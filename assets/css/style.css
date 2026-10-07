@@ -1708,7 +1708,7 @@ blockquote {
 }
 
 /* ==========================================================================
-   YouTube Prayer Section (Zero-JS, Lightweight CTA)
+   YouTube Prayer Section (Zero-JS CTA)
    ========================================================================== */
 .youtube-prayer-section {
   background-color: var(--color-bg-alt);
@@ -1718,10 +1718,6 @@ blockquote {
   margin: 2.75rem 0 2rem;
   text-align: center;
   box-shadow: var(--shadow-sm);
-}
-
-.youtube-prayer-header {
-  margin-bottom: 1.35rem;
 }
 
 .youtube-prayer-badge {
@@ -1752,7 +1748,7 @@ blockquote {
   color: var(--color-text-muted);
   line-height: 1.6;
   max-width: 580px;
-  margin: 0 auto;
+  margin: 0 auto 1.35rem;
 }
 
 .youtube-prayer-card-wrap {
@@ -1776,7 +1772,6 @@ blockquote {
   transform: translateY(-2px);
   box-shadow: var(--shadow-md);
   border-color: var(--color-accent-border);
-  color: var(--color-text-main);
 }
 
 .youtube-prayer-card:focus-visible {
@@ -1812,7 +1807,7 @@ blockquote {
   height: 58px;
   border-radius: 50%;
   background-color: rgba(35, 32, 28, 0.82);
-  color: #ffffff;
+  color: #fff;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1822,13 +1817,13 @@ blockquote {
   transition: background-color var(--transition-fast), transform var(--transition-fast);
 }
 
+.youtube-prayer-play-btn svg {
+  margin-left: 3px;
+}
+
 .youtube-prayer-card:hover .youtube-prayer-play-btn {
   background-color: #c4302b;
   transform: translate(-50%, -50%) scale(1.08);
-}
-
-.youtube-prayer-play-btn svg {
-  margin-left: 3px;
 }
 
 .youtube-prayer-overlay-label {
@@ -1836,7 +1831,7 @@ blockquote {
   bottom: 0.65rem;
   right: 0.65rem;
   background-color: rgba(0, 0, 0, 0.72);
-  color: #ffffff;
+  color: #fff;
   font-size: 0.725rem;
   font-weight: 600;
   padding: 0.2rem 0.5rem;
