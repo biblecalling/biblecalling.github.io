@@ -1,0 +1,53 @@
+---
+layout: default
+title: "All Articles & Reflections"
+description: "Explore the complete library of Christ-centered articles, biblical encouragement, daily prayers, and devotionals."
+permalink: /blog/
+---
+
+<div class="category-page-wrapper">
+  <header class="category-hero">
+    <div class="container">
+      {% include breadcrumbs.html %}
+      <div class="category-hero-content">
+        <span class="category-kicker">Spiritual Library</span>
+        <h1 class="category-heading">All Articles &amp; Reflections</h1>
+        <p class="category-hero-desc">
+          Browse our complete archive of Bible teachings, devotionals, prayers, and reflections on Jesus Christ. Filter through themes or search for topics of interest.
+        </p>
+        <div class="category-meta-info">
+          <span class="category-count-badge">{{ site.posts.size }} Published Articles</span>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <div class="container category-main-content">
+    <!-- Category Quick Filters -->
+    <div class="category-pills" style="margin-bottom: 2.5rem;">
+      <span style="font-weight: 600; font-size: 0.85rem; align-self: center; color: var(--color-text-muted);">Filter By Theme:</span>
+      <a href="{{ site.baseurl }}/categories/jesus/">Jesus</a>
+      <a href="{{ site.baseurl }}/categories/bible/">Bible</a>
+      <a href="{{ site.baseurl }}/categories/prayer/">Prayer</a>
+      <a href="{{ site.baseurl }}/categories/faith/">Faith</a>
+      <a href="{{ site.baseurl }}/categories/devotionals/">Devotionals</a>
+      <a href="{{ site.baseurl }}/categories/christian-life/">Christian Life</a>
+    </div>
+
+    <!-- Articles Grid -->
+    <div class="posts-grid">
+      {% if paginator.posts %}
+        {% for post in paginator.posts %}
+          {% include post-card.html post=post %}
+        {% endfor %}
+      {% else %}
+        {% for post in site.posts %}
+          {% include post-card.html post=post %}
+        {% endfor %}
+      {% endif %}
+    </div>
+
+    <!-- Pagination Controls -->
+    {% include pagination.html %}
+  </div>
+</div>

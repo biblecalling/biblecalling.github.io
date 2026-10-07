@@ -1,0 +1,24 @@
+# Jekyll local build output
+_site/
+.sass-cache/
+.jekyll-cache/
+.jekyll-metadata
+
+# Ruby/Bundler dependencies
+vendor/
+.bundle/
+
+# Operating System files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editor & IDE settings
+.vscode/
+.idea/
+
+# Logs & temp files
+*.log
+*.tmp
+*.py
+__pycache__/

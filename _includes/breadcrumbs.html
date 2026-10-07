@@ -1,0 +1,31 @@
+<nav class="breadcrumbs" aria-label="Breadcrumb">
+  <ol class="breadcrumb-list">
+    <li class="breadcrumb-item">
+      <a href="{{ site.baseurl }}/">Home</a>
+    </li>
+    {% if page.url contains '/jesus-calling-october-' and page.url != '/jesus-calling-october-2026/' %}
+      <li class="breadcrumb-separator" aria-hidden="true">&rsaquo;</li>
+      <li class="breadcrumb-item">
+        <a href="{{ site.baseurl }}/categories/jesus-calling/">Jesus Calling</a>
+      </li>
+      <li class="breadcrumb-separator" aria-hidden="true">&rsaquo;</li>
+      <li class="breadcrumb-item">
+        <a href="{{ site.baseurl }}/jesus-calling-october-2026/">October 2026</a>
+      </li>
+    {% elsif page.layout == 'post' and page.categories.first %}
+      <li class="breadcrumb-separator" aria-hidden="true">&rsaquo;</li>
+      <li class="breadcrumb-item">
+        <a href="{{ site.baseurl }}/categories/{{ page.categories.first | slugify }}/">{{ page.categories.first }}</a>
+      </li>
+    {% elsif page.categories.first %}
+      <li class="breadcrumb-separator" aria-hidden="true">&rsaquo;</li>
+      <li class="breadcrumb-item">
+        <a href="{{ site.baseurl }}/categories/{{ page.categories.first | slugify }}/">{{ page.categories.first }}</a>
+      </li>
+    {% endif %}
+    <li class="breadcrumb-separator" aria-hidden="true">&rsaquo;</li>
+    <li class="breadcrumb-item active" aria-current="page">
+      <span>{{ page.breadcrumb_title | default: page.title | truncate: 50 }}</span>
+    </li>
+  </ol>
+</nav>

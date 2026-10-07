@@ -1,0 +1,192 @@
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>{% if page.url == '/' %}{{ page.title | default: site.title }}{% elsif page.title %}{% if page.title contains site.title %}{{ page.title }}{% else %}{{ page.title }} | {{ site.title }}{% endif %}{% else %}{{ site.title }} - {{ site.tagline }}{% endif %}</title>
+
+<!-- SEO Meta Tags -->
+{% assign page_desc = page.description | default: page.excerpt | default: site.description | strip_html | strip_newlines | truncate: 160 %}
+<meta name="description" content="{{ page_desc | escape }}">
+<meta name="author" content="{{ page.author.name | default: page.author | default: site.author.name }}">
+{% if page.noindex or page.url contains '404' or page.url contains '/search/' %}
+<meta name="robots" content="noindex, follow">
+{% else %}
+<meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+{% endif %}
+
+<!-- Canonical URL -->
+{% capture canonical_url %}{{ site.url }}{{ site.baseurl }}{{ page.url | replace:'index.html','' }}{% endcapture %}
+<link rel="canonical" href="{{ canonical_url }}">
+
+<!-- Open Graph / Facebook -->
+<meta property="og:type" content="{% if page.layout == 'post' %}article{% else %}website{% endif %}">
+<meta property="og:site_name" content="{{ site.title }}">
+<meta property="og:title" content="{% if page.url == '/' %}{{ page.title | default: site.title }}{% elsif page.title %}{{ page.title }} | {{ site.title }}{% else %}{{ site.title }}{% endif %}">
+<meta property="og:description" content="{{ page_desc | escape }}">
+<meta property="og:url" content="{{ canonical_url }}">
+{% if page.image %}
+  {% if page.image contains "http" %}
+    <meta property="og:image" content="{{ page.image }}">
+  {% else %}
+    <meta property="og:image" content="{{ site.url }}{{ site.baseurl }}{{ page.image }}">
+  {% endif %}
+{% else %}
+  <meta property="og:image" content="{{ site.url }}{{ site.baseurl }}/assets/images/og-default.webp">
+{% endif %}
+
+{% if page.layout == 'post' %}
+  <meta property="article:published_time" content="{{ page.date | date_to_xmlschema }}">
+  {% if page.last_modified_at %}
+    <meta property="article:modified_time" content="{{ page.last_modified_at | date_to_xmlschema }}">
+  {% endif %}
+  <meta property="article:author" content="{{ page.author.name | default: page.author | default: site.author.name }}">
+  {% for category in page.categories %}
+    <meta property="article:section" content="{{ category }}">
+  {% endfor %}
+{% endif %}
+
+<!-- Twitter Cards -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="@{{ site.twitter_username }}">
+<meta name="twitter:creator" content="@{{ site.twitter_username }}">
+<meta name="twitter:title" content="{% if page.url == '/' %}{{ page.title | default: site.title }}{% elsif page.title %}{{ page.title }} | {{ site.title }}{% else %}{{ site.title }}{% endif %}">
+<meta name="twitter:description" content="{{ page_desc | escape }}">
+{% if page.image %}
+  {% if page.image contains "http" %}
+    <meta name="twitter:image" content="{{ page.image }}">
+  {% else %}
+    <meta name="twitter:image" content="{{ site.url }}{{ site.baseurl }}{{ page.image }}">
+  {% endif %}
+{% else %}
+  <meta name="twitter:image" content="{{ site.url }}{{ site.baseurl }}/assets/images/og-default.webp">
+{% endif %}
+
+<!-- RSS & Feeds -->
+<link rel="alternate" type="application/rss+xml" title="{{ site.title }} RSS Feed" href="{{ site.url }}{{ site.baseurl }}/feed.xml">
+
+<!-- Favicon (Inline SVG for zero latency) -->
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%239a7432'/%3E%3Cpath d='M16 6v20M10 12h12' stroke='%23ffffff' stroke-width='3' stroke-linecap='round'/%3E%3C/svg%3E">
+
+<!-- Theme Color -->
+<meta name="theme-color" content="#fcfbf7">
+
+<!-- LCP Image Preload for Article Pages -->
+{% if page.layout == 'post' and page.image %}
+<link rel="preload" as="image" href="{{ page.image | relative_url }}" fetchpriority="high">
+{% endif %}
+
+<!-- Stylesheet -->
+<link rel="stylesheet" href="{{ site.baseurl }}/assets/css/style.css">
+
+<!-- Structured Data (JSON-LD) -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebSite",
+      "@id": "{{ site.url }}/#website",
+      "url": "{{ site.url }}/",
+      "name": "{{ site.title }}",
+      "description": "{{ site.description | escape }}",
+      "inLanguage": "en-US",
+      "publisher": {
+        "@id": "{{ site.url }}/#organization"
+      },
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": "{{ site.url }}/search/?q={search_term_string}",
+        "query-input": "required name=search_term_string"
+      }
+    },
+    {
+      "@type": "Organization",
+      "@id": "{{ site.url }}/#organization",
+      "name": "{{ site.title }}",
+      "url": "{{ site.url }}/",
+      "description": "{{ site.description | escape }}",
+      {% if site.author.email %}"email": "{{ site.author.email }}",{% endif %}
+      "logo": {
+        "@type": "ImageObject",
+        "url": "{{ site.url }}/assets/images/logo.webp",
+        "width": 512,
+        "height": 512
+      }
+    }{% if page.layout == 'post' %},
+    {
+      "@type": "BlogPosting",
+      "@id": "{{ canonical_url }}#article",
+      "isPartOf": {
+        "@id": "{{ site.url }}/#website"
+      },
+      "inLanguage": "en-US",
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "{{ canonical_url }}"
+      },
+      "headline": {{ page.title | jsonify }},
+      "description": {{ page_desc | jsonify }},
+      "url": "{{ canonical_url }}",
+      "datePublished": "{{ page.date | date_to_xmlschema }}",
+      "dateModified": "{{ page.last_modified_at | default: page.date | date_to_xmlschema }}",
+      "author": {
+        "@type": "Organization",
+        "name": {{ page.author.name | default: page.author | default: site.author.name | jsonify }},
+        "url": "{{ site.url }}/about/"
+      },
+      "publisher": {
+        "@id": "{{ site.url }}/#organization"
+      },
+      "image": "{% if page.image contains 'http' %}{{ page.image }}{% else %}{{ site.url }}{{ site.baseurl }}{{ page.image | default: '/assets/images/og-default.webp' }}{% endif %}",
+      "articleSection": {{ page.categories | first | jsonify }}{% if page.tags.size > 0 %},
+      "keywords": {{ page.tags | join: ', ' | jsonify }}{% endif %}
+    }{% endif %}{% if page.url != '/' %},
+    {
+      "@type": "BreadcrumbList",
+      "@id": "{{ canonical_url }}#breadcrumb",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "{{ site.url }}/"
+        }{% if page.url contains '/jesus-calling-october-' and page.url != '/jesus-calling-october-2026/' %},
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Jesus Calling",
+          "item": "{{ site.url }}/categories/jesus-calling/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "October 2026",
+          "item": "{{ site.url }}/jesus-calling-october-2026/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 4,
+          "name": {{ page.breadcrumb_title | default: page.title | jsonify }},
+          "item": "{{ canonical_url }}"
+        }{% elsif page.layout == 'post' and page.categories.first %},
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "{{ page.categories.first }}",
+          "item": "{{ site.url }}/categories/{{ page.categories.first | slugify }}/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": {{ page.title | jsonify }},
+          "item": "{{ canonical_url }}"
+        }{% else %},
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": {{ page.title | jsonify }},
+          "item": "{{ canonical_url }}"
+        }{% endif %}
+      ]
+    }{% endif %}
+  ]
+}
+</script>

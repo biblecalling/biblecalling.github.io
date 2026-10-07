@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  {% include head.html %}
+</head>
+<body class="site-body layout-{{ page.layout | default: 'default' }}{% if page.body_class %} {{ page.body_class }}{% endif %}">
+
+  {% include header.html %}
+
+  <main id="main-content" class="site-main">
+    {{ content }}
+  </main>
+
+  {% include footer.html %}
+
+  <!-- Vanilla JavaScript (deferred for Core Web Vitals) -->
+  <script src="{{ site.baseurl }}/assets/js/main.js" defer></script>
+</body>
+</html>

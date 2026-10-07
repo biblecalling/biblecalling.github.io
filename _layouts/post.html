@@ -1,0 +1,157 @@
+---
+layout: default
+---
+
+<!-- Reading Progress Bar -->
+<div id="reading-progress-bar" class="reading-progress-bar" aria-hidden="true"></div>
+
+<article class="article-wrapper" itemscope itemtype="https://schema.org/BlogPosting">
+  <!-- Article Header -->
+  <header class="article-header">
+    <div class="container container-reading">
+      {% include breadcrumbs.html %}
+
+      <div class="article-badge-row">
+        {% for cat in page.categories %}
+          <a href="{{ site.baseurl }}/categories/{{ cat | slugify }}/" class="article-category-badge">{{ cat }}</a>
+        {% endfor %}
+      </div>
+
+      <h1 class="article-title" itemprop="headline">{{ page.h1 | default: page.title }}</h1>
+
+      {% if page.description %}
+        <p class="article-lead" itemprop="description">{{ page.description }}</p>
+      {% endif %}
+
+      <!-- Article Meta Box -->
+      <div class="article-meta-box">
+        <div class="article-author-info">
+          <div class="author-avatar" aria-hidden="true">
+            {% if site.author.photo and site.author.photo != "" %}
+              <img src="{{ site.author.photo | relative_url }}" alt="{{ site.author.name }}" class="author-avatar-img" width="40" height="40">
+            {% else %}
+              <svg viewBox="0 0 32 32" width="22" height="22" fill="none">
+                <circle cx="16" cy="16" r="15" stroke="currentColor" stroke-width="1.5" opacity="0.4"/>
+                <path d="M16 8v16M11 13h10" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+              </svg>
+            {% endif %}
+          </div>
+          <div>
+            <span class="author-name" itemprop="author" itemscope itemtype="https://schema.org/Organization">
+              <span itemprop="name">{{ page.author.name | default: page.author | default: site.author.name }}</span>
+            </span>
+            <div class="article-dates">
+              <time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
+                {{ page.date | date: "%B %-d, %Y" }}
+              </time>
+              {% if page.last_modified_at %}
+                <span class="meta-dot" aria-hidden="true">&bull;</span>
+                <span class="updated-date">Updated: <time datetime="{{ page.last_modified_at | date_to_xmlschema }}" itemprop="dateModified">{{ page.last_modified_at | date: "%B %-d, %Y" }}</time></span>
+              {% endif %}
+            </div>
+          </div>
+        </div>
+
+        <div class="article-reading-stats">
+          {% assign words = content | number_of_words %}
+          {% assign read_time = words | divided_by: 200 | at_least: 1 %}
+          <span class="read-time-pill">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+            {{ read_time }} min read
+          </span>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Featured Hero Image -->
+  {% if page.image %}
+    <div class="article-featured-image-wrap">
+      <div class="container container-reading">
+        <figure class="article-figure">
+          <img
+            src="{{ page.image | relative_url }}"
+            alt="{{ page.title | escape }}"
+            width="1200"
+            height="630"
+            loading="eager"
+            fetchpriority="high"
+            decoding="async"
+            class="article-featured-img"
+            onerror="this.closest('.article-featured-image-wrap').style.display='none';"
+            itemprop="image">
+          {% if page.image_caption %}
+            <figcaption class="article-figcaption">{{ page.image_caption }}</figcaption>
+          {% endif %}
+        </figure>
+      </div>
+    </div>
+  {% endif %}
+
+  <!-- Article Body Content -->
+  <div class="container container-reading article-content-layout">
+    <div class="article-body-content" itemprop="articleBody">
+      {{ content }}
+
+      {% assign post_categories = page.categories | join: ', ' | downcase %}
+      {% if post_categories contains "jesus calling" or post_categories contains "jesus-calling" %}
+        <div class="devotional-disclaimer-note" role="note" aria-label="Devotional reflection note">
+          <p>{{ site.disclaimer_devotional_note }}</p>
+        </div>
+      {% endif %}
+    </div>
+
+    <!-- Article Tags -->
+    {% if page.tags.size > 0 %}
+      <div class="article-tags-wrap" aria-label="Tags">
+        <span class="tags-label">Topics:</span>
+        <div class="tags-list">
+          {% for tag in page.tags %}
+            <span class="tag-pill">#{{ tag }}</span>
+          {% endfor %}
+        </div>
+      </div>
+    {% endif %}
+
+    <!-- Share Buttons -->
+    <div class="article-share-section">
+      {% include share-buttons.html %}
+    </div>
+
+    <!-- Author Bio -->
+    {% include author-bio.html %}
+
+    <!-- Previous / Next Navigation -->
+    <nav class="post-prev-next-nav" aria-label="Adjacent Articles">
+      <div class="prev-next-grid">
+        {% if page.previous.url %}
+          <a href="{{ page.previous.url | relative_url }}" class="prev-next-card prev-card" rel="prev">
+            <span class="prev-next-label">&larr; Previous Devotional</span>
+            <span class="prev-next-title">{{ page.previous.title | truncate: 55 }}</span>
+          </a>
+        {% else %}
+          <div class="prev-next-empty"></div>
+        {% endif %}
+
+        {% if page.next.url %}
+          <a href="{{ page.next.url | relative_url }}" class="prev-next-card next-card" rel="next">
+            <span class="prev-next-label">Next Devotional &rarr;</span>
+            <span class="prev-next-title">{{ page.next.title | truncate: 55 }}</span>
+          </a>
+        {% endif %}
+      </div>
+    </nav>
+
+    <!-- Related Articles -->
+    {% include related-posts.html %}
+
+    <!-- Comments & Community Reflections -->
+    {% unless page.comments == false %}
+      {% include comments.html %}
+    {% endunless %}
+  </div>
+</article>
+
+<!-- Comment System & Supabase Integration (Deferred for Core Web Vitals) -->
+<script src="{{ site.baseurl }}/assets/js/supabase-config.js" defer></script>
+<script src="{{ site.baseurl }}/assets/js/comments.js" defer></script>

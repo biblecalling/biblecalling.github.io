@@ -1,0 +1,17 @@
+<section class="author-bio-card" aria-label="About the Author">
+  <div class="bio-avatar" aria-hidden="true">
+    {% if site.author.photo and site.author.photo != "" %}
+      <img src="{{ site.author.photo | relative_url }}" alt="{{ site.author.name }}" class="bio-avatar-img" width="58" height="58" loading="lazy">
+    {% else %}
+      ✝
+    {% endif %}
+  </div>
+  <div class="bio-details">
+    <h3 class="bio-name">
+      <a href="{{ site.baseurl }}/about/#author" class="bio-name-link">{{ page.author.name | default: page.author | default: site.author.name }}</a>
+    </h3>
+    <p class="bio-desc">
+      {{ page.author.bio | default: site.author.bio }}
+    </p>
+  </div>
+</section>

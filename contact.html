@@ -1,0 +1,95 @@
+---
+layout: page
+title: "Contact & Prayer Requests"
+description: "Reach out to the Jesus Calling editorial team with questions, encouragement, or prayer requests."
+permalink: /contact/
+---
+
+<p class="lead">
+  We love hearing from our readers across the world. Whether you have a question about an article, feedback for our editorial team, or a personal burden you would like us to remember in prayer, we welcome your message.
+</p>
+
+<div class="contact-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2.5rem; margin: 2.5rem 0;">
+  <!-- Left Column: Form -->
+  <div class="contact-form-column">
+    <h2>Send a Message or Prayer Request</h2>
+    <p>Fill out the form below to connect with our editorial team:</p>
+
+    <form
+      id="contact-form"
+      class="contact-form"
+      action="{% if site.contact_form_action and site.contact_form_action != '' %}{{ site.contact_form_action }}{% else %}mailto:{{ site.author.email }}?subject=Website%20Inquiry{% endif %}"
+      method="{% if site.contact_form_action and site.contact_form_action != '' %}post{% else %}get{% endif %}"
+      aria-label="Contact and prayer request form">
+
+      <!-- Honeypot anti-spam check -->
+      <div style="position: absolute; left: -5000px;" aria-hidden="true">
+        <input type="text" name="b_contact_hp" tabindex="-1" value="" autocomplete="off">
+      </div>
+
+      <div class="auth-field-group">
+        <label for="contact-name" class="auth-label">Your Name</label>
+        <input type="text" id="contact-name" name="name" class="auth-input" placeholder="e.g. Sarah" required autocomplete="name">
+      </div>
+
+      <div class="auth-field-group">
+        <label for="contact-email" class="auth-label">Email Address</label>
+        <input type="email" id="contact-email" name="email" class="auth-input" placeholder="you@example.com" required autocomplete="email">
+      </div>
+
+      <div class="auth-field-group">
+        <label for="contact-subject" class="auth-label">Topic / Subject</label>
+        <select id="contact-subject" name="subject" class="auth-input" style="background-color: #fff;">
+          <option value="Prayer Request">Prayer Request</option>
+          <option value="Editorial Feedback">Editorial Question / Feedback</option>
+          <option value="Testimony">Sharing a Personal Testimony</option>
+          <option value="General Inquiry">General Inquiry</option>
+        </select>
+      </div>
+
+      <div class="auth-field-group">
+        <label for="contact-message" class="auth-label">Your Message or Prayer Request</label>
+        <textarea id="contact-message" name="message" class="comment-textarea" rows="5" placeholder="Share how we can pray for you, or what is on your heart..." required></textarea>
+      </div>
+
+      <button type="submit" class="btn btn-primary btn-block">
+        <span>Send Message</span>
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="22" y1="2" x2="11" y2="13"></line><polygon points="22 2 15 22 11 13 2 9 22 2"></polygon></svg>
+      </button>
+
+      <p class="auth-privacy-disclaimer" style="text-align: left; margin-top: 0.75rem;">
+        Your privacy is sacred to us. We never share prayer requests or email addresses with third parties.
+      </p>
+    </form>
+  </div>
+
+  <!-- Right Column: Information & Scripture -->
+  <div class="contact-info-column">
+    <h2>Direct Contact Information</h2>
+    <div class="prayer-box" style="margin-bottom: 2rem;">
+      <div class="prayer-box-title">Direct Editorial Email</div>
+      <p style="font-size: 1.15rem; font-style: normal; margin-bottom: 0.5rem;">
+        <strong>Email:</strong> <a href="mailto:{{ site.author.email }}">{{ site.author.email }}</a>
+      </p>
+      <p style="font-size: 0.85rem; color: var(--color-text-muted); margin-bottom: 0;">
+        We read every message with prayerful care and aim to reply within 2 to 3 business days.
+      </p>
+    </div>
+
+    <h2>How We Pray For You</h2>
+    <p>
+      James 5:16 reminds us, <em>&ldquo;Confess your sins to one another and pray for one another, that you may be healed. The prayer of a righteous person has great power as it is working.&rdquo;</em>
+    </p>
+    <p>
+      If you are currently walking through a difficult valley &mdash; illness, anxiety, family difficulties, or grief &mdash; please know you are not alone. Our team pauses regularly to lift our readers before the throne of grace.
+    </p>
+
+    <div class="scripture-highlight">
+      <div class="scripture-highlight-title">God's Invitation to You</div>
+      <blockquote class="scripture-highlight-text">
+        &ldquo;Cast your burden on the Lord, and he will sustain you; he will never permit the righteous to be moved.&rdquo;
+      </blockquote>
+      <div class="scripture-highlight-ref">&mdash; Psalm 55:22</div>
+    </div>
+  </div>
+</div>

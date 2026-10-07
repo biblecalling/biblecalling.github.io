@@ -1,0 +1,41 @@
+{% if paginator.total_pages > 1 %}
+<nav class="pagination" aria-label="Pagination">
+  <div class="pagination-inner">
+    {% if paginator.previous_page %}
+      <a href="{{ paginator.previous_page_path | relative_url }}" class="pagination-link pagination-prev" aria-label="Previous Page">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="15 18 9 12 15 6"></polyline></svg>
+        <span>Previous</span>
+      </a>
+    {% else %}
+      <span class="pagination-link pagination-disabled pagination-prev" aria-disabled="true">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="15 18 9 12 15 6"></polyline></svg>
+        <span>Previous</span>
+      </span>
+    {% endif %}
+
+    <div class="pagination-numbers">
+      {% for page in (1..paginator.total_pages) %}
+        {% if page == paginator.page %}
+          <span class="pagination-num current" aria-current="page">{{ page }}</span>
+        {% elsif page == 1 %}
+          <a href="{{ '/blog/' | relative_url }}" class="pagination-num">{{ page }}</a>
+        {% else %}
+          <a href="{{ site.paginate_path | relative_url | replace: ':num', page }}" class="pagination-num">{{ page }}</a>
+        {% endif %}
+      {% endfor %}
+    </div>
+
+    {% if paginator.next_page %}
+      <a href="{{ paginator.next_page_path | relative_url }}" class="pagination-link pagination-next" aria-label="Next Page">
+        <span>Next</span>
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="9 18 15 12 9 6"></polyline></svg>
+      </a>
+    {% else %}
+      <span class="pagination-link pagination-disabled pagination-next" aria-disabled="true">
+        <span>Next</span>
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="9 18 15 12 9 6"></polyline></svg>
+      </span>
+    {% endif %}
+  </div>
+</nav>
+{% endif %}

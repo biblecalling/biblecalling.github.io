@@ -1,0 +1,217 @@
+<!-- Comments & Community Reflections Section -->
+<section class="comments-section" id="comments-section" aria-labelledby="comments-heading" data-post-url="{{ page.url }}">
+  <div class="comments-header">
+    <div class="comments-badge">Christian Community</div>
+    <h2 id="comments-heading" class="comments-title">Join the Conversation</h2>
+    <p class="comments-desc">
+      Share what God is teaching you, what you're trusting Him with, or how this reflection spoke to you.
+    </p>
+  </div>
+
+  <!-- Authenticated User Status Bar (populated by JS) -->
+  <div class="comment-user-bar" id="comment-user-bar" style="display: none;">
+    <div class="user-bar-profile">
+      <div class="user-bar-avatar" id="user-bar-avatar" aria-hidden="true"></div>
+      <div class="user-bar-info">
+        <span class="user-bar-greeting">Sharing reflection as:</span>
+        <strong class="user-bar-name" id="user-bar-name"></strong>
+      </div>
+    </div>
+    <button type="button" class="btn-text-link" id="btn-comment-signout">Sign Out</button>
+  </div>
+
+  <!-- Comment Form Box -->
+  <div class="comment-form-card" id="comment-form-card">
+    <label for="comment-input" class="comment-input-label">
+      <span>What is God teaching you today?</span>
+      <span class="comment-char-count" id="comment-char-count">1000 characters left</span>
+    </label>
+
+    <div class="comment-textarea-wrap">
+      <textarea
+        id="comment-input"
+        class="comment-textarea"
+        placeholder="Share what God is doing in your life or how this Scripture spoke to you today..."
+        maxlength="1000"
+        rows="4"
+        aria-describedby="comment-input-hint"></textarea>
+    </div>
+
+    <div class="comment-form-footer">
+      <p class="comment-input-hint" id="comment-input-hint">
+        Please keep comments encouraging, respectful, and rooted in Christ's love.
+      </p>
+      <div class="comment-form-actions">
+        <!-- Button text toggled via JS based on login state -->
+        <button type="button" class="btn btn-primary" id="btn-submit-comment">
+          <span id="submit-comment-text">Continue to Comment</span>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="22" y1="2" x2="11" y2="13"></line><polygon points="22 2 15 22 11 13 2 9 22 2"></polygon></svg>
+        </button>
+      </div>
+    </div>
+    <div id="comment-form-feedback" class="comment-feedback" role="alert" style="display: none;"></div>
+  </div>
+
+  <!-- Comments Stream Container -->
+  <div class="comments-stream" id="comments-stream">
+    <div class="comments-stream-header">
+      <h3 class="comments-count-title">
+        Reflections <span class="comments-count-badge" id="comments-count-badge">(0)</span>
+      </h3>
+    </div>
+
+    <!-- Loading Skeleton Placeholder -->
+    <div class="comments-loading" id="comments-loading" aria-live="polite">
+      <div class="skeleton-comment">
+        <div class="skeleton-avatar"></div>
+        <div class="skeleton-lines">
+          <div class="skeleton-line skeleton-line-title"></div>
+          <div class="skeleton-line skeleton-line-body"></div>
+        </div>
+      </div>
+      <p class="skeleton-loading-text">Loading reflections...</p>
+    </div>
+
+    <!-- Empty State -->
+    <div class="comments-empty-state" id="comments-empty-state" style="display: none;">
+      <div class="empty-icon" aria-hidden="true">✝</div>
+      <h4>Be the first to share your thoughts</h4>
+      <p>Your encouragement or testimony could be exactly what another believer needs to hear today.</p>
+    </div>
+
+    <!-- Error State -->
+    <div class="comments-error-state" id="comments-error-state" style="display: none;" role="alert">
+      <p id="comments-error-message">Comments are temporarily unavailable. Please try again later.</p>
+    </div>
+
+    <!-- Comments List (Tree) -->
+    <ul class="comments-list" id="comments-list" aria-label="Community comments">
+      <!-- Dynamically generated via comments.js -->
+    </ul>
+  </div>
+</section>
+
+<!-- Authentication Modal -->
+<div class="auth-modal" id="auth-modal" role="dialog" aria-modal="true" aria-labelledby="auth-modal-title" style="display: none;">
+  <div class="auth-modal-backdrop" id="auth-modal-backdrop"></div>
+  <div class="auth-modal-card">
+    <button type="button" class="auth-modal-close" id="auth-modal-close" aria-label="Close authentication window">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+        <line x1="18" y1="6" x2="6" y2="18"></line>
+        <line x1="6" y1="6" x2="18" y2="18"></line>
+      </svg>
+    </button>
+
+    <div class="auth-modal-header">
+      <div class="auth-modal-symbol" aria-hidden="true">✝</div>
+      <h3 class="auth-modal-title" id="auth-modal-title">Sign In to {{ site.title }}</h3>
+      <p class="auth-modal-subtitle">
+        Join our fellowship to share reflections, encourage fellow believers, and grow together in faith.
+      </p>
+    </div>
+
+    <!-- Google OAuth Button -->
+    <button type="button" class="btn-oauth-google" id="btn-oauth-google">
+      <svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true">
+        <path fill="#4285F4" d="M23.745 12.27c0-.7-.06-1.4-.19-2.07H12v4.51h6.6c-.29 1.52-1.14 2.82-2.4 3.68v3.05h3.88c2.27-2.09 3.665-5.17 3.665-9.17z"/>
+        <path fill="#34A853" d="M12 24c3.24 0 5.95-1.08 7.93-2.91l-3.88-3.05c-1.08.72-2.45 1.16-4.05 1.16-3.12 0-5.77-2.1-6.72-4.93H1.25v3.15C3.26 21.36 7.33 24 12 24z"/>
+        <path fill="#FBBC05" d="M5.28 14.27c-.25-.72-.38-1.49-.38-2.27s.13-1.55.38-2.27V6.58H1.25C.45 8.18 0 9.97 0 12s.45 3.82 1.25 5.42l4.03-3.15z"/>
+        <path fill="#EA4335" d="M12 4.75c1.77 0 3.35.61 4.6 1.8l3.42-3.42C17.95 1.19 15.24 0 12 0 7.33 0 3.26 2.64 1.25 6.58l4.03 3.15c.95-2.83 3.6-4.98 6.72-4.98z"/>
+      </svg>
+      <span>Continue with Google</span>
+    </button>
+
+    <div class="auth-divider">
+      <span>or continue with email</span>
+    </div>
+
+    <!-- Email Auth Form -->
+    <form id="auth-email-form" class="auth-email-form" novalidate>
+      <div class="auth-field-group" id="auth-group-name" style="display: none;">
+        <label for="auth-input-name" class="auth-label">Your Display Name</label>
+        <input type="text" id="auth-input-name" class="auth-input" placeholder="e.g. Sarah M." autocomplete="name">
+        <span class="auth-field-note">This is the public name shown on your comments. Your email is never displayed.</span>
+      </div>
+
+      <div class="auth-field-group">
+        <label for="auth-input-email" class="auth-label">Email Address</label>
+        <input type="email" id="auth-input-email" class="auth-input" placeholder="you@example.com" autocomplete="email" required>
+      </div>
+
+      <div class="auth-field-group">
+        <div class="auth-label-row">
+          <label for="auth-input-password" class="auth-label">Password</label>
+          <button type="button" class="btn-text-link" id="btn-forgot-password">Forgot password?</button>
+        </div>
+        <input type="password" id="auth-input-password" class="auth-input" placeholder="••••••••" autocomplete="current-password" required minlength="6">
+      </div>
+
+      <div id="auth-feedback" class="auth-feedback" role="alert" style="display: none;"></div>
+
+      <button type="submit" class="btn btn-primary btn-block" id="btn-auth-submit">
+        <span id="btn-auth-submit-text">Sign In</span>
+      </button>
+    </form>
+
+    <div class="auth-modal-footer">
+      <p id="auth-toggle-prompt">
+        Don't have an account yet?
+        <button type="button" class="btn-text-link font-bold" id="btn-toggle-auth-mode">Create an Account</button>
+      </p>
+      <p class="auth-privacy-disclaimer">
+        By continuing, you agree to our <a href="{{ site.baseurl }}/terms/">Terms</a> and <a href="{{ site.baseurl }}/privacy-policy/">Privacy Policy</a>. We never sell your personal data.
+      </p>
+    </div>
+  </div>
+</div>
+
+<!-- Report Comment Modal -->
+<div class="report-modal" id="report-modal" role="dialog" aria-modal="true" aria-labelledby="report-modal-title" style="display: none;">
+  <div class="report-modal-backdrop" id="report-modal-backdrop"></div>
+  <div class="report-modal-card">
+    <button type="button" class="auth-modal-close" id="report-modal-close" aria-label="Close report window">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+        <line x1="18" y1="6" x2="6" y2="18"></line>
+        <line x1="6" y1="6" x2="18" y2="18"></line>
+      </svg>
+    </button>
+
+    <h3 class="report-modal-title" id="report-modal-title">Report Comment</h3>
+    <p class="report-modal-subtitle">
+      Help us maintain a peaceful, Christ-honoring community. Why are you reporting this comment?
+    </p>
+
+    <form id="report-form" class="report-form">
+      <input type="hidden" id="report-comment-id" value="">
+      <div class="report-radios">
+        <label class="report-radio-label">
+          <input type="radio" name="report_reason" value="Spam" checked>
+          <span>Spam or advertising</span>
+        </label>
+        <label class="report-radio-label">
+          <input type="radio" name="report_reason" value="Offensive content">
+          <span>Offensive or unwholesome language</span>
+        </label>
+        <label class="report-radio-label">
+          <input type="radio" name="report_reason" value="Harassment">
+          <span>Harassment or personal attack</span>
+        </label>
+        <label class="report-radio-label">
+          <input type="radio" name="report_reason" value="Misleading content">
+          <span>Misleading or harmful claims</span>
+        </label>
+        <label class="report-radio-label">
+          <input type="radio" name="report_reason" value="Other">
+          <span>Other concern</span>
+        </label>
+      </div>
+
+      <div id="report-feedback" class="auth-feedback" role="alert" style="display: none;"></div>
+
+      <div class="report-actions">
+        <button type="button" class="btn btn-secondary" id="btn-cancel-report">Cancel</button>
+        <button type="submit" class="btn btn-primary" id="btn-submit-report">Submit Report</button>
+      </div>
+    </form>
+  </div>
+</div>

@@ -1,0 +1,99 @@
+<a href="#main-content" class="skip-link">Skip to main content</a>
+
+<!-- Tranquil Top Blessing Ribbon -->
+<div class="top-ribbon" role="region" aria-label="Daily Scripture Banner">
+  <div class="container ribbon-inner">
+    <span class="ribbon-text">
+      <svg class="ribbon-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 2v20M5 8h14"/></svg>
+      <em>&ldquo;Peace I leave with you; my peace I give you.&rdquo;</em> &mdash; John 14:27
+    </span>
+    <a href="{{ site.baseurl }}/jesus-calling-october-2026/" class="ribbon-link">October 2026 Daily Guide &rarr;</a>
+  </div>
+</div>
+
+<header class="site-header" id="site-header">
+  <div class="container header-inner">
+    <!-- Brand Logo -->
+    <a href="{{ site.baseurl }}/" class="site-logo" aria-label="{{ site.title }} Home">
+      <span class="logo-symbol" aria-hidden="true">
+        <svg viewBox="0 0 32 32" width="28" height="28" fill="none">
+          <circle cx="16" cy="16" r="15" stroke="currentColor" stroke-width="1.5" opacity="0.3"/>
+          <path d="M16 6v20M10 12h12" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/>
+        </svg>
+      </span>
+      <span class="logo-text">
+        <span class="brand-title">{{ site.title }}</span>
+        <span class="brand-subtitle">{{ site.tagline }}</span>
+      </span>
+    </a>
+
+    <!-- Desktop Navigation -->
+    <nav class="nav-desktop" aria-label="Primary Navigation">
+      <ul class="nav-list">
+        <li><a href="{{ site.baseurl }}/" {% if page.url == '/' %}class="active" aria-current="page"{% endif %}>Home</a></li>
+        <li><a href="{{ site.baseurl }}/devotionals/" {% if page.url contains '/devotionals/' or page.url contains '/categories/devotionals/' %}class="active" aria-current="page"{% endif %}>Devotionals</a></li>
+        <li><a href="{{ site.baseurl }}/categories/jesus-calling/" {% if page.url contains '/categories/jesus-calling/' %}class="active" aria-current="page"{% endif %}>Jesus Calling</a></li>
+        <li><a href="{{ site.baseurl }}/bible/" {% if page.url contains '/bible/' or page.url contains '/categories/bible/' or page.url contains '/categories/bible-study/' %}class="active" aria-current="page"{% endif %}>Bible</a></li>
+        <li><a href="{{ site.baseurl }}/prayer/" {% if page.url contains '/prayer/' or page.url contains '/categories/prayer/' %}class="active" aria-current="page"{% endif %}>Prayer</a></li>
+        <li><a href="{{ site.baseurl }}/categories/" {% if page.url == '/categories/' %}class="active" aria-current="page"{% endif %}>Categories</a></li>
+        <li><a href="{{ site.baseurl }}/about/" {% if page.url == '/about/' %}class="active" aria-current="page"{% endif %}>About</a></li>
+      </ul>
+    </nav>
+
+    <!-- Header Actions (Search, Account & Mobile Toggle) -->
+    <div class="header-actions">
+      <a href="{{ site.baseurl }}/search/" class="search-btn" aria-label="Search articles" title="Search articles">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <circle cx="11" cy="11" r="8"></circle>
+          <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+        </svg>
+      </a>
+
+      <!-- Account / Sign In State Button -->
+      <button type="button" class="btn-nav-auth" id="nav-auth-btn" aria-label="Account / Sign In">
+        Sign In
+      </button>
+
+      <!-- Mobile Hamburger Button -->
+      <button type="button" class="mobile-toggle" id="mobile-toggle" aria-expanded="false" aria-controls="mobile-menu" aria-label="Toggle navigation menu">
+        <span class="hamburger-bar"></span>
+        <span class="hamburger-bar"></span>
+        <span class="hamburger-bar"></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<!-- Mobile Drawer Navigation -->
+<div class="mobile-menu" id="mobile-menu" aria-hidden="true">
+  <div class="mobile-menu-backdrop" id="mobile-backdrop"></div>
+  <div class="mobile-menu-content">
+    <div class="mobile-menu-header">
+      <span class="mobile-brand-title">{{ site.title }}</span>
+      <button type="button" class="mobile-close" id="mobile-close" aria-label="Close menu">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <line x1="18" y1="6" x2="6" y2="18"></line>
+          <line x1="6" y1="6" x2="18" y2="18"></line>
+        </svg>
+      </button>
+    </div>
+    <nav aria-label="Mobile Navigation">
+      <ul class="mobile-nav-list">
+        <li><a href="{{ site.baseurl }}/" {% if page.url == '/' %}class="active" aria-current="page"{% endif %}>Home</a></li>
+        <li><a href="{{ site.baseurl }}/devotionals/">Devotionals</a></li>
+        <li><a href="{{ site.baseurl }}/categories/jesus-calling/">Jesus Calling</a></li>
+        <li><a href="{{ site.baseurl }}/bible/">Bible Studies</a></li>
+        <li><a href="{{ site.baseurl }}/prayer/">Prayer Guide</a></li>
+        <li><a href="{{ site.baseurl }}/categories/">Categories</a></li>
+        <li><a href="{{ site.baseurl }}/blog/">All Articles</a></li>
+        <li><a href="{{ site.baseurl }}/about/">About Us</a></li>
+        <li><a href="{{ site.baseurl }}/search/">Search Reflections</a></li>
+        <li class="mobile-auth-item"><a href="#comments-section" id="mobile-auth-btn">Sign In / Account</a></li>
+      </ul>
+    </nav>
+    <div class="mobile-menu-footer">
+      <p class="mobile-verse">&ldquo;Come to me, all who are weary and burdened, and I will give you rest.&rdquo;</p>
+      <cite>&mdash; Matthew 11:28</cite>
+    </div>
+  </div>
+</div>

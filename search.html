@@ -1,0 +1,35 @@
+---
+layout: default
+title: "Search Articles & Reflections"
+description: "Search across all Christian articles, Bible verses, prayers, and devotionals published on Jesus Calling."
+permalink: /search/
+---
+
+<div class="search-wrapper">
+  <div class="container container-reading">
+    {% include breadcrumbs.html %}
+    <h1 class="page-title" style="margin-bottom: 0.75rem;">Search Reflections &amp; Scripture</h1>
+    <p class="page-lead" style="margin-bottom: 2rem;">Find biblically grounded encouragement, prayers, and teachings tailored to your heart's questions.</p>
+
+    <div class="search-box-wrap">
+      <label for="search-input" class="sr-only">Type your search query</label>
+      <input
+        type="search"
+        id="search-input"
+        class="search-input-field"
+        placeholder="Search for peace, worry, prayer, love, strength, Jesus..."
+        autocomplete="off"
+        autofocus
+        data-baseurl="{{ site.baseurl }}"
+        aria-describedby="search-status">
+    </div>
+
+    <div id="search-status" class="search-status" role="status" aria-live="polite">
+      Search through our articles...
+    </div>
+
+    <div id="search-results" class="search-results-list" aria-live="polite">
+      <!-- Search results dynamically rendered via vanilla JavaScript -->
+    </div>
+  </div>
+</div>

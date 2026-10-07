@@ -1,0 +1,49 @@
+<!-- Reusable Lightweight Newsletter Signup Component -->
+<section class="newsletter-card" aria-labelledby="newsletter-heading">
+  <div class="newsletter-icon" aria-hidden="true">✉</div>
+  <h2 id="newsletter-heading" class="newsletter-title">Stay Connected With God's Word</h2>
+  <p class="newsletter-desc">
+    Receive new devotional reflections, prayers, and encouragement delivered directly to your inbox. Take a peaceful moment each morning with Scripture.
+  </p>
+
+  <form
+    id="newsletter-form"
+    class="newsletter-form"
+    action="{% if site.newsletter_action and site.newsletter_action != '' %}{{ site.newsletter_action }}{% else %}mailto:{{ site.author.email }}?subject=Newsletter%20Subscription{% endif %}"
+    method="{% if site.newsletter_action and site.newsletter_action != '' %}post{% else %}get{% endif %}"
+    target="_blank"
+    rel="noopener noreferrer"
+    aria-label="Newsletter subscription form">
+
+    <!-- Anti-Spam Honeypot field (hidden from real users) -->
+    <div style="position: absolute; left: -5000px;" aria-hidden="true">
+      <input type="text" name="b_hp_check" tabindex="-1" value="" autocomplete="off">
+    </div>
+
+    <div class="newsletter-input-group">
+      <label for="newsletter-email" class="sr-only">Your Email Address</label>
+      <input
+        type="email"
+        id="newsletter-email"
+        name="email"
+        class="newsletter-email-input"
+        placeholder="Enter your email address..."
+        autocomplete="email"
+        required
+        aria-describedby="newsletter-privacy-note">
+
+      <button type="submit" class="btn btn-primary btn-newsletter-submit">
+        <span>Subscribe</span>
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <line x1="22" y1="2" x2="11" y2="13"></line>
+          <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+        </svg>
+      </button>
+    </div>
+
+    <p id="newsletter-privacy-note" class="newsletter-privacy-note">
+      We respect your privacy. No spam, ever &mdash; unsubscribe at any time.
+    </p>
+    <div id="newsletter-feedback" class="newsletter-feedback" role="alert" style="display: none;"></div>
+  </form>
+</section>

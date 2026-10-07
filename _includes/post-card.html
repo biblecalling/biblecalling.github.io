@@ -1,0 +1,61 @@
+{% assign p = include.post | default: post %}
+{% assign post_words = p.content | number_of_words %}
+{% assign read_time = post_words | divided_by: 200 | at_least: 1 %}
+{% assign post_cat = p.categories.first | default: "Faith" %}
+
+<article class="post-card{% if include.featured %} post-card-featured{% endif %}">
+  <div class="post-card-media">
+    <a href="{{ p.url | relative_url }}" class="post-card-img-link" tabindex="-1" aria-hidden="true">
+      {% if p.image %}
+        <img
+          src="{{ p.image | relative_url }}"
+          alt="{{ p.title | escape }}"
+          width="600"
+          height="340"
+          {% if include.lazy == false %}loading="eager" fetchpriority="high"{% else %}loading="lazy"{% endif %}
+          decoding="async"
+          class="post-card-img"
+          onerror="this.style.display='none'; if(this.nextElementSibling) this.nextElementSibling.style.display='flex';">
+        <div class="post-card-fallback-media" style="display: none;">
+          <svg viewBox="0 0 40 40" width="40" height="40" fill="none" class="fallback-cross">
+            <path d="M20 6v28M12 14h16" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/>
+          </svg>
+        </div>
+      {% else %}
+        <div class="post-card-fallback-media">
+          <svg viewBox="0 0 40 40" width="40" height="40" fill="none" class="fallback-cross">
+            <path d="M20 6v28M12 14h16" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/>
+          </svg>
+        </div>
+      {% endif %}
+    </a>
+    <a href="{{ site.baseurl }}/categories/{{ post_cat | slugify }}/" class="post-card-category">
+      {{ post_cat }}
+    </a>
+  </div>
+
+  <div class="post-card-content">
+    <div class="post-card-meta">
+      <time datetime="{{ p.date | date_to_xmlschema }}" class="post-card-date">
+        {{ p.date | date: "%B %-d, %Y" }}
+      </time>
+      <span class="meta-dot" aria-hidden="true">&bull;</span>
+      <span class="post-card-reading-time">{{ read_time }} min read</span>
+    </div>
+
+    <h3 class="post-card-title">
+      <a href="{{ p.url | relative_url }}">{{ p.title }}</a>
+    </h3>
+
+    <p class="post-card-excerpt">
+      {{ p.description | default: p.excerpt | strip_html | strip_newlines | truncate: 135 }}
+    </p>
+
+    <div class="post-card-footer">
+      <a href="{{ p.url | relative_url }}" class="post-card-link" aria-label="Read full article: {{ p.title | escape }}">
+        <span>Read Reflection</span>
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+      </a>
+    </div>
+  </div>
+</article>

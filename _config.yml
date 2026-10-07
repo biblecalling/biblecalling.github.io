@@ -1,0 +1,106 @@
+# Jesus Calling - Site Configuration
+title: "Jesus Calling"
+tagline: "Biblical Encouragement, Prayers & Daily Devotionals"
+description: "Find hope, peace, and spiritual encouragement through Jesus Christ. Bible-based devotionals, prayers, scripture reflections, and biblical wisdom for everyday life."
+url: "https://jesuscalling.github.io"
+baseurl: ""
+
+# Legal & Non-Affiliation Disclaimers (Centralized for Rebranding)
+disclaimer_footer: "This is an independent website and is not affiliated with, endorsed by, or sponsored by Sarah Young, Thomas Nelson, HarperCollins Christian Publishing, or the official Jesus Calling brand. 'Jesus Calling' is a registered trademark of its respective owner. Devotional book excerpts are referenced for commentary and reflection only. To purchase the official book, please visit <a href=\"https://www.jesuscalling.com\" rel=\"noopener noreferrer nofollow\" target=\"_blank\">jesuscalling.com</a>."
+disclaimer_footer_subline: "An independent Christian devotional website."
+disclaimer_about_text: "This website is independently created and operated. It is not the official Jesus Calling website. Our articles are original reflections inspired by Scripture and by the devotional tradition of Jesus Calling by Sarah Young. We encourage readers to purchase the official book to support the author's work."
+disclaimer_terms_text: "This is an independent website and is not affiliated with, endorsed by, or sponsored by Sarah Young, Thomas Nelson, HarperCollins Christian Publishing, or the official Jesus Calling brand. 'Jesus Calling' is a registered trademark of its respective owner. Devotional book excerpts are referenced for commentary and reflection only. To purchase the official book, please visit <a href=\"https://www.jesuscalling.com\" rel=\"noopener noreferrer nofollow\" target=\"_blank\">jesuscalling.com</a>."
+disclaimer_devotional_note: "Inspired by today's reading in Jesus Calling by Sarah Young. This post is an original reflection, not the book's text."
+
+# Author & Organization Information
+author:
+  name: "Jesus Calling Editorial Team"
+  photo: ""
+  email: "contact@jesuscalling.github.io"
+  bio: "An independent Christian editorial team dedicated to biblical reflection, daily devotional guides, and Christ-centered scripture commentary to encourage your daily walk with Christ."
+
+# Social / Editorial
+twitter_username: "jesuscalling"
+github_username: "jesuscalling"
+locale: "en_US"
+
+# Permalinks - Clean, Permanent, SEO-Optimized
+permalink: /:year/:month/:day/:title/
+
+# Pagination (GitHub Pages safe)
+paginate: 10
+paginate_path: "/blog/page:num/"
+
+# Markdown and Syntax Highlighting
+markdown: kramdown
+kramdown:
+  input: GFM
+  hard_wrap: false
+  syntax_highlighter: rouge
+
+# Collections & Defaults
+defaults:
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+      author: "Jesus Calling Editorial Team"
+      featured: false
+  - scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: "page"
+
+# Newsletter & Contact Integration (Configurable External Endpoints)
+# Replace with your external provider URL (e.g., Buttondown, Mailchimp, Formspree, Substack)
+newsletter_action: ""
+contact_form_action: ""
+
+# Categories Configuration
+categories_data:
+  - slug: "jesus-calling"
+    name: "Jesus Calling"
+    description: "Daily reflections on hearing Christ's gentle voice, walking in His peace, and surrendering daily burdens."
+  - slug: "faith"
+    name: "Faith"
+    description: "Encouragement for trusting God in trials, building steadfast faith, and resting in His promises."
+  - slug: "prayer"
+    name: "Prayer"
+    description: "Guidance on communion with God, morning and evening prayers, and prayers for peace."
+  - slug: "bible-study"
+    name: "Bible Study"
+    description: "In-depth scripture studies, chapter insights, Bible book reflections, and timeless biblical wisdom."
+  - slug: "christian-encouragement"
+    name: "Christian Encouragement"
+    description: "Hope-filled words and gospel reminders to uplift weary hearts and strengthen your spiritual walk."
+  - slug: "trusting-god"
+    name: "Trusting God"
+    description: "Biblical reflections on learning to surrender control and trust God when you cannot see the road ahead."
+  - slug: "daily-devotional"
+    name: "Daily Devotional"
+    description: "Daily quiet moments with Scripture and prayer to refresh your heart and draw near to Christ."
+  - slug: "jesus"
+    name: "Jesus"
+    description: "Reflections on the life, character, grace, and transformative teachings of Jesus Christ."
+  - slug: "bible"
+    name: "Bible"
+    description: "Scripture studies, memorable verses, chapter insights, and timeless biblical wisdom."
+  - slug: "devotionals"
+    name: "Devotionals"
+    description: "Daily spiritual nourishment and heart-centered reflections to draw near to God."
+  - slug: "christian-life"
+    name: "Christian Life"
+    description: "Practical Christian living: forgiveness, grace in relationships, patience, and love."
+
+# Exclude unnecessary files from build
+exclude:
+  - README.md
+  - COMMENT_SYSTEM_SETUP.md
+  - Gemfile
+  - Gemfile.lock
+  - vendor/
+  - .git/
+  - .github/
+  - .gemini/
