@@ -2,6 +2,19 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>{% if page.exact_title %}{{ page.title }}{% elsif page.url == '/' %}{{ page.title | default: site.title }}{% elsif page.title %}{% if page.title contains site.title %}{{ page.title }}{% else %}{{ page.title }} | {{ site.title }}{% endif %}{% else %}{{ site.title }} - {{ site.tagline }}{% endif %}</title>
 
+<!-- Google Search Console Verification -->
+<meta name="google-site-verification" content="KFBOeHeUEbNl1vkGk5tJZB9AIrmDIXS_gNERN3FrdOc" />
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-CGBPXFRX5L"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-CGBPXFRX5L');
+</script>
+
 <!-- SEO Meta Tags -->
 {% assign page_desc = page.description | default: page.excerpt | default: site.description | strip_html | strip_newlines | truncate: 160 %}
 <meta name="description" content="{{ page_desc | escape }}">
