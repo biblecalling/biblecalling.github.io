@@ -13,7 +13,7 @@ tags:
   - Waiting
   - Faith
   - Spiritual Growth
-author: "Jesus Calling Editorial Team"
+author: "Amelia"
 image: "/assets/images/gods-timing.webp"
 featured: false
 ---

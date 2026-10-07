@@ -13,7 +13,7 @@ tags:
   - Daily Devotional
   - Peace
   - Purpose
-author: "Jesus Calling Editorial Team"
+author: "Amelia"
 image: "/assets/images/morning-prayer.webp"
 featured: false
 ---

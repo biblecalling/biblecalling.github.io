@@ -5,7 +5,7 @@ h1: "Jesus Calling October 8 — 2026 Reflection & Prayer"
 breadcrumb_title: "October 8"
 description: "Daily reflection for Jesus Calling October 8, 2026. Explore God's unchanging love through Jeremiah 31:3 and Romans 8, with practical steps and a heartfelt prayer."
 date: 2026-10-08
-author: "Jesus Calling Editorial Team"
+author: "Amelia"
 categories:
   - Jesus Calling
   - Daily Devotional

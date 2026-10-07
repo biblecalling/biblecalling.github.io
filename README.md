@@ -95,7 +95,7 @@ Adding an article requires **only creating a Markdown file in `_posts/`**. Jekyl
      - Trust God
      - Faith
      - Walking With God
-   author: "Jesus Calling Editorial Team"
+   author: "Amelia"
    featured: false
    image: "/assets/images/trust-god.webp"
    ---

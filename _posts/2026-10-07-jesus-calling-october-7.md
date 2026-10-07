@@ -5,7 +5,7 @@ h1: "Jesus Calling October 7 — 2026 Reflection & Prayer"
 breadcrumb_title: "October 7"
 description: "Daily reflection for Jesus Calling October 7, 2026. Discover how casting your cares on Jesus frees your heart to hear His voice, with Bible verses and prayer."
 date: 2026-10-07
-author: "Jesus Calling Editorial Team"
+author: "Amelia"
 categories:
   - Jesus Calling
   - Daily Devotional

@@ -17,7 +17,7 @@ tags:
   - Jesus
   - Christian Encouragement
   - Bible Reflection
-author: "Jesus Calling Editorial Team"
+author: "Amelia"
 featured: true
 image: "/assets/images/trusting-god-road-ahead.webp"
 ---

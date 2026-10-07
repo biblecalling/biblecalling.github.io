@@ -5,7 +5,7 @@ h1: "Jesus Calling October 20 — 2026 Reflection & Prayer"
 breadcrumb_title: "October 20"
 description: "Daily reflection for Jesus Calling October 20, 2026. A biblical message of inner renewal, aging, physical limitations, and relying on Christ's vitality."
 date: 2026-10-20
-author: "Jesus Calling Editorial Team"
+author: "Amelia"
 categories:
   - Jesus Calling
   - Daily Devotional

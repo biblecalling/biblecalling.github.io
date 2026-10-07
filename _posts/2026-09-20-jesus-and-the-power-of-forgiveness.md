@@ -13,7 +13,7 @@ tags:
   - Grace
   - Cross
   - Relationships
-author: "Jesus Calling Editorial Team"
+author: "Amelia"
 image: "/assets/images/jesus-forgiveness.webp"
 featured: false
 ---

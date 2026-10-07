@@ -14,10 +14,10 @@ disclaimer_devotional_note: "Inspired by today's reading in Jesus Calling by Sar
 
 # Author & Organization Information
 author:
-  name: "Jesus Calling Editorial Team"
-  photo: ""
+  name: "Amelia"
+  photo: "/assets/images/amelia-author.jpg"
   email: "contact@jesuscalling.github.io"
-  bio: "An independent Christian editorial team dedicated to biblical reflection, daily devotional guides, and Christ-centered scripture commentary to encourage your daily walk with Christ."
+  bio: "Amelia is a Christian writer and devotional author who shares Bible-based reflections, prayers, and heartfelt encouragement for everyday life. Her writings focus on finding peace, trusting God through uncertainty, and drawing closer to Jesus Christ through Scripture."
 
 # Social / Editorial
 twitter_username: "jesuscalling"
@@ -48,7 +48,7 @@ defaults:
       type: "posts"
     values:
       layout: "post"
-      author: "Jesus Calling Editorial Team"
+      author: "Amelia"
       featured: false
   - scope:
       path: ""

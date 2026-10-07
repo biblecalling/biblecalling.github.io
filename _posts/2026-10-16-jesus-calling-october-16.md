@@ -5,7 +5,7 @@ h1: "Jesus Calling October 16 — 2026 Reflection & Prayer"
 breadcrumb_title: "October 16"
 description: "Daily reflection for Jesus Calling October 16, 2026. Discover how receiving divine comfort equips you to become a compassionate channel of grace to others."
 date: 2026-10-16
-author: "Jesus Calling Editorial Team"
+author: "Amelia"
 categories:
   - Jesus Calling
   - Daily Devotional

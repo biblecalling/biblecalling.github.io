@@ -13,7 +13,7 @@ tags:
   - Intercession
   - Romans 8
   - Silence
-author: "Jesus Calling Editorial Team"
+author: "Amelia"
 image: "/assets/images/how-to-pray.webp"
 featured: false
 ---

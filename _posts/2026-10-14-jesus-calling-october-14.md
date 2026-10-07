@@ -5,7 +5,7 @@ h1: "Jesus Calling October 14 — 2026 Reflection & Prayer"
 breadcrumb_title: "October 14"
 description: "Daily reflection for Jesus Calling October 14, 2026. A thoughtful, biblical exploration of suffering, endurance, redemption, and trusting God in grief."
 date: 2026-10-14
-author: "Jesus Calling Editorial Team"
+author: "Amelia"
 categories:
   - Jesus Calling
   - Daily Devotional

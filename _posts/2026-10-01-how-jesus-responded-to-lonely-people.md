@@ -13,7 +13,7 @@ tags:
   - Compassion
   - Samaritan Woman
   - Zacchaeus
-author: "Jesus Calling Editorial Team"
+author: "Amelia"
 image: "/assets/images/jesus-lonely.webp"
 featured: false
 ---

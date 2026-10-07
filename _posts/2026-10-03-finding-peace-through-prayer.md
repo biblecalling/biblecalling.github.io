@@ -13,7 +13,7 @@ tags:
   - Philippians 4
   - Stillness
   - Devotionals
-author: "Jesus Calling Editorial Team"
+author: "Amelia"
 image: "/assets/images/peace-prayer.webp"
 featured: false
 ---

@@ -13,7 +13,7 @@ tags:
   - Anxiety
   - Stillness
   - Devotional
-author: "Jesus Calling Editorial Team"
+author: "Amelia"
 image: "/assets/images/prayer-peace.webp"
 featured: true
 ---

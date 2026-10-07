@@ -13,7 +13,7 @@ tags:
   - Difficult Days
   - Suffering
   - Hope
-author: "Jesus Calling Editorial Team"
+author: "Amelia"
 image: "/assets/images/faith-difficult-days.webp"
 featured: false
 ---

@@ -5,7 +5,7 @@ h1: "Jesus Calling October 17 — 2026 Reflection & Prayer"
 breadcrumb_title: "October 17"
 description: "Daily reflection for Jesus Calling October 17, 2026. Conquer runaway anxiety by bringing Christ into your future thoughts through Scripture and prayer."
 date: 2026-10-17
-author: "Jesus Calling Editorial Team"
+author: "Amelia"
 categories:
   - Jesus Calling
   - Daily Devotional

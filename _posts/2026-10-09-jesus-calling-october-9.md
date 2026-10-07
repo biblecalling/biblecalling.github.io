@@ -5,7 +5,7 @@ h1: "Jesus Calling October 9 — 2026 Reflection & Prayer"
 breadcrumb_title: "October 9"
 description: "Daily reflection for Jesus Calling October 9, 2026. Discover how biblical lament transforms complaints into trust, with Scripture from Psalms and Philippians."
 date: 2026-10-09
-author: "Jesus Calling Editorial Team"
+author: "Amelia"
 categories:
   - Jesus Calling
   - Daily Devotional

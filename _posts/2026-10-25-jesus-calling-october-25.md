@@ -5,7 +5,7 @@ h1: "Jesus Calling October 25 — 2026 Reflection & Prayer"
 breadcrumb_title: "October 25"
 description: "Daily reflection for Jesus Calling October 25, 2026. Reawaken wonder to the name Immanuel—God with us—in the ordinary moments of everyday life."
 date: 2026-10-25
-author: "Jesus Calling Editorial Team"
+author: "Amelia"
 categories:
   - Jesus Calling
   - Daily Devotional

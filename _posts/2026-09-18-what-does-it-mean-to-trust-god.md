@@ -13,7 +13,7 @@ tags:
   - Proverbs 3
   - Wisdom
   - Christian Living
-author: "Jesus Calling Editorial Team"
+author: "Amelia"
 image: "/assets/images/trust-god.webp"
 featured: true
 ---

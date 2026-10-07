@@ -5,7 +5,7 @@ h1: "Jesus Calling October 23 — 2026 Reflection & Prayer"
 breadcrumb_title: "October 23"
 description: "Daily reflection for Jesus Calling October 23, 2026. Explore John 15, living in union with the true Vine, and experiencing the shared, abiding joy of Christ."
 date: 2026-10-23
-author: "Jesus Calling Editorial Team"
+author: "Amelia"
 categories:
   - Jesus Calling
   - Daily Devotional

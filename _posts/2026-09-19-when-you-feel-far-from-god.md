@@ -13,7 +13,7 @@ tags:
   - Prayer
   - God's Presence
   - Devotionals
-author: "Jesus Calling Editorial Team"
+author: "Amelia"
 image: "/assets/images/far-from-god.webp"
 featured: false
 ---

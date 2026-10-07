@@ -5,7 +5,7 @@ h1: "Jesus Calling October 30 — 2026 Reflection & Prayer"
 breadcrumb_title: "October 30"
 description: "Daily reflection for Jesus Calling October 30, 2026. Cultivate holy quietness, learn to recognize the Shepherd's voice, and test impressions with Scripture."
 date: 2026-10-30
-author: "Jesus Calling Editorial Team"
+author: "Amelia"
 categories:
   - Jesus Calling
   - Daily Devotional

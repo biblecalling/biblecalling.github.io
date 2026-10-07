@@ -14,7 +14,7 @@ tags:
   - Isaiah 40
   - Encouragement
   - Scripture
-author: "Jesus Calling Editorial Team"
+author: "Amelia"
 image: "/assets/images/verses-strength.webp"
 featured: false
 ---

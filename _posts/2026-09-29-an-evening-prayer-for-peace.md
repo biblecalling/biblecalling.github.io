@@ -13,7 +13,7 @@ tags:
   - Peace
   - Rest
   - Prayer
-author: "Jesus Calling Editorial Team"
+author: "Amelia"
 image: "/assets/images/evening-prayer.webp"
 featured: false
 ---

@@ -13,7 +13,7 @@ tags:
   - Healing
   - Grace
   - Christian Living
-author: "Jesus Calling Editorial Team"
+author: "Amelia"
 image: "/assets/images/why-forgiveness.webp"
 featured: false
 ---
