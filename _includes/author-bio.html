@@ -1,17 +1,18 @@
 <section class="author-bio-card" aria-label="About the Author">
   <div class="bio-avatar" aria-hidden="true">
-    {% if site.author.photo and site.author.photo != "" %}
-      <img src="{{ site.author.photo | relative_url }}" alt="{{ site.author.name }}" class="bio-avatar-img" width="58" height="58" loading="lazy">
-    {% else %}
-      ✝
-    {% endif %}
+    <a href="{{ site.baseurl }}/amelia/" tabindex="-1" aria-hidden="true">
+      <img src="{{ site.author.photo | default: '/assets/images/amelia-author.jpg' | relative_url }}" alt="Amelia — Christian writer and devotional author" class="bio-avatar-img" width="58" height="58" loading="lazy">
+    </a>
   </div>
   <div class="bio-details">
-    <h3 class="bio-name">
-      <a href="{{ site.baseurl }}/about/#author" class="bio-name-link">{{ page.author.name | default: page.author | default: site.author.name }}</a>
-    </h3>
-    <p class="bio-desc">
-      {{ page.author.bio | default: site.author.bio }}
+    <div style="font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.05em; color: var(--color-accent); font-weight: 700; margin-bottom: 0.25rem;">Written by Amelia</div>
+    <p class="bio-desc" style="margin-bottom: 0.5rem;">
+      Christian writer and devotional author based in New York City.
     </p>
+    <a href="{{ site.baseurl }}/amelia/" class="author-more-link" style="font-weight: 600; font-size: 0.9rem; color: var(--color-accent); display: inline-flex; align-items: center; gap: 0.35rem;">
+      <span>Read more about Amelia</span>
+      <span aria-hidden="true">&rarr;</span>
+    </a>
   </div>
 </section>
+

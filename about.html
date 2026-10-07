@@ -50,17 +50,25 @@ permalink: /about/
 <h2 id="author">About the Author</h2>
 <div class="author-bio-card" style="margin: 1.5rem 0 2.5rem;">
   <div class="bio-avatar" aria-hidden="true">
-    {% if site.author.photo and site.author.photo != "" %}
-      <img src="{{ site.author.photo | relative_url }}" alt="{{ site.author.name }}" class="bio-avatar-img" width="58" height="58">
-    {% else %}
-      ✝
-    {% endif %}
+    <a href="{{ site.baseurl }}/amelia/" tabindex="-1" aria-hidden="true">
+      {% if site.author.photo and site.author.photo != "" %}
+        <img src="{{ site.author.photo | relative_url }}" alt="{{ site.author.name }}" class="bio-avatar-img" width="58" height="58">
+      {% else %}
+        ✝
+      {% endif %}
+    </a>
   </div>
   <div class="bio-details">
-    <h3 class="bio-name">{{ site.author.name }}</h3>
+    <h3 class="bio-name">
+      <a href="{{ site.baseurl }}/amelia/" class="bio-name-link">{{ site.author.name }}</a>
+    </h3>
     <p class="bio-desc">
       {{ site.author.bio }}
     </p>
+    <a href="{{ site.baseurl }}/amelia/" style="display: inline-flex; align-items: center; gap: 0.35rem; margin-top: 0.75rem; font-weight: 600; font-size: 0.9rem; color: var(--color-accent);">
+      <span>Read more about Amelia</span>
+      <span aria-hidden="true">&rarr;</span>
+    </a>
   </div>
 </div>
 

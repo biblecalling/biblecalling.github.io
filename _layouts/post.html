@@ -26,7 +26,7 @@ layout: default
       <!-- Article Meta Box -->
       <div class="article-meta-box">
         <div class="article-author-info">
-          <div class="author-avatar" aria-hidden="true">
+          <a href="{{ site.baseurl }}/amelia/" class="author-avatar" aria-label="About Amelia">
             {% if site.author.photo and site.author.photo != "" %}
               <img src="{{ site.author.photo | relative_url }}" alt="{{ site.author.name }}" class="author-avatar-img" width="40" height="40">
             {% else %}
@@ -35,10 +35,10 @@ layout: default
                 <path d="M16 8v16M11 13h10" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
               </svg>
             {% endif %}
-          </div>
+          </a>
           <div>
             <span class="author-name" itemprop="author" itemscope itemtype="https://schema.org/Person">
-              <span itemprop="name">{{ page.author.name | default: page.author | default: site.author.name }}</span>
+              <a href="{{ site.baseurl }}/amelia/" itemprop="url"><span itemprop="name">{{ page.author.name | default: page.author | default: site.author.name }}</span></a>
             </span>
             <div class="article-dates">
               <time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">

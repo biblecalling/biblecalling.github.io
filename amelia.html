@@ -1,0 +1,103 @@
+---
+layout: page
+title: "Amelia — Christian Writer & Devotional Author"
+h1: "Amelia"
+breadcrumb_title: "Amelia"
+description: "Meet Amelia, a Christian writer and devotional author in New York City who shares Bible-based reflections, prayers, and encouragement for everyday life."
+permalink: /amelia/
+exact_title: true
+---
+
+<div class="author-profile-intro" style="display: flex; gap: 1.5rem; align-items: center; margin: 1.5rem 0 2.5rem; padding: 1.5rem; background: var(--color-bg-alt); border: 1px solid var(--color-border); border-radius: var(--radius-md);">
+  <img src="{{ '/assets/images/amelia-author.jpg' | relative_url }}" alt="Amelia — Christian writer and devotional author" width="110" height="110" style="border-radius: 50%; object-fit: cover; border: 3px solid var(--color-accent-border); box-shadow: var(--shadow-sm); flex-shrink: 0;">
+  <div>
+    <p style="font-size: 1.15rem; font-weight: 500; color: var(--color-text-main); margin-bottom: 0.35rem; line-height: 1.5;">
+      Hi, I'm Amelia. I write the daily devotional reflections on this site.
+    </p>
+    <p style="font-size: 0.9rem; color: var(--color-text-muted); margin-bottom: 0;">
+      📍 New York City, USA &bull; Christian Writer &amp; Devotional Author
+    </p>
+  </div>
+</div>
+
+<h2>Why I started writing</h2>
+<p>
+  I write these reflections as a way to slow down with Scripture, think about the day's devotional reading, and share an honest reflection that may encourage someone else.
+</p>
+
+<h2>A little about me</h2>
+<p>
+  I live in New York City, USA.
+</p>
+
+<h2>How I write these posts</h2>
+<p>
+  Every post starts with the day's reading in Sarah Young's <em>Jesus Calling</em>. I read it first, and then I open my Bible and look at the verses behind the idea. What I write is my own reflection, in my own words.
+</p>
+<p>
+  I quote Scripture from the King James Version because it is in the public domain. I do not copy text from the book. If I'm not sure about something, I leave it out instead of guessing.
+</p>
+
+<h2>What I am not</h2>
+<p>
+  I'm not presenting myself as a pastor, theologian, or counselor.
+</p>
+<p>
+  These posts are meant to encourage you, not to treat or diagnose anything. If you are dealing with anxiety, depression, grief, or anything that feels too heavy, please talk to a doctor, counselor, or pastor you trust. If you are in crisis, contact your local emergency services or an appropriate crisis line.
+</p>
+
+<h2>About this website and Jesus Calling</h2>
+<p>
+  This is an independent website. It is not connected to Sarah Young, her publisher, or the official Jesus Calling brand.
+</p>
+<p>
+  <em>Jesus Calling</em> is a devotional written from the point of view of Jesus. It is not Scripture. I read it as a prompt for reflection, and I always try to check ideas against the Bible. I'd encourage you to do the same.
+</p>
+
+<h2>Get in touch</h2>
+<p>
+  If you have a question, a prayer request, or you've spotted a mistake, you can get in touch through the <a href="{{ site.baseurl }}/contact/">Contact page</a>.
+</p>
+
+<hr style="border: none; border-top: 1px solid var(--color-border); margin: 3rem 0 2.5rem;">
+
+<h2>Articles by Amelia</h2>
+<p style="color: var(--color-text-muted); margin-bottom: 1.75rem;">
+  Explore daily devotional reflections and Scripture studies written by Amelia:
+</p>
+
+<div class="author-articles-list" style="display: flex; flex-direction: column; gap: 1.25rem;">
+  {% assign amelia_posts = site.posts | where_exp: "item", "item.author == 'Amelia' or item.author.name == 'Amelia' or item.author == nil" %}
+  {% for post in amelia_posts %}
+    <article class="author-article-row" style="background: var(--color-surface); border: 1px solid var(--color-border); border-radius: var(--radius-md); padding: 1.35rem 1.5rem; transition: transform var(--transition-fast), box-shadow var(--transition-fast); box-shadow: var(--shadow-sm);">
+      <div style="font-size: 0.8rem; color: var(--color-text-muted); margin-bottom: 0.4rem; display: flex; align-items: center; gap: 0.5rem; flex-wrap: wrap;">
+        <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%B %-d, %Y" }}</time>
+        {% if post.categories.first %}
+          <span style="opacity: 0.5;">&bull;</span>
+          <span style="color: var(--color-accent); font-weight: 600;">{{ post.categories.first }}</span>
+        {% endif %}
+      </div>
+      <h3 style="font-family: var(--font-serif); font-size: 1.2rem; line-height: 1.35; margin: 0 0 0.5rem;">
+        <a href="{{ post.url | relative_url }}" style="color: var(--color-text-main); text-decoration: none;">{{ post.title }}</a>
+      </h3>
+      <p style="font-size: 0.92rem; color: var(--color-text-body); line-height: 1.6; margin: 0 0 0.85rem;">
+        {{ post.description | default: post.excerpt | strip_html | strip_newlines | truncate: 150 }}
+      </p>
+      <a href="{{ post.url | relative_url }}" style="font-size: 0.875rem; font-weight: 600; color: var(--color-accent); display: inline-flex; align-items: center; gap: 0.35rem;">
+        <span>Read reflection</span>
+        <span aria-hidden="true">&rarr;</span>
+      </a>
+    </article>
+  {% endfor %}
+</div>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Amelia",
+  "url": "https://jesuscalling.github.io/amelia/",
+  "image": "https://jesuscalling.github.io/assets/images/amelia-author.jpg",
+  "description": "Amelia is a Christian writer and devotional author who shares Bible-based reflections, prayers, and heartfelt encouragement for everyday life."
+}
+</script>

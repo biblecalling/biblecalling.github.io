@@ -6,7 +6,7 @@ layout: default
   <header class="page-header">
     <div class="container container-reading">
       {% include breadcrumbs.html %}
-      <h1 class="page-title">{{ page.title }}</h1>
+      <h1 class="page-title">{{ page.h1 | default: page.title }}</h1>
       {% if page.description %}
         <p class="page-lead">{{ page.description }}</p>
       {% endif %}

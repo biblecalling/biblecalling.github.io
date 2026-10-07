@@ -1,6 +1,6 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>{% if page.url == '/' %}{{ page.title | default: site.title }}{% elsif page.title %}{% if page.title contains site.title %}{{ page.title }}{% else %}{{ page.title }} | {{ site.title }}{% endif %}{% else %}{{ site.title }} - {{ site.tagline }}{% endif %}</title>
+<title>{% if page.exact_title %}{{ page.title }}{% elsif page.url == '/' %}{{ page.title | default: site.title }}{% elsif page.title %}{% if page.title contains site.title %}{{ page.title }}{% else %}{{ page.title }} | {{ site.title }}{% endif %}{% else %}{{ site.title }} - {{ site.tagline }}{% endif %}</title>
 
 <!-- SEO Meta Tags -->
 {% assign page_desc = page.description | default: page.excerpt | default: site.description | strip_html | strip_newlines | truncate: 160 %}
@@ -130,7 +130,7 @@
       "author": {
         "@type": "Person",
         "name": {{ page.author.name | default: page.author | default: site.author.name | jsonify }},
-        "url": "{{ site.url }}/about/#author"
+        "url": "{{ site.url }}/amelia/"
       },
       "publisher": {
         "@id": "{{ site.url }}/#organization"
