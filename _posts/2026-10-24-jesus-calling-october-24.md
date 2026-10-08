@@ -15,7 +15,7 @@ tags:
   - Technology
   - Daily Devotional
   - Psalm 23
-noindex: true
+index: true
 permalink: /jesus-calling-october-24/
 ---
 
