@@ -66,6 +66,7 @@ html {
   font-size: 16px;
   scroll-behavior: smooth;
   -webkit-text-size-adjust: 100%;
+  overflow-x: hidden;
 }
 
 body {
@@ -79,6 +80,7 @@ body {
   flex-direction: column;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
 }
 
 img, picture, svg {
@@ -102,6 +104,11 @@ button {
   cursor: pointer;
   border: none;
   background: none;
+}
+
+:focus-visible {
+  outline: 2px solid var(--color-accent);
+  outline-offset: 3px;
 }
 
 ul, ol {
@@ -517,9 +524,12 @@ blockquote {
 
   .search-btn,
   .mobile-toggle {
-    width: 38px;
-    height: 38px;
-    padding: 6px;
+    min-width: 44px;
+    min-height: 44px;
+    padding: 10px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
   }
 }
 
@@ -530,9 +540,9 @@ blockquote {
 
   .search-btn,
   .mobile-toggle {
-    width: 34px;
-    height: 34px;
-    padding: 5px;
+    min-width: 44px;
+    min-height: 44px;
+    padding: 10px;
   }
 }
 
@@ -597,7 +607,12 @@ blockquote {
 
 .mobile-close {
   color: var(--color-text-main);
-  padding: 0.25rem;
+  padding: 0.5rem;
+  min-width: 44px;
+  min-height: 44px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .mobile-nav-list {
@@ -682,16 +697,16 @@ blockquote {
 }
 
 .hero-title {
-  font-size: 2.75rem;
+  font-size: clamp(2rem, 5vw, 2.75rem);
   font-weight: 700;
-  line-height: 1.15;
+  line-height: 1.18;
   margin-bottom: 1.25rem;
   color: var(--color-text-main);
 }
 
 @media (max-width: 600px) {
   .hero-title {
-    font-size: 2rem;
+    font-size: clamp(1.75rem, 6vw, 2.15rem);
   }
 }
 
@@ -1256,14 +1271,14 @@ blockquote {
 }
 
 .article-title {
-  font-size: 2.75rem;
-  line-height: 1.2;
+  font-size: clamp(1.9rem, 5vw, 2.75rem);
+  line-height: 1.22;
   margin-bottom: 1.25rem;
 }
 
 @media (max-width: 600px) {
   .article-title {
-    font-size: 2rem;
+    font-size: clamp(1.65rem, 6vw, 2.1rem);
   }
 }
 
