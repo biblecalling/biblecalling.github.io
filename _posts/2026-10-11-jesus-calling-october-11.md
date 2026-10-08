@@ -19,7 +19,7 @@ permalink: /jesus-calling-october-11/
 ---
 
 <p class="lead">
-  Even the sweetest earthly blessings can become heavy burdens when we grip them too tightly. Whether it is family, health, financial security, or career achievements, the October 11 reading in *Jesus Calling* presents a liberating spiritual posture: receive God's gifts with joy, but keep your hands open.
+  Within our <a href="{{ site.baseurl }}/jesus-calling-october-2026/">Jesus Calling October collection</a>, even the sweetest earthly blessings can become heavy burdens when we grip them too tightly. Whether it is family, health, financial security, or career achievements, the October 11 reading in *Jesus Calling* presents a liberating spiritual posture: receive God's gifts with joy, but keep your hands open.
 </p>
 
 ## What Is Jesus Calling October 11 About?
@@ -29,7 +29,7 @@ Jesus Calling October 11 centers on enjoying God's blessings without clinging to
 ## Today's Theme: Enjoying the Gifts While Clinging to the Giver
 
 <p>
-  The reading reminds believers that Jesus is the fulfillment of our deepest longings—the Alpha and Omega who satisfies the thirsty soul. Before knowing Him, people often look for lasting satisfaction in things that cannot sustain them. While God provides countless good gifts to enrich our lives, none of them can replace His presence. When we make gifts our ultimate source of security, fear of loss takes over. When we rest in Jesus, we are freed to enjoy His gifts without anxiety.
+  The reading reminds believers that Jesus is the fulfillment of our deepest longings—the Alpha and Omega who satisfies the thirsty soul. Before knowing Him, people often look for lasting satisfaction in things that cannot sustain them. While God provides countless good gifts to enrich our lives, none of them can replace His presence. When we make gifts our ultimate source of security, fear of loss takes over. When we rest in Jesus, we are freed to enjoy His gifts without anxiety, bringing our hearts before God in <a href="{{ site.baseurl }}/prayer/">prayers of thanksgiving</a>.
 </p>
 
 ## Bible Verses Related to Today's Theme
@@ -42,7 +42,7 @@ Jesus Calling October 11 centers on enjoying God's blessings without clinging to
   </blockquote>
   <div class="scripture-highlight-ref">&mdash; Psalm 62:5 (KJV)</div>
 </div>
-<p>The psalmist directs his core expectations away from fragile earthly systems and anchors them solely in the living Lord.</p>
+<p>As highlighted in our <a href="{{ site.baseurl }}/bible/">Scripture guide</a>, the psalmist directs his core expectations away from fragile earthly systems and anchors them solely in the living Lord.</p>
 
 ### God gives richly for our enjoyment
 <div class="scripture-highlight">
@@ -67,7 +67,7 @@ Jesus Calling October 11 centers on enjoying God's blessings without clinging to
 ## Why This Matters in Everyday Life
 
 <p>
-  There are two opposite ways to misuse God's blessings: cynical rejection or idolatrous worship. Scripture rejects both extremes. Holding blessings with open hands means we celebrate family, friendship, meaningful labor, and daily comforts with vibrant gratitude, yet we do not collapse if circumstances change. Our identity and security remain anchored in the one reality that can never be taken away: Christ in us.
+  There are two opposite ways to misuse God's blessings: cynical rejection or idolatrous worship. Scripture rejects both extremes. Holding blessings with open hands means we celebrate family, friendship, meaningful labor, and daily comforts with vibrant gratitude, yet we do not collapse if circumstances change. Our identity and security remain anchored in the one reality that can never be taken away: Christ in us, which we cultivate through a steady <a href="{{ site.baseurl }}/devotionals/">spiritual quiet time</a>.
 </p>
 
 ## Practical Ways to Practice This Today

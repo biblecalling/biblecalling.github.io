@@ -15,11 +15,12 @@ tags:
   - Names of Jesus
   - Daily Devotional
   - Incarnation
+noindex: true
 permalink: /jesus-calling-october-25/
 ---
 
 <p class="lead">
-  Some spiritual truths are so familiar that we stop truly hearing them. 'God is with us' might be the most familiar phrase in the entire Christian vocabulary. The October 25 reading in *Jesus Calling* urges us never to let familiarity numb the breathtaking reality of Christ's perpetual presence.
+  Within our <a href="{{ site.baseurl }}/jesus-calling-october-2026/">October devotional series</a>, some spiritual truths are so familiar that we stop truly hearing them. 'God is with us' might be the most familiar phrase in the entire Christian vocabulary. The October 25 reading in *Jesus Calling* urges us never to let familiarity numb the breathtaking reality of Christ's perpetual presence.
 </p>
 
 ## What Is Jesus Calling October 25 About?
@@ -29,7 +30,7 @@ Jesus Calling October 25 centers on the perpetual presence of Christ and the dee
 ## Understanding Today's Focus: Immanuel: God With Us in the Mundane and the Sacred
 
 <p>
-  The reading reminds believers that Jesus is Immanuel—God with us for all eternity. It cautions against allowing that reality to become so routine that it loses its impact. His constant presence should be an unending wellspring of peace and joy. The meditation encourages us to reflect deeply on the sacred meanings of His names: Jesus, because He saves His people from sin, and Immanuel, because He abides with us forever.
+  The reading reminds believers that Jesus is Immanuel—God with us for all eternity. It cautions against allowing that reality to become so routine that it loses its impact. His constant presence should be an unending wellspring of peace and joy. The meditation encourages us to reflect deeply on the sacred meanings of His names: Jesus, because He saves His people from sin, and Immanuel, because He abides with us forever, bringing our hearts before God in <a href="{{ site.baseurl }}/prayer/">heartfelt prayer</a>.
 </p>
 
 ## Biblical Anchor & Passages
@@ -42,7 +43,7 @@ Jesus Calling October 25 centers on the perpetual presence of Christ and the dee
   </blockquote>
   <div class="scripture-highlight-ref">&mdash; Matthew 1:21, 23 (KJV)</div>
 </div>
-<p>Together, these two names summarize the gospel: God rescues us from our sins, and then He stays with us forever.</p>
+<p>As highlighted in our <a href="{{ site.baseurl }}/bible/">Scripture encouragement guide</a>, together, these two names summarize the gospel: God rescues us from our sins, and then He stays with us forever.</p>
 
 ### An inescapable presence
 <div class="scripture-highlight">
@@ -67,7 +68,7 @@ Jesus Calling October 25 centers on the perpetual presence of Christ and the dee
 ## Living With Perspective & Grace
 
 <p>
-  Salvation is not merely a legal ticket to heaven punched in the past, followed by an isolated life until death. Salvation is an invitation into an eternal relationship. When you grasp that Immanuel walks beside you while you do laundry, sit in rush-hour traffic, or manage difficult emails, ordinary tasks become sacred space shared with the King of kings.
+  Salvation is not merely a legal ticket to heaven punched in the past, followed by an isolated life until death. Salvation is an invitation into an eternal relationship. When you grasp that Immanuel walks beside you while you do laundry, sit in rush-hour traffic, or manage difficult emails, ordinary tasks become sacred space shared with the King of kings, which we cultivate through a steady <a href="{{ site.baseurl }}/devotionals/">daily devotional reading</a>.
 </p>
 
 ## How to Put This Into Practice Today

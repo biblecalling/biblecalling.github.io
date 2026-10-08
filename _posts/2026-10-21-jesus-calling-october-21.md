@@ -15,11 +15,12 @@ tags:
   - Grief
   - Daily Devotional
   - Bitterness
+noindex: true
 permalink: /jesus-calling-october-21/
 ---
 
 <p class="lead">
-  Resentment is one of the stealthiest spiritual poisons. It rarely announces its arrival with trumpets; it creeps in as quiet irritation when our plans get derailed, or as a persistent grudge when life does not unfold as we expected. The October 21 reading in *Jesus Calling* invites us to bring these hidden resentments into God's light.
+  Within our <a href="{{ site.baseurl }}/jesus-calling-october-2026/">Jesus Calling October 2026 series</a>, resentment is one of the stealthiest spiritual poisons. It rarely announces its arrival with trumpets; it creeps in as quiet irritation when our plans get derailed, or as a persistent grudge when life does not unfold as we expected. The October 21 reading in *Jesus Calling* invites us to bring these hidden resentments into God's light.
 </p>
 
 ## What Is Jesus Calling October 21 About?
@@ -29,7 +30,7 @@ Jesus Calling October 21 centers on identifying hidden resentment and rebellious
 ## Understanding Today's Focus: Surrendering Resentment at the Feet of Christ
 
 <p>
-  The reading points out that walking consistently in Christ's presence requires confronting our internal resistance, especially the resentment we feel when life interferes with our personal desires. Pushing those feelings underground only allows bitterness to fester. The spiritual path forward is to let them surface before Jesus, submit to His loving authority, and practice gratitude, recognizing that everything we possess is an unearned gift from His hand.
+  The reading points out that walking consistently in Christ's presence requires confronting our internal resistance, especially the resentment we feel when life interferes with our personal desires. Pushing those feelings underground only allows bitterness to fester. The spiritual path forward is to let them surface before Jesus, submit to His loving authority, and practice gratitude, recognizing that everything we possess is an unearned gift from His hand, bringing our hearts before God in <a href="{{ site.baseurl }}/prayer/">prayers for forgiveness</a>.
 </p>
 
 ## Biblical Anchor & Passages
@@ -42,7 +43,7 @@ Jesus Calling October 21 centers on identifying hidden resentment and rebellious
   </blockquote>
   <div class="scripture-highlight-ref">&mdash; Job 1:21 (KJV)</div>
 </div>
-<p>Notice Job's profound context: before speaking these words, Job tore his robe and fell to the ground in deep grief (Job 1:20). He did not deny pain; he brought broken worship into the loss.</p>
+<p>As highlighted in our <a href="{{ site.baseurl }}/bible/">biblical wisdom resources</a>, notice Job's profound context: before speaking these words, Job tore his robe and fell to the ground in deep grief (Job 1:20). He did not deny pain; he brought broken worship into the loss.</p>
 
 ### Guarding against the root of bitterness
 <div class="scripture-highlight">
@@ -67,7 +68,7 @@ Jesus Calling October 21 centers on identifying hidden resentment and rebellious
 ## Living With Perspective & Grace
 
 <p>
-  It is critically important to distinguish between honest grief and destructive bitterness. Grieving a loss, mourning a missed opportunity, or weeping over a heartbreak is not rebellion against God; Jesus wept openly at the grave of Lazarus. The devotional is not commanding you to skip sorrow. It is warning against letting unresolved disappointment curdle into cold bitterness against God or other people. God can handle your tears, but He calls you to release your grudges.
+  It is critically important to distinguish between honest grief and destructive bitterness. Grieving a loss, mourning a missed opportunity, or weeping over a heartbreak is not rebellion against God; Jesus wept openly at the grave of Lazarus. The <a href="{{ site.baseurl }}/devotionals/">morning devotions</a> is not commanding you to skip sorrow. It is warning against letting unresolved disappointment curdle into cold bitterness against God or other people. God can handle your tears, but He calls you to release your grudges.
 </p>
 
 ## How to Put This Into Practice Today

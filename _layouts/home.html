@@ -14,7 +14,7 @@ layout: default
         Daily Christian Encouragement for Your Walk With God
       </h1>
       <p class="hero-description">
-        Welcome to {{ site.title }} &mdash; your quiet space for Christ-centered encouragement, daily prayer guides, biblical wisdom, and uplifting devotionals to guide your walk with God through every season of life.
+        Welcome to {{ site.title }} &mdash; your quiet space for Christ-centered encouragement, <a href="{{ site.baseurl }}/prayer/">daily prayer guides</a>, <a href="{{ site.baseurl }}/bible/">biblical wisdom and scripture reflections</a>, and <a href="{{ site.baseurl }}/devotionals/">uplifting daily devotionals</a> to guide your walk with God through every season of life.
       </p>
       <div class="hero-actions">
         <a href="{{ site.posts.first.url | relative_url }}" class="btn btn-primary">
@@ -99,7 +99,7 @@ layout: default
         <div class="section-kicker" style="margin-bottom: 0.5rem;">Daily Scripture &amp; Devotional Guide</div>
         <h2 id="october-guide-heading" style="font-size: 1.75rem; margin: 0 0 0.75rem; color: var(--color-text);">Jesus Calling October 2026 Hub</h2>
         <p style="margin: 0; color: var(--color-text-muted); font-size: 1.05rem; line-height: 1.6;">
-          Explore our complete collection of daily reflections, underlying Scripture passages, practical action steps, and original prayers for October 7&ndash;30, 2026.
+          Explore our complete collection of <a href="{{ site.baseurl }}/jesus-calling-october-2026/">Jesus Calling October 2026</a> daily reflections, underlying Scripture passages, practical action steps, and original prayers for October 7&ndash;30, 2026.
         </p>
       </div>
       <div>
@@ -232,7 +232,7 @@ layout: default
       <div class="section-kicker">Our Calling</div>
       <h2 class="section-title">About {{ site.title }}</h2>
       <p class="section-subtitle">
-        We are an independent Christian editorial ministry dedicated to sharing Christ's love, biblical encouragement, and daily devotions to help believers draw closer to Jesus through Scripture.
+        We are an independent Christian editorial ministry dedicated to sharing Christ's love, <a href="{{ site.baseurl }}/bible/">biblical encouragement</a>, and <a href="{{ site.baseurl }}/devotionals/">daily devotions</a> to help believers draw closer to Jesus through Scripture.
       </p>
     </div>
 
@@ -241,6 +241,13 @@ layout: default
     <div style="text-align: center; margin-top: 2rem;">
       <a href="{{ site.baseurl }}/about/" class="btn btn-secondary">Learn More About Our Ministry &rarr;</a>
     </div>
+  </div>
+</section>
+
+<!-- YouTube Prayer Section -->
+<section class="section section-home-youtube" style="padding: 1.5rem 0 3rem; background-color: var(--color-bg);">
+  <div class="container" style="max-width: 820px;">
+    {% include youtube-prayer.html %}
   </div>
 </section>
 

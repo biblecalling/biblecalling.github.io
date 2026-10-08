@@ -15,11 +15,12 @@ tags:
   - Encouragement
   - Daily Devotional
   - Hope
+noindex: true
 permalink: /jesus-calling-october-22/
 ---
 
 <p class="lead">
-  Some mornings greet you with vibrant sunshine, energetic motivation, and effortless optimism. Other mornings feel overcast from the very first minute: gray skies, heavy hearts, and an uphill climb. The October 22 reading in *Jesus Calling* offers gentle, practical wisdom for finding joy on both kinds of days.
+  Within our <a href="{{ site.baseurl }}/jesus-calling-october-2026/">October devotional journey</a>, some mornings greet you with vibrant sunshine, energetic motivation, and effortless optimism. Other mornings feel overcast from the very first minute: gray skies, heavy hearts, and an uphill climb. The October 22 reading in *Jesus Calling* offers gentle, practical wisdom for finding joy on both kinds of days.
 </p>
 
 ## What Is Jesus Calling October 22 About?
@@ -29,7 +30,7 @@ Jesus Calling October 22 focuses on discovering supernatural joy in Christ's pre
 ## Key Takeaway: Uncovering Joy on the Gray Days of Life
 
 <p>
-  The reading contrasts bright, vibrant days—where joy seems scattered openly along the path—with gloomy, overcast seasons where the journey feels heavy. Even on the grayest days, joy remains accessible because Jesus Himself is present with us. The devotional urges believers to search for joy like hidden treasure: by remembering that God created this specific day, acknowledging His invisible nearness, and opening up an honest conversation with Him about whatever is on our minds.
+  The reading contrasts bright, vibrant days—where joy seems scattered openly along the path—with gloomy, overcast seasons where the journey feels heavy. Even on the grayest days, joy remains accessible because Jesus Himself is present with us. The devotional urges believers to search for joy like hidden treasure: by remembering that God created this specific day, acknowledging His invisible nearness, and opening up an honest conversation with Him about whatever is on our minds, bringing our hearts before God in <a href="{{ site.baseurl }}/prayer/">daily prayers</a>.
 </p>
 
 ## Scripture Verses Behind the Reflection
@@ -42,7 +43,7 @@ Jesus Calling October 22 focuses on discovering supernatural joy in Christ's pre
   </blockquote>
   <div class="scripture-highlight-ref">&mdash; Psalm 16:11 (KJV)</div>
 </div>
-<p>The psalmist locates joy not in circumstances, but in geography: in the presence of God Himself. Closeness to Christ is the true fountain of delight.</p>
+<p>As highlighted in our <a href="{{ site.baseurl }}/bible/">Scripture guide</a>, the psalmist locates joy not in circumstances, but in geography: in the presence of God Himself. Closeness to Christ is the true fountain of delight.</p>
 
 ### The joy of the Lord as our strength
 <div class="scripture-highlight">
@@ -67,7 +68,7 @@ Jesus Calling October 22 focuses on discovering supernatural joy in Christ's pre
 ## Overcoming the Daily Challenge
 
 <p>
-  Spiritual joy is vastly deeper than superficial happiness. Happiness depends on 'happenings'—on favorable weather, positive news, and agreeable people. Joy rests on Who is walking with us. That vital truth makes joy available even in sorrow. At the same time, if gray days have stretched into weeks of numbness, fatigue, and hopelessness, that may indicate clinical depression—a legitimate medical condition that requires compassionate medical care, not self-condemnation. Seeking medical help is an act of faithful stewardship.
+  Spiritual joy is vastly deeper than superficial happiness. Happiness depends on 'happenings'—on favorable weather, positive news, and agreeable people. Joy rests on Who is walking with us. That vital truth makes joy available even in sorrow. At the same time, if gray days have stretched into weeks of numbness, fatigue, and hopelessness, that may indicate clinical depression—a legitimate medical condition that requires compassionate medical care, not self-condemnation. Seeking medical help is an act of faithful stewardship, which we cultivate through a steady <a href="{{ site.baseurl }}/devotionals/">devotional practice</a>.
 </p>
 
 ## Practical Spiritual Disciplines for Today

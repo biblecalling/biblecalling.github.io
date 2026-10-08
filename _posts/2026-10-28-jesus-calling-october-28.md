@@ -15,11 +15,12 @@ tags:
   - Identity
   - Daily Devotional
   - Grace
+noindex: true
 permalink: /jesus-calling-october-28/
 ---
 
 <p class="lead">
-  Few experiences cut deeper than being treated unfairly: being misunderstood, slandered, betrayed, or cheated. The October 28 reading in *Jesus Calling* addresses unfair treatment head-on, offering a surprising and deeply liberating source of comfort.
+  Within our <a href="{{ site.baseurl }}/jesus-calling-october-2026/">Jesus Calling October series</a>, few experiences cut deeper than being treated unfairly: being misunderstood, slandered, betrayed, or cheated. The October 28 reading in *Jesus Calling* addresses unfair treatment head-on, offering a surprising and deeply liberating source of comfort.
 </p>
 
 ## What Is Jesus Calling October 28 About?
@@ -29,7 +30,7 @@ Jesus Calling October 28 focuses on responding to unfair treatment with quick fo
 ## The Core Spiritual Lesson: Forgiveness When Life Isn't Fair: Clothed in Grace
 
 <p>
-  The reading counsels believers not to expect earthly life to be consistently fair; people will sometimes hurt us without cause. When mistreatment occurs, the reading suggests viewing it as a classroom to grow in Christlike grace: forgiving quickly rather than fighting frantically to set the record straight. It urges us to focus on Jesus' evaluation of our life, reminding us that we are clothed in His spotless robe of righteousness—a gift that was pure, unearned mercy.
+  The reading counsels believers not to expect earthly life to be consistently fair; people will sometimes hurt us without cause. When mistreatment occurs, the reading suggests viewing it as a classroom to grow in Christlike grace: forgiving quickly rather than fighting frantically to set the record straight. It urges us to focus on Jesus' evaluation of our life, reminding us that we are clothed in His spotless robe of righteousness—a gift that was pure, unearned mercy, bringing our hearts before God in <a href="{{ site.baseurl }}/prayer/">honest prayers of surrender</a>.
 </p>
 
 ## What Scripture Teaches Us
@@ -42,7 +43,7 @@ Jesus Calling October 28 focuses on responding to unfair treatment with quick fo
   </blockquote>
   <div class="scripture-highlight-ref">&mdash; Colossians 3:13 (KJV)</div>
 </div>
-<p>The standard for Christian forgiveness is not whether the offender deserves mercy, but how generously Christ forgave us at the cross.</p>
+<p>As highlighted in our <a href="{{ site.baseurl }}/bible/">Bible studies</a>, the standard for Christian forgiveness is not whether the offender deserves mercy, but how generously Christ forgave us at the cross.</p>
 
 ### Clothed in the robe of righteousness
 <div class="scripture-highlight">
@@ -67,7 +68,7 @@ Jesus Calling October 28 focuses on responding to unfair treatment with quick fo
 ## Navigating Everyday Life With This Truth
 
 <p>
-  Forgiveness is often dangerously misunderstood: it does not mean pretending abuse never occurred, and it does not mean remaining in an unsafe environment. Forgiving someone releases our claim for personal vengeance into God's hands. Setting healthy boundaries, having honest conversations, and reporting criminal behavior or abuse to appropriate authorities are fully biblical and necessary actions. The ultimate peace is knowing that human slander cannot stain the righteousness Christ has placed upon you.
+  Forgiveness is often dangerously misunderstood: it does not mean pretending abuse never occurred, and it does not mean remaining in an unsafe environment. Forgiving someone releases our claim for personal vengeance into God's hands. Setting healthy boundaries, having honest conversations, and reporting criminal behavior or abuse to appropriate authorities are fully biblical and necessary actions. The ultimate peace is knowing that human slander cannot stain the righteousness Christ has placed upon you, which we cultivate through a steady <a href="{{ site.baseurl }}/devotionals/">daily quiet time</a>.
 </p>
 
 ## Three Concrete Action Steps for Today

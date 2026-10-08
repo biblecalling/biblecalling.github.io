@@ -19,7 +19,7 @@ permalink: /jesus-calling-october-10/
 ---
 
 <p class="lead">
-  Many people spend countless hours mentally scripting tomorrow: rehearsing what they will say, calculating every possible obstacle, and strategizing how they will keep things under control. The October 10 reading in *Jesus Calling* asks a probing question: could that constant rehearsal quietly be a form of self-reliance?
+  Within our <a href="{{ site.baseurl }}/jesus-calling-october-2026/">October devotional guide</a>, many people spend countless hours mentally scripting tomorrow: rehearsing what they will say, calculating every possible obstacle, and strategizing how they will keep things under control. The October 10 reading in *Jesus Calling* asks a probing question: could that constant rehearsal quietly be a form of self-reliance?
 </p>
 
 ## What Is Jesus Calling October 10 About?
@@ -29,7 +29,7 @@ Jesus Calling October 10 focuses on letting go of anxious control and learning t
 ## Key Takeaway: Living in Active Dependence, Not Anxious Control
 
 <p>
-  Today's meditation encourages believers to cultivate trust strong enough to let life unfold without needing to micromanage every upcoming detail. Trying to mentally secure ourselves miles into the future can subtly communicate that we do not need God's present help. The biblical alternative is to live fully in today's moment, walking in close relationship with Jesus, and recognizing that our strength comes from remaining connected to Him rather than hoarding solutions in advance.
+  Today's meditation encourages believers to cultivate trust strong enough to let life unfold without needing to micromanage every upcoming detail. Trying to mentally secure ourselves miles into the future can subtly communicate that we do not need God's present help. The biblical alternative is to live fully in today's moment, walking in close relationship with Jesus, and recognizing that our strength comes from remaining connected to Him rather than hoarding solutions in advance, bringing our hearts before God in <a href="{{ site.baseurl }}/prayer/">conversations with God in prayer</a>.
 </p>
 
 ## Scripture Verses Behind the Reflection
@@ -42,7 +42,7 @@ Jesus Calling October 10 focuses on letting go of anxious control and learning t
   </blockquote>
   <div class="scripture-highlight-ref">&mdash; Psalm 37:5 (KJV)</div>
 </div>
-<p>Proverbs 16:3 similarly instructs us to commit our works to God so our thoughts can be established. God invites thoughtful stewardship while reserving outcomes in His sovereign care.</p>
+<p>As highlighted in our <a href="{{ site.baseurl }}/bible/">Bible encouragement studies</a>, proverbs 16:3 similarly instructs us to commit our works to God so our thoughts can be established. God invites thoughtful stewardship while reserving outcomes in His sovereign care.</p>
 
 ### Grace for one day at a time
 <div class="scripture-highlight">
@@ -67,7 +67,7 @@ Jesus Calling October 10 focuses on letting go of anxious control and learning t
 ## Overcoming the Daily Challenge
 
 <p>
-  Prudent planning is celebrated throughout Scripture—Proverbs frequently commends diligence and foresight. The spiritual danger is anxious planning that leaves God out of the equation, where our peace is contingent on feeling completely in control. Dependence on God is not passive neglect; it means acting faithfully with the responsibilities in front of you while holding future outcomes with open hands.
+  Prudent planning is celebrated throughout Scripture—Proverbs frequently commends diligence and foresight. The spiritual danger is anxious planning that leaves God out of the equation, where our peace is contingent on feeling completely in control. Dependence on God is not passive neglect; it means acting faithfully with the responsibilities in front of you while holding future outcomes with open hands, which we cultivate through a steady <a href="{{ site.baseurl }}/devotionals/">daily devotional rhythm</a>.
 </p>
 
 ## Practical Spiritual Disciplines for Today

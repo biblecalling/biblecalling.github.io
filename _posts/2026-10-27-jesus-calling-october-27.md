@@ -15,11 +15,12 @@ tags:
   - Presence
   - Daily Devotional
   - Wisdom
+noindex: true
 permalink: /jesus-calling-october-27/
 ---
 
 <p class="lead">
-  Many believers wait for massive, life-altering crossroads to ask for God's guidance, while hundreds of small daily decisions slip by unnoticed. The October 27 reading in *Jesus Calling* turns our focus directly toward the choices right in front of us today.
+  Within our <a href="{{ site.baseurl }}/jesus-calling-october-2026/">October 2026 collection</a>, many believers wait for massive, life-altering crossroads to ask for God's guidance, while hundreds of small daily decisions slip by unnoticed. The October 27 reading in *Jesus Calling* turns our focus directly toward the choices right in front of us today.
 </p>
 
 ## What Is Jesus Calling October 27 About?
@@ -29,7 +30,7 @@ Jesus Calling October 27 centers on developing sensitivity to God's guidance in 
 ## Today's Theme: Discerning God's Guidance in Today's Choices
 
 <p>
-  The reading explains that as we grow in conscious awareness of Christ's presence, discerning the way forward becomes far more natural. Instead of agonizing over distant hypothetical scenarios, we can maintain steady dialogue with Jesus, trusting that when we reach an actual fork in the road, He will make the next step clear. It warns against becoming so absorbed in future blueprints that we sleepwalk through today's opportunities.
+  The reading explains that as we grow in conscious awareness of Christ's presence, discerning the way forward becomes far more natural. Instead of agonizing over distant hypothetical scenarios, we can maintain steady dialogue with Jesus, trusting that when we reach an actual fork in the road, He will make the next step clear. It warns against becoming so absorbed in future blueprints that we sleepwalk through today's opportunities, bringing our hearts before God in <a href="{{ site.baseurl }}/prayer/">prayer for wisdom</a>.
 </p>
 
 ## Bible Verses Related to Today's Theme
@@ -42,7 +43,7 @@ Jesus Calling October 27 centers on developing sensitivity to God's guidance in 
   </blockquote>
   <div class="scripture-highlight-ref">&mdash; Psalm 32:8 (KJV)</div>
 </div>
-<p>God does not drive His people with harsh cattle prods; He guides with His eye, inviting us into close, watchful relationship.</p>
+<p>As highlighted in our <a href="{{ site.baseurl }}/bible/">biblical wisdom resources</a>, God does not drive His people with harsh cattle prods; He guides with His eye, inviting us into close, watchful relationship.</p>
 
 ### A word behind you directing the path
 <div class="scripture-highlight">
@@ -67,7 +68,7 @@ Jesus Calling October 27 centers on developing sensitivity to God's guidance in 
 ## Why This Matters in Everyday Life
 
 <p>
-  God's guidance rarely arrives like a dramatic lightning strike; more often it resembles a quiet, deepening sensitivity forged through steady obedience in small things. A crucial biblical safeguard is to test every impression against the written Word of God and wise counsel. Proverbs 11:14 reminds us that 'in the multitude of counsellors there is safety.' God never guides someone to violate Scripture or act contrary to His holy character.
+  God's guidance rarely arrives like a dramatic lightning strike; more often it resembles a quiet, deepening sensitivity forged through steady obedience in small things. A crucial biblical safeguard is to test every impression against the written Word of God and wise counsel. Proverbs 11:14 reminds us that 'in the multitude of counsellors there is safety.' God never guides someone to violate Scripture or act contrary to His holy character, which we cultivate through a steady <a href="{{ site.baseurl }}/devotionals/">quiet devotional reading</a>.
 </p>
 
 ## Practical Ways to Practice This Today

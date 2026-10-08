@@ -15,11 +15,12 @@ tags:
   - Technology
   - Daily Devotional
   - Psalm 23
+noindex: true
 permalink: /jesus-calling-october-24/
 ---
 
 <p class="lead">
-  Smartphones buzz endlessly, inboxes overflow, and the pressure to produce never stops. In modern culture, taking time to rest often feels like an unaffordable luxury—or worse, a guilty failure. The October 24 reading in *Jesus Calling* argues that spiritual rest is neither a luxury nor a sin; it is an essential part of how God designed human beings.
+  Within our <a href="{{ site.baseurl }}/jesus-calling-october-2026/">Jesus Calling October 2026 collection</a>, smartphones buzz endlessly, inboxes overflow, and the pressure to produce never stops. In modern culture, taking time to rest often feels like an unaffordable luxury—or worse, a guilty failure. The October 24 reading in *Jesus Calling* argues that spiritual rest is neither a luxury nor a sin; it is an essential part of how God designed human beings.
 </p>
 
 ## What Is Jesus Calling October 24 About?
@@ -29,7 +30,7 @@ Jesus Calling October 24 focuses on the vital necessity of unwinding in the Shep
 ## The Core Spiritual Lesson: Green Pastures in a Wired World: The Holy Duty of Rest
 
 <p>
-  The reading calls believers to unwind in the gentle presence of the Good Shepherd. It observes that our electronic age keeps society perpetually 'wired,' leaving people too stressed and fragmented to sense God in their daily moments. Rest is woven into the very fabric of creation. The reading contrasts the unnecessary guilt many feel when resting with the immense energy wasted on hurried, frantic busyness, inviting us to walk paths of peace.
+  The reading calls believers to unwind in the gentle presence of the Good Shepherd. It observes that our electronic age keeps society perpetually 'wired,' leaving people too stressed and fragmented to sense God in their daily moments. Rest is woven into the very fabric of creation. The reading contrasts the unnecessary guilt many feel when resting with the immense energy wasted on hurried, frantic busyness, inviting us to walk paths of peace, bringing our hearts before God in <a href="{{ site.baseurl }}/prayer/">prayer and meditation</a>.
 </p>
 
 ## What Scripture Teaches Us
@@ -42,7 +43,7 @@ Jesus Calling October 24 focuses on the vital necessity of unwinding in the Shep
   </blockquote>
   <div class="scripture-highlight-ref">&mdash; Psalm 23:1–3 (KJV)</div>
 </div>
-<p>Notice the divine initiative: the Shepherd *makes* His sheep lie down. Sheep only rest when they feel secure, well-fed, and free from pests. The Shepherd provides the safety that makes rest possible.</p>
+<p>As highlighted in our <a href="{{ site.baseurl }}/bible/">Bible teachings</a>, notice the divine initiative: the Shepherd *makes* His sheep lie down. Sheep only rest when they feel secure, well-fed, and free from pests. The Shepherd provides the safety that makes rest possible.</p>
 
 ### Jesus invites weary disciples to rest
 <div class="scripture-highlight">
@@ -67,7 +68,7 @@ Jesus Calling October 24 focuses on the vital necessity of unwinding in the Shep
 ## Navigating Everyday Life With This Truth
 
 <p>
-  Spiritual rest is an active confession of faith: when you stop working, you are declaring that God is in control of the world and that His sovereignty does not depend on your nonstop labor. Constant digital connectivity trains our brains to anticipate perpetual interruption, making silence feel unnatural or threatening. Intentionally carving out quiet pockets allows your soul to catch up with your body.
+  Spiritual rest is an active confession of faith: when you stop working, you are declaring that God is in control of the world and that His sovereignty does not depend on your nonstop labor. Constant digital connectivity trains our brains to anticipate perpetual interruption, making silence feel unnatural or threatening. Intentionally carving out quiet pockets allows your soul to catch up with your body, which we cultivate through a steady <a href="{{ site.baseurl }}/devotionals/">daily quiet time rhythm</a>.
 </p>
 
 ## Three Concrete Action Steps for Today

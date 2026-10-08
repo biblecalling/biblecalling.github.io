@@ -19,7 +19,7 @@ permalink: /jesus-calling-october-8/
 ---
 
 <p class="lead">
-  Some mornings you wake up with a vibrant sense of God's closeness. Other mornings your emotions feel flat, dry, or distant. If your confidence in God's love rises and falls with your emotional weather, the October 8 reading in *Jesus Calling* offers a vital, steadying anchor for your faith.
+  Within our <a href="{{ site.baseurl }}/jesus-calling-october-2026/">October 2026 devotional series</a>, some mornings you wake up with a vibrant sense of God's closeness. Other mornings your emotions feel flat, dry, or distant. If your confidence in God's love rises and falls with your emotional weather, the October 8 reading in *Jesus Calling* offers a vital, steadying anchor for your faith.
 </p>
 
 ## What Is Jesus Calling October 8 About?
@@ -29,7 +29,7 @@ Jesus Calling October 8 centers on the steady, unchanging nature of God's love c
 ## The Core Spiritual Lesson: God's Steadfast Love Beyond Changing Feelings
 
 <p>
-  The October 8 reflection addresses a common human vulnerability: we often mistake our emotional fluctuations for changes in God's posture toward us. When we feel motivated and spiritually energized, we imagine God loves us more; when we feel downhearted or weary, we fear He has pulled away. The devotional challenges this misconception by turning our eyes toward Jesus' unchanging character. Circumstances shift constantly, but the cross of Christ settled God's love once and for all.
+  The October 8 reflection addresses a common human vulnerability: we often mistake our emotional fluctuations for changes in God's posture toward us. When we feel motivated and spiritually energized, we imagine God loves us more; when we feel downhearted or weary, we fear He has pulled away. The devotional challenges this misconception by turning our eyes toward Jesus' unchanging character. Circumstances shift constantly, but the cross of Christ settled God's love once and for all, bringing our hearts before God in <a href="{{ site.baseurl }}/prayer/">daily prayers for peace</a>.
 </p>
 
 ## What Scripture Teaches Us
@@ -42,7 +42,7 @@ Jesus Calling October 8 centers on the steady, unchanging nature of God's love c
   </blockquote>
   <div class="scripture-highlight-ref">&mdash; Jeremiah 31:3 (KJV)</div>
 </div>
-<p>God spoke these tender words to Israel when they were weary and wayward. His love did not start when they performed well, and it did not dissolve when they stumbled. It is an everlasting love that pursues us with mercy.</p>
+<p>As highlighted in our <a href="{{ site.baseurl }}/bible/">biblical truth and scripture promises</a>, God spoke these tender words to Israel when they were weary and wayward. His love did not start when they performed well, and it did not dissolve when they stumbled. It is an everlasting love that pursues us with mercy.</p>
 
 ### A God without shadow or shift
 <div class="scripture-highlight">
@@ -67,7 +67,7 @@ Jesus Calling October 8 centers on the steady, unchanging nature of God's love c
 ## Navigating Everyday Life With This Truth
 
 <p>
-  When we condition God's love on our daily performance or emotional state, spiritual anxiety inevitably follows. We become hyper-focused on analyzing our feelings instead of trusting Christ's finished work. While emotions are authentic parts of the human experience that deserve honest attention, they make terrible foundations for spiritual truth. The stability of our Christian walk rests outside ourselves—in the unchanging character and promises of God.
+  When we condition God's love on our daily performance or emotional state, spiritual anxiety inevitably follows. We become hyper-focused on analyzing our feelings instead of trusting Christ's finished work. While emotions are authentic parts of the human experience that deserve honest attention, they make terrible foundations for spiritual truth. The stability of our Christian walk rests outside ourselves—in the unchanging character and promises of God, which we cultivate through a steady <a href="{{ site.baseurl }}/devotionals/">daily devotional practice</a>.
 </p>
 
 ## Three Concrete Action Steps for Today

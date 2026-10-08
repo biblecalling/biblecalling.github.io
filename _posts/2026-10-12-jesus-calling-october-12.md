@@ -19,7 +19,7 @@ permalink: /jesus-calling-october-12/
 ---
 
 <p class="lead">
-  It is surprisingly easy to build our sense of identity out of other people's reactions: a quick nod of approval, an unanswered text message, a flattering compliment, or a sharp critique. The October 12 reading in *Jesus Calling* warns that living for human approval is an unstable and exhausting way to live.
+  Within our <a href="{{ site.baseurl }}/jesus-calling-october-2026/">October devotional calendar</a>, it is surprisingly easy to build our sense of identity out of other people's reactions: a quick nod of approval, an unanswered text message, a flattering compliment, or a sharp critique. The October 12 reading in *Jesus Calling* warns that living for human approval is an unstable and exhausting way to live.
 </p>
 
 ## What Is Jesus Calling October 12 About?
@@ -29,7 +29,7 @@ Jesus Calling October 12 focuses on breaking free from people-pleasing by seeing
 ## The Core Spiritual Lesson: Whose Opinion Gets the Final Say in Your Life?
 
 <p>
-  The reading outlines several reasons why relying on human approval is spiritually perilous. First, we rarely know what other people are genuinely thinking; we often react to our own projections. Second, people's opinions are inherently unstable, shifting with their own stress, moods, and changing interests. Most seriously, when gaining approval becomes our dominant motive, pleasing people displaces God as the center of our lives. The biblical remedy is to gaze upon Jesus and let His loving assessment define our worth.
+  The reading outlines several reasons why relying on human approval is spiritually perilous. First, we rarely know what other people are genuinely thinking; we often react to our own projections. Second, people's opinions are inherently unstable, shifting with their own stress, moods, and changing interests. Most seriously, when gaining approval becomes our dominant motive, pleasing people displaces God as the center of our lives. The biblical remedy is to gaze upon Jesus and let His loving assessment define our worth, bringing our hearts before God in <a href="{{ site.baseurl }}/prayer/">prayerful stillness</a>.
 </p>
 
 ## What Scripture Teaches Us
@@ -42,7 +42,7 @@ Jesus Calling October 12 focuses on breaking free from people-pleasing by seeing
   </blockquote>
   <div class="scripture-highlight-ref">&mdash; 1 Samuel 16:7 (KJV)</div>
 </div>
-<p>Human evaluations are almost always superficial and incomplete. God sees our deepest motives, vulnerabilities, and intentions with complete compassion and truth.</p>
+<p>As highlighted in our <a href="{{ site.baseurl }}/bible/">biblical encouragement resources</a>, human evaluations are almost always superficial and incomplete. God sees our deepest motives, vulnerabilities, and intentions with complete compassion and truth.</p>
 
 ### Serving Christ over human approval
 <div class="scripture-highlight">
@@ -67,7 +67,7 @@ Jesus Calling October 12 focuses on breaking free from people-pleasing by seeing
 ## Navigating Everyday Life With This Truth
 
 <p>
-  Rejecting people-pleasing does not mean becoming arrogant, defensive, or indifferent to wise counsel. Proverbs 27:6 teaches that 'faithful are the wounds of a friend.' Constructive feedback from trusted, mature believers is a blessing. The vital distinction lies in who gets the final say over your value and identity. Feedback can help us grow in skill and character, but only God's Word has the authority to define who we are.
+  Rejecting people-pleasing does not mean becoming arrogant, defensive, or indifferent to wise counsel. Proverbs 27:6 teaches that 'faithful are the wounds of a friend.' Constructive feedback from trusted, mature believers is a blessing. The vital distinction lies in who gets the final say over your value and identity. Feedback can help us grow in skill and character, but only God's Word has the authority to define who we are, which we cultivate through a steady <a href="{{ site.baseurl }}/devotionals/">daily devotional walk</a>.
 </p>
 
 ## Three Concrete Action Steps for Today

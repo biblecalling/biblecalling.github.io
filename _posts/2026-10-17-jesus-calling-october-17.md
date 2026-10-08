@@ -15,11 +15,12 @@ tags:
   - Prayer
   - Daily Devotional
   - Mental Peace
+noindex: true
 permalink: /jesus-calling-october-17/
 ---
 
 <p class="lead">
-  Much of human worry is simply our imagination running unchecked into the future. We picture the worst possible outcomes, rehearse catastrophic conversations, and feel exhausted before tomorrow even arrives. The October 17 reading in *Jesus Calling* offers a remarkably practical strategy for dismantling anxious projections.
+  Within our <a href="{{ site.baseurl }}/jesus-calling-october-2026/">Jesus Calling October series</a>, much of human worry is simply our imagination running unchecked into the future. We picture the worst possible outcomes, rehearse catastrophic conversations, and feel exhausted before tomorrow even arrives. The October 17 reading in *Jesus Calling* offers a remarkably practical strategy for dismantling anxious projections.
 </p>
 
 ## What Is Jesus Calling October 17 About?
@@ -29,7 +30,7 @@ Jesus Calling October 17 centers on overcoming future anxiety by refusing to ima
 ## Understanding Today's Focus: Refusing to Imagine a Future Without Christ
 
 <p>
-  The reading pinpoints the root mechanism of anxiety: we mentally project ourselves into tomorrow's difficulties, but we project ourselves there alone, stripped of God's grace. In that God-absent fantasy, fear naturally runs wild. The devotional offers two clear guidelines: first, do not linger unnecessarily in tomorrow's problems; second, whenever you must think about upcoming duties, intentionally include Jesus in the mental picture.
+  The reading pinpoints the root mechanism of anxiety: we mentally project ourselves into tomorrow's difficulties, but we project ourselves there alone, stripped of God's grace. In that God-absent fantasy, fear naturally runs wild. The devotional offers two clear guidelines: first, do not linger unnecessarily in tomorrow's problems; second, whenever you must think about upcoming duties, intentionally include Jesus in the mental picture, bringing our hearts before God in <a href="{{ site.baseurl }}/prayer/">prayers for anxiety</a>.
 </p>
 
 ## Biblical Anchor & Passages
@@ -42,7 +43,7 @@ Jesus Calling October 17 centers on overcoming future anxiety by refusing to ima
   </blockquote>
   <div class="scripture-highlight-ref">&mdash; Luke 12:25 (KJV)</div>
 </div>
-<p>Jesus appeals to basic reality: anxious fretting produces zero constructive outcomes; it cannot change a single centimeter of reality.</p>
+<p>As highlighted in our <a href="{{ site.baseurl }}/bible/">Bible guide on overcoming fear</a>, Jesus appeals to basic reality: anxious fretting produces zero constructive outcomes; it cannot change a single centimeter of reality.</p>
 
 ### Replacing anxiety with thankful petition
 <div class="scripture-highlight">
@@ -67,7 +68,7 @@ Jesus Calling October 17 centers on overcoming future anxiety by refusing to ima
 ## Living With Perspective & Grace
 
 <p>
-  Prudent preparation for tomorrow is wise, but dwelling in fearful fantasies is destructive. If you struggle with persistent, severe clinical anxiety, remember that medical evaluation and licensed Christian counseling are wise and God-honoring resources alongside faithful prayer. In daily discipleship, bringing Jesus into your mental picture changes everything: He is already in tomorrow, and His grace will meet you there.
+  Prudent preparation for tomorrow is wise, but dwelling in fearful fantasies is destructive. If you struggle with persistent, severe clinical anxiety, remember that medical evaluation and licensed Christian counseling are wise and God-honoring resources alongside faithful prayer. In daily discipleship, bringing Jesus into your mental picture changes everything: He is already in tomorrow, and His grace will meet you there, which we cultivate through a steady <a href="{{ site.baseurl }}/devotionals/">daily quiet time rhythms</a>.
 </p>
 
 ## How to Put This Into Practice Today

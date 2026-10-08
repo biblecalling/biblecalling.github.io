@@ -15,11 +15,12 @@ tags:
   - Encouragement
   - Daily Devotional
   - Ministry
+noindex: true
 permalink: /jesus-calling-october-16/
 ---
 
 <p class="lead">
-  We usually think of comfort as a personal blessing—something we receive from God to soothe our own grief or stress. The October 16 reading in *Jesus Calling* reveals a beautiful second dimension: the comfort we receive from Christ is meant to flow through us to heal others.
+  Within our <a href="{{ site.baseurl }}/jesus-calling-october-2026/">October 2026 devotional journey</a>, we usually think of comfort as a personal blessing—something we receive from God to soothe our own grief or stress. The October 16 reading in *Jesus Calling* reveals a beautiful second dimension: the comfort we receive from Christ is meant to flow through us to heal others.
 </p>
 
 ## What Is Jesus Calling October 16 About?
@@ -29,7 +30,7 @@ Jesus Calling October 16 focuses on continually looking to Jesus for comfort and
 ## The Core Spiritual Lesson: Comforted by God to Comfort Others
 
 <p>
-  Believers are urged to look toward Jesus continually throughout the day for strength, counsel, and companionship. Even a momentary prayer or brief upward glance reconnects our awareness with Him. When we face trials, Jesus enfolds us in His tender care. But divine comfort is not meant to stagnate within us; as we experience God's mercy in our own weakness, we become gentle instruments through which He comforts other struggling souls.
+  Believers are urged to look toward Jesus continually throughout the day for strength, counsel, and companionship. Even a momentary <a href="{{ site.baseurl }}/prayer/">intercessory prayer</a> or brief upward glance reconnects our awareness with Him. When we face trials, Jesus enfolds us in His tender care. But divine comfort is not meant to stagnate within us; as we experience God's mercy in our own weakness, we become gentle instruments through which He comforts other struggling souls.
 </p>
 
 ## What Scripture Teaches Us
@@ -42,7 +43,7 @@ Jesus Calling October 16 focuses on continually looking to Jesus for comfort and
   </blockquote>
   <div class="scripture-highlight-ref">&mdash; Psalm 34:5 (KJV)</div>
 </div>
-<p>Turning our eyes toward God brings spiritual clarity and removes the paralyzing shame that isolates weary hearts.</p>
+<p>As highlighted in our <a href="{{ site.baseurl }}/bible/">Scripture reflections on God's love</a>, turning our eyes toward God brings spiritual clarity and removes the paralyzing shame that isolates weary hearts.</p>
 
 ### Seeking His face continually
 <div class="scripture-highlight">
@@ -67,7 +68,7 @@ Jesus Calling October 16 focuses on continually looking to Jesus for comfort and
 ## Navigating Everyday Life With This Truth
 
 <p>
-  Our most difficult life seasons often yield our greatest ministry to others. A person who has experienced grief, depression, or severe disappointment and tasted God's comfort is uniquely equipped to sit with another hurting person—not with simplistic clichés, but with quiet, compassionate understanding. Serving as a channel of comfort also protects us from becoming self-absorbed in our own trials.
+  Our most difficult life seasons often yield our greatest ministry to others. A person who has experienced grief, depression, or severe disappointment and tasted God's comfort is uniquely equipped to sit with another hurting person—not with simplistic clichés, but with quiet, compassionate understanding. Serving as a channel of comfort also protects us from becoming self-absorbed in our own trials, which we cultivate through a steady <a href="{{ site.baseurl }}/devotionals/">daily devotions</a>.
 </p>
 
 ## Three Concrete Action Steps for Today

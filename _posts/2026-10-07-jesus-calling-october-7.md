@@ -19,7 +19,7 @@ permalink: /jesus-calling-october-7/
 ---
 
 <p class="lead">
-  It is hard to listen when your mind is loud. Most people know the feeling: you sit down for a quiet moment to pray, and instead of stillness, your thoughts race through a running list of everything that could go wrong. The October 7 reading in Sarah Young's devotional *Jesus Calling* begins right at that tension. Before we can perceive God's quiet peace, we need an intentional place to lay down the worries crowding the room.
+  Within our <a href="{{ site.baseurl }}/jesus-calling-october-2026/">Jesus Calling October 2026 devotional series</a>, it is hard to listen when your mind is loud. Most people know the feeling: you sit down for a quiet moment to pray, and instead of stillness, your thoughts race through a running list of everything that could go wrong. The October 7 reading in Sarah Young's devotional *Jesus Calling* begins right at that tension. Before we can perceive God's quiet peace, we need an intentional place to lay down the worries crowding the room.
 </p>
 
 ## What Is Jesus Calling October 7 About?
@@ -29,7 +29,7 @@ Jesus Calling October 7 focuses on releasing anxious worries to God so that our 
 ## Today's Theme: Releasing Cares to Cultivate Quietness
 
 <p>
-  The reading connects three vital spiritual ideas. First, unmanaged worries and runaway fears crowd our mental and spiritual space, keeping us from sensing Christ's presence. Entrusting those anxieties to Jesus is the necessary first step. Second, we are encouraged to accept each day as it arrives, recognizing that God is sovereign over today's moments rather than projecting fears into next month. Third, rather than resenting unpredictable circumstances, we practice thankfulness—a spiritual discipline that turns our focus from what is lacking to the God who sustains us.
+  The reading connects three vital spiritual ideas. First, unmanaged worries and runaway fears crowd our mental and spiritual space, keeping us from sensing Christ's presence. Entrusting those anxieties to Jesus is the necessary first step. Second, we are encouraged to accept each day as it arrives, recognizing that God is sovereign over today's moments rather than projecting fears into next month. Third, rather than resenting unpredictable circumstances, we practice thankfulness—a spiritual discipline that turns our focus from what is lacking to the God who sustains us, bringing our hearts before God in <a href="{{ site.baseurl }}/prayer/">heartfelt prayer</a>.
 </p>
 
 ## Bible Verses Related to Today's Theme
@@ -42,7 +42,7 @@ Jesus Calling October 7 focuses on releasing anxious worries to God so that our 
   </blockquote>
   <div class="scripture-highlight-ref">&mdash; 1 Peter 5:7 (KJV)</div>
 </div>
-<p>The Apostle Peter does not tell believers to pretend they have no responsibilities or burdens. Rather, the command is to transfer the crushing weight onto shoulders capable of carrying it. Notice the comforting reason given: because He cares for you personally.</p>
+<p>As highlighted in our <a href="{{ site.baseurl }}/bible/">Scripture encouragement guide</a>, the Apostle Peter does not tell believers to pretend they have no responsibilities or burdens. Rather, the command is to transfer the crushing weight onto shoulders capable of carrying it. Notice the comforting reason given: because He cares for you personally.</p>
 
 ### Receiving the day as given
 <div class="scripture-highlight">
@@ -67,7 +67,7 @@ Jesus Calling October 7 focuses on releasing anxious worries to God so that our 
 ## Why This Matters in Everyday Life
 
 <p>
-  Anxiety and attention constantly compete for the same inner space. The Apostle Paul describes this holy exchange in Philippians 4:6–7: when we bring our honest requests to God with thanksgiving, the peace of God, which surpasses human understanding, guards our hearts and minds through Christ Jesus. This pattern is not an emotional formula to instantly erase all stress. It is a steady, faithful discipline of placing our burdens where they safely belong.
+  Anxiety and attention constantly compete for the same inner space. The Apostle Paul describes this holy exchange in Philippians 4:6–7: when we bring our honest requests to God with thanksgiving, the peace of God, which surpasses human understanding, guards our hearts and minds through Christ Jesus. This pattern is not an emotional formula to instantly erase all stress. It is a steady, faithful discipline of placing our burdens where they safely belong, which we cultivate through a steady <a href="{{ site.baseurl }}/devotionals/">daily devotional habit</a>.
 </p>
 
 ## Practical Ways to Practice This Today

@@ -19,7 +19,7 @@ permalink: /jesus-calling-october-9/
 ---
 
 <p class="lead">
-  When you are physically exhausted and emotionally drained, venting complaints can feel almost automatic. The October 9 reflection in *Jesus Calling* does not shame weary individuals for feeling overwhelmed. Instead, it gently redirects where we take the heavy burdens of our hearts.
+  Within our <a href="{{ site.baseurl }}/jesus-calling-october-2026/">Jesus Calling October series</a>, when you are physically exhausted and emotionally drained, venting complaints can feel almost automatic. The October 9 reflection in *Jesus Calling* does not shame weary individuals for feeling overwhelmed. Instead, it gently redirects where we take the heavy burdens of our hearts.
 </p>
 
 ## What Is Jesus Calling October 9 About?
@@ -29,7 +29,7 @@ Jesus Calling October 9 focuses on bringing complaints and frustrations directly
 ## Understanding Today's Focus: Transforming Grumbling into Biblical Lament
 
 <p>
-  The October 9 reading begins with deep encouragement, acknowledging the long, uphill road many readers have traveled without abandoning faith. It then addresses a subtle habit that can erode our joy: habitual grumbling. While talking to Christ openly about difficulties helps us gain His perspective, broadcasting complaints to everyone around us breeds resentment, bitterness, and self-pity. Scripture shows us a healthier pathway: honest lament before the Lord.
+  The October 9 reading begins with deep encouragement, acknowledging the long, uphill road many readers have traveled without abandoning faith. It then addresses a subtle habit that can erode our joy: habitual grumbling. While talking to Christ openly about difficulties helps us gain His perspective, broadcasting complaints to everyone around us breeds resentment, bitterness, and self-pity. Scripture shows us a healthier pathway: honest lament before the Lord, bringing our hearts before God in <a href="{{ site.baseurl }}/prayer/">personal prayer and lament</a>.
 </p>
 
 ## Biblical Anchor & Passages
@@ -42,7 +42,7 @@ Jesus Calling October 9 focuses on bringing complaints and frustrations directly
   </blockquote>
   <div class="scripture-highlight-ref">&mdash; Psalm 142:2 (KJV)</div>
 </div>
-<p>David did not sanitize his prayers when he was hiding in a cave. He spoke plainly to God about his distress, proving that bringing real pain to the Lord is an act of genuine faith, not a lack of it.</p>
+<p>As highlighted in our <a href="{{ site.baseurl }}/bible/">Bible study reflections</a>, david did not sanitize his prayers when he was hiding in a cave. He spoke plainly to God about his distress, proving that bringing real pain to the Lord is an act of genuine faith, not a lack of it.</p>
 
 ### God as our safe refuge
 <div class="scripture-highlight">
@@ -67,7 +67,7 @@ Jesus Calling October 9 focuses on bringing complaints and frustrations directly
 ## Living With Perspective & Grace
 
 <p>
-  There is a profound theological difference between lament and grumbling. Lament turns directly toward God with honest vulnerability and concludes in renewed worship, which is why nearly every biblical psalm of lament ends with praise. Grumbling, by contrast, turns toward a human audience, seeking validation while deepening bitterness. Taking your pain to God does not mean silencing healthy boundaries or refusing to seek counsel when wronged; it means letting God be the first place you unpack your heart.
+  There is a profound theological difference between lament and grumbling. Lament turns directly toward God with honest vulnerability and concludes in renewed worship, which is why nearly every biblical psalm of lament ends with praise. Grumbling, by contrast, turns toward a human audience, seeking validation while deepening bitterness. Taking your pain to God does not mean silencing healthy boundaries or refusing to seek counsel when wronged; it means letting God be the first place you unpack your heart, which we cultivate through a steady <a href="{{ site.baseurl }}/devotionals/">morning quiet time</a>.
 </p>
 
 ## How to Put This Into Practice Today

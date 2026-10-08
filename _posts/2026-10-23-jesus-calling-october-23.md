@@ -15,11 +15,12 @@ tags:
   - Unity
   - Daily Devotional
   - John 15
+noindex: true
 permalink: /jesus-calling-october-23/
 ---
 
 <p class="lead">
-  Few biblical phrases are richer or more life-giving than Jesus' invitation: 'Abide in Me.' The October 23 reading in *Jesus Calling* unpacks that sacred reality, transforming theological doctrine into an intimate, warm invitation to share in the very joy of Christ.
+  Within our <a href="{{ site.baseurl }}/jesus-calling-october-2026/">Jesus Calling October guide</a>, few biblical phrases are richer or more life-giving than Jesus' invitation: 'Abide in Me.' The October 23 reading in *Jesus Calling* unpacks that sacred reality, transforming theological doctrine into an intimate, warm invitation to share in the very joy of Christ.
 </p>
 
 ## What Is Jesus Calling October 23 About?
@@ -29,7 +30,7 @@ Jesus Calling October 23 centers on the mystery of abiding in Christ and experie
 ## Today's Theme: Abiding in the Vine: The Shared Joy of Jesus
 
 <p>
-  Scripture invites believers to turn their attention toward Jesus and receive the warm light of His presence. It pictures opening our hearts to receive His smile of grace, allowing His life to intertwine with ours until a profound union is formed: Christ living in us, and us resting in Christ. In that union, joy is no longer something we labor to manufacture; it is the natural byproduct of remaining connected to the true Vine.
+  Scripture invites believers to turn their attention toward Jesus and receive the warm light of His presence. It pictures opening our hearts to receive His smile of grace, allowing His life to intertwine with ours until a profound union is formed: Christ living in us, and us resting in Christ. In that union, joy is no longer something we labor to manufacture; it is the natural byproduct of remaining connected to the true Vine, bringing our hearts before God in <a href="{{ site.baseurl }}/prayer/">communion in prayer</a>.
 </p>
 
 ## Bible Verses Related to Today's Theme
@@ -42,7 +43,7 @@ Jesus Calling October 23 centers on the mystery of abiding in Christ and experie
   </blockquote>
   <div class="scripture-highlight-ref">&mdash; John 15:4 (KJV)</div>
 </div>
-<p>A branch does not grunt and strain to produce grapes; it simply remains attached to the vine, drawing life and nutrients from the root. Discipleship is about staying connected to Christ.</p>
+<p>As highlighted in our <a href="{{ site.baseurl }}/bible/">Bible study articles</a>, a branch does not grunt and strain to produce grapes; it simply remains attached to the vine, drawing life and nutrients from the root. Discipleship is about staying connected to Christ.</p>
 
 ### Fullness of joy through abiding
 <div class="scripture-highlight">
@@ -67,7 +68,7 @@ Jesus Calling October 23 centers on the mystery of abiding in Christ and experie
 ## Why This Matters in Everyday Life
 
 <p>
-  Many believers mistakenly imagine God's primary attitude toward them is frustration or weary tolerance. Zephaniah 3:17 paints the exact opposite portrait: the Almighty God resting in His love and singing over His children with joy. When you understand that Christ genuinely delights in fellowship with you, the discipline of prayer stops feeling like a grueling chore and becomes a life-giving sanctuary.
+  Many believers mistakenly imagine God's primary attitude toward them is frustration or weary tolerance. Zephaniah 3:17 paints the exact opposite portrait: the Almighty God resting in His love and singing over His children with joy. When you understand that Christ genuinely delights in fellowship with you, the discipline of prayer stops feeling like a grueling chore and becomes a life-giving sanctuary, which we cultivate through a steady <a href="{{ site.baseurl }}/devotionals/">quiet time reflections</a>.
 </p>
 
 ## Practical Ways to Practice This Today

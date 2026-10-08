@@ -15,11 +15,12 @@ tags:
   - Shepherd
   - Daily Devotional
   - Discernment
+noindex: true
 permalink: /jesus-calling-october-30/
 ---
 
 <p class="lead">
-  Many sincere Christians ask: 'How do I hear God's voice?' The October 30 reading in *Jesus Calling* provides a gentle, biblical answer: start by creating intentional room for quietness.
+  Within our <a href="{{ site.baseurl }}/jesus-calling-october-2026/">Jesus Calling October series</a>, many sincere Christians ask: 'How do I hear God's voice?' The October 30 reading in *Jesus Calling* provides a gentle, biblical answer: start by creating intentional room for quietness.
 </p>
 
 ## What Is Jesus Calling October 30 About?
@@ -29,7 +30,7 @@ Jesus Calling October 30 focuses on becoming quieter and more attentive to God's
 ## Key Takeaway: Quietness as the Classroom: Learning to Hear the Shepherd
 
 <p>
-  The reading reminds us of Jesus' promise that His presence is constantly with us. Yet many people miss that reality because their minds are earthbound and cluttered with noise. Christ desires for His sheep to hear His voice continually. Quietness is the classroom where our spiritual hearing is trained; as we practice stillness in prayer, we learn to carry that settled peace into the noisy marketplace of daily life.
+  The reading reminds us of Jesus' promise that His presence is constantly with us. Yet many people miss that reality because their minds are earthbound and cluttered with noise. Christ desires for His sheep to hear His voice continually. Quietness is the classroom where our spiritual hearing is trained; as we practice stillness in <a href="{{ site.baseurl }}/prayer/">attentive prayer</a>, we learn to carry that settled peace into the noisy marketplace of daily life.
 </p>
 
 ## Scripture Verses Behind the Reflection
@@ -42,7 +43,7 @@ Jesus Calling October 30 focuses on becoming quieter and more attentive to God's
   </blockquote>
   <div class="scripture-highlight-ref">&mdash; John 10:27 (KJV)</div>
 </div>
-<p>Hearing the Shepherd's voice is the natural mark of a disciple. It is not an esoteric skill for spiritual elites, but the birthright of every follower of Christ.</p>
+<p>As highlighted in our <a href="{{ site.baseurl }}/bible/">Bible encouragement guide</a>, hearing the Shepherd's voice is the natural mark of a disciple. It is not an esoteric skill for spiritual elites, but the birthright of every follower of Christ.</p>
 
 ### Seeking with the whole heart
 <div class="scripture-highlight">
@@ -77,7 +78,7 @@ Jesus Calling October 30 focuses on becoming quieter and more attentive to God's
 ## Overcoming the Daily Challenge
 
 <p>
-  It is essential to understand what 'hearing God' means in biblical orthodoxy. For most believers, hearing God is not an audible sound, but a growing familiarity with His character through Scripture, the convicting whisper of the Holy Spirit, a settled peace, or the confirmation of wise Christian counsel. Crucially, *Jesus Calling* is an inspiring devotional work, whereas the Holy Bible is inspired, inerrant Scripture. We use devotionals as prompts for prayer, but we test everything against the Bible.
+  It is essential to understand what 'hearing God' means in biblical orthodoxy. For most believers, hearing God is not an audible sound, but a growing familiarity with His character through Scripture, the convicting whisper of the Holy Spirit, a settled peace, or the confirmation of wise Christian counsel. Crucially, *Jesus Calling* is an inspiring <a href="{{ site.baseurl }}/devotionals/">daily devotional walk</a> work, whereas the Holy Bible is inspired, inerrant Scripture. We use devotionals as prompts for prayer, but we test everything against the Bible.
 </p>
 
 ## Practical Spiritual Disciplines for Today

@@ -15,11 +15,12 @@ tags:
   - Guidance
   - Daily Devotional
   - Discipleship
+noindex: true
 permalink: /jesus-calling-october-15/
 ---
 
 <p class="lead">
-  Most wrong turns in spiritual life do not begin with a dramatic, defiant rebellion. They begin with a gradual drift of attention: letting daily distractions, cultural noise, and busy schedules crowd out our awareness of Jesus. The October 15 reading in *Jesus Calling* encourages us to walk consciously with Christ through every ordinary step.
+  Within our <a href="{{ site.baseurl }}/jesus-calling-october-2026/">Jesus Calling October guide</a>, most wrong turns in spiritual life do not begin with a dramatic, defiant rebellion. They begin with a gradual drift of attention: letting daily distractions, cultural noise, and busy schedules crowd out our awareness of Jesus. The October 15 reading in *Jesus Calling* encourages us to walk consciously with Christ through every ordinary step.
 </p>
 
 ## What Is Jesus Calling October 15 About?
@@ -29,7 +30,7 @@ Jesus Calling October 15 centers on maintaining an active, moment-by-moment awar
 ## Today's Theme: Staying Conscious of Christ's Presence Step by Step
 
 <p>
-  The reading highlights Jesus' parting promise to His disciples: that He is with us always, even to the end of the age. This promise is not merely comforting sentiment; it is our active spiritual shield. When our focus wavers, we can easily slip into pits of self-pity, resentment, or pride. Even well-meaning friends can lead us astray if we prioritize their approval over Christ. Keeping our eyes fixed on Jesus keeps our steps firmly on the path of life.
+  The reading highlights Jesus' parting promise to His disciples: that He is with us always, even to the end of the age. This promise is not merely comforting sentiment; it is our active spiritual shield. When our focus wavers, we can easily slip into pits of self-pity, resentment, or pride. Even well-meaning friends can lead us astray if we prioritize their approval over Christ. Keeping our eyes fixed on Jesus keeps our steps firmly on the path of life, bringing our hearts before God in <a href="{{ site.baseurl }}/prayer/">daily prayers</a>.
 </p>
 
 ## Bible Verses Related to Today's Theme
@@ -42,7 +43,7 @@ Jesus Calling October 15 centers on maintaining an active, moment-by-moment awar
   </blockquote>
   <div class="scripture-highlight-ref">&mdash; Matthew 28:20 (KJV)</div>
 </div>
-<p>Christ's presence is not occasional or conditional upon our perfection; it is a permanent promise to all who follow Him.</p>
+<p>As highlighted in our <a href="{{ site.baseurl }}/bible/">teachings of Scripture</a>, christ's presence is not occasional or conditional upon our perfection; it is a permanent promise to all who follow Him.</p>
 
 ### Setting the Lord always before me
 <div class="scripture-highlight">
@@ -67,7 +68,7 @@ Jesus Calling October 15 centers on maintaining an active, moment-by-moment awar
 ## Why This Matters in Everyday Life
 
 <p>
-  Practicing the presence of God is intensely practical. A Christian who lives with active awareness of Christ's nearness is far less likely to be swayed by fleeting anxieties, toxic gossip, or reactive anger. Notice also the reading's wise nuance regarding relationships: good friends are a gift from God, but they can never substitute for Christ Himself. We walk with friends, but we follow Jesus.
+  Practicing the presence of God is intensely practical. A Christian who lives with active awareness of Christ's nearness is far less likely to be swayed by fleeting anxieties, toxic gossip, or reactive anger. Notice also the reading's wise nuance regarding relationships: good friends are a gift from God, but they can never substitute for Christ Himself. We walk with friends, but we follow Jesus, which we cultivate through a steady <a href="{{ site.baseurl }}/devotionals/">morning devotional time</a>.
 </p>
 
 ## Practical Ways to Practice This Today

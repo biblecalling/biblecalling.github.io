@@ -19,7 +19,7 @@ permalink: /jesus-calling-october-14/
 ---
 
 <p class="lead">
-  Few subjects require more spiritual gentleness than human suffering. If you are walking through profound physical pain, grief, or heartbreak today, please read this reflection with ease, knowing it is never a demand to paste on an artificial smile.
+  Within our <a href="{{ site.baseurl }}/jesus-calling-october-2026/">October devotional series</a>, few subjects require more spiritual gentleness than human suffering. If you are walking through profound physical pain, grief, or heartbreak today, please read this reflection with ease, knowing it is never a demand to paste on an artificial smile.
 </p>
 
 ## What Is Jesus Calling October 14 About?
@@ -29,7 +29,7 @@ Jesus Calling October 14 focuses on how suffering can be redeemed in God's kingd
 ## Key Takeaway: Redemption in the Valley: Faith Amid Suffering
 
 <p>
-  The October 14 reading shares a solemn truth: suffering endured in Christ's name is never wasted in God's kingdom. Hardships can become sacred ground where deep trust is forged, and offering thanksgiving in the middle of pain becomes a profound sacrifice of praise. Rather than hiding our wounds, we are urged to bring them directly to Christ, believing that He is capable of working through our brokenness to produce eternal fruit.
+  The October 14 reading shares a solemn truth: suffering endured in Christ's name is never wasted in God's kingdom. Hardships can become sacred ground where deep trust is forged, and offering thanksgiving in the middle of pain becomes a profound sacrifice of praise. Rather than hiding our wounds, we are urged to bring them directly to Christ, believing that He is capable of working through our brokenness to produce eternal fruit, bringing our hearts before God in <a href="{{ site.baseurl }}/prayer/">heartfelt prayers for comfort</a>.
 </p>
 
 ## Scripture Verses Behind the Reflection
@@ -42,7 +42,7 @@ Jesus Calling October 14 focuses on how suffering can be redeemed in God's kingd
   </blockquote>
   <div class="scripture-highlight-ref">&mdash; James 1:2–3 (KJV)</div>
 </div>
-<p>James does not say trials are joyful in themselves; he points to the spiritual maturity and endurance that God produces through them.</p>
+<p>As highlighted in our <a href="{{ site.baseurl }}/bible/">Bible promises for difficult times</a>, James does not say trials are joyful in themselves; he points to the spiritual maturity and endurance that God produces through them.</p>
 
 ### All things working together
 <div class="scripture-highlight">
@@ -67,7 +67,7 @@ Jesus Calling October 14 focuses on how suffering can be redeemed in God's kingd
 ## Overcoming the Daily Challenge
 
 <p>
-  The Bible never glorifies pain as good in itself; Jesus wept openly at the tomb of Lazarus (John 11:35). Trusting God through trials does not mean enduring abusive situations, ignoring serious medical problems, or refusing professional counseling. Seeking help, setting healthy boundaries, and consulting doctors are wise, faithful actions. True faith allows us to hold sorrow and hope simultaneously, trusting that God's grace will sustain us through the valley.
+  The Bible never glorifies pain as good in itself; Jesus wept openly at the tomb of Lazarus (John 11:35). Trusting God through trials does not mean enduring abusive situations, ignoring serious medical problems, or refusing professional counseling. Seeking help, setting healthy boundaries, and consulting doctors are wise, faithful actions. True faith allows us to hold sorrow and hope simultaneously, trusting that God's grace will sustain us through the valley, which we cultivate through a steady <a href="{{ site.baseurl }}/devotionals/">daily devotional practice</a>.
 </p>
 
 ## Practical Spiritual Disciplines for Today

@@ -15,11 +15,12 @@ tags:
   - Grace
   - Daily Devotional
   - Humility
+noindex: true
 permalink: /jesus-calling-october-26/
 ---
 
 <p class="lead">
-  We live in a culture obsessed with self-improvement, self-reliance, and 'looking out for number one.' Bookstores and feeds are packed with formulas promising to make you entirely self-sufficient. The October 26 reading in *Jesus Calling* points to a radically different and far more peaceful path: finding our completeness in Christ.
+  Within our <a href="{{ site.baseurl }}/jesus-calling-october-2026/">Jesus Calling October calendar</a>, we live in a culture obsessed with self-improvement, self-reliance, and 'looking out for number one.' Bookstores and feeds are packed with formulas promising to make you entirely self-sufficient. The October 26 reading in *Jesus Calling* points to a radically different and far more peaceful path: finding our completeness in Christ.
 </p>
 
 ## What Is Jesus Calling October 26 About?
@@ -29,7 +30,7 @@ Jesus Calling October 26 focuses on trading exhausting self-sufficiency for acti
 ## Key Takeaway: Complete in Christ: Moving Beyond Self-Sufficiency
 
 <p>
-  Today's reflection calls believers to bring both their deepest sorrows and their greatest joys to Jesus. He soothes our heartaches and multiplies our celebrations. It contrasts the world's self-centered ethos with Christ's call to joyful dependence. True spiritual confidence does not arise from feeling superior or completely self-contained; it rests on knowing that in Christ, we lack nothing essential for life and godliness.
+  Today's reflection calls believers to bring both their deepest sorrows and their greatest joys to Jesus. He soothes our heartaches and multiplies our celebrations. It contrasts the world's self-centered ethos with Christ's call to joyful dependence. True spiritual confidence does not arise from feeling superior or completely self-contained; it rests on knowing that in Christ, we lack nothing essential for life and godliness, bringing our hearts before God in <a href="{{ site.baseurl }}/prayer/">daily prayers</a>.
 </p>
 
 ## Scripture Verses Behind the Reflection
@@ -42,7 +43,7 @@ Jesus Calling October 26 focuses on trading exhausting self-sufficiency for acti
   </blockquote>
   <div class="scripture-highlight-ref">&mdash; Colossians 2:10 (KJV)</div>
 </div>
-<p>Believers do not need to piece together their worth from worldly accolades or self-help regimes. In Christ, our spiritual identity and standing are already fully supplied.</p>
+<p>As highlighted in our <a href="{{ site.baseurl }}/bible/">Bible reflections</a>, believers do not need to piece together their worth from worldly accolades or self-help regimes. In Christ, our spiritual identity and standing are already fully supplied.</p>
 
 ### Without Him we can do nothing
 <div class="scripture-highlight">
@@ -67,7 +68,7 @@ Jesus Calling October 26 focuses on trading exhausting self-sufficiency for acti
 ## Overcoming the Daily Challenge
 
 <p>
-  Rejecting self-sufficiency is not an excuse for passivity, nor does it reject personal discipline, medical therapy, or wise counseling. Scripture explicitly values wise counsel: Proverbs 11:14 teaches that 'in the multitude of counsellors there is safety.' God frequently works His healing grace through doctors, therapists, mentors, and pastors. The vital distinction lies in where your core security rests: not in your own perfection, but in Christ's sufficiency.
+  Rejecting self-sufficiency is not an excuse for passivity, nor does it reject personal discipline, medical therapy, or wise counseling. Scripture explicitly values wise counsel: Proverbs 11:14 teaches that 'in the multitude of counsellors there is safety.' God frequently works His healing grace through doctors, therapists, mentors, and pastors. The vital distinction lies in where your core security rests: not in your own perfection, but in Christ's sufficiency, which we cultivate through a steady <a href="{{ site.baseurl }}/devotionals/">daily devotional habit</a>.
 </p>
 
 ## Practical Spiritual Disciplines for Today

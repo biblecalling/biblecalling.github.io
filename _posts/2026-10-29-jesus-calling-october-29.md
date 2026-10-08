@@ -15,11 +15,12 @@ tags:
   - Preparation
   - Daily Devotional
   - Discipline
+noindex: true
 permalink: /jesus-calling-october-29/
 ---
 
 <p class="lead">
-  For most people in our digital age, the very first motion of the morning is reaching for a smartphone: checking urgent notifications, browsing headlines, and absorbing the stress of the world before their feet even hit the floor. The October 29 reading in *Jesus Calling* invites us to reach for something infinitely better first.
+  Within our <a href="{{ site.baseurl }}/jesus-calling-october-2026/">October 2026 devotional guide</a>, for most people in our digital age, the very first motion of the morning is reaching for a smartphone: checking urgent notifications, browsing headlines, and absorbing the stress of the world before their feet even hit the floor. The October 29 reading in *Jesus Calling* invites us to reach for something infinitely better first.
 </p>
 
 ## What Is Jesus Calling October 29 About?
@@ -29,7 +30,7 @@ Jesus Calling October 29 centers on lingering in Jesus' presence at the start of
 ## Understanding Today's Focus: Linger Before You Launch: Grounding the Morning in God
 
 <p>
-  The reading urges believers to rein in the impulsive urge to plunge straight into daily tasks without pausing. Beginning the day alone with Jesus equips us for spiritual endurance, just as an athlete centers their focus before entering competition. Christ alone foresees what challenges our day will bring; time spent in His presence anchors our hearts so that when unexpected demands arise, we respond with patience rather than panic.
+  The reading urges believers to rein in the impulsive urge to plunge straight into daily tasks without pausing. Beginning the day alone with Jesus equips us for spiritual endurance, just as an athlete centers their focus before entering competition. Christ alone foresees what challenges our day will bring; time spent in His presence anchors our hearts so that when unexpected demands arise, we respond with patience rather than panic, bringing our hearts before God in <a href="{{ site.baseurl }}/prayer/">morning prayer</a>.
 </p>
 
 ## Biblical Anchor & Passages
@@ -42,7 +43,7 @@ Jesus Calling October 29 centers on lingering in Jesus' presence at the start of
   </blockquote>
   <div class="scripture-highlight-ref">&mdash; Mark 1:35 (KJV)</div>
 </div>
-<p>If the Son of God prioritized solitary communion with the Father before embarking on demanding ministry, how much more do we need that morning rhythm?</p>
+<p>As highlighted in our <a href="{{ site.baseurl }}/bible/">Scripture guide</a>, if the Son of God prioritized solitary communion with the Father before embarking on demanding ministry, how much more do we need that morning rhythm?</p>
 
 ### Directing prayer in the morning
 <div class="scripture-highlight">
@@ -67,7 +68,7 @@ Jesus Calling October 29 centers on lingering in Jesus' presence at the start of
 ## Living With Perspective & Grace
 
 <p>
-  Morning quiet time is not a legalistic performance to earn God's favor; God does not love you more because you woke up at dawn. Morning prayer is simply practical wisdom: it is remembering who you are and Whose you are before the noise of the day tries to tell you otherwise. Even a brief ten-minute intentional pause can shift the entire tone of your day from anxious reaction to peaceful trust.
+  A <a href="{{ site.baseurl }}/devotionals/">morning devotional practice</a> is not a legalistic performance to earn God's favor; God does not love you more because you woke up at dawn. Morning prayer is simply practical wisdom: it is remembering who you are and Whose you are before the noise of the day tries to tell you otherwise. Even a brief ten-minute intentional pause can shift the entire tone of your day from anxious reaction to peaceful trust.
 </p>
 
 ## How to Put This Into Practice Today

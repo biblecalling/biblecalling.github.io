@@ -19,7 +19,7 @@ permalink: /jesus-calling-october-13/
 ---
 
 <p class="lead">
-  When your calendar is packed and notifications never stop, stepping away for quiet reflection feels like the last thing you can afford. Yet the October 13 reading in *Jesus Calling* suggests that the more overwhelmed you feel, the more vital holy stillness becomes.
+  Within our <a href="{{ site.baseurl }}/jesus-calling-october-2026/">Jesus Calling October reading hub</a>, when your calendar is packed and notifications never stop, stepping away for quiet reflection feels like the last thing you can afford. Yet the October 13 reading in *Jesus Calling* suggests that the more overwhelmed you feel, the more vital holy stillness becomes.
 </p>
 
 ## What Is Jesus Calling October 13 About?
@@ -29,7 +29,7 @@ Jesus Calling October 13 centers on the necessity of pausing in God's presence t
 ## Understanding Today's Focus: Stillness in the Rush: Receiving the Peace of Christ
 
 <p>
-  Sarah Young's devotional prompts believers to pause before God, pointing out that when we feel most frazzled, quiet communion is not a luxury—it is spiritual oxygen. Pausing to rest under the light of Jesus' countenance allows us to receive the supernatural peace He purchased for us at great cost. This peace is not dependent on circumstances remaining calm; it is an internal anchor that steadies our minds regardless of outer storms.
+  Sarah Young's devotional prompts believers to pause before God, pointing out that when we feel most frazzled, quiet communion is not a luxury—it is spiritual oxygen. Pausing to rest under the light of Jesus' countenance allows us to receive the supernatural peace He purchased for us at great cost. This peace is not dependent on circumstances remaining calm; it is an internal anchor that steadies our minds regardless of outer storms, bringing our hearts before God in <a href="{{ site.baseurl }}/prayer/">quiet prayer and reflection</a>.
 </p>
 
 ## Biblical Anchor & Passages
@@ -42,7 +42,7 @@ Jesus Calling October 13 centers on the necessity of pausing in God's presence t
   </blockquote>
   <div class="scripture-highlight-ref">&mdash; Psalm 46:10 (KJV)</div>
 </div>
-<p>The Hebrew root for 'be still' conveys letting go, ceasing striving, and slacking your grip. God calls us to stop trying to manage the universe and remember who sits on the throne.</p>
+<p>As highlighted in our <a href="{{ site.baseurl }}/bible/">Bible verses on peace and rest</a>, the Hebrew root for 'be still' conveys letting go, ceasing striving, and slacking your grip. God calls us to stop trying to manage the universe and remember who sits on the throne.</p>
 
 ### The blessing of His countenance
 <div class="scripture-highlight">
@@ -67,7 +67,7 @@ Jesus Calling October 13 centers on the necessity of pausing in God's presence t
 ## Living With Perspective & Grace
 
 <p>
-  The peace Jesus gives is not merely an emotional calm; it is a spiritual reality grounded in reconciliation with God. Taking a few intentional minutes of quiet does not instantly make all difficult deadlines disappear, but it reorients our perspective. When we start from resting in God's presence, we face our obligations with clarity, patience, and supernatural endurance.
+  The peace Jesus gives is not merely an emotional calm; it is a spiritual reality grounded in reconciliation with God. Taking a few intentional minutes of quiet does not instantly make all difficult deadlines disappear, but it reorients our perspective. When we start from resting in God's presence, we face our obligations with clarity, patience, and supernatural endurance, which we cultivate through a steady <a href="{{ site.baseurl }}/devotionals/">quiet time devotional habit</a>.
 </p>
 
 ## How to Put This Into Practice Today

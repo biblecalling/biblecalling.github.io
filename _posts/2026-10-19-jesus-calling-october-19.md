@@ -15,11 +15,12 @@ tags:
   - Fellowship
   - Daily Devotional
   - Grace
+noindex: true
 permalink: /jesus-calling-october-19/
 ---
 
 <p class="lead">
-  Most of us have worn a polite religious mask at one time or another: offering a bright 'fine, thank you' while our personal lives were unraveling inside. The October 19 reading in *Jesus Calling* invites us to lay down that exhausting performance in the one place where pretense is completely unnecessary: before the God who already knows all things.
+  Within our <a href="{{ site.baseurl }}/jesus-calling-october-2026/">Jesus Calling October collection</a>, most of us have worn a polite religious mask at one time or another: offering a bright 'fine, thank you' while our personal lives were unraveling inside. The October 19 reading in *Jesus Calling* invites us to lay down that exhausting performance in the one place where pretense is completely unnecessary: before the God who already knows all things.
 </p>
 
 ## What Is Jesus Calling October 19 About?
@@ -29,7 +30,7 @@ Jesus Calling October 19 focuses on approaching God with complete authenticity, 
 ## Today's Theme: Laying Down the Mask: Freedom in God's Light
 
 <p>
-  The reading urges believers to come to Jesus with their shields down, vulnerable and authentic. Human beings instinctively erect emotional walls to protect themselves from rejection, even inside churches, where the pressure to project spiritual success often produces hollow fellowship. The antidote is to prioritize genuine worship: when we become secure in Christ's comprehensive love and forgiveness, we are liberated to love others without defensiveness.
+  The reading urges believers to come to Jesus with their shields down, vulnerable and authentic. Human beings instinctively erect emotional walls to protect themselves from rejection, even inside churches, where the pressure to project spiritual success often produces hollow fellowship. The antidote is to prioritize genuine worship: when we become secure in Christ's comprehensive love and forgiveness, we are liberated to love others without defensiveness, bringing our hearts before God in <a href="{{ site.baseurl }}/prayer/">prayer and surrender</a>.
 </p>
 
 ## Bible Verses Related to Today's Theme
@@ -42,7 +43,7 @@ Jesus Calling October 19 focuses on approaching God with complete authenticity, 
   </blockquote>
   <div class="scripture-highlight-ref">&mdash; 1 John 1:7 (KJV)</div>
 </div>
-<p>Light implies transparency and truth. John links authentic Christian fellowship directly to coming out of hiding into God's radiant grace.</p>
+<p>As highlighted in our <a href="{{ site.baseurl }}/bible/">Scripture guide on grace</a>, light implies transparency and truth. John links authentic Christian fellowship directly to coming out of hiding into God's radiant grace.</p>
 
 ### The searchlight of God's love
 <div class="scripture-highlight">
@@ -67,7 +68,7 @@ Jesus Calling October 19 focuses on approaching God with complete authenticity, 
 ## Why This Matters in Everyday Life
 
 <p>
-  Hiding our brokenness may feel safer in the short term, but it breeds profound spiritual loneliness. When we believe we must remain flawless to be accepted, we can never truly experience being loved. Biblical authenticity does not mean broadcasting every intimate detail indiscriminately on social media; it means refusing to lie to God in prayer, and finding a trustworthy, mature circle where we can be known and prayed for.
+  Hiding our brokenness may feel safer in the short term, but it breeds profound spiritual loneliness. When we believe we must remain flawless to be accepted, we can never truly experience being loved. Biblical authenticity does not mean broadcasting every intimate detail indiscriminately on social media; it means refusing to lie to God in prayer, and finding a trustworthy, mature circle where we can be known and prayed for, which we cultivate through a steady <a href="{{ site.baseurl }}/devotionals/">daily devotional habit</a>.
 </p>
 
 ## Practical Ways to Practice This Today
