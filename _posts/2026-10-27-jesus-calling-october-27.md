@@ -15,7 +15,7 @@ tags:
   - Presence
   - Daily Devotional
   - Wisdom
-noindex: true
+index: true
 permalink: /jesus-calling-october-27/
 ---
 
