@@ -15,7 +15,7 @@ tags:
   - Encouragement
   - Daily Devotional
   - Ministry
-noindex: true
+index: true
 permalink: /jesus-calling-october-16/
 ---
 
