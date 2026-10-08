@@ -15,7 +15,7 @@ tags:
   - Prayer
   - Daily Devotional
   - Mental Peace
-noindex: true
+index: true
 permalink: /jesus-calling-october-17/
 ---
 
