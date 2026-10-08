@@ -15,7 +15,7 @@ tags:
   - Shepherd
   - Daily Devotional
   - Discernment
-noindex: true
+index: true
 permalink: /jesus-calling-october-30/
 ---
 
