@@ -15,7 +15,7 @@ tags:
   - Grief
   - Daily Devotional
   - Bitterness
-noindex: true
+index: true
 permalink: /jesus-calling-october-21/
 ---
 
