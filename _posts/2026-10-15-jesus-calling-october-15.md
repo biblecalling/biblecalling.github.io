@@ -15,7 +15,7 @@ tags:
   - Guidance
   - Daily Devotional
   - Discipleship
-noindex: true
+index: true
 permalink: /jesus-calling-october-15/
 ---
 
