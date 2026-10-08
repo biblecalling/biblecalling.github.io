@@ -15,7 +15,7 @@ tags:
   - Trust
   - Daily Devotional
   - Good Shepherd
-noindex: true
+index: true
 permalink: /jesus-calling-october-18/
 ---
 
