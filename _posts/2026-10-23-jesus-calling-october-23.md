@@ -15,7 +15,7 @@ tags:
   - Unity
   - Daily Devotional
   - John 15
-noindex: true
+index: true
 permalink: /jesus-calling-october-23/
 ---
 
