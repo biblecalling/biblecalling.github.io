@@ -15,7 +15,7 @@ tags:
   - Renewal
   - Daily Devotional
   - Health
-noindex: true
+index: true
 permalink: /jesus-calling-october-20/
 ---
 
