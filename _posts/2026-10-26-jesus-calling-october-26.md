@@ -15,7 +15,7 @@ tags:
   - Grace
   - Daily Devotional
   - Humility
-noindex: true
+index: true
 permalink: /jesus-calling-october-26/
 ---
 
