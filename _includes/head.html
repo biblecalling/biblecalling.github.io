@@ -31,7 +31,7 @@
 
 <!-- Open Graph / Facebook -->
 <meta property="og:type" content="{% if page.layout == 'post' %}article{% else %}website{% endif %}">
-<meta property="og:site_name" content="{{ site.title }}">
+<meta property="og:site_name" content="GitHub">
 <meta property="og:title" content="{% if page.url == '/' %}{{ page.title | default: site.title }}{% elsif page.title %}{{ page.title }} | {{ site.title }}{% else %}{{ site.title }}{% endif %}">
 <meta property="og:description" content="{{ page_desc | escape }}">
 <meta property="og:url" content="{{ canonical_url }}">
@@ -108,7 +108,8 @@
       "@type": "WebSite",
       "@id": "{{ site.url }}/#website",
       "url": "{{ site.url }}/",
-      "name": "{{ site.title }}",
+      "name": "GitHub",
+      "alternateName": ["{{ site.title }}", "Bible Calling"],
       "description": "{{ site.description | escape }}",
       "inLanguage": "en-US",
       "publisher": {
