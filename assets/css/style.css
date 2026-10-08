@@ -2451,6 +2451,36 @@ blockquote {
   margin-top: 0.25rem;
 }
 
+.footer-social {
+  font-size: 0.85rem;
+  color: var(--color-text-muted);
+  margin-bottom: 0.85rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.footer-social-label {
+  color: var(--color-text-main);
+  font-weight: 600;
+}
+
+.footer-social-sep {
+  color: var(--color-text-light);
+}
+
+.footer-social a {
+  color: var(--color-accent);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+  transition: color var(--transition-fast);
+}
+
+.footer-social a:hover {
+  color: var(--color-accent-hover);
+}
+
 .back-to-top-btn {
   display: inline-flex;
   align-items: center;
