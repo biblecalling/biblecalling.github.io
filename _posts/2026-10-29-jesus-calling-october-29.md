@@ -15,7 +15,7 @@ tags:
   - Preparation
   - Daily Devotional
   - Discipline
-noindex: true
+index: true
 permalink: /jesus-calling-october-29/
 ---
 
