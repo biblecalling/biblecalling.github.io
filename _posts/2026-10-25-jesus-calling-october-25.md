@@ -15,7 +15,7 @@ tags:
   - Names of Jesus
   - Daily Devotional
   - Incarnation
-noindex: true
+index: true
 permalink: /jesus-calling-october-25/
 ---
 
