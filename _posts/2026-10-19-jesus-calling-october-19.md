@@ -15,7 +15,7 @@ tags:
   - Fellowship
   - Daily Devotional
   - Grace
-noindex: true
+index: true
 permalink: /jesus-calling-october-19/
 ---
 
