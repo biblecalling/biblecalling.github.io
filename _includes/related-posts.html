@@ -1,17 +1,19 @@
 {% assign related_posts = "" | split: "" %}
 {% assign max_related = 3 %}
 
-<!-- 1. Find posts matching shared tags -->
+<!-- 1. Find posts matching specific thematic tags (excluding generic bulk tags) -->
 {% for post in site.posts %}
   {% if post.url != page.url %}
-    {% assign has_shared_tag = false %}
+    {% assign has_theme_match = false %}
     {% for tag in post.tags %}
-      {% if page.tags contains tag %}
-        {% assign has_shared_tag = true %}
-        {% break %}
+      {% if tag != "Daily Devotional" and tag != "Jesus Calling Devotional" and tag != "October 2026" and tag != "October Devotionals" and tag != "Christian Devotional" and tag != "Morning Devotional" %}
+        {% if page.tags contains tag %}
+          {% assign has_theme_match = true %}
+          {% break %}
+        {% endif %}
       {% endif %}
     {% endfor %}
-    {% if has_shared_tag %}
+    {% if has_theme_match %}
       {% assign related_posts = related_posts | push: post %}
     {% endif %}
   {% endif %}

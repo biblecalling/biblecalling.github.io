@@ -7,11 +7,18 @@ layout: default
     <div class="container">
       {% include breadcrumbs.html %}
       <div class="category-hero-content">
-        <span class="category-kicker">Biblical Category</span>
+        <span class="category-kicker">Biblical Theme &bull; Topic Hub</span>
         <h1 class="category-heading">{{ page.title }}</h1>
         <p class="category-hero-desc">{{ page.description }}</p>
         <div class="category-meta-info">
-          {% assign cat_posts = site.posts | where_exp: "item", "item.categories contains page.category_name" %}
+          {% assign cat_posts = "" | split: "" %}
+          {% for post in site.posts %}
+            {% if post.categories contains page.category_name %}
+              {% assign cat_posts = cat_posts | push: post %}
+            {% elsif page.tag_filter and post.tags contains page.tag_filter %}
+              {% assign cat_posts = cat_posts | push: post %}
+            {% endif %}
+          {% endfor %}
           <span class="category-count-badge">{{ cat_posts.size }} Published Reflections</span>
         </div>
       </div>
@@ -19,6 +26,36 @@ layout: default
   </header>
 
   <div class="container category-main-content">
+    {% if page.direct_answer %}
+      <section class="category-direct-answer-section" aria-label="Biblical Overview">
+        <div class="category-answer-box">
+          <div class="category-answer-kicker">Biblical Foundation &bull; Quick Guidance</div>
+          <p class="category-answer-text">{{ page.direct_answer }}</p>
+          {% if page.pillar_link_url %}
+            <div class="category-pillar-link-wrap">
+              <a href="{{ page.pillar_link_url | relative_url }}" class="category-pillar-link">
+                <span>{{ page.pillar_link_text | default: "Explore our comprehensive guide &rarr;" }}</span>
+              </a>
+            </div>
+          {% endif %}
+        </div>
+      </section>
+    {% endif %}
+
+    {% if page.scripture_verse %}
+      <div class="scripture-highlight" style="margin: 2rem 0 2.5rem;">
+        <div class="scripture-highlight-title">Scripture Anchor for {{ page.title }}</div>
+        <blockquote class="scripture-highlight-text">
+          &ldquo;{{ page.scripture_verse }}&rdquo;
+        </blockquote>
+        <div class="scripture-highlight-ref">&mdash; {{ page.scripture_ref }}</div>
+      </div>
+    {% endif %}
+
+    <div class="category-section-title-wrap">
+      <h2 class="category-grid-title">Devotionals &amp; Reflections in {{ page.title }}</h2>
+    </div>
+
     {% if cat_posts.size > 0 %}
       <div class="posts-grid">
         {% for post in cat_posts %}
@@ -34,17 +71,18 @@ layout: default
 
     <!-- Cross-category navigation -->
     <div class="other-categories-bar">
-      <h3>Explore Other Themes:</h3>
+      <h3>Explore Connected Biblical Themes:</h3>
       <div class="category-pills">
         <a href="{{ site.baseurl }}/categories/jesus-calling/">Jesus Calling</a>
-        <a href="{{ site.baseurl }}/categories/faith/">Faith</a>
+        <a href="{{ site.baseurl }}/categories/trusting-god/">Trusting God</a>
         <a href="{{ site.baseurl }}/categories/prayer/">Prayer</a>
+        <a href="{{ site.baseurl }}/categories/faith/">Faith</a>
         <a href="{{ site.baseurl }}/categories/bible-study/">Bible Study</a>
         <a href="{{ site.baseurl }}/categories/christian-encouragement/">Christian Encouragement</a>
-        <a href="{{ site.baseurl }}/categories/trusting-god/">Trusting God</a>
         <a href="{{ site.baseurl }}/categories/daily-devotional/">Daily Devotional</a>
         <a href="{{ site.baseurl }}/categories/christian-life/">Christian Life</a>
       </div>
     </div>
   </div>
 </div>
+
