@@ -36,18 +36,11 @@ permalink: /blog/
 
     <!-- Articles Grid -->
     <div class="posts-grid">
-      {% if paginator.posts %}
-        {% for post in paginator.posts %}
+      {% for post in site.posts %}
+        {% unless post.noindex %}
           {% include post-card.html post=post %}
-        {% endfor %}
-      {% else %}
-        {% for post in site.posts %}
-          {% include post-card.html post=post %}
-        {% endfor %}
-      {% endif %}
+        {% endunless %}
+      {% endfor %}
     </div>
-
-    <!-- Pagination Controls -->
-    {% include pagination.html %}
   </div>
 </div>
