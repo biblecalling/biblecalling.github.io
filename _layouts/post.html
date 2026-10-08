@@ -5,7 +5,7 @@ layout: default
 <!-- Reading Progress Bar -->
 <div id="reading-progress-bar" class="reading-progress-bar" aria-hidden="true"></div>
 
-<article class="article-wrapper" itemscope itemtype="https://schema.org/BlogPosting">
+<article class="article-wrapper">
   <!-- Article Header -->
   <header class="article-header">
     <div class="container container-reading">
@@ -17,18 +17,14 @@ layout: default
         {% endfor %}
       </div>
 
-      <h1 class="article-title" itemprop="headline">{{ page.h1 | default: page.title }}</h1>
+      <h1 class="article-title">{{ page.h1 | default: page.title }}</h1>
 
-      {% if page.description %}
-        <p class="article-lead" itemprop="description">{{ page.description }}</p>
-      {% endif %}
-
-      <!-- Article Meta Box -->
+      <!-- Article Meta Box (Author & Publication Info) -->
       <div class="article-meta-box">
         <div class="article-author-info">
           <a href="{{ site.baseurl }}/amelia/" class="author-avatar" aria-label="About Amelia">
             {% if site.author.photo and site.author.photo != "" %}
-              <img src="{{ site.author.photo | relative_url }}" alt="{{ site.author.name }}" class="author-avatar-img" width="40" height="40">
+              <img src="{{ site.author.photo | relative_url }}" alt="{{ site.author.name }}" class="author-avatar-img" width="42" height="42">
             {% else %}
               <svg viewBox="0 0 32 32" width="22" height="22" fill="none">
                 <circle cx="16" cy="16" r="15" stroke="currentColor" stroke-width="1.5" opacity="0.4"/>
@@ -36,17 +32,20 @@ layout: default
               </svg>
             {% endif %}
           </a>
-          <div>
-            <span class="author-name" itemprop="author" itemscope itemtype="https://schema.org/Person">
-              <a href="{{ site.baseurl }}/amelia/" itemprop="url"><span itemprop="name">{{ page.author.name | default: page.author | default: site.author.name }}</span></a>
-            </span>
+          <div class="author-meta-text">
+            <div class="author-meta-top">
+              <span class="author-byline">Written by</span>
+              <a href="{{ site.baseurl }}/amelia/" class="author-name-link">{{ page.author.name | default: page.author | default: site.author.name }}</a>
+              <span class="author-badge-separator" aria-hidden="true">&bull;</span>
+              <span class="author-title-badge">Christian Writer &amp; Devotional Author</span>
+            </div>
             <div class="article-dates">
-              <time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
+              <time datetime="{{ page.date | date_to_xmlschema }}">
                 {{ page.date | date: "%B %-d, %Y" }}
               </time>
               {% if page.last_modified_at %}
                 <span class="meta-dot" aria-hidden="true">&bull;</span>
-                <span class="updated-date">Updated: <time datetime="{{ page.last_modified_at | date_to_xmlschema }}" itemprop="dateModified">{{ page.last_modified_at | date: "%B %-d, %Y" }}</time></span>
+                <span class="updated-date">Updated: <time datetime="{{ page.last_modified_at | date_to_xmlschema }}">{{ page.last_modified_at | date: "%B %-d, %Y" }}</time></span>
               {% endif %}
             </div>
           </div>
@@ -61,6 +60,13 @@ layout: default
           </span>
         </div>
       </div>
+
+      <!-- Short Direct Introduction / Search Intent Summary -->
+      {% if page.description %}
+        <div class="article-lead-wrap">
+          <p class="article-lead">{{ page.description }}</p>
+        </div>
+      {% endif %}
     </div>
   </header>
 
@@ -78,8 +84,7 @@ layout: default
             fetchpriority="high"
             decoding="async"
             class="article-featured-img"
-            onerror="this.closest('.article-featured-image-wrap').style.display='none';"
-            itemprop="image">
+            onerror="this.closest('.article-featured-image-wrap').style.display='none';">
           {% if page.image_caption %}
             <figcaption class="article-figcaption">{{ page.image_caption }}</figcaption>
           {% endif %}
@@ -90,19 +95,16 @@ layout: default
 
   <!-- Article Body Content -->
   <div class="container container-reading article-content-layout">
-    <div class="article-body-content" itemprop="articleBody">
+    <div class="article-body-content">
       {{ content }}
 
       {% assign post_categories = page.categories | join: ', ' | downcase %}
       {% if post_categories contains "jesus calling" or post_categories contains "jesus-calling" %}
         <div class="devotional-disclaimer-note" role="note" aria-label="Devotional reflection note">
-          <p>{{ site.disclaimer_devotional_note }}</p>
+          <p>{{ site.disclaimer_devotional_note }} <a href="{{ site.baseurl }}/about/">Learn more about our independent Christian ministry</a> or explore our <a href="{{ site.baseurl }}/devotionals/">daily devotional archive</a>.</p>
         </div>
       {% endif %}
     </div>
-
-    <!-- YouTube Prayer Section -->
-    {% include youtube-prayer.html %}
 
     <!-- Article Tags -->
     {% if page.tags.size > 0 %}
@@ -121,8 +123,8 @@ layout: default
       {% include share-buttons.html %}
     </div>
 
-    <!-- Author Bio -->
-    {% include author-bio.html %}
+    <!-- Related Devotionals -->
+    {% include related-posts.html %}
 
     <!-- Previous / Next Navigation -->
     <nav class="post-prev-next-nav" aria-label="Adjacent Articles">
@@ -145,8 +147,11 @@ layout: default
       </div>
     </nav>
 
-    <!-- Related Articles -->
-    {% include related-posts.html %}
+    <!-- Author Bio & Trust Information -->
+    {% include author-bio.html %}
+
+    <!-- YouTube Prayer Section (Relevant CTA) -->
+    {% include youtube-prayer.html %}
 
     <!-- Comments & Community Reflections -->
     {% unless page.comments == false %}
@@ -158,3 +163,4 @@ layout: default
 <!-- Comment System & Supabase Integration (Deferred for Core Web Vitals) -->
 <script src="{{ site.baseurl }}/assets/js/supabase-config.js" defer></script>
 <script src="{{ site.baseurl }}/assets/js/comments.js" defer></script>
+

@@ -1282,11 +1282,19 @@ blockquote {
   }
 }
 
+.article-lead-wrap {
+  margin: 1.5rem 0 2rem;
+}
+
 .article-lead {
-  font-size: 1.2rem;
-  line-height: 1.6;
-  color: var(--color-text-muted);
-  margin-bottom: 1.75rem;
+  font-size: 1.15rem;
+  line-height: 1.7;
+  color: var(--color-text-main);
+  margin: 0;
+  padding: 1.15rem 1.35rem;
+  background-color: var(--color-bg-alt);
+  border-left: 3px solid var(--color-accent);
+  border-radius: var(--radius-sm);
   font-family: var(--font-serif);
 }
 
@@ -1308,8 +1316,8 @@ blockquote {
 }
 
 .author-avatar {
-  width: 40px;
-  height: 40px;
+  width: 42px;
+  height: 42px;
   border-radius: 50%;
   background-color: var(--color-accent-soft);
   color: var(--color-accent);
@@ -1327,6 +1335,54 @@ blockquote {
   object-fit: cover;
   border-radius: 50%;
   display: block;
+}
+
+.author-meta-text {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+}
+
+.author-meta-top {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.35rem;
+  line-height: 1.3;
+}
+
+.author-byline {
+  font-size: 0.85rem;
+  color: var(--color-text-muted);
+}
+
+.author-name-link {
+  font-weight: 700;
+  font-size: 0.95rem;
+  color: var(--color-text-main);
+  text-decoration: none;
+}
+
+.author-name-link:hover {
+  color: var(--color-accent);
+  text-decoration: underline;
+}
+
+.author-badge-separator {
+  font-size: 0.75rem;
+  color: var(--color-border);
+}
+
+@media (max-width: 480px) {
+  .author-badge-separator {
+    display: none;
+  }
+}
+
+.author-title-badge {
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--color-accent);
 }
 
 .author-name {
@@ -1963,6 +2019,22 @@ blockquote {
   object-fit: cover;
   border-radius: 50%;
   display: block;
+}
+
+.bio-kicker {
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--color-text-muted);
+  font-weight: 700;
+  margin-bottom: 0.2rem;
+}
+
+.bio-role {
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: var(--color-accent);
+  margin-bottom: 0.5rem;
 }
 
 .bio-name {

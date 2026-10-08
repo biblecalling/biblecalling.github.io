@@ -1,18 +1,20 @@
 <section class="author-bio-card" aria-label="About the Author">
   <div class="bio-avatar" aria-hidden="true">
     <a href="{{ site.baseurl }}/amelia/" tabindex="-1" aria-hidden="true">
-      <img src="{{ site.author.photo | default: '/assets/images/amelia-author.jpg' | relative_url }}" alt="Amelia — Christian writer and devotional author" class="bio-avatar-img" width="58" height="58" loading="lazy">
+      <img src="{{ site.author.photo | default: '/assets/images/amelia-author.jpg' | relative_url }}" alt="Amelia — Christian writer and devotional author" class="bio-avatar-img" width="64" height="64" loading="lazy">
     </a>
   </div>
   <div class="bio-details">
-    <div style="font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.05em; color: var(--color-accent); font-weight: 700; margin-bottom: 0.25rem;">Written by Amelia</div>
-    <p class="bio-desc" style="margin-bottom: 0.5rem;">
-      Christian writer and devotional author based in New York City.
+    <div class="bio-kicker">Written by {{ site.author.name | default: 'Amelia' }}</div>
+    <div class="bio-role">Christian Writer &amp; Devotional Author</div>
+    <p class="bio-desc">
+      {{ site.author.bio | default: "Amelia is a Christian writer and devotional author who shares Bible-based reflections, prayers, and heartfelt encouragement for everyday life. Her writings focus on finding peace, trusting God through uncertainty, and drawing closer to Jesus Christ through Scripture." }}
     </p>
-    <a href="{{ site.baseurl }}/amelia/" class="author-more-link" style="font-weight: 600; font-size: 0.9rem; color: var(--color-accent); display: inline-flex; align-items: center; gap: 0.35rem;">
-      <span>Read more about Amelia</span>
+    <a href="{{ site.baseurl }}/amelia/" class="author-more-link">
+      <span>Read more about Amelia &amp; Our Editorial Mission</span>
       <span aria-hidden="true">&rarr;</span>
     </a>
   </div>
 </section>
+
 
