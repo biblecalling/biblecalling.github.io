@@ -145,11 +145,13 @@ layout: null
 
   <!-- Dynamic Post Articles -->
   {% for post in site.posts %}
+  {% unless post.noindex %}
   <url>
     <loc>{{ site.url }}{{ post.url }}</loc>
     <lastmod>{{ post.last_modified_at | default: post.date | date_to_xmlschema }}</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
+  {% endunless %}
   {% endfor %}
 </urlset>
