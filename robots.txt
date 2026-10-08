@@ -2,4 +2,4 @@ User-agent: *
 Allow: /
 Disallow: /search.json
 
-Sitemap: https://jesuscalling.github.io/sitemap.xml
+Sitemap: https://biblecalling.github.io/sitemap.xml
