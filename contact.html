@@ -18,8 +18,8 @@ permalink: /contact/
     <form
       id="contact-form"
       class="contact-form"
-      action="{% if site.contact_form_action and site.contact_form_action != '' %}{{ site.contact_form_action }}{% else %}mailto:{{ site.author.email }}?subject=Website%20Inquiry{% endif %}"
-      method="{% if site.contact_form_action and site.contact_form_action != '' %}post{% else %}get{% endif %}"
+      action="https://formspree.io/f/xjygyjeq"
+      method="POST"
       aria-label="Contact and prayer request form">
 
       <!-- Honeypot anti-spam check -->
@@ -39,7 +39,7 @@ permalink: /contact/
 
       <div class="auth-field-group">
         <label for="contact-subject" class="auth-label">Topic / Subject</label>
-        <select id="contact-subject" name="subject" class="auth-input" style="background-color: #fff;">
+        <select id="contact-subject" name="topic" class="auth-input" style="background-color: #fff;">
           <option value="Prayer Request">Prayer Request</option>
           <option value="Editorial Feedback">Editorial Question / Feedback</option>
           <option value="Testimony">Sharing a Personal Testimony</option>
