@@ -58,9 +58,9 @@ defaults:
       layout: "page"
 
 # Newsletter & Contact Integration (Configurable External Endpoints)
-# Replace with your external provider URL (e.g., Buttondown, Mailchimp, Formspree, Substack)
-newsletter_action: ""
-contact_form_action: ""
+# Formspree endpoint (free tier, no server required). To switch to MailerLite, replace with your MailerLite form URL.
+newsletter_action: "https://formspree.io/f/xjygyjeq"
+contact_form_action: "https://formspree.io/f/xjygyjeq"
 
 # Categories Configuration
 categories_data:

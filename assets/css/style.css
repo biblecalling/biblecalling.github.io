@@ -1200,9 +1200,37 @@ blockquote {
 
 .newsletter-feedback {
   margin-top: 1rem;
-  padding: 0.75rem 1rem;
+  padding: 0.85rem 1.15rem;
   border-radius: var(--radius-sm);
-  font-size: 0.875rem;
+  font-size: 0.9rem;
+  line-height: 1.5;
+  text-align: center;
+}
+
+.newsletter-feedback.is-success {
+  display: block !important;
+  background-color: #edf7ed;
+  color: #1e4620;
+  border: 1px solid #c8e6c9;
+}
+
+.newsletter-feedback.is-error {
+  display: block !important;
+  background-color: #fdf2f2;
+  color: #991b1b;
+  border: 1px solid #fecaca;
+}
+
+.newsletter-feedback.is-loading {
+  display: block !important;
+  background-color: var(--color-bg-alt);
+  color: var(--color-text-muted);
+  border: 1px solid var(--color-border);
+}
+
+.btn-newsletter-submit:disabled {
+  opacity: 0.65;
+  cursor: not-allowed;
 }
 
 /* --------------------------------------------------------------------------

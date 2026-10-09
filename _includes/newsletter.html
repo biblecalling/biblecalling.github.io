@@ -6,19 +6,23 @@
     Receive new devotional reflections, prayers, and encouragement delivered directly to your inbox. Take a peaceful moment each morning with Scripture.
   </p>
 
+  {% assign form_action = site.newsletter_action | default: "https://formspree.io/f/xjygyjeq" %}
   <form
     id="newsletter-form"
     class="newsletter-form"
-    action="{% if site.newsletter_action and site.newsletter_action != '' %}{{ site.newsletter_action }}{% else %}mailto:{{ site.author.email }}?subject=Newsletter%20Subscription{% endif %}"
-    method="{% if site.newsletter_action and site.newsletter_action != '' %}post{% else %}get{% endif %}"
-    target="_blank"
-    rel="noopener noreferrer"
+    action="{{ form_action }}"
+    method="POST"
     aria-label="Newsletter subscription form">
 
     <!-- Anti-Spam Honeypot field (hidden from real users) -->
     <div style="position: absolute; left: -5000px;" aria-hidden="true">
       <input type="text" name="b_hp_check" tabindex="-1" value="" autocomplete="off">
+      <input type="text" name="_gotcha" tabindex="-1" value="" autocomplete="off">
     </div>
+
+    <!-- Hidden Formspree Subject & Form Type -->
+    <input type="hidden" name="_subject" value="New Devotional Newsletter Subscription">
+    <input type="hidden" name="form_type" value="newsletter_subscription">
 
     <div class="newsletter-input-group">
       <label for="newsletter-email" class="sr-only">Your Email Address</label>
@@ -32,9 +36,9 @@
         required
         aria-describedby="newsletter-privacy-note">
 
-      <button type="submit" class="btn btn-primary btn-newsletter-submit">
-        <span>Subscribe</span>
-        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+      <button type="submit" id="newsletter-submit-btn" class="btn btn-primary btn-newsletter-submit">
+        <span class="btn-text">Subscribe</span>
+        <svg class="btn-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
           <line x1="22" y1="2" x2="11" y2="13"></line>
           <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
         </svg>
@@ -44,6 +48,6 @@
     <p id="newsletter-privacy-note" class="newsletter-privacy-note">
       We respect your privacy. No spam, ever &mdash; unsubscribe at any time.
     </p>
-    <div id="newsletter-feedback" class="newsletter-feedback" role="alert" style="display: none;"></div>
+    <div id="newsletter-feedback" class="newsletter-feedback" role="alert" aria-live="polite" style="display: none;"></div>
   </form>
 </section>

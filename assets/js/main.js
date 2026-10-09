@@ -270,4 +270,97 @@ document.addEventListener('DOMContentLoaded', () => {
       loadIndex().then(() => runSearch(initialQuery));
     }
   }
+
+  // 5. Newsletter Subscription AJAX Handler
+  const newsletterForm = document.getElementById('newsletter-form');
+  if (newsletterForm) {
+    const emailInput = document.getElementById('newsletter-email');
+    const feedbackBox = document.getElementById('newsletter-feedback');
+    const submitBtn = newsletterForm.querySelector('button[type="submit"]');
+    const submitBtnText = submitBtn ? (submitBtn.querySelector('.btn-text') || submitBtn.querySelector('span')) : null;
+    const originalBtnText = submitBtnText ? submitBtnText.textContent : 'Subscribe';
+
+    function setFeedback(message, type) {
+      if (!feedbackBox) return;
+      feedbackBox.className = 'newsletter-feedback';
+      if (type) {
+        feedbackBox.classList.add(`is-${type}`);
+      }
+      feedbackBox.textContent = message;
+      feedbackBox.style.display = message ? 'block' : 'none';
+    }
+
+    function isValidEmail(email) {
+      const re = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?(?:\.[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?)+$/;
+      return re.test(String(email).trim());
+    }
+
+    newsletterForm.addEventListener('submit', async (e) => {
+      e.preventDefault();
+      setFeedback('', '');
+
+      const email = emailInput ? emailInput.value.trim() : '';
+
+      // Validate email address
+      if (!email || !isValidEmail(email)) {
+        setFeedback('Please enter a valid email address (e.g. name@example.com).', 'error');
+        if (emailInput) emailInput.focus();
+        return;
+      }
+
+      // Check anti-spam honeypots
+      const honeypot = newsletterForm.querySelector('input[name="b_hp_check"]');
+      const gotcha = newsletterForm.querySelector('input[name="_gotcha"]');
+      if ((honeypot && honeypot.value) || (gotcha && gotcha.value)) {
+        setFeedback('✓ Thank you for subscribing! Blessings on your journey.', 'success');
+        newsletterForm.reset();
+        return;
+      }
+
+      // Set loading state
+      if (submitBtn) submitBtn.disabled = true;
+      if (submitBtnText) submitBtnText.textContent = 'Subscribing...';
+      setFeedback('Subscribing, please wait a moment...', 'loading');
+
+      try {
+        const formData = new FormData(newsletterForm);
+        const actionUrl = newsletterForm.getAttribute('action') || 'https://formspree.io/f/xjygyjeq';
+
+        const response = await fetch(actionUrl, {
+          method: 'POST',
+          body: formData,
+          headers: {
+            'Accept': 'application/json'
+          }
+        });
+
+        if (response.ok) {
+          setFeedback('✓ Thank you for subscribing! You will receive our daily devotional reflections and biblical encouragement in your inbox.', 'success');
+          newsletterForm.reset();
+        } else {
+          let errorMsg = 'Oops! There was a problem submitting your subscription. Please try again.';
+          try {
+            const data = await response.json();
+            if (data && data.errors && data.errors.length) {
+              errorMsg = data.errors.map(err => err.message).join(', ');
+            }
+          } catch (_) {}
+          setFeedback(errorMsg, 'error');
+        }
+      } catch (err) {
+        setFeedback('Network error. Please check your internet connection and try again.', 'error');
+      } finally {
+        if (submitBtn) submitBtn.disabled = false;
+        if (submitBtnText) submitBtnText.textContent = originalBtnText;
+      }
+    });
+
+    if (emailInput) {
+      emailInput.addEventListener('input', () => {
+        if (feedbackBox && feedbackBox.classList.contains('is-error')) {
+          setFeedback('', '');
+        }
+      });
+    }
+  }
 });
