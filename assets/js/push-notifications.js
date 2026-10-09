@@ -62,6 +62,9 @@
       modal.classList.add('active');
       modal.setAttribute('aria-hidden', 'false');
       document.body.style.overflow = 'hidden';
+      if (tzDisplay) {
+        tzDisplay.textContent = getDetectedTimezone();
+      }
       checkCurrentSubscriptionStatus();
 
       // Accessibility focus management
@@ -274,7 +277,7 @@
 
         localStorage.setItem(storageKey, 'true');
         localStorage.setItem(dismissedKey, 'true');
-        showMessage('You are now subscribed! Your daily devotional will arrive at 8:00 AM.', 'success');
+        showMessage('You are now subscribed! Your daily devotional will arrive at 8:00 AM US Eastern.', 'success');
         await checkCurrentSubscriptionStatus();
 
         // Smoothly close after user sees confirmation
