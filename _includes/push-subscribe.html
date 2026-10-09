@@ -1,0 +1,66 @@
+<!-- Accessible Push Notification Modal & Component -->
+<div id="push-subscribe-modal" class="push-modal-wrap" role="dialog" aria-modal="true" aria-labelledby="push-modal-title" aria-hidden="true">
+  <div class="push-modal-backdrop" id="push-modal-backdrop" tabindex="-1"></div>
+  <div class="push-modal-card">
+    <button type="button" class="push-modal-close" id="push-modal-close" aria-label="Close notification settings">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+        <line x1="18" y1="6" x2="6" y2="18"></line>
+        <line x1="6" y1="6" x2="18" y2="18"></line>
+      </svg>
+    </button>
+
+    <div class="push-modal-header">
+      <div class="push-modal-icon-badge" aria-hidden="true">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"></path>
+          <path d="M13.73 21a2 2 0 0 1-3.46 0"></path>
+        </svg>
+      </div>
+      <h2 id="push-modal-title" class="push-modal-title">Morning Devotional Reminders</h2>
+      <p id="push-subscription-state" class="push-modal-subtitle">
+        Start each day centered on Christ. Receive today's Scripture reflection and prayer every morning at 8:00 AM.
+      </p>
+    </div>
+
+    <div class="push-modal-body">
+      <div class="push-detail-box">
+        <div class="push-detail-item">
+          <span class="push-detail-label">Delivery Schedule:</span>
+          <span class="push-detail-value">Every morning at <strong>8:00 AM</strong></span>
+        </div>
+        <div class="push-detail-item">
+          <span class="push-detail-label">Detected Timezone:</span>
+          <span class="push-detail-value"><code id="push-detected-timezone">UTC</code></span>
+        </div>
+      </div>
+
+      <div id="push-status-msg" class="push-status-alert" role="alert" aria-live="polite" style="display: none;"></div>
+
+      <div class="push-modal-actions">
+        <button type="button" id="push-action-subscribe" class="btn btn-primary btn-push-action">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"></path>
+            <path d="M13.73 21a2 2 0 0 1-3.46 0"></path>
+          </svg>
+          <span class="btn-label">Subscribe to Daily Devotionals</span>
+        </button>
+
+        <button type="button" id="push-action-unsubscribe" class="btn btn-secondary btn-push-action" style="display: none;">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <line x1="18" y1="6" x2="6" y2="18"></line>
+            <line x1="6" y1="6" x2="18" y2="18"></line>
+          </svg>
+          <span class="btn-label">Unsubscribe from Devotionals</span>
+        </button>
+      </div>
+
+      <p class="push-privacy-guarantee">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect>
+          <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
+        </svg>
+        <span>Privacy-first: No email or personal identity required. Unsubscribe at any time.</span>
+      </p>
+    </div>
+  </div>
+</div>

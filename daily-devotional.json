@@ -1,0 +1,22 @@
+---
+layout: null
+permalink: /daily-devotional.json
+---
+[
+  {% assign sorted_posts = site.posts | sort: 'date' %}
+  {% assign first_item = true %}
+  {% for post in sorted_posts %}
+    {% if post.published != false and post.date %}
+      {% unless first_item %},{% endunless %}
+      {
+        "date": "{{ post.date | date: '%Y-%m-%d' }}",
+        "title": {{ post.title | jsonify }},
+        "excerpt": {{ post.description | default: post.excerpt | strip_html | strip_newlines | truncate: 160 | jsonify }},
+        "url": "{{ site.url }}{{ site.baseurl }}{{ post.url }}",
+        "categories": {{ post.categories | jsonify }},
+        "is_devotional": {% if post.categories contains "Jesus Calling" or post.categories contains "Daily Devotional" %}true{% else %}false{% endif %}
+      }
+      {% assign first_item = false %}
+    {% endif %}
+  {% endfor %}
+]

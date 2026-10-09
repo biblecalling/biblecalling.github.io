@@ -1,0 +1,22 @@
+name = "jesuscalling-push-worker"
+main = "src/index.js"
+compatibility_date = "2024-09-23"
+compatibility_flags = ["nodejs_compat"]
+
+# Hourly cron trigger to dispatch notifications at 8:00 AM in each subscriber's timezone
+[triggers]
+crons = ["0 * * * *"]
+
+# Cloudflare D1 Database Binding
+[[d1_databases]]
+binding = "DB"
+database_name = "jesuscalling-push-db"
+database_id = "REPLACE_WITH_YOUR_D1_DATABASE_ID"
+
+# Environment Variables
+[vars]
+ALLOWED_ORIGIN = "https://biblecalling.github.io"
+DEVOTIONAL_FEED_URL = "https://biblecalling.github.io/daily-devotional.json"
+VAPID_SUBJECT = "mailto:contact@jesuscalling.github.io"
+# Default to false for safe development. Set to "true" in production to activate daily sends.
+ENABLE_PRODUCTION_CRON = "false"

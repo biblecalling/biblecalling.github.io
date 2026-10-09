@@ -1,0 +1,19 @@
+{
+  "name": "jesuscalling-push-worker",
+  "version": "1.0.0",
+  "description": "Cloudflare Worker and D1 backend for Jesus Calling Web Push Notifications",
+  "main": "src/index.js",
+  "type": "module",
+  "scripts": {
+    "dev": "wrangler dev",
+    "deploy": "wrangler deploy",
+    "db:init": "wrangler d1 execute jesuscalling-push-db --local --file=./schema.sql",
+    "db:init:prod": "wrangler d1 execute jesuscalling-push-db --remote --file=./schema.sql"
+  },
+  "dependencies": {
+    "@block65/webcrypto-web-push": "^0.1.8"
+  },
+  "devDependencies": {
+    "wrangler": "^3.78.0"
+  }
+}

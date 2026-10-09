@@ -108,3 +108,4 @@ exclude:
   - .git/
   - .github/
   - .gemini/
+  - cloudflare-push-worker/
