@@ -22,3 +22,7 @@ desktop.ini
 *.tmp
 *.py
 __pycache__/
+
+# Node & Cloudflare Worker artifacts
+node_modules/
+.wrangler/

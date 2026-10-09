@@ -460,80 +460,74 @@ export default {
       return;
     }
 
-    // 3. Query all distinct active timezones
-    const distinctTzs = await env.DB.prepare(
-      `SELECT DISTINCT timezone FROM subscriptions WHERE active = 1`
-    ).all();
+    // 3. Schedule target: 8:00 AM US Eastern Time (America/New_York)
+    const targetTimezone = env.SCHEDULED_TIMEZONE || 'America/New_York';
 
-    for (const row of (distinctTzs.results || [])) {
-      const tz = row.timezone;
+    // Check if current hour in US Eastern Time is 8:00 AM (automatically handles EST/EDT)
+    if (!is8AMInTimezone(targetTimezone, now)) {
+      console.log(`Current time is not 8:00 AM in ${targetTimezone}. Skipping daily send.`);
+      return;
+    }
 
-      // Check if current hour in this timezone is 8:00 AM
-      if (!is8AMInTimezone(tz, now)) {
-        continue;
-      }
+    // Determine calendar date in US Eastern Time (YYYY-MM-DD)
+    const localDate = getLocalDateString(targetTimezone, now);
 
-      // Determine local calendar date in this timezone (YYYY-MM-DD)
-      const localDate = getLocalDateString(tz, now);
+    // Find published devotional matching localDate
+    const todaysDevotional = devotionals.find(d => d.date === localDate);
+    if (!todaysDevotional) {
+      console.log(`No published devotional for date ${localDate} in ${targetTimezone}. Skipping.`);
+      return;
+    }
 
-      // Find published devotional matching localDate
-      const todaysDevotional = devotionals.find(d => d.date === localDate);
-      if (!todaysDevotional) {
-        console.log(`No published devotional for date ${localDate} in timezone ${tz}. Skipping.`);
-        continue;
-      }
+    // 4. Fetch all active subscriptions that have NOT received this devotional date yet
+    const eligibleSubs = await env.DB.prepare(`
+      SELECT s.*
+      FROM subscriptions s
+      LEFT JOIN notification_logs n
+        ON s.id = n.subscription_id AND n.devotional_date = ?
+      WHERE s.active = 1
+        AND n.id IS NULL
+    `).bind(localDate).all();
 
-      // 4. Fetch all active subscriptions in this timezone that have NOT received this date yet
-      const eligibleSubs = await env.DB.prepare(`
-        SELECT s.*
-        FROM subscriptions s
-        LEFT JOIN notification_logs n
-          ON s.id = n.subscription_id AND n.devotional_date = ?
-        WHERE s.active = 1
-          AND s.timezone = ?
-          AND n.id IS NULL
-      `).bind(localDate, tz).all();
-
-      for (const sub of (eligibleSubs.results || [])) {
-        const payload = {
-          title: 'Jesus Calling Daily Devotional',
-          body: `${todaysDevotional.title}\n${todaysDevotional.excerpt}`,
-          icon: 'https://biblecalling.github.io/assets/images/favicon-96x96.png',
-          badge: 'https://biblecalling.github.io/assets/images/favicon-48x48.png',
-          data: {
-            url: todaysDevotional.url,
-            date: localDate,
-            subscriptionHash: sub.id.substring(0, 12),
-            trackingEndpoint: 'https://jesuscalling-push.your-subdomain.workers.dev/api/track-click'
-          }
-        };
-
-        try {
-          const result = await sendWebPushNotification({
-            subscription: sub,
-            payload,
-            vapidPublicKey: env.VAPID_PUBLIC_KEY,
-            vapidPrivateKey: env.VAPID_PRIVATE_KEY,
-            vapidSubject: env.VAPID_SUBJECT || 'mailto:contact@jesuscalling.github.io'
-          });
-
-          // Check if subscription has expired on push service (404 Not Found or 410 Gone)
-          const isExpired = result.status === 404 || result.status === 410;
-          if (isExpired) {
-            await env.DB.prepare(`UPDATE subscriptions SET active = 0, updated_at = datetime('now') WHERE id = ?`).bind(sub.id).run();
-          }
-
-          const deliveryStatus = result.ok ? 'sent_to_gateway' : (isExpired ? 'expired_unregistered' : 'gateway_error');
-
-          // Record in notification_logs (enforces UNIQUE constraint against duplicate sends)
-          await env.DB.prepare(`
-            INSERT INTO notification_logs (subscription_id, devotional_date, devotional_title, devotional_url, http_status, delivery_status, sent_at)
-            VALUES (?, ?, ?, ?, ?, ?, datetime('now'))
-          `).bind(sub.id, localDate, todaysDevotional.title, todaysDevotional.url, result.status, deliveryStatus).run();
-
-        } catch (pushErr) {
-          console.error(`Failed to dispatch push to sub ${sub.id}:`, pushErr);
+    for (const sub of (eligibleSubs.results || [])) {
+      const payload = {
+        title: 'Jesus Calling Daily Devotional',
+        body: `${todaysDevotional.title}\n${todaysDevotional.excerpt}`,
+        icon: 'https://biblecalling.github.io/assets/images/favicon-96x96.png',
+        badge: 'https://biblecalling.github.io/assets/images/favicon-48x48.png',
+        data: {
+          url: todaysDevotional.url,
+          date: localDate,
+          subscriptionHash: sub.id.substring(0, 12),
+          trackingEndpoint: 'https://jesuscalling-push-worker.biblecalling-push.workers.dev/api/track-click'
         }
+      };
+
+      try {
+        const result = await sendWebPushNotification({
+          subscription: sub,
+          payload,
+          vapidPublicKey: env.VAPID_PUBLIC_KEY,
+          vapidPrivateKey: env.VAPID_PRIVATE_KEY,
+          vapidSubject: env.VAPID_SUBJECT || 'mailto:contact@jesuscalling.github.io'
+        });
+
+        // Check if subscription has expired on push service (404 Not Found or 410 Gone)
+        const isExpired = result.status === 404 || result.status === 410;
+        if (isExpired) {
+          await env.DB.prepare(`UPDATE subscriptions SET active = 0, updated_at = datetime('now') WHERE id = ?`).bind(sub.id).run();
+        }
+
+        const deliveryStatus = result.ok ? 'sent_to_gateway' : (isExpired ? 'expired_unregistered' : 'gateway_error');
+
+        // Record in notification_logs (enforces UNIQUE constraint against duplicate sends)
+        await env.DB.prepare(`
+          INSERT INTO notification_logs (subscription_id, devotional_date, devotional_title, devotional_url, http_status, delivery_status, sent_at)
+          VALUES (?, ?, ?, ?, ?, ?, datetime('now'))
+        `).bind(sub.id, localDate, todaysDevotional.title, todaysDevotional.url, result.status, deliveryStatus).run();
+
+      } catch (pushErr) {
+        console.error(`Failed to dispatch push to sub ${sub.id}:`, pushErr);
       }
     }
   }

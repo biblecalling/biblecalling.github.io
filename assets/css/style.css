@@ -3946,4 +3946,14 @@ blockquote {
   .header-push-btn {
     padding: 0.5rem;
   }
+  .push-modal-card {
+    padding: 1.5rem 1.25rem;
+    margin: 0.75rem;
+  }
+  .push-modal-title {
+    font-size: 1.3rem;
+  }
+  .push-modal-subtitle {
+    font-size: 0.875rem;
+  }
 }

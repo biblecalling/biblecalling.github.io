@@ -10,9 +10,6 @@
     "db:init": "wrangler d1 execute jesuscalling-push-db --local --file=./schema.sql",
     "db:init:prod": "wrangler d1 execute jesuscalling-push-db --remote --file=./schema.sql"
   },
-  "dependencies": {
-    "@block65/webcrypto-web-push": "^0.1.8"
-  },
   "devDependencies": {
     "wrangler": "^3.78.0"
   }

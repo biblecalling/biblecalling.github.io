@@ -34,15 +34,20 @@
 
   document.addEventListener('DOMContentLoaded', () => {
     const config = window.JESUS_CALLING_PUSH_CONFIG || {};
+    const storageKey = config.storageKey || 'jesuscalling_push_subscribed';
+    const dismissedKey = config.dismissedKey || 'jesuscalling_push_prompt_dismissed';
+
     const modal = document.getElementById('push-subscribe-modal');
     const backdrop = document.getElementById('push-modal-backdrop');
     const openBtns = document.querySelectorAll('.js-open-push-modal');
     const closeBtn = document.getElementById('push-modal-close');
     const subscribeBtn = document.getElementById('push-action-subscribe');
+    const disableBtn = document.getElementById('push-action-disable');
     const unsubscribeBtn = document.getElementById('push-action-unsubscribe');
+    const modalTitle = document.getElementById('push-modal-title');
+    const subStateNotice = document.getElementById('push-subscription-state');
     const statusMsg = document.getElementById('push-status-msg');
     const tzDisplay = document.getElementById('push-detected-timezone');
-    const subStateNotice = document.getElementById('push-subscription-state');
 
     const isPushSupported = 'serviceWorker' in navigator && 'PushManager' in window && 'Notification' in window;
     const detectedTz = getDetectedTimezone();
@@ -52,13 +57,19 @@
     }
 
     // Modal state controllers
-    function openModal() {
+    function openModal(isAutoPrompt = false) {
       if (!modal) return;
       modal.classList.add('active');
       modal.setAttribute('aria-hidden', 'false');
       document.body.style.overflow = 'hidden';
       checkCurrentSubscriptionStatus();
-      if (closeBtn) closeBtn.focus();
+
+      // Accessibility focus management
+      if (isAutoPrompt && subscribeBtn && !subscribeBtn.disabled) {
+        subscribeBtn.focus();
+      } else if (closeBtn) {
+        closeBtn.focus();
+      }
     }
 
     function closeModal() {
@@ -67,6 +78,21 @@
       modal.setAttribute('aria-hidden', 'true');
       document.body.style.overflow = '';
       clearMessage();
+    }
+
+    // Dismissal & Disable handling
+    function handleDisable() {
+      // Remember choice so popup does not appear on future visits/refreshes
+      localStorage.setItem(dismissedKey, 'true');
+      closeModal();
+    }
+
+    function handleDismissOnClose() {
+      // If visitor closes the modal without subscribing, remember dismissal choice
+      if (localStorage.getItem(storageKey) !== 'true') {
+        localStorage.setItem(dismissedKey, 'true');
+      }
+      closeModal();
     }
 
     function showMessage(text, type = 'info') {
@@ -86,40 +112,62 @@
     // Update UI based on browser permission and active service worker registration
     async function checkCurrentSubscriptionStatus() {
       if (!isPushSupported) {
+        if (modalTitle) modalTitle.textContent = 'Morning Devotional Reminders';
         if (subStateNotice) subStateNotice.textContent = 'Push notifications are not supported in this browser.';
-        if (subscribeBtn) subscribeBtn.disabled = true;
+        if (subscribeBtn) {
+          subscribeBtn.disabled = true;
+          subscribeBtn.style.display = 'inline-flex';
+        }
+        if (disableBtn) disableBtn.style.display = 'inline-flex';
         if (unsubscribeBtn) unsubscribeBtn.style.display = 'none';
+        updateHeaderButtonState(false);
         return;
       }
 
       if (Notification.permission === 'denied') {
+        if (modalTitle) modalTitle.textContent = 'Morning Devotional Reminders';
         if (subStateNotice) subStateNotice.textContent = 'Notifications are blocked in your browser settings.';
-        if (subscribeBtn) subscribeBtn.disabled = true;
+        if (subscribeBtn) {
+          subscribeBtn.disabled = true;
+          subscribeBtn.style.display = 'inline-flex';
+        }
+        if (disableBtn) disableBtn.style.display = 'inline-flex';
         if (unsubscribeBtn) unsubscribeBtn.style.display = 'none';
+        updateHeaderButtonState(false);
         showMessage('Please enable notifications for this site in your browser settings to receive morning devotionals.', 'error');
         return;
       }
 
+      let isSubscribed = false;
       try {
         const reg = await navigator.serviceWorker.getRegistration('/sw.js');
         const sub = reg ? await reg.pushManager.getSubscription() : null;
-
-        if (sub) {
-          if (subStateNotice) subStateNotice.textContent = 'You are currently subscribed to daily devotionals.';
-          if (subscribeBtn) subscribeBtn.style.display = 'none';
-          if (unsubscribeBtn) unsubscribeBtn.style.display = 'inline-flex';
-          updateHeaderButtonState(true);
-        } else {
-          if (subStateNotice) subStateNotice.textContent = 'Receive Scripture reflections every morning at 8:00 AM.';
-          if (subscribeBtn) {
-            subscribeBtn.style.display = 'inline-flex';
-            subscribeBtn.disabled = false;
-          }
-          if (unsubscribeBtn) unsubscribeBtn.style.display = 'none';
-          updateHeaderButtonState(false);
-        }
+        isSubscribed = !!(sub && Notification.permission === 'granted');
       } catch (err) {
-        // Fallback gracefully without throwing
+        isSubscribed = localStorage.getItem(storageKey) === 'true';
+      }
+
+      if (isSubscribed) {
+        localStorage.setItem(storageKey, 'true');
+        if (modalTitle) modalTitle.textContent = 'Morning Devotional Reminders';
+        if (subStateNotice) subStateNotice.textContent = 'You are currently subscribed to daily devotionals.';
+        if (subscribeBtn) subscribeBtn.style.display = 'none';
+        if (disableBtn) disableBtn.style.display = 'none';
+        if (unsubscribeBtn) unsubscribeBtn.style.display = 'inline-flex';
+        updateHeaderButtonState(true);
+      } else {
+        localStorage.removeItem(storageKey);
+        if (modalTitle) modalTitle.textContent = 'Start Your Day with Jesus';
+        if (subStateNotice) subStateNotice.textContent = 'Receive daily Jesus Calling devotionals and peaceful prayer reminders.';
+        if (subscribeBtn) {
+          subscribeBtn.style.display = 'inline-flex';
+          subscribeBtn.disabled = false;
+          const textSpan = subscribeBtn.querySelector('.btn-label') || subscribeBtn;
+          textSpan.textContent = 'Enable Notifications';
+        }
+        if (disableBtn) disableBtn.style.display = 'inline-flex';
+        if (unsubscribeBtn) unsubscribeBtn.style.display = 'none';
+        updateHeaderButtonState(false);
       }
     }
 
@@ -127,14 +175,36 @@
       openBtns.forEach((btn) => {
         const textSpan = btn.querySelector('.push-btn-text');
         if (textSpan) {
-          textSpan.textContent = isSubscribed ? 'Devotionals Subscribed' : 'Get Daily Devotionals';
+          textSpan.textContent = isSubscribed ? 'Devotionals Subscribed' : 'Get Devotionals';
         }
         if (isSubscribed) {
           btn.classList.add('subscribed');
+          btn.setAttribute('title', 'Notifications Enabled (Click to manage)');
+          btn.setAttribute('aria-label', 'Notifications Enabled');
         } else {
           btn.classList.remove('subscribed');
+          btn.setAttribute('title', 'Get Daily Devotionals at 8:00 AM');
+          btn.setAttribute('aria-label', 'Get Daily Devotionals');
         }
       });
+    }
+
+    // Auto-invitation check on page ready
+    function checkAutoInvitation() {
+      // 1. Browser compatibility check
+      if (!isPushSupported) return;
+
+      // 2. Do not prompt if permission is already granted or blocked
+      if (Notification.permission === 'denied' || Notification.permission === 'granted') return;
+
+      // 3. Do not prompt if already subscribed
+      if (localStorage.getItem(storageKey) === 'true') return;
+
+      // 4. Do not prompt if visitor previously selected Disable or dismissed
+      if (localStorage.getItem(dismissedKey) === 'true') return;
+
+      // 5. Display clean mobile-friendly invitation popup immediately on page ready
+      openModal(true);
     }
 
     // Subscribe handler
@@ -151,14 +221,19 @@
         return;
       }
 
-      setLoading(true, subscribeBtn, 'Subscribing...');
+      setLoading(true, subscribeBtn, 'Enabling...');
 
       try {
-        // 1. Request native notification permission
+        // 1. Request native notification permission on explicit click
         const permission = await Notification.requestPermission();
         if (permission !== 'granted') {
-          setLoading(false, subscribeBtn, 'Subscribe to Daily Devotionals');
-          showMessage('Notification permission was not granted. You can re-enable it in your browser preferences.', 'warning');
+          setLoading(false, subscribeBtn, 'Enable Notifications');
+          if (permission === 'denied') {
+            localStorage.setItem(dismissedKey, 'true');
+            showMessage('Notification permission was blocked in your browser settings. You can enable notifications in browser site permissions.', 'warning');
+          } else {
+            showMessage('Notification permission was not granted.', 'info');
+          }
           return;
         }
 
@@ -197,13 +272,19 @@
           throw new Error(result.error || 'Server failed to save subscription');
         }
 
-        localStorage.setItem(config.storageKey || 'jesuscalling_push_subscribed', 'true');
+        localStorage.setItem(storageKey, 'true');
+        localStorage.setItem(dismissedKey, 'true');
         showMessage('You are now subscribed! Your daily devotional will arrive at 8:00 AM.', 'success');
-        checkCurrentSubscriptionStatus();
+        await checkCurrentSubscriptionStatus();
+
+        // Smoothly close after user sees confirmation
+        setTimeout(() => {
+          closeModal();
+        }, 2200);
       } catch (err) {
         showMessage(`Subscription failed: ${err.message || 'Network error'}. Please try again.`, 'error');
       } finally {
-        setLoading(false, subscribeBtn, 'Subscribe to Daily Devotionals');
+        setLoading(false, subscribeBtn, 'Enable Notifications');
       }
     }
 
@@ -217,7 +298,7 @@
         const sub = reg ? await reg.pushManager.getSubscription() : null;
 
         if (sub) {
-          // 1. Inform backend
+          // 1. Inform backend to set active = 0
           try {
             await fetch(`${config.workerUrl}/api/unsubscribe`, {
               method: 'POST',
@@ -232,9 +313,10 @@
           await sub.unsubscribe();
         }
 
-        localStorage.removeItem(config.storageKey || 'jesuscalling_push_subscribed');
+        localStorage.removeItem(storageKey);
+        localStorage.setItem(dismissedKey, 'true');
         showMessage('You have unsubscribed from daily devotionals.', 'info');
-        checkCurrentSubscriptionStatus();
+        await checkCurrentSubscriptionStatus();
       } catch (err) {
         showMessage(`Could not unsubscribe: ${err.message}`, 'error');
       } finally {
@@ -253,24 +335,28 @@
     openBtns.forEach((btn) => {
       btn.addEventListener('click', (e) => {
         e.preventDefault();
-        openModal();
+        openModal(false);
       });
     });
 
-    if (closeBtn) closeBtn.addEventListener('click', closeModal);
-    if (backdrop) backdrop.addEventListener('click', closeModal);
+    if (disableBtn) disableBtn.addEventListener('click', handleDisable);
+    if (closeBtn) closeBtn.addEventListener('click', handleDismissOnClose);
+    if (backdrop) backdrop.addEventListener('click', handleDismissOnClose);
     if (subscribeBtn) subscribeBtn.addEventListener('click', handleSubscribe);
     if (unsubscribeBtn) unsubscribeBtn.addEventListener('click', handleUnsubscribe);
 
     document.addEventListener('keydown', (e) => {
       if (e.key === 'Escape' && modal && modal.classList.contains('active')) {
-        closeModal();
+        handleDismissOnClose();
       }
     });
 
-    // Check local storage quickly to update button appearance without network calls
-    if (localStorage.getItem(config.storageKey || 'jesuscalling_push_subscribed') === 'true') {
+    // Initial check from localStorage for fast render
+    if (localStorage.getItem(storageKey) === 'true') {
       updateHeaderButtonState(true);
     }
+
+    // Immediately trigger auto-invitation check on page ready
+    checkAutoInvitation();
   });
 })();
