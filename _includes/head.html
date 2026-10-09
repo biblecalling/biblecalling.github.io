@@ -133,7 +133,11 @@
         "url": "{{ site.url }}/assets/images/logo.webp",
         "width": 512,
         "height": 512
-      }
+      },
+      "sameAs": [
+        "https://www.youtube.com/@godmessageforyoump4",
+        "https://www.instagram.com/godsmessageforyoump4/"
+      ]
     }{% if page.layout == 'post' %},
     {
       "@type": "BlogPosting",
@@ -152,7 +156,7 @@
       "datePublished": "{{ page.date | date_to_xmlschema }}",
       "dateModified": "{{ page.last_modified_at | default: page.date | date_to_xmlschema }}",
       "author": {
-        "@type": "Person",
+        "@type": "Organization",
         "name": {{ page.author.name | default: page.author | default: site.author.name | jsonify }},
         "url": "{{ site.url }}/amelia/"
       },

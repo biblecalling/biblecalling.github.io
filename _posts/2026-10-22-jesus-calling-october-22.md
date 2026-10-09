@@ -5,7 +5,7 @@ h1: "Jesus Calling October 22 — 2026 Reflection & Prayer"
 breadcrumb_title: "October 22"
 description: "Daily reflection for Jesus Calling October 22, 2026. Discover hidden spiritual joy in God's presence, even on overcast and emotionally heavy days."
 date: 2026-10-22
-author: "Amelia"
+author: "Jesus Calling Editorial Team"
 categories:
   - Jesus Calling
   - Daily Devotional

@@ -1,17 +1,20 @@
-<section class="author-bio-card" aria-label="About the Author">
+<section class="author-bio-card" aria-label="About the Editorial Team">
   <div class="bio-avatar" aria-hidden="true">
-    <a href="{{ site.baseurl }}/amelia/" tabindex="-1" aria-hidden="true">
-      <img src="{{ site.author.photo | default: '/assets/images/amelia-author.jpg' | relative_url }}" alt="Amelia — Christian writer and devotional author" class="bio-avatar-img" width="64" height="64" loading="lazy">
+    <a href="{{ site.baseurl }}/amelia/" tabindex="-1" aria-hidden="true" style="display: flex; align-items: center; justify-content: center; width: 64px; height: 64px; border-radius: 50%; background: var(--color-bg); color: var(--color-accent); border: 2px solid var(--color-accent-border); box-shadow: var(--shadow-sm);">
+      <svg viewBox="0 0 32 32" width="30" height="30" fill="none">
+        <circle cx="16" cy="16" r="15" stroke="currentColor" stroke-width="1.5" opacity="0.3"/>
+        <path d="M16 6v20M10 12h12" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/>
+      </svg>
     </a>
   </div>
   <div class="bio-details">
-    <div class="bio-kicker">Written by {{ site.author.name | default: 'Amelia' }}</div>
-    <div class="bio-role">Christian Writer &amp; Devotional Author</div>
+    <div class="bio-kicker">Published by {{ site.author.name | default: 'Jesus Calling Editorial Team' }}</div>
+    <div class="bio-role">Christian Editorial Team</div>
     <p class="bio-desc">
-      {{ site.author.bio | default: "Amelia is a Christian writer and devotional author who shares Bible-based reflections, prayers, and heartfelt encouragement for everyday life. Her writings focus on finding peace, trusting God through uncertainty, and drawing closer to Jesus Christ through Scripture." }}
+      {{ site.author.bio | default: "The Jesus Calling Editorial Team is dedicated to sharing Bible-based reflections, prayers, daily devotionals, and Scripture guidance to help believers walk closely with Jesus Christ in everyday life." }}
     </p>
     <a href="{{ site.baseurl }}/amelia/" class="author-more-link">
-      <span>Read more about Amelia &amp; Our Editorial Mission</span>
+      <span>About the Jesus Calling Editorial Team &amp; Our Mission</span>
       <span aria-hidden="true">&rarr;</span>
     </a>
   </div>

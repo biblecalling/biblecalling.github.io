@@ -5,7 +5,7 @@ h1: "Jesus Calling October 13 — 2026 Reflection & Prayer"
 breadcrumb_title: "October 13"
 description: "Daily reflection for Jesus Calling October 13, 2026. Discover how five minutes of stillness in God's presence brings peace that outlasts busy schedules."
 date: 2026-10-13
-author: "Amelia"
+author: "Jesus Calling Editorial Team"
 categories:
   - Jesus Calling
   - Daily Devotional

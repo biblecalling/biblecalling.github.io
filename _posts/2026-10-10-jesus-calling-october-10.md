@@ -5,7 +5,7 @@ h1: "Jesus Calling October 10 — 2026 Reflection & Prayer"
 breadcrumb_title: "October 10"
 description: "Daily reflection for Jesus Calling October 10, 2026. Learn how to plan responsibly without self-reliance, trusting God's daily supply through Scripture."
 date: 2026-10-10
-author: "Amelia"
+author: "Jesus Calling Editorial Team"
 categories:
   - Jesus Calling
   - Daily Devotional

@@ -13,7 +13,7 @@ tags:
   - Worry
   - Peace
   - Sermon on the Mount
-author: "Amelia"
+author: "Jesus Calling Editorial Team"
 image: "/assets/images/jesus-worry.webp"
 featured: true
 ---

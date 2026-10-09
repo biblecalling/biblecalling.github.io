@@ -5,7 +5,7 @@ h1: "Jesus Calling October 18 — 2026 Reflection & Prayer"
 breadcrumb_title: "October 18"
 description: "Daily reflection for Jesus Calling October 18, 2026. Discover how fixing your eyes on the Good Shepherd leads you through seemingly blocked paths."
 date: 2026-10-18
-author: "Amelia"
+author: "Jesus Calling Editorial Team"
 categories:
   - Jesus Calling
   - Daily Devotional

@@ -13,7 +13,7 @@ tags:
   - Peace
   - Philippians 4
   - Scripture
-author: "Amelia"
+author: "Jesus Calling Editorial Team"
 image: "/assets/images/bible-anxiety.webp"
 featured: false
 ---

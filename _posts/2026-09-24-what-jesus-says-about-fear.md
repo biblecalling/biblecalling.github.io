@@ -13,7 +13,7 @@ tags:
   - Courage
   - Faith
   - Gospel
-author: "Amelia"
+author: "Jesus Calling Editorial Team"
 image: "/assets/images/jesus-fear.webp"
 featured: false
 ---

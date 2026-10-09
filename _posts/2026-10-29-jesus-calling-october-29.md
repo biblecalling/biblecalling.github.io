@@ -5,7 +5,7 @@ h1: "Jesus Calling October 29 — 2026 Reflection & Prayer"
 breadcrumb_title: "October 29"
 description: "Daily reflection for Jesus Calling October 29, 2026. Discover the transformative power of a ten-minute morning quiet time before rushing into the day."
 date: 2026-10-29
-author: "Amelia"
+author: "Jesus Calling Editorial Team"
 categories:
   - Jesus Calling
   - Daily Devotional

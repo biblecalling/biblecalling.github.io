@@ -5,7 +5,7 @@ h1: "Jesus Calling October 26 — 2026 Reflection & Prayer"
 breadcrumb_title: "October 26"
 description: "Daily reflection for Jesus Calling October 26, 2026. Discover true confidence through completeness in Christ rather than exhausting self-reliance."
 date: 2026-10-26
-author: "Amelia"
+author: "Jesus Calling Editorial Team"
 categories:
   - Jesus Calling
   - Daily Devotional

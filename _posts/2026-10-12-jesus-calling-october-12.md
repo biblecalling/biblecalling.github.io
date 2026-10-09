@@ -5,7 +5,7 @@ h1: "Jesus Calling October 12 — 2026 Reflection & Prayer"
 breadcrumb_title: "October 12"
 description: "Daily reflection for Jesus Calling October 12, 2026. Break free from people-pleasing and discover your true identity through Christ's loving perspective."
 date: 2026-10-12
-author: "Amelia"
+author: "Jesus Calling Editorial Team"
 categories:
   - Jesus Calling
   - Daily Devotional

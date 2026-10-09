@@ -13,7 +13,7 @@ tags:
   - Uncertainty
   - Hebrews 6
   - Devotionals
-author: "Amelia"
+author: "Jesus Calling Editorial Team"
 image: "/assets/images/finding-hope.webp"
 featured: false
 ---

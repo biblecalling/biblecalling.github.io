@@ -14,7 +14,7 @@ tags:
   - Scripture
   - Grace
   - Hope
-author: "Amelia"
+author: "Jesus Calling Editorial Team"
 image: "/assets/images/god-love.webp"
 featured: true
 ---

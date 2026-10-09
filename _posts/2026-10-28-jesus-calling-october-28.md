@@ -5,7 +5,7 @@ h1: "Jesus Calling October 28 — 2026 Reflection & Prayer"
 breadcrumb_title: "October 28"
 description: "Daily reflection for Jesus Calling October 28, 2026. Learn how to forgive quickly when life is unfair, maintain healthy boundaries, and rest in Christ's righteousness."
 date: 2026-10-28
-author: "Amelia"
+author: "Jesus Calling Editorial Team"
 categories:
   - Jesus Calling
   - Daily Devotional

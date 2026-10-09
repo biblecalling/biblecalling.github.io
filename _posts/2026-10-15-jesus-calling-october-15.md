@@ -5,7 +5,7 @@ h1: "Jesus Calling October 15 — 2026 Reflection & Prayer"
 breadcrumb_title: "October 15"
 description: "Daily reflection for Jesus Calling October 15, 2026. Learn how to stay consciously aware of Christ's presence through ordinary routines and guard your focus."
 date: 2026-10-15
-author: "Amelia"
+author: "Jesus Calling Editorial Team"
 categories:
   - Jesus Calling
   - Daily Devotional

@@ -14,7 +14,7 @@ tags:
   - Hope
   - Suffering
   - Strength
-author: "Amelia"
+author: "Jesus Calling Editorial Team"
 image: "/assets/images/difficult-times.webp"
 featured: false
 ---

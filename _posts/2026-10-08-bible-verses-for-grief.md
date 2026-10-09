@@ -4,7 +4,7 @@ title: "Bible Verses for Grief: Finding Comfort in God's Word"
 h1: "Bible Verses for Grief: Finding God's Comfort in Seasons of Loss"
 description: "When grief and loss feel overwhelming, turn to these comforting Bible verses for God's presence, hope, and peace through seasons of sorrow."
 date: 2026-10-08
-author: "Amelia"
+author: "Jesus Calling Editorial Team"
 categories:
   - Christian Encouragement
 tags:

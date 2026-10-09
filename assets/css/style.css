@@ -1989,7 +1989,8 @@ blockquote {
   .youtube-secondary-divider {
     display: none;
   }
-.amelia-youtube-prayer .youtube-prayer-section {
+.amelia-youtube-prayer .youtube-prayer-section,
+.editorial-team-youtube-prayer .youtube-prayer-section {
   max-width: 680px;
   margin: 2rem auto;
   padding: 1.75rem 1.5rem;

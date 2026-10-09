@@ -5,7 +5,7 @@ h1: "Jesus Calling October 24 — 2026 Reflection & Prayer"
 breadcrumb_title: "October 24"
 description: "Daily reflection for Jesus Calling October 24, 2026. Discover the biblical necessity of rest, green pastures, and unplugging in a hyper-connected world."
 date: 2026-10-24
-author: "Amelia"
+author: "Jesus Calling Editorial Team"
 categories:
   - Jesus Calling
   - Daily Devotional

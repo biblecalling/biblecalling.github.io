@@ -5,7 +5,7 @@ h1: "Jesus Calling October 21 — 2026 Reflection & Prayer"
 breadcrumb_title: "October 21"
 description: "Daily reflection for Jesus Calling October 21, 2026. Uncover hidden resentment, distinguish honest grief from bitterness, and surrender to God's hand."
 date: 2026-10-21
-author: "Amelia"
+author: "Jesus Calling Editorial Team"
 categories:
   - Jesus Calling
   - Daily Devotional

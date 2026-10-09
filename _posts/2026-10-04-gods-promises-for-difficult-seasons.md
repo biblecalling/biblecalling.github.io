@@ -13,7 +13,7 @@ tags:
   - Faith
   - Hope
   - Scripture
-author: "Amelia"
+author: "Jesus Calling Editorial Team"
 image: "/assets/images/gods-promises.webp"
 featured: false
 ---

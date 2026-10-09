@@ -5,7 +5,7 @@ h1: "Jesus Calling October 11 — 2026 Reflection & Prayer"
 breadcrumb_title: "October 11"
 description: "Daily reflection for Jesus Calling October 11, 2026. Explore how to enjoy God's gifts with open hands while finding your completeness in Christ alone."
 date: 2026-10-11
-author: "Amelia"
+author: "Jesus Calling Editorial Team"
 categories:
   - Jesus Calling
   - Daily Devotional

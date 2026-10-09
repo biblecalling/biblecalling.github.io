@@ -5,7 +5,7 @@ h1: "Jesus Calling October 27 — 2026 Reflection & Prayer"
 breadcrumb_title: "October 27"
 description: "Daily reflection for Jesus Calling October 27, 2026. Discover God's creative guidance in today's small choices rather than sleepwalking through routines."
 date: 2026-10-27
-author: "Amelia"
+author: "Jesus Calling Editorial Team"
 categories:
   - Jesus Calling
   - Daily Devotional

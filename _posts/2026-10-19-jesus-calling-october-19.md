@@ -5,7 +5,7 @@ h1: "Jesus Calling October 19 — 2026 Reflection & Prayer"
 breadcrumb_title: "October 19"
 description: "Daily reflection for Jesus Calling October 19, 2026. Discover the freedom of dropping religious masks, walking in the light, and authentic Christian fellowship."
 date: 2026-10-19
-author: "Amelia"
+author: "Jesus Calling Editorial Team"
 categories:
   - Jesus Calling
   - Daily Devotional
