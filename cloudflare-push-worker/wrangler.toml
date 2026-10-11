@@ -17,7 +17,7 @@ database_id = "0607f8d0-88ec-4ca5-bc78-f90d542d07ac"
 [vars]
 ALLOWED_ORIGIN = "https://biblecalling.github.io"
 DEVOTIONAL_FEED_URL = "https://biblecalling.github.io/daily-devotional.json"
-VAPID_SUBJECT = "mailto:contact@jesuscalling.github.io"
+VAPID_SUBJECT = "https://biblecalling.github.io/contact/"
 SCHEDULED_TIMEZONE = "America/New_York"
 # Default to false for safe development. Set to "true" in production to activate daily sends.
 ENABLE_PRODUCTION_CRON = "false"

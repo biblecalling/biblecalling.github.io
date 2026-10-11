@@ -1,6 +1,6 @@
-# Jesus Calling
+# Bible Calling
 
-A production-ready, high-performance Christian editorial blog website built with Jekyll, HTML5, CSS3, and Vanilla JavaScript, designed specifically for deployment on **GitHub Pages** at [https://jesuscalling.github.io/](https://jesuscalling.github.io/).
+A production-ready, high-performance Christian editorial blog website built with Jekyll, HTML5, CSS3, and Vanilla JavaScript, designed specifically for deployment on **GitHub Pages** at [https://biblecalling.github.io/](https://biblecalling.github.io/).
 
 ---
 
@@ -18,7 +18,7 @@ A production-ready, high-performance Christian editorial blog website built with
 ## 📁 Project Architecture
 
 ```
-jesuscalling.github.io/
+biblecalling.github.io/
 ├── _config.yml                    # Site configuration, permalinks, pagination, metadata
 ├── _posts/                        # 21 original, in-depth Christian articles (.md)
 │   ├── 2026-09-15-what-jesus-teaches-us-about-worry.md
@@ -121,10 +121,10 @@ Adding an article requires **only creating a Markdown file in `_posts/`**. Jekyl
 
 ## 🚀 Enabling GitHub Pages
 
-1. Create a repository on GitHub named `jesuscalling.github.io` (or push this code to your existing repository).
+1. Create a repository on GitHub named `biblecalling.github.io` (or push this code to your existing repository).
 2. Go to **Settings** > **Pages** in the GitHub repository.
 3. Under **Build and deployment**:
    - Source: **Deploy from a branch**
    - Branch: `main` (or `master`), Folder: `/ (root)`
 4. Click **Save**.
-5. Your website will be live at `https://jesuscalling.github.io/`.
+5. Your website will be live at `https://biblecalling.github.io/`.

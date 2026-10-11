@@ -1,5 +1,5 @@
 /**
- * Jesus Calling - Lightweight Native Web Push Service Worker
+ * Bible Calling - Lightweight Native Web Push Service Worker
  * Fully vanilla, zero external libraries.
  * Handles background push display, click navigation, and click tracking.
  */
@@ -22,12 +22,12 @@ self.addEventListener('push', (event) => {
     payload = event.data.json();
   } catch (err) {
     payload = {
-      title: 'Jesus Calling Daily Devotional',
+      title: 'Bible Calling Daily Devotional',
       body: event.data.text()
     };
   }
 
-  const title = payload.title || 'Jesus Calling Daily Devotional';
+  const title = payload.title || 'Bible Calling Daily Devotional';
   const options = {
     body: payload.body || 'A new Scripture reflection is ready for you.',
     icon: payload.icon || '/assets/images/favicon-96x96.png',

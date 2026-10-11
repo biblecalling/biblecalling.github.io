@@ -413,7 +413,7 @@ export default {
           payload: testPayload,
           vapidPublicKey: env.VAPID_PUBLIC_KEY,
           vapidPrivateKey: env.VAPID_PRIVATE_KEY,
-          vapidSubject: env.VAPID_SUBJECT || 'mailto:contact@jesuscalling.github.io'
+          vapidSubject: env.VAPID_SUBJECT || 'https://biblecalling.github.io/contact/'
         });
 
         return json({
@@ -509,7 +509,7 @@ export default {
           payload,
           vapidPublicKey: env.VAPID_PUBLIC_KEY,
           vapidPrivateKey: env.VAPID_PRIVATE_KEY,
-          vapidSubject: env.VAPID_SUBJECT || 'mailto:contact@jesuscalling.github.io'
+          vapidSubject: env.VAPID_SUBJECT || 'https://biblecalling.github.io/contact/'
         });
 
         // Check if subscription has expired on push service (404 Not Found or 410 Gone)

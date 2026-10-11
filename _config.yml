@@ -1,5 +1,5 @@
-# Jesus Calling - Site Configuration
-title: "Jesus Calling"
+# Bible Calling - Site Configuration
+title: "Bible Calling"
 tagline: "Biblical Encouragement, Prayers & Daily Devotionals"
 description: "Find hope, peace, and spiritual encouragement through Jesus Christ. Bible-based devotionals, prayers, scripture reflections, and biblical wisdom for everyday life."
 url: "https://biblecalling.github.io"
@@ -14,15 +14,13 @@ disclaimer_devotional_note: "Inspired by today's reading in Jesus Calling by Sar
 
 # Author & Organization Information
 author:
-  name: "Jesus Calling Editorial Team"
+  name: "Bible Calling Editorial Team"
   photo: ""
-  url: "/amelia/"
-  email: "contact@jesuscalling.github.io"
-  bio: "The Jesus Calling Editorial Team is dedicated to sharing Bible-based reflections, prayers, daily devotionals, and Scripture guidance to help believers walk closely with Jesus Christ in everyday life."
+  url: "/about/"
+  email: ""
+  bio: "The Bible Calling Editorial Team is dedicated to sharing Bible-based reflections, prayers, daily devotionals, and Scripture guidance to help believers walk closely with Jesus Christ in everyday life."
 
 # Social / Editorial
-twitter_username: "jesuscalling"
-github_username: "jesuscalling"
 locale: "en_US"
 
 # Permalinks - Clean, Permanent, SEO-Optimized
@@ -49,7 +47,7 @@ defaults:
       type: "posts"
     values:
       layout: "post"
-      author: "Jesus Calling Editorial Team"
+      author: "Bible Calling Editorial Team"
       featured: false
   - scope:
       path: ""

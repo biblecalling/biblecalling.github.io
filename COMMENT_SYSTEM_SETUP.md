@@ -1,4 +1,4 @@
-# Jesus Calling - Comment System & User Accounts Setup Guide
+# Bible Calling - Comment System & User Accounts Setup Guide
 
 This guide explains how the secure user account and commenting architecture works on this static Jekyll / GitHub Pages website, and provides step-by-step instructions to connect your Supabase backend.
 
@@ -212,11 +212,11 @@ To allow visitors to click **Continue with Google**:
 1. In your **Supabase Dashboard**, go to **Authentication** > **URL Configuration**.
 2. Set **Site URL** to:
    ```
-   https://jesuscalling.github.io
+   https://biblecalling.github.io
    ```
 3. Under **Redirect URLs**, add:
    ```
-   https://jesuscalling.github.io/**
+   https://biblecalling.github.io/**
    http://localhost:4000/**
    ```
    *(The second URL allows you to test authentication locally during development)*
@@ -304,7 +304,7 @@ Complete this checklist before announcing the comment system publicly:
 - [ ] **Enable email confirmation:** Turned ON "Confirm email" to require email verification.
 - [ ] **Configure Google OAuth:** Created Google Cloud credentials and added Client ID & Secret to Supabase.
 - [ ] **Configure production redirect URL:** Added `https://<PROJECT-REF>.supabase.co/auth/v1/callback` to Google Console.
-- [ ] **Add https://jesuscalling.github.io:** Set Site URL and Redirect URLs (`https://jesuscalling.github.io/**`) in Supabase URL Configuration.
+- [ ] **Add https://biblecalling.github.io:** Set Site URL and Redirect URLs (`https://biblecalling.github.io/**`) in Supabase URL Configuration.
 - [ ] **Add correct Supabase URL:** Pasted project URL into `assets/js/supabase-config.js`.
 - [ ] **Add public anon/publishable key:** Pasted `anon` `public` key into `assets/js/supabase-config.js`.
 - [ ] **Confirm service-role key is NOT in frontend:** Verified `service_role` secret is nowhere in repository.

@@ -1,7 +1,7 @@
 ---
 layout: page
-title: "About Jesus Calling"
-description: "Discover the mission, editorial convictions, and biblical foundation behind Jesus Calling — a sanctuary for Christ-centered encouragement."
+title: "About Bible Calling"
+description: "Discover the mission, editorial convictions, and biblical foundation behind Bible Calling — a sanctuary for Christ-centered encouragement."
 permalink: /about/
 ---
 
@@ -14,7 +14,7 @@ permalink: /about/
   In a noisy and hurried world filled with anxiety and uncertainty, the human heart continually longs for a place of spiritual quietness. Scripture reminds us in Psalm 46:10, <em>&ldquo;Be still, and know that I am God.&rdquo;</em>
 </p>
 <p>
-  Jesus Calling was created to provide a digital sanctuary where believers, seekers, and the weary can pause, open the Word of God, and receive genuine biblical encouragement. We believe that Jesus Christ is our peace (Ephesians 2:14), and that His words provide steadfast anchor points for daily life.
+  Bible Calling was created to provide a digital sanctuary where believers, seekers, and the weary can pause, open the Word of God, and receive genuine biblical encouragement. We believe that Jesus Christ is our peace (Ephesians 2:14), and that His words provide steadfast anchor points for daily life.
 </p>
 
 <div class="scripture-highlight">
@@ -50,25 +50,19 @@ permalink: /about/
 <h2 id="editorial-team">About the Editorial Team</h2>
 <div class="author-bio-card" style="margin: 1.5rem 0 2.5rem;">
   <div class="bio-avatar" aria-hidden="true">
-    <a href="{{ site.baseurl }}/amelia/" tabindex="-1" aria-hidden="true">
-      {% if site.author.photo and site.author.photo != "" %}
-        <img src="{{ site.author.photo | relative_url }}" alt="{{ site.author.name }}" class="bio-avatar-img" width="58" height="58">
-      {% else %}
-        ✝
-      {% endif %}
-    </a>
+    <div style="display: flex; align-items: center; justify-content: center; width: 58px; height: 58px; border-radius: 50%; background: var(--color-bg); color: var(--color-accent); border: 2px solid var(--color-accent-border); box-shadow: var(--shadow-sm);">
+      <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+        <path d="M12 2v20M5 7h14"/>
+      </svg>
+    </div>
   </div>
   <div class="bio-details">
     <h3 class="bio-name">
-      <a href="{{ site.baseurl }}/amelia/" class="bio-name-link">{{ site.author.name }}</a>
+      <span class="bio-name-text">{{ site.author.name }}</span>
     </h3>
     <p class="bio-desc">
       {{ site.author.bio }}
     </p>
-    <a href="{{ site.baseurl }}/amelia/" style="display: inline-flex; align-items: center; gap: 0.35rem; margin-top: 0.75rem; font-weight: 600; font-size: 0.9rem; color: var(--color-accent);">
-      <span>Read more about the Jesus Calling Editorial Team</span>
-      <span aria-hidden="true">&rarr;</span>
-    </a>
   </div>
 </div>
 
