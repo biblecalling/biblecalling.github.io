@@ -1,153 +1,389 @@
----
-layout: null
----
-<?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-        xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
-  <!-- Core Site Pages -->
-  <url>
-    <loc>{{ site.url }}/</loc>
-    <lastmod>{{ site.time | date_to_xmlschema }}</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>1.0</priority>
-  </url>
-  <url>
-    <loc>{{ site.url }}/blog/</loc>
-    <lastmod>{{ site.time | date_to_xmlschema }}</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>{{ site.url }}/categories/</loc>
-    <lastmod>{{ site.time | date_to_xmlschema }}</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>{{ site.url }}/categories/jesus-calling/</loc>
-    <lastmod>{{ site.time | date_to_xmlschema }}</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>{{ site.url }}/categories/daily-devotional/</loc>
-    <lastmod>{{ site.time | date_to_xmlschema }}</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>{{ site.url }}/categories/faith/</loc>
-    <lastmod>{{ site.time | date_to_xmlschema }}</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>{{ site.url }}/categories/prayer/</loc>
-    <lastmod>{{ site.time | date_to_xmlschema }}</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>{{ site.url }}/categories/bible-study/</loc>
-    <lastmod>{{ site.time | date_to_xmlschema }}</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>{{ site.url }}/categories/christian-encouragement/</loc>
-    <lastmod>{{ site.time | date_to_xmlschema }}</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>{{ site.url }}/categories/trusting-god/</loc>
-    <lastmod>{{ site.time | date_to_xmlschema }}</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>{{ site.url }}/categories/jesus/</loc>
-    <lastmod>{{ site.time | date_to_xmlschema }}</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>{{ site.url }}/categories/bible/</loc>
-    <lastmod>{{ site.time | date_to_xmlschema }}</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>{{ site.url }}/categories/devotionals/</loc>
-    <lastmod>{{ site.time | date_to_xmlschema }}</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>{{ site.url }}/categories/christian-life/</loc>
-    <lastmod>{{ site.time | date_to_xmlschema }}</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>{{ site.url }}/about/</loc>
-    <lastmod>{{ site.time | date_to_xmlschema }}</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>{{ site.url }}/bible/</loc>
-    <lastmod>{{ site.time | date_to_xmlschema }}</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>{{ site.url }}/prayer/</loc>
-    <lastmod>{{ site.time | date_to_xmlschema }}</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>{{ site.url }}/devotionals/</loc>
-    <lastmod>{{ site.time | date_to_xmlschema }}</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>{{ site.url }}/jesus-calling-october-2026/</loc>
-    <lastmod>{{ site.time | date_to_xmlschema }}</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>{{ site.url }}/contact/</loc>
-    <lastmod>{{ site.time | date_to_xmlschema }}</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>{{ site.url }}/privacy-policy/</loc>
-    <lastmod>{{ site.time | date_to_xmlschema }}</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.3</priority>
-  </url>
-  <url>
-    <loc>{{ site.url }}/terms/</loc>
-    <lastmod>{{ site.time | date_to_xmlschema }}</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.3</priority>
-  </url>
-
-  <!-- Dynamic Post Articles -->
-  {% for post in site.posts %}
-  {% unless post.noindex %}
-  <url>
-    <loc>{{ site.url }}{{ post.url }}</loc>
-    <lastmod>{{ post.last_modified_at | default: post.date | date_to_xmlschema }}</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  {% endunless %}
-  {% endfor %}
+This XML file does not appear to have any style information associated with it. The document tree is shown below.
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+<script src="chrome-extension://hoklmmgfnpapgjgcpechhaamimifchmp/frame_ant/frame_ant.js"/>
+<url>
+<loc>https://biblecalling.github.io/</loc>
+<lastmod>2026-10-13T10:55:07+00:00</lastmod>
+<priority>1.0000</priority>
+</url>
+<url>
+<loc>https://biblecalling.github.io/feed.xml</loc>
+<lastmod>2026-10-13T10:55:07+00:00</lastmod>
+<priority>0.8000</priority>
+</url>
+<url>
+<loc>https://biblecalling.github.io/jesus-calling-october-2026/</loc>
+<lastmod>2026-10-13T10:55:07+00:00</lastmod>
+<priority>0.8000</priority>
+</url>
+<url>
+<loc>https://biblecalling.github.io/devotionals/</loc>
+<lastmod>2026-10-13T10:55:07+00:00</lastmod>
+<priority>0.8000</priority>
+</url>
+<url>
+<loc>https://biblecalling.github.io/categories/jesus-calling/</loc>
+<lastmod>2026-10-13T10:55:07+00:00</lastmod>
+<priority>0.8000</priority>
+</url>
+<url>
+<loc>https://biblecalling.github.io/bible/</loc>
+<lastmod>2026-10-13T10:55:07+00:00</lastmod>
+<priority>0.8000</priority>
+</url>
+<url>
+<loc>https://biblecalling.github.io/prayer/</loc>
+<lastmod>2026-10-13T10:55:07+00:00</lastmod>
+<priority>0.8000</priority>
+</url>
+<url>
+<loc>https://biblecalling.github.io/prayer/prayer-for-someone-in-the-hospital/</loc>
+<lastmod>2026-10-13T10:55:07+00:00</lastmod>
+<priority>0.8000</priority>
+</url>
+<url>
+<loc>https://biblecalling.github.io/prayer/prayer-for-a-sick-mother/</loc>
+<lastmod>2026-10-13T10:55:07+00:00</lastmod>
+<priority>0.8000</priority>
+</url>
+<url>
+<loc>https://biblecalling.github.io/prayer/prayer-for-healing-a-loved-one/</loc>
+<lastmod>2026-10-13T10:55:07+00:00</lastmod>
+<priority>0.8000</priority>
+</url>
+<url>
+<loc>https://biblecalling.github.io/prayer/prayer-for-anxiety-at-night/</loc>
+<lastmod>2026-10-13T10:55:07+00:00</lastmod>
+<priority>0.8000</priority>
+</url>
+<url>
+<loc>https://biblecalling.github.io/prayer/prayer-for-peace-of-mind/</loc>
+<lastmod>2026-10-13T10:55:07+00:00</lastmod>
+<priority>0.8000</priority>
+</url>
+<url>
+<loc>https://biblecalling.github.io/prayer/prayer-for-strength/</loc>
+<lastmod>2026-10-13T10:55:07+00:00</lastmod>
+<priority>0.8000</priority>
+</url>
+<url>
+<loc>https://biblecalling.github.io/prayer/prayer-for-protection-of-family/</loc>
+<lastmod>2026-10-13T10:55:07+00:00</lastmod>
+<priority>0.8000</priority>
+</url>
+<url>
+<loc>https://biblecalling.github.io/categories/</loc>
+<lastmod>2026-10-13T10:55:07+00:00</lastmod>
+<priority>0.8000</priority>
+</url>
+<url>
+<loc>https://biblecalling.github.io/about/</loc>
+<lastmod>2026-10-13T10:55:07+00:00</lastmod>
+<priority>0.8000</priority>
+</url>
+<url>
+<loc>https://biblecalling.github.io/blog/</loc>
+<lastmod>2026-10-13T10:55:07+00:00</lastmod>
+<priority>0.8000</priority>
+</url>
+<url>
+<loc>https://biblecalling.github.io/jesus-calling-october-30/</loc>
+<lastmod>2026-10-30T00:00:00+00:00</lastmod>
+<priority>0.8000</priority>
+</url>
+<url>
+<loc>https://biblecalling.github.io/jesus-calling-october-6/</loc>
+<lastmod>2026-10-06T00:00:00+00:00</lastmod>
+<priority>0.8000</priority>
+</url>
+<url>
+<loc>https://biblecalling.github.io/2026/09/18/what-does-it-mean-to-trust-god/</loc>
+<lastmod>2026-09-18T00:00:00+00:00</lastmod>
+<priority>0.8000</priority>
+</url>
+<url>
+<loc>https://biblecalling.github.io/categories/faith/</loc>
+<lastmod>2026-10-13T10:55:07+00:00</lastmod>
+<priority>0.8000</priority>
+</url>
+<url>
+<loc>https://biblecalling.github.io/2026/09/17/a-simple-prayer-for-peace/</loc>
+<lastmod>2026-09-17T00:00:00+00:00</lastmod>
+<priority>0.8000</priority>
+</url>
+<url>
+<loc>https://biblecalling.github.io/categories/prayer/</loc>
+<lastmod>2026-10-13T10:55:07+00:00</lastmod>
+<priority>0.8000</priority>
+</url>
+<url>
+<loc>https://biblecalling.github.io/categories/trusting-god/</loc>
+<lastmod>2026-10-13T10:55:07+00:00</lastmod>
+<priority>0.8000</priority>
+</url>
+<url>
+<loc>https://biblecalling.github.io/categories/bible-study/</loc>
+<lastmod>2026-10-13T10:55:07+00:00</lastmod>
+<priority>0.8000</priority>
+</url>
+<url>
+<loc>https://biblecalling.github.io/categories/christian-encouragement/</loc>
+<lastmod>2026-10-13T10:55:07+00:00</lastmod>
+<priority>0.8000</priority>
+</url>
+<url>
+<loc>https://biblecalling.github.io/jesus-calling-october-29/</loc>
+<lastmod>2026-10-29T00:00:00+00:00</lastmod>
+<priority>0.8000</priority>
+</url>
+<url>
+<loc>https://biblecalling.github.io/jesus-calling-october-28/</loc>
+<lastmod>2026-10-28T00:00:00+00:00</lastmod>
+<priority>0.8000</priority>
+</url>
+<url>
+<loc>https://biblecalling.github.io/jesus-calling-october-27/</loc>
+<lastmod>2026-10-27T00:00:00+00:00</lastmod>
+<priority>0.8000</priority>
+</url>
+<url>
+<loc>https://biblecalling.github.io/jesus-calling-october-26/</loc>
+<lastmod>2026-10-26T00:00:00+00:00</lastmod>
+<priority>0.8000</priority>
+</url>
+<url>
+<loc>https://biblecalling.github.io/jesus-calling-october-25/</loc>
+<lastmod>2026-10-25T00:00:00+00:00</lastmod>
+<priority>0.8000</priority>
+</url>
+<url>
+<loc>https://biblecalling.github.io/jesus-calling-october-24/</loc>
+<lastmod>2026-10-24T00:00:00+00:00</lastmod>
+<priority>0.8000</priority>
+</url>
+<url>
+<loc>https://biblecalling.github.io/jesus-calling-october-23/</loc>
+<lastmod>2026-10-23T00:00:00+00:00</lastmod>
+<priority>0.8000</priority>
+</url>
+<url>
+<loc>https://biblecalling.github.io/jesus-calling-october-22/</loc>
+<lastmod>2026-10-22T00:00:00+00:00</lastmod>
+<priority>0.8000</priority>
+</url>
+<url>
+<loc>https://biblecalling.github.io/categories/daily-devotional/</loc>
+<lastmod>2026-10-13T10:55:07+00:00</lastmod>
+<priority>0.8000</priority>
+</url>
+<url>
+<loc>https://biblecalling.github.io/contact/</loc>
+<lastmod>2026-10-13T10:55:07+00:00</lastmod>
+<priority>0.8000</priority>
+</url>
+<url>
+<loc>https://biblecalling.github.io/privacy-policy/</loc>
+<lastmod>2026-10-13T10:55:07+00:00</lastmod>
+<priority>0.8000</priority>
+</url>
+<url>
+<loc>https://biblecalling.github.io/terms/</loc>
+<lastmod>2026-10-13T10:55:07+00:00</lastmod>
+<priority>0.8000</priority>
+</url>
+<url>
+<loc>https://biblecalling.github.io/sitemap.xml</loc>
+<lastmod>2026-10-13T10:55:07+00:00</lastmod>
+<priority>0.8000</priority>
+</url>
+<url>
+<loc>https://biblecalling.github.io/jesus-calling-october-7/</loc>
+<lastmod>2026-10-07T00:00:00+00:00</lastmod>
+<priority>0.6400</priority>
+</url>
+<url>
+<loc>https://biblecalling.github.io/jesus-calling-october-8/</loc>
+<lastmod>2026-10-08T00:00:00+00:00</lastmod>
+<priority>0.6400</priority>
+</url>
+<url>
+<loc>https://biblecalling.github.io/jesus-calling-october-9/</loc>
+<lastmod>2026-10-09T00:00:00+00:00</lastmod>
+<priority>0.6400</priority>
+</url>
+<url>
+<loc>https://biblecalling.github.io/jesus-calling-october-10/</loc>
+<lastmod>2026-10-10T00:00:00+00:00</lastmod>
+<priority>0.6400</priority>
+</url>
+<url>
+<loc>https://biblecalling.github.io/jesus-calling-october-11/</loc>
+<lastmod>2026-10-11T00:00:00+00:00</lastmod>
+<priority>0.6400</priority>
+</url>
+<url>
+<loc>https://biblecalling.github.io/jesus-calling-october-12/</loc>
+<lastmod>2026-10-12T00:00:00+00:00</lastmod>
+<priority>0.6400</priority>
+</url>
+<url>
+<loc>https://biblecalling.github.io/jesus-calling-october-13/</loc>
+<lastmod>2026-10-13T00:00:00+00:00</lastmod>
+<priority>0.6400</priority>
+</url>
+<url>
+<loc>https://biblecalling.github.io/jesus-calling-october-14/</loc>
+<lastmod>2026-10-14T00:00:00+00:00</lastmod>
+<priority>0.6400</priority>
+</url>
+<url>
+<loc>https://biblecalling.github.io/jesus-calling-october-15/</loc>
+<lastmod>2026-10-15T00:00:00+00:00</lastmod>
+<priority>0.6400</priority>
+</url>
+<url>
+<loc>https://biblecalling.github.io/jesus-calling-october-16/</loc>
+<lastmod>2026-10-16T00:00:00+00:00</lastmod>
+<priority>0.6400</priority>
+</url>
+<url>
+<loc>https://biblecalling.github.io/jesus-calling-october-17/</loc>
+<lastmod>2026-10-17T00:00:00+00:00</lastmod>
+<priority>0.6400</priority>
+</url>
+<url>
+<loc>https://biblecalling.github.io/jesus-calling-october-18/</loc>
+<lastmod>2026-10-18T00:00:00+00:00</lastmod>
+<priority>0.6400</priority>
+</url>
+<url>
+<loc>https://biblecalling.github.io/jesus-calling-october-19/</loc>
+<lastmod>2026-10-19T00:00:00+00:00</lastmod>
+<priority>0.6400</priority>
+</url>
+<url>
+<loc>https://biblecalling.github.io/jesus-calling-october-20/</loc>
+<lastmod>2026-10-20T00:00:00+00:00</lastmod>
+<priority>0.6400</priority>
+</url>
+<url>
+<loc>https://biblecalling.github.io/jesus-calling-october-21/</loc>
+<lastmod>2026-10-21T00:00:00+00:00</lastmod>
+<priority>0.6400</priority>
+</url>
+<url>
+<loc>https://biblecalling.github.io/categories/devotionals/</loc>
+<lastmod>2026-10-13T10:55:07+00:00</lastmod>
+<priority>0.6400</priority>
+</url>
+<url>
+<loc>https://biblecalling.github.io/categories/christian-life/</loc>
+<lastmod>2026-10-13T10:55:07+00:00</lastmod>
+<priority>0.6400</priority>
+</url>
+<url>
+<loc>https://biblecalling.github.io/categories/bible/</loc>
+<lastmod>2026-10-13T10:55:07+00:00</lastmod>
+<priority>0.6400</priority>
+</url>
+<url>
+<loc>https://biblecalling.github.io/categories/jesus/</loc>
+<lastmod>2026-10-13T10:55:07+00:00</lastmod>
+<priority>0.6400</priority>
+</url>
+<url>
+<loc>https://biblecalling.github.io/bible-verses-for-grief/</loc>
+<lastmod>2026-10-08T00:00:00+00:00</lastmod>
+<priority>0.6400</priority>
+</url>
+<url>
+<loc>https://biblecalling.github.io/2026/10/04/gods-promises-for-difficult-seasons/</loc>
+<lastmod>2026-10-04T00:00:00+00:00</lastmod>
+<priority>0.6400</priority>
+</url>
+<url>
+<loc>https://biblecalling.github.io/2026/10/03/finding-peace-through-prayer/</loc>
+<lastmod>2026-10-03T00:00:00+00:00</lastmod>
+<priority>0.6400</priority>
+</url>
+<url>
+<loc>https://biblecalling.github.io/2026/10/02/why-forgiveness-matters/</loc>
+<lastmod>2026-10-02T00:00:00+00:00</lastmod>
+<priority>0.6400</priority>
+</url>
+<url>
+<loc>https://biblecalling.github.io/2026/10/01/how-jesus-responded-to-lonely-people/</loc>
+<lastmod>2026-10-01T00:00:00+00:00</lastmod>
+<priority>0.6400</priority>
+</url>
+<url>
+<loc>https://biblecalling.github.io/2026/09/30/what-the-bible-says-about-anxiety/</loc>
+<lastmod>2026-09-30T00:00:00+00:00</lastmod>
+<priority>0.6400</priority>
+</url>
+<url>
+<loc>https://biblecalling.github.io/2026/09/29/an-evening-prayer-for-peace/</loc>
+<lastmod>2026-09-29T00:00:00+00:00</lastmod>
+<priority>0.6400</priority>
+</url>
+<url>
+<loc>https://biblecalling.github.io/2026/09/28/a-morning-prayer-to-start-your-day/</loc>
+<lastmod>2026-09-28T00:00:00+00:00</lastmod>
+<priority>0.6400</priority>
+</url>
+<url>
+<loc>https://biblecalling.github.io/2026/09/27/bible-verses-about-strength/</loc>
+<lastmod>2026-09-27T00:00:00+00:00</lastmod>
+<priority>0.6400</priority>
+</url>
+<url>
+<loc>https://biblecalling.github.io/2026/09/26/how-faith-helps-during-difficult-days/</loc>
+<lastmod>2026-09-26T00:00:00+00:00</lastmod>
+<priority>0.6400</priority>
+</url>
+<url>
+<loc>https://biblecalling.github.io/2026/09/25/learning-to-wait-on-gods-timing/</loc>
+<lastmod>2026-09-25T00:00:00+00:00</lastmod>
+<priority>0.6400</priority>
+</url>
+<url>
+<loc>https://biblecalling.github.io/2026/09/24/what-jesus-says-about-fear/</loc>
+<lastmod>2026-09-24T00:00:00+00:00</lastmod>
+<priority>0.6400</priority>
+</url>
+<url>
+<loc>https://biblecalling.github.io/2026/09/23/finding-hope-when-life-feels-uncertain/</loc>
+<lastmod>2026-09-23T00:00:00+00:00</lastmod>
+<priority>0.6400</priority>
+</url>
+<url>
+<loc>https://biblecalling.github.io/2026/09/22/how-to-pray-when-you-dont-know-what-to-say/</loc>
+<lastmod>2026-09-22T00:00:00+00:00</lastmod>
+<priority>0.6400</priority>
+</url>
+<url>
+<loc>https://biblecalling.github.io/2026/09/21/bible-verses-for-difficult-times/</loc>
+<lastmod>2026-09-21T00:00:00+00:00</lastmod>
+<priority>0.6400</priority>
+</url>
+<url>
+<loc>https://biblecalling.github.io/2026/09/20/jesus-and-the-power-of-forgiveness/</loc>
+<lastmod>2026-09-20T00:00:00+00:00</lastmod>
+<priority>0.6400</priority>
+</url>
+<url>
+<loc>https://biblecalling.github.io/2026/09/19/when-you-feel-far-from-god/</loc>
+<lastmod>2026-09-19T00:00:00+00:00</lastmod>
+<priority>0.6400</priority>
+</url>
+<url>
+<loc>https://biblecalling.github.io/2026/09/16/bible-verses-about-gods-love/</loc>
+<lastmod>2026-09-16T00:00:00+00:00</lastmod>
+<priority>0.6400</priority>
+</url>
+<url>
+<loc>https://biblecalling.github.io/2026/09/15/what-jesus-teaches-us-about-worry/</loc>
+<lastmod>2026-09-15T00:00:00+00:00</lastmod>
+<priority>0.6400</priority>
+</url>
 </urlset>
