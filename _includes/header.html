@@ -25,7 +25,41 @@
         <li><a href="{{ site.baseurl }}/devotionals/" {% if page.url contains '/devotionals/' or page.url contains '/categories/devotionals/' %}class="active" aria-current="page"{% endif %}>Devotionals</a></li>
         <li><a href="{{ site.baseurl }}/categories/jesus-calling/" {% if page.url contains '/categories/jesus-calling/' %}class="active" aria-current="page"{% endif %}>Jesus Calling</a></li>
         <li><a href="{{ site.baseurl }}/bible/" {% if page.url contains '/bible/' or page.url contains '/categories/bible/' or page.url contains '/categories/bible-study/' %}class="active" aria-current="page"{% endif %}>Bible</a></li>
-        <li><a href="{{ site.baseurl }}/prayer/" {% if page.url contains '/prayer/' or page.url contains '/categories/prayer/' %}class="active" aria-current="page"{% endif %}>Prayer</a></li>
+        <li class="nav-item-dropdown" id="nav-item-prayer">
+          <div class="nav-dropdown-trigger-wrap">
+            <a href="{{ site.baseurl }}/prayer/" class="nav-link-prayer{% if page.url contains '/prayer/' or page.url contains '/categories/prayer/' %} active{% endif %}" {% if page.url == '/prayer/' %}aria-current="page"{% endif %}>Prayer</a>
+            <button type="button" class="nav-dropdown-toggle" id="prayer-menu-toggle" aria-expanded="false" aria-haspopup="true" aria-controls="prayer-dropdown-menu" aria-label="Toggle Prayer submenu">
+              <svg class="chevron-icon" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"></polyline></svg>
+            </button>
+          </div>
+          <div class="nav-dropdown-menu" id="prayer-dropdown-menu" role="region" aria-label="Prayer Submenu">
+            <div class="nav-dropdown-header">
+              <a href="{{ site.baseurl }}/prayer/" class="nav-dropdown-hub-link">
+                <strong>Prayer Hub</strong>
+                <span>All Prayers &rarr;</span>
+              </a>
+            </div>
+            <div class="nav-dropdown-grid">
+              <div class="nav-dropdown-group">
+                <span class="nav-dropdown-group-title">Healing Prayer</span>
+                <ul class="nav-dropdown-sublist">
+                  <li><a href="{{ site.baseurl }}/prayer/prayer-for-someone-in-the-hospital/">Prayer for Someone in the Hospital</a></li>
+                  <li><a href="{{ site.baseurl }}/prayer/prayer-for-a-sick-mother/">Prayer for a Sick Mother</a></li>
+                  <li><a href="{{ site.baseurl }}/prayer/prayer-for-healing-a-loved-one/">Prayer for Healing a Loved One</a></li>
+                </ul>
+              </div>
+              <div class="nav-dropdown-group">
+                <span class="nav-dropdown-group-title">Life Needs Prayer</span>
+                <ul class="nav-dropdown-sublist">
+                  <li><a href="{{ site.baseurl }}/prayer/prayer-for-anxiety-at-night/">Prayer for Anxiety at Night</a></li>
+                  <li><a href="{{ site.baseurl }}/prayer/prayer-for-peace-of-mind/">Prayer for Peace of Mind</a></li>
+                  <li><a href="{{ site.baseurl }}/prayer/prayer-for-strength/">Prayer for Strength</a></li>
+                  <li><a href="{{ site.baseurl }}/prayer/prayer-for-protection-of-family/">Prayer for Protection of Family</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </li>
         <li><a href="{{ site.baseurl }}/categories/" {% if page.url == '/categories/' %}class="active" aria-current="page"{% endif %}>Categories</a></li>
         <li><a href="{{ site.baseurl }}/about/" {% if page.url == '/about/' %}class="active" aria-current="page"{% endif %}>About</a></li>
       </ul>
@@ -78,7 +112,36 @@
         <li><a href="{{ site.baseurl }}/devotionals/">Devotionals</a></li>
         <li><a href="{{ site.baseurl }}/categories/jesus-calling/">Jesus Calling</a></li>
         <li><a href="{{ site.baseurl }}/bible/">Bible Studies</a></li>
-        <li><a href="{{ site.baseurl }}/prayer/">Prayer Guide</a></li>
+        <li class="mobile-nav-item-dropdown" id="mobile-nav-prayer">
+          <div class="mobile-nav-row">
+            <a href="{{ site.baseurl }}/prayer/" {% if page.url contains '/prayer/' or page.url contains '/categories/prayer/' %}class="active"{% endif %}>Prayer Guide</a>
+            <button type="button" class="mobile-submenu-toggle" id="mobile-prayer-toggle" aria-expanded="false" aria-controls="mobile-prayer-submenu" aria-label="Toggle Prayer submenu">
+              <svg class="chevron-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"></polyline></svg>
+            </button>
+          </div>
+          <div class="mobile-submenu" id="mobile-prayer-submenu" hidden>
+            <div class="mobile-submenu-hub">
+              <a href="{{ site.baseurl }}/prayer/" class="mobile-hub-link">Prayer Hub &rarr;</a>
+            </div>
+            <div class="mobile-submenu-group">
+              <span class="mobile-submenu-group-title">Healing Prayer</span>
+              <ul class="mobile-submenu-list">
+                <li><a href="{{ site.baseurl }}/prayer/prayer-for-someone-in-the-hospital/">Prayer for Someone in the Hospital</a></li>
+                <li><a href="{{ site.baseurl }}/prayer/prayer-for-a-sick-mother/">Prayer for a Sick Mother</a></li>
+                <li><a href="{{ site.baseurl }}/prayer/prayer-for-healing-a-loved-one/">Prayer for Healing a Loved One</a></li>
+              </ul>
+            </div>
+            <div class="mobile-submenu-group">
+              <span class="mobile-submenu-group-title">Life Needs Prayer</span>
+              <ul class="mobile-submenu-list">
+                <li><a href="{{ site.baseurl }}/prayer/prayer-for-anxiety-at-night/">Prayer for Anxiety at Night</a></li>
+                <li><a href="{{ site.baseurl }}/prayer/prayer-for-peace-of-mind/">Prayer for Peace of Mind</a></li>
+                <li><a href="{{ site.baseurl }}/prayer/prayer-for-strength/">Prayer for Strength</a></li>
+                <li><a href="{{ site.baseurl }}/prayer/prayer-for-protection-of-family/">Prayer for Protection of Family</a></li>
+              </ul>
+            </div>
+          </div>
+        </li>
         <li><a href="{{ site.baseurl }}/categories/">Categories</a></li>
         <li><a href="{{ site.baseurl }}/blog/">All Articles</a></li>
         <li><a href="{{ site.baseurl }}/about/">About Us</a></li>

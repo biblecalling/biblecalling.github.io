@@ -75,6 +75,58 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
+  // 2b. Prayer Navigation Submenus (Desktop & Mobile)
+  const desktopPrayerDropdown = document.getElementById('nav-item-prayer');
+  const desktopPrayerToggle = document.getElementById('prayer-menu-toggle');
+  const mobilePrayerToggle = document.getElementById('mobile-prayer-toggle');
+  const mobilePrayerSubmenu = document.getElementById('mobile-prayer-submenu');
+
+  if (desktopPrayerDropdown && desktopPrayerToggle) {
+    desktopPrayerToggle.addEventListener('click', (e) => {
+      e.stopPropagation();
+      const isOpen = desktopPrayerDropdown.classList.contains('open');
+      if (isOpen) {
+        desktopPrayerDropdown.classList.remove('open');
+        desktopPrayerToggle.setAttribute('aria-expanded', 'false');
+      } else {
+        desktopPrayerDropdown.classList.add('open');
+        desktopPrayerToggle.setAttribute('aria-expanded', 'true');
+      }
+    });
+
+    // Close desktop dropdown on click outside
+    document.addEventListener('click', (e) => {
+      if (!desktopPrayerDropdown.contains(e.target)) {
+        desktopPrayerDropdown.classList.remove('open');
+        desktopPrayerToggle.setAttribute('aria-expanded', 'false');
+      }
+    });
+
+    // Close desktop dropdown on Escape key
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape' && desktopPrayerDropdown.classList.contains('open')) {
+        desktopPrayerDropdown.classList.remove('open');
+        desktopPrayerToggle.setAttribute('aria-expanded', 'false');
+        desktopPrayerToggle.focus();
+      }
+    });
+  }
+
+  if (mobilePrayerToggle && mobilePrayerSubmenu) {
+    mobilePrayerToggle.addEventListener('click', (e) => {
+      e.preventDefault();
+      e.stopPropagation();
+      const isExpanded = mobilePrayerToggle.getAttribute('aria-expanded') === 'true';
+      if (isExpanded) {
+        mobilePrayerToggle.setAttribute('aria-expanded', 'false');
+        mobilePrayerSubmenu.setAttribute('hidden', '');
+      } else {
+        mobilePrayerToggle.setAttribute('aria-expanded', 'true');
+        mobilePrayerSubmenu.removeAttribute('hidden');
+      }
+    });
+  }
+
   // 3. Reading Progress Bar (Article pages)
   const progressBar = document.getElementById('reading-progress-bar');
   if (progressBar) {
