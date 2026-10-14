@@ -499,6 +499,9 @@ blockquote {
 }
 
 .nav-dropdown-header {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.65rem;
   padding-bottom: 0.75rem;
   margin-bottom: 0.85rem;
   border-bottom: 1px solid var(--color-border-subtle);
@@ -863,6 +866,13 @@ blockquote {
 
 .mobile-submenu[hidden] {
   display: none;
+}
+
+.mobile-submenu-hub {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+  margin-bottom: 0.35rem;
 }
 
 .mobile-hub-link {

@@ -12,6 +12,11 @@
       <li class="breadcrumb-item">
         <a href="{{ site.baseurl }}/jesus-calling-october-2026/">October 2026</a>
       </li>
+    {% elsif page.url == '/prayer/daily-prayer/' %}
+      <li class="breadcrumb-separator" aria-hidden="true">&rsaquo;</li>
+      <li class="breadcrumb-item">
+        <a href="{{ site.baseurl }}/prayer/">Prayer</a>
+      </li>
     {% elsif page.layout == 'post' and page.categories.first %}
       <li class="breadcrumb-separator" aria-hidden="true">&rsaquo;</li>
       <li class="breadcrumb-item">
