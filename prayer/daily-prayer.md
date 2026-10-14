@@ -71,11 +71,56 @@ author: "Jesus Calling Team"
 <p>
   Depending on your time of day or immediate need, explore these focused prayer guides across our site:
 </p>
+
+<div class="spoke-cards-grid">
+  <a href="{{ site.baseurl }}/prayer/" class="spoke-card">
+    <div class="spoke-card-media">
+      <img src="{{ site.baseurl }}/assets/images/spoke-prayer-hub.jpg" alt="Main Prayer Hub" class="spoke-card-img" width="600" height="338" loading="lazy" decoding="async">
+    </div>
+    <div class="spoke-card-body">
+      <h3 class="spoke-card-title">Main Prayer Hub</h3>
+      <p class="spoke-card-desc">Our central directory linking all situational, healing, endurance, and family prayers in one place.</p>
+      <span class="spoke-card-action">Explore Directory &rarr;</span>
+    </div>
+  </a>
+
+  <a href="{{ site.baseurl }}/prayer/prayer-for-peace-of-mind/" class="spoke-card">
+    <div class="spoke-card-media">
+      <img src="{{ site.baseurl }}/assets/images/spoke-peace-of-mind.jpg" alt="Prayer for Peace of Mind" class="spoke-card-img" width="600" height="338" loading="lazy" decoding="async">
+    </div>
+    <div class="spoke-card-body">
+      <h3 class="spoke-card-title">Prayer for Peace of Mind</h3>
+      <p class="spoke-card-desc">Calming prayers and biblical grounding when worries, insomnia, and racing thoughts feel overwhelming.</p>
+      <span class="spoke-card-action">Read Peace Prayers &rarr;</span>
+    </div>
+  </a>
+
+  <a href="{{ site.baseurl }}/prayer/prayer-for-strength/" class="spoke-card">
+    <div class="spoke-card-media">
+      <img src="{{ site.baseurl }}/assets/images/spoke-prayer-for-strength.jpg" alt="Prayer for Strength" class="spoke-card-img" width="600" height="338" loading="lazy" decoding="async">
+    </div>
+    <div class="spoke-card-body">
+      <h3 class="spoke-card-title">Prayer for Strength</h3>
+      <p class="spoke-card-desc">Words of renewal, patience, and stamina when you are facing emotional, physical, or spiritual exhaustion.</p>
+      <span class="spoke-card-action">Find Daily Strength &rarr;</span>
+    </div>
+  </a>
+
+  <a href="{{ site.baseurl }}/prayer/prayer-for-protection-of-family/" class="spoke-card">
+    <div class="spoke-card-media">
+      <img src="{{ site.baseurl }}/assets/images/spoke-protection-of-family.jpg" alt="Prayer for Protection of Family" class="spoke-card-img" width="600" height="338" loading="lazy" decoding="async">
+    </div>
+    <div class="spoke-card-body">
+      <h3 class="spoke-card-title">Prayer for Protection of Family</h3>
+      <p class="spoke-card-desc">Daily prayers of spiritual covering, safety, and blessing over your home, children, and loved ones.</p>
+      <span class="spoke-card-action">Protect Your Family &rarr;</span>
+    </div>
+  </a>
+</div>
+
+<h3>Upcoming Prayer Guides</h3>
+<p>We are actively developing dedicated guides for these daily rhythms:</p>
 <ul>
-  <li><a href="{{ site.baseurl }}/prayer/">Main Prayer Hub</a> &mdash; Our central directory linking all situational, health, and family prayers.</li>
-  <li><a href="{{ site.baseurl }}/prayer/prayer-for-peace-of-mind/">Prayer for Peace of Mind</a> &mdash; Calming prayers and biblical grounding when worries and racing thoughts feel overwhelming.</li>
-  <li><a href="{{ site.baseurl }}/prayer/prayer-for-strength/">Prayer for Strength</a> &mdash; Words of renewal when you are facing emotional, physical, or spiritual exhaustion.</li>
-  <li><a href="{{ site.baseurl }}/prayer/prayer-for-protection-of-family/">Prayer for Protection of Family</a> &mdash; Daily prayers over your home, children, and loved ones.</li>
   <li><strong>Morning Prayers</strong> &mdash; Short, intentional prayers to start your workday or school routine <em>(forthcoming)</em>.</li>
   <li><strong>Night Prayers</strong> &mdash; Peaceful evening reflections, look-back exercises, and bedtime prayers for restful sleep <em>(forthcoming)</em>.</li>
   <li><strong>Good Night Prayer for Family</strong> &mdash; Simple evening prayers to read together with children or spouses <em>(forthcoming)</em>.</li>
