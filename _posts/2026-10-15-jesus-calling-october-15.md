@@ -106,6 +106,12 @@ Jesus Calling October 15 centers on maintaining an active, moment-by-moment awar
 ### How can I stay aware of God's presence during a routine day?
 <p>Set three natural transition checkpoints—such as starting your car, opening your computer, or arriving home—to pause and whisper: 'Lord, You are here with me.'</p>
 
+### What should I do when I feel nothing during my quiet time with God?
+<p>Dry seasons are a normal part of faith, not a sign that God has left. Keep showing up: read a short passage such as Psalm 63, pray honestly about how you feel, and trust that God's presence does not depend on your emotions. Many believers find that steady, faithful habits carry them through until warmth returns.</p>
+
+### How can I use a daily devotional alongside my Bible reading?
+<p>Read the Scripture passage first, then the devotional, so the Bible shapes your thinking before any commentary does. Afterward, write one sentence about what stood out and turn it into a short prayer. This keeps the devotional as a helpful guide while Scripture remains your foundation.</p>
+
 ## Related Jesus Calling Reflections
 
 <ul>
