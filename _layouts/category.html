@@ -52,6 +52,12 @@ layout: default
       </div>
     {% endif %}
 
+    {% if content and content != "" %}
+      <div class="category-content-body" style="margin-bottom: 2rem;">
+        {{ content }}
+      </div>
+    {% endif %}
+
     <div class="category-section-title-wrap">
       <h2 class="category-grid-title">Devotionals &amp; Reflections in {{ page.title }}</h2>
     </div>
