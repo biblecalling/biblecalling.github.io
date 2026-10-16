@@ -13,7 +13,7 @@ author: "Jesus Calling Team"
 </p>
 
 <p>
-  This page offers heartfelt prayers for her physical comfort and healing, prayers for your own strength as a caregiver, and practical advice for navigating this emotional season. You can also explore our central <a href="{{ site.baseurl }}/prayer/">Prayer Hub</a> for prayers tailored to other moments of need.
+  This page offers heartfelt prayers for her physical comfort and healing, prayers for your own strength as a caregiver, and practical advice for navigating this emotional season. Explore our dedicated <a href="{{ site.baseurl }}/prayer/healing-prayers/">healing prayers</a> for recovery and loved ones, or browse our central <a href="{{ site.baseurl }}/prayer/">Prayer Hub</a> for prayers tailored to other moments of need.
 </p>
 
 <h2>A Prayer for a Sick Mother</h2>
@@ -111,6 +111,7 @@ author: "Jesus Calling Team"
 
 <h2>Related Prayers</h2>
 <ul>
+  <li><a href="{{ site.baseurl }}/prayer/healing-prayers/">Healing Prayer Hub</a> &mdash; Central guide featuring prayers for physical recovery, loved ones, and spiritual comfort.</li>
   <li><a href="{{ site.baseurl }}/prayer/prayer-for-healing-a-loved-one/">Prayer for Healing a Loved One</a> &mdash; Steady intercession for extended health battles.</li>
   <li><a href="{{ site.baseurl }}/prayer/prayer-for-someone-in-the-hospital/">Prayer for Someone in the Hospital</a> &mdash; Waiting room prayers and bedside comfort.</li>
   <li><a href="{{ site.baseurl }}/prayer/prayer-for-strength/">Prayer for Strength</a> &mdash; Finding renewal when caregiving feels overwhelming.</li>

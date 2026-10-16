@@ -13,7 +13,7 @@ author: "Jesus Calling Team"
 </p>
 
 <p>
-  If that is where you find yourself tonight, this page is for you. Start with the prayer below, and then read on to understand why night makes worry heavier and what practical habits can help settle your mind. You can also visit our <a href="{{ site.baseurl }}/prayer/">Prayer Hub</a> whenever you need spiritual encouragement.
+  If that is where you find yourself tonight, this page is for you. Start with the prayer below, and then read on to understand why night makes worry heavier and what practical habits can help settle your mind. You can also browse our collection of <a href="{{ site.baseurl }}/prayer/life-needs-prayers/">prayers for life's challenges</a>, or visit our central <a href="{{ site.baseurl }}/prayer/">Prayer Hub</a> whenever you need spiritual encouragement.
 </p>
 
 <h2>A Prayer for Anxiety at Night</h2>
@@ -136,6 +136,7 @@ author: "Jesus Calling Team"
 
 <h2>Related Prayers</h2>
 <ul>
+  <li><a href="{{ site.baseurl }}/prayer/life-needs-prayers/">Life Needs Prayer Hub</a> &mdash; Browse prayers for life's challenges, peace of mind, daily strength, and family protection.</li>
   <li><a href="{{ site.baseurl }}/prayer/prayer-for-peace-of-mind/">Prayer for Peace of Mind</a> &mdash; Calming an overthinking mind throughout the day.</li>
   <li><a href="{{ site.baseurl }}/prayer/prayer-for-protection-of-family/">Prayer for Protection of Family</a> &mdash; Releasing worry over loved ones and home.</li>
   <li><a href="{{ site.baseurl }}/prayer/prayer-for-strength/">Prayer for Strength</a> &mdash; Encouragement for weary bodies and exhausted spirits.</li>

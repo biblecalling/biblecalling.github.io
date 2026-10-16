@@ -13,7 +13,7 @@ author: "Jesus Calling Team"
 </p>
 
 <p>
-  This page offers quiet prayers to help center your thoughts, biblical truths regarding God's peace, and practical cognitive habits to interrupt cycles of overthinking. You can also explore our broader <a href="{{ site.baseurl }}/prayer/">Prayer Hub</a> whenever life feels turbulent.
+  This page offers quiet prayers to help center your thoughts, biblical truths regarding God's peace, and practical cognitive habits to interrupt cycles of overthinking. Explore our collection of <a href="{{ site.baseurl }}/prayer/life-needs-prayers/">prayers for life's challenges</a> for emotional endurance, or explore our broader <a href="{{ site.baseurl }}/prayer/">Prayer Hub</a> whenever life feels turbulent.
 </p>
 
 <h2>A Prayer for Peace of Mind</h2>
@@ -108,6 +108,7 @@ author: "Jesus Calling Team"
 
 <h2>Related Prayers</h2>
 <ul>
+  <li><a href="{{ site.baseurl }}/prayer/life-needs-prayers/">Life Needs Prayer Hub</a> &mdash; Central directory of prayers for emotional resilience, peace, and everyday life needs.</li>
   <li><a href="{{ site.baseurl }}/prayer/prayer-for-anxiety-at-night/">Prayer for Anxiety at Night</a> &mdash; Calming thoughts when worry keeps you awake.</li>
   <li><a href="{{ site.baseurl }}/prayer/prayer-for-strength/">Prayer for Strength</a> &mdash; Recharging when you feel emotionally depleted.</li>
   <li><a href="{{ site.baseurl }}/prayer/prayer-for-protection-of-family/">Prayer for Protection of Family</a> &mdash; Handing over family worries to God's care.</li>

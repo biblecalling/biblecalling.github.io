@@ -13,7 +13,7 @@ author: "Jesus Calling Team"
 </p>
 
 <p>
-  This page offers prayers you can pray over your home and children, biblical insights into what God's protection means, and healthy habits for spiritual peace. You can also explore our central <a href="{{ site.baseurl }}/prayer/">Prayer Hub</a> for prayers supporting other family seasons.
+  This page offers prayers you can pray over your home and children, biblical insights into what God's protection means, and healthy habits for spiritual peace. Discover more <a href="{{ site.baseurl }}/prayer/life-needs-prayers/">prayers for life's challenges</a> covering peace and protection, or explore our central <a href="{{ site.baseurl }}/prayer/">Prayer Hub</a> for prayers supporting other family seasons.
 </p>
 
 <h2>A Prayer for Protection of Family</h2>
@@ -113,6 +113,7 @@ author: "Jesus Calling Team"
 
 <h2>Related Prayers</h2>
 <ul>
+  <li><a href="{{ site.baseurl }}/prayer/life-needs-prayers/">Life Needs Prayer Hub</a> &mdash; Prayers for family safety, peace of mind, and strength during stressful seasons.</li>
   <li><a href="{{ site.baseurl }}/prayer/prayer-for-peace-of-mind/">Prayer for Peace of Mind</a> &mdash; Replacing worry with God's steady calm.</li>
   <li><a href="{{ site.baseurl }}/prayer/prayer-for-anxiety-at-night/">Prayer for Anxiety at Night</a> &mdash; Releasing family concerns before bedtime.</li>
   <li><a href="{{ site.baseurl }}/prayer/prayer-for-strength/">Prayer for Strength</a> &mdash; Endurance for busy parents and providers.</li>

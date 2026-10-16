@@ -13,7 +13,7 @@ author: "Jesus Calling Team"
 </p>
 
 <p>
-  This page is for those seasons. Below you will find prayers for endurance, comforting Scripture passages, and honest biblical insights on what true spiritual strength looks like. You can also visit our central <a href="{{ site.baseurl }}/prayer/">Prayer Hub</a> for prayers covering a wide range of life needs.
+  This page is for those seasons. Below you will find prayers for endurance, comforting Scripture passages, and honest biblical insights on what true spiritual strength looks like. Browse our <a href="{{ site.baseurl }}/prayer/life-needs-prayers/">prayers for life's challenges</a> to find peace and stamina, or visit our central <a href="{{ site.baseurl }}/prayer/">Prayer Hub</a> for prayers covering a wide range of life needs.
 </p>
 
 <h2>A Prayer for Strength</h2>
@@ -118,6 +118,7 @@ author: "Jesus Calling Team"
 
 <h2>Related Prayers</h2>
 <ul>
+  <li><a href="{{ site.baseurl }}/prayer/life-needs-prayers/">Life Needs Prayer Hub</a> &mdash; Guidance and prayers for navigating emotional trials, inner peace, and family life.</li>
   <li><a href="{{ site.baseurl }}/prayer/prayer-for-peace-of-mind/">Prayer for Peace of Mind</a> &mdash; Calming an overstimulated, exhausted brain.</li>
   <li><a href="{{ site.baseurl }}/prayer/prayer-for-anxiety-at-night/">Prayer for Anxiety at Night</a> &mdash; Peaceful sleep when weary from stress.</li>
   <li><a href="{{ site.baseurl }}/prayer/prayer-for-healing-a-loved-one/">Prayer for Healing a Loved One</a> &mdash; Sustained intercession through long health journeys.</li>

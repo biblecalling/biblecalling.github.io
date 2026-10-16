@@ -13,7 +13,7 @@ author: "Jesus Calling Team"
 </p>
 
 <p>
-  Below are prayers you can use as written, along with practical guidance on when and how to pray, including how to pray with the patient if they welcome that support. If you are navigating other challenging health seasons, you can also explore our <a href="{{ site.baseurl }}/prayer/">Prayer Hub</a> for additional encouragement.
+  Below are prayers you can use as written, along with practical guidance on when and how to pray, including how to pray with the patient if they welcome that support. If you are navigating other challenging health seasons, explore our <a href="{{ site.baseurl }}/prayer/healing-prayers/">healing prayers</a> for recovery and comfort, or visit our central <a href="{{ site.baseurl }}/prayer/">Prayer Hub</a> for additional encouragement.
 </p>
 
 <h2>A Prayer for Someone in the Hospital</h2>
@@ -146,6 +146,7 @@ author: "Jesus Calling Team"
 
 <h2>Related Prayers</h2>
 <ul>
+  <li><a href="{{ site.baseurl }}/prayer/healing-prayers/">Healing Prayer Hub</a> &mdash; Explore our dedicated collection of healing prayers, comfort, and recovery scriptures.</li>
   <li><a href="{{ site.baseurl }}/prayer/prayer-for-healing-a-loved-one/">Prayer for Healing a Loved One</a> &mdash; Words of faith for chronic or extended illness.</li>
   <li><a href="{{ site.baseurl }}/prayer/prayer-for-a-sick-mother/">Prayer for a Sick Mother</a> &mdash; Heartfelt prayers for adult children supporting a parent.</li>
   <li><a href="{{ site.baseurl }}/prayer/prayer-for-strength/">Prayer for Strength</a> &mdash; Finding renewal when emotional reserves run dry.</li>

@@ -13,7 +13,7 @@ author: "Jesus Calling Team"
 </p>
 
 <p>
-  This page provides prayers you can speak right now, along with honest reflections on how to sustain intercession across weeks, months, or chronic health struggles. You can also explore our broader <a href="{{ site.baseurl }}/prayer/">Prayer Hub</a> for prayers supporting other life challenges.
+  This page provides prayers you can speak right now, along with honest reflections on how to sustain intercession across weeks, months, or chronic health struggles. You can also explore our <a href="{{ site.baseurl }}/prayer/healing-prayers/">Healing Prayer Hub</a> for broader prayers for recovery, alongside our central <a href="{{ site.baseurl }}/prayer/">Prayer Hub</a>.
 </p>
 
 <h2>A Prayer for Healing a Loved One</h2>
@@ -113,6 +113,7 @@ author: "Jesus Calling Team"
 
 <h2>Related Prayers</h2>
 <ul>
+  <li><a href="{{ site.baseurl }}/prayer/healing-prayers/">Healing Prayer Hub</a> &mdash; Our central collection of prayers for restoration, recovery, and sick loved ones.</li>
   <li><a href="{{ site.baseurl }}/prayer/prayer-for-someone-in-the-hospital/">Prayer for Someone in the Hospital</a> &mdash; Bedside prayers and waiting room comfort.</li>
   <li><a href="{{ site.baseurl }}/prayer/prayer-for-a-sick-mother/">Prayer for a Sick Mother</a> &mdash; Compassionate prayers for an ill parent.</li>
   <li><a href="{{ site.baseurl }}/prayer/prayer-for-strength/">Prayer for Strength</a> &mdash; Renewal for weary caregivers and families.</li>

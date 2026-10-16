@@ -199,7 +199,7 @@
           "position": 4,
           "name": {{ page.breadcrumb_title | default: page.title | jsonify }},
           "item": "{{ canonical_url }}"
-        }{% elsif page.url == '/prayer/daily-prayer/' %},
+        }{% elsif page.url == '/prayer/daily-prayer/' or page.url == '/prayer/healing-prayers/' or page.url == '/prayer/life-needs-prayers/' %},
         {
           "@type": "ListItem",
           "position": 2,
