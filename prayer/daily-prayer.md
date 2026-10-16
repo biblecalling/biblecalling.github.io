@@ -126,6 +126,10 @@ author: "Jesus Calling Team"
   </a>
 </div>
 
+<p class="image-source-note" style="font-size: 0.825rem; color: var(--color-text-muted); text-align: center; margin: 1rem 0 2rem; padding: 0.5rem 1rem; background: var(--color-bg-alt); border-radius: var(--radius-sm); border: 1px solid var(--color-border-subtle);">
+  <strong>Visual Artwork Credit:</strong> Devotional card illustrations created for Bible Calling via Generative AI (Google DeepMind Imagen) &bull; Royalty-Free Editorial License.
+</p>
+
 <h3>Additional Situational &amp; Daily Prayers</h3>
 <p>Depending on your immediate need, explore these additional prayer guides:</p>
 <ul class="prayer-hub-articles-list">

@@ -7,11 +7,18 @@ description: "Find calm with a short night prayer. Five prayers for anxious nigh
 permalink: /prayer/night-prayers/
 author: "Jesus Calling Team"
 image: "/assets/images/night-prayers.jpg"
+image_source: "AI-generated devotional artwork (Google DeepMind Imagen)"
+image_credit: "Bible Calling Editorial Team"
+image_license: "Royalty-Free Editorial License"
+image_caption: "Image Source & Credit: Devotional artwork created for Bible Calling via Generative AI • Royalty-Free Editorial License"
 ---
 
-<div class="prayer-featured-image-wrap" style="margin-bottom: 2rem;">
-  <img src="{{ site.baseurl }}/assets/images/night-prayers.jpg" alt="Night prayers with open Bible beside a warm bedside lamp at twilight" class="article-featured-img" width="1200" height="675" fetchpriority="high" style="width: 100%; height: auto; border-radius: var(--radius-md); box-shadow: var(--shadow-sm);">
-</div>
+<figure class="prayer-featured-image-wrap" style="margin: 0 0 2rem 0; overflow: hidden; border-radius: var(--radius-md); border: 1px solid var(--color-border); box-shadow: var(--shadow-sm); background: var(--color-surface);">
+  <img src="{{ site.baseurl }}/assets/images/night-prayers.jpg" alt="Night prayers with open Bible beside a warm bedside lamp at twilight" class="article-featured-img" width="1200" height="675" fetchpriority="high" style="width: 100%; height: auto; display: block; border-radius: var(--radius-md) var(--radius-md) 0 0;">
+  <figcaption class="article-figcaption" style="font-size: 0.825rem; color: var(--color-text-muted); text-align: center; padding: 0.65rem 1rem; background: var(--color-bg-alt); border-top: 1px solid var(--color-border);">
+    <strong>Image Source &amp; Credit:</strong> Devotional artwork created for Bible Calling via Generative AI &bull; Royalty-Free Editorial License
+  </figcaption>
+</figure>
 
 <p class="lead">
   Night is when the day finally catches up with us. The noise drops, the house grows still, and what we did, said, and left undone becomes clearer. A night prayer gives that quiet moment a peaceful shape: say thank you, let go of what you cannot change, and rest in God's keeping.

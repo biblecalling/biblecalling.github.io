@@ -7,11 +7,18 @@ description: "Start your day with a short morning prayer. Seven prayers for work
 permalink: /prayer/morning-prayers/
 author: "Jesus Calling Team"
 image: "/assets/images/morning-prayers.jpg"
+image_source: "AI-generated devotional artwork (Google DeepMind Imagen)"
+image_credit: "Bible Calling Editorial Team"
+image_license: "Royalty-Free Editorial License"
+image_caption: "Image Source & Credit: Devotional artwork created for Bible Calling via Generative AI • Royalty-Free Editorial License"
 ---
 
-<div class="prayer-featured-image-wrap" style="margin-bottom: 2rem;">
-  <img src="{{ site.baseurl }}/assets/images/morning-prayers.jpg" alt="Morning prayer with open Bible and coffee at sunrise" class="article-featured-img" width="1200" height="675" fetchpriority="high" style="width: 100%; height: auto; border-radius: var(--radius-md); box-shadow: var(--shadow-sm);">
-</div>
+<figure class="prayer-featured-image-wrap" style="margin: 0 0 2rem 0; overflow: hidden; border-radius: var(--radius-md); border: 1px solid var(--color-border); box-shadow: var(--shadow-sm); background: var(--color-surface);">
+  <img src="{{ site.baseurl }}/assets/images/morning-prayers.jpg" alt="Morning prayer with open Bible and coffee at sunrise" class="article-featured-img" width="1200" height="675" fetchpriority="high" style="width: 100%; height: auto; display: block; border-radius: var(--radius-md) var(--radius-md) 0 0;">
+  <figcaption class="article-figcaption" style="font-size: 0.825rem; color: var(--color-text-muted); text-align: center; padding: 0.65rem 1rem; background: var(--color-bg-alt); border-top: 1px solid var(--color-border);">
+    <strong>Image Source &amp; Credit:</strong> Devotional artwork created for Bible Calling via Generative AI &bull; Royalty-Free Editorial License
+  </figcaption>
+</figure>
 
 <p class="lead">
   The first few minutes of the day shape more than people expect. A phone in the hand and a list in the head can set the tone before you've had a chance to breathe. A morning prayer is a brief conversation with God before the day’s demands take over.

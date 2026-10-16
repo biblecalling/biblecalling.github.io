@@ -43,6 +43,15 @@
   {% else %}
     <meta property="og:image" content="{{ site.url }}{{ site.baseurl }}{{ page.image }}">
   {% endif %}
+  {% if page.image_source %}
+  <meta name="image:source" content="{{ page.image_source | escape }}">
+  {% endif %}
+  {% if page.image_credit %}
+  <meta name="image:credit" content="{{ page.image_credit | escape }}">
+  {% endif %}
+  {% if page.image_license %}
+  <meta name="image:license" content="{{ page.image_license | escape }}">
+  {% endif %}
 {% else %}
   <meta property="og:image" content="{{ site.url }}{{ site.baseurl }}/assets/images/og-default.webp">
 {% endif %}
@@ -297,6 +306,21 @@
           "item": "{{ canonical_url }}"
         }{% endif %}
       ]
+    }{% endif %}{% if page.image and page.url != '/' %},
+    {
+      "@type": "ImageObject",
+      "@id": "{% if page.image contains 'http' %}{{ page.image }}{% else %}{{ site.url }}{{ site.baseurl }}{{ page.image }}{% endif %}#image",
+      "url": "{% if page.image contains 'http' %}{{ page.image }}{% else %}{{ site.url }}{{ site.baseurl }}{{ page.image }}{% endif %}",
+      "contentUrl": "{% if page.image contains 'http' %}{{ page.image }}{% else %}{{ site.url }}{{ site.baseurl }}{{ page.image }}{% endif %}",
+      "caption": {{ page.image_caption | default: page.title | jsonify }},
+      "creator": {
+        "@type": "Organization",
+        "name": {{ page.image_credit | default: "Bible Calling Editorial Team" | jsonify }}
+      },
+      "creditText": {{ page.image_source | default: "Bible Calling Devotional Artwork" | jsonify }},
+      "copyrightNotice": "© 2026 Bible Calling",
+      "license": "{{ site.url }}/about/",
+      "acquireLicensePage": "{{ site.url }}/about/"
     }{% endif %}
   ]
 }

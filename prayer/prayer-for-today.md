@@ -7,11 +7,18 @@ description: "A prayer for today you can use on any day, plus a Scripture reflec
 permalink: /prayer/prayer-for-today/
 author: "Jesus Calling Team"
 image: "/assets/images/prayer-for-today.jpg"
+image_source: "AI-generated devotional artwork (Google DeepMind Imagen)"
+image_credit: "Bible Calling Editorial Team"
+image_license: "Royalty-Free Editorial License"
+image_caption: "Image Source & Credit: Devotional artwork created for Bible Calling via Generative AI • Royalty-Free Editorial License"
 ---
 
-<div class="prayer-featured-image-wrap" style="margin-bottom: 2rem;">
-  <img src="{{ site.baseurl }}/assets/images/prayer-for-today.jpg" alt="Prayer for today with open Bible, journal, and warm sunlight" class="article-featured-img" width="1200" height="675" fetchpriority="high" style="width: 100%; height: auto; border-radius: var(--radius-md); box-shadow: var(--shadow-sm);">
-</div>
+<figure class="prayer-featured-image-wrap" style="margin: 0 0 2rem 0; overflow: hidden; border-radius: var(--radius-md); border: 1px solid var(--color-border); box-shadow: var(--shadow-sm); background: var(--color-surface);">
+  <img src="{{ site.baseurl }}/assets/images/prayer-for-today.jpg" alt="Prayer for today with open Bible, journal, and warm sunlight" class="article-featured-img" width="1200" height="675" fetchpriority="high" style="width: 100%; height: auto; display: block; border-radius: var(--radius-md) var(--radius-md) 0 0;">
+  <figcaption class="article-figcaption" style="font-size: 0.825rem; color: var(--color-text-muted); text-align: center; padding: 0.65rem 1rem; background: var(--color-bg-alt); border-top: 1px solid var(--color-border);">
+    <strong>Image Source &amp; Credit:</strong> Devotional artwork created for Bible Calling via Generative AI &bull; Royalty-Free Editorial License
+  </figcaption>
+</figure>
 
 <p class="lead">
   Some days you wake up already carrying too much. The to-do list is demanding, the news is heavy, and the thought of praying about &ldquo;everything&rdquo; feels overwhelming. That is where a prayer for today helps: it narrows your focus to the single day right in front of you.
