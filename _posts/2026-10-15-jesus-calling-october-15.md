@@ -106,6 +106,12 @@ Jesus Calling October 15 centers on maintaining an active, moment-by-moment awar
 ### How can I stay aware of God's presence during a routine day?
 <p>Set three natural transition checkpoints—such as starting your car, opening your computer, or arriving home—to pause and whisper: 'Lord, You are here with me.'</p>
 
+### What should I do when I feel nothing during my quiet time with God?
+<p>Dry seasons are a normal part of faith, not a sign that God has left. Keep showing up: read a short passage such as Psalm 63, pray honestly about how you feel, and trust that God's presence does not depend on your emotions. Many believers find that steady, faithful habits carry them through until warmth returns.</p>
+
+### How can I use a daily devotional alongside my Bible reading?
+<p>Read the Scripture passage first, then the devotional, so the Bible shapes your thinking before any commentary does. Afterward, write one sentence about what stood out and turn it into a short prayer. This keeps the devotional as a helpful guide while Scripture remains your foundation.</p>
+
 ## Related Jesus Calling Reflections
 
 <ul>
@@ -131,15 +137,15 @@ Jesus Calling October 15 centers on maintaining an active, moment-by-moment awar
       "name": "What is Jesus Calling October 15 about?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Jesus Calling October 15 centers on maintaining an active, moment-by-moment awareness of Christ's presence as our chief protection against spiritual drift and temptation. The reading warns against the competing voices of self-pity, pride, and cultural distraction, reminding believers to keep their eyes fixed on Jesus. Supported by Matthew 28:20, Psalm 16:8, and Hebrews 12:1\u20132, the practical takeaway is to set intentional pauses during the day to whisper: 'Lord, You are here.'"
+        "text": "Jesus Calling October 15 centers on maintaining an active, moment-by-moment awareness of Christ's presence as our chief protection against spiritual drift and temptation. The reading warns against the competing voices of self-pity, pride, and cultural distraction, reminding believers to keep their eyes fixed on Jesus. Supported by Matthew 28:20, Psalm 16:8, and Hebrews 12:1–2, the practical takeaway is to set intentional pauses during the day to whisper: 'Lord, You are here.'"
       }
     },
     {
       "@type": "Question",
-      "name": "How does Hebrews 12:1\u20132 help believers maintain spiritual focus?",
+      "name": "How does Hebrews 12:1–2 help believers maintain spiritual focus?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Hebrews 12:1\u20132 instructs Christians to run the race of faith with endurance by fixing their eyes upon Jesus, the author and finisher of our faith. Keeping our attention on Christ guards us against the subtle drift of cultural distraction, pride, and self-pity."
+        "text": "Hebrews 12:1–2 instructs Christians to run the race of faith with endurance by fixing their eyes upon Jesus, the author and finisher of our faith. Keeping our attention on Christ guards us against the subtle drift of cultural distraction, pride, and self-pity."
       }
     },
     {
@@ -155,7 +161,23 @@ Jesus Calling October 15 centers on maintaining an active, moment-by-moment awar
       "name": "How can I stay aware of God's presence during a routine day?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Set three natural transition checkpoints\u2014such as starting your car, opening your computer, or arriving home\u2014to pause and whisper: 'Lord, You are here with me.'"
+        "text": "Set three natural transition checkpoints—such as starting your car, opening your computer, or arriving home—to pause and whisper: 'Lord, You are here with me.'"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What should I do when I feel nothing during my quiet time with God?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Dry seasons are a normal part of faith, not a sign that God has left. Keep showing up: read a short passage such as Psalm 63, pray honestly about how you feel, and trust that God's presence does not depend on your emotions. Many believers find that steady, faithful habits carry them through until warmth returns."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How can I use a daily devotional alongside my Bible reading?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Read the Scripture passage first, then the devotional, so the Bible shapes your thinking before any commentary does. Afterward, write one sentence about what stood out and turn it into a short prayer. This keeps the devotional as a helpful guide while Scripture remains your foundation."
       }
     }
   ]
