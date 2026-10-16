@@ -12,7 +12,34 @@
       <li class="breadcrumb-item">
         <a href="{{ site.baseurl }}/jesus-calling-october-2026/">October 2026</a>
       </li>
-    {% elsif page.url == '/prayer/daily-prayer/' or page.url == '/prayer/healing-prayers/' or page.url == '/prayer/life-needs-prayers/' %}
+    {% elsif page.url == '/prayer/morning-prayers/' or page.url == '/prayer/night-prayers/' or page.url == '/prayer/good-night-prayer-for-family/' or page.url == '/prayer/prayer-for-today/' %}
+      <li class="breadcrumb-separator" aria-hidden="true">&rsaquo;</li>
+      <li class="breadcrumb-item">
+        <a href="{{ site.baseurl }}/prayer/">Prayer</a>
+      </li>
+      <li class="breadcrumb-separator" aria-hidden="true">&rsaquo;</li>
+      <li class="breadcrumb-item">
+        <a href="{{ site.baseurl }}/prayer/daily-prayer/">Daily Prayer</a>
+      </li>
+    {% elsif page.url == '/prayer/prayer-for-someone-in-the-hospital/' or page.url == '/prayer/prayer-for-a-sick-mother/' or page.url == '/prayer/prayer-for-healing-a-loved-one/' %}
+      <li class="breadcrumb-separator" aria-hidden="true">&rsaquo;</li>
+      <li class="breadcrumb-item">
+        <a href="{{ site.baseurl }}/prayer/">Prayer</a>
+      </li>
+      <li class="breadcrumb-separator" aria-hidden="true">&rsaquo;</li>
+      <li class="breadcrumb-item">
+        <a href="{{ site.baseurl }}/prayer/healing-prayers/">Healing Prayer</a>
+      </li>
+    {% elsif page.url == '/prayer/prayer-for-anxiety-at-night/' or page.url == '/prayer/prayer-for-peace-of-mind/' or page.url == '/prayer/prayer-for-strength/' or page.url == '/prayer/prayer-for-protection-of-family/' %}
+      <li class="breadcrumb-separator" aria-hidden="true">&rsaquo;</li>
+      <li class="breadcrumb-item">
+        <a href="{{ site.baseurl }}/prayer/">Prayer</a>
+      </li>
+      <li class="breadcrumb-separator" aria-hidden="true">&rsaquo;</li>
+      <li class="breadcrumb-item">
+        <a href="{{ site.baseurl }}/prayer/life-needs-prayers/">Life Needs Prayer</a>
+      </li>
+    {% elsif page.url contains '/prayer/' and page.url != '/prayer/' %}
       <li class="breadcrumb-separator" aria-hidden="true">&rsaquo;</li>
       <li class="breadcrumb-item">
         <a href="{{ site.baseurl }}/prayer/">Prayer</a>

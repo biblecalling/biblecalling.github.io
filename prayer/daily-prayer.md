@@ -17,6 +17,14 @@ author: "Jesus Calling Team"
   This Daily Prayer hub is your doorway to daily quiet time. Here you can pray today’s focus prayer, reflect on Scripture, learn about our featured daily devotionals, explore published prayer guides, and explore practical resources to cultivate a lasting spiritual rhythm.
 </p>
 
+<nav class="daily-prayer-subnav" aria-label="Daily Prayer Submenu" style="display: flex; flex-wrap: wrap; gap: 0.5rem; margin: 1.5rem 0 2rem; padding: 0.85rem 1.15rem; background: var(--color-bg-alt); border: 1px solid var(--color-border); border-radius: var(--radius-sm); align-items: center;">
+  <strong style="color: var(--color-text-main); font-size: 0.85rem; text-transform: uppercase; letter-spacing: 0.05em; margin-right: 0.5rem;">Daily Prayer Menu:</strong>
+  <a href="{{ site.baseurl }}/prayer/morning-prayers/" style="font-size: 0.875rem; font-weight: 600; color: var(--color-accent); text-decoration: none; padding: 0.3rem 0.65rem; background: var(--color-surface); border: 1px solid var(--color-border); border-radius: var(--radius-sm);">Morning Prayers &rarr;</a>
+  <a href="{{ site.baseurl }}/prayer/night-prayers/" style="font-size: 0.875rem; font-weight: 600; color: var(--color-accent); text-decoration: none; padding: 0.3rem 0.65rem; background: var(--color-surface); border: 1px solid var(--color-border); border-radius: var(--radius-sm);">Night Prayers &rarr;</a>
+  <a href="{{ site.baseurl }}/prayer/good-night-prayer-for-family/" style="font-size: 0.875rem; font-weight: 600; color: var(--color-accent); text-decoration: none; padding: 0.3rem 0.65rem; background: var(--color-surface); border: 1px solid var(--color-border); border-radius: var(--radius-sm);">Good Night Prayer for Family &rarr;</a>
+  <a href="{{ site.baseurl }}/prayer/prayer-for-today/" style="font-size: 0.875rem; font-weight: 600; color: var(--color-accent); text-decoration: none; padding: 0.3rem 0.65rem; background: var(--color-surface); border: 1px solid var(--color-border); border-radius: var(--radius-sm);">Prayer for Today &rarr;</a>
+</nav>
+
 <h2>Today’s Prayer</h2>
 
 <div class="prayer-box">
@@ -54,7 +62,7 @@ author: "Jesus Calling Team"
 
 <h2>Today's Featured Devotional</h2>
 <p>
-  Looking for a deeper spiritual reflection for today? We are preparing a dedicated devotional feature, <strong>Prayer for Today</strong> <em>(forthcoming)</em>, designed to offer an expanded Scripture study, thoughtful daily commentary, and practical steps for faith in action. While this hub organizes your daily prayer options and habits, the upcoming <em>Prayer for Today</em> series will provide a full, immersive quiet-time reflection for each day.
+  Looking for a deeper spiritual reflection for today? Explore our dedicated <a href="{{ site.baseurl }}/prayer/prayer-for-today/" style="font-weight: 600; text-decoration: underline; text-underline-offset: 3px;">Prayer for Today</a> guide, designed to offer a daily focus prayer, Scripture study on Psalm 90:12, and practical steps for walking in wisdom, strength, and love.
 </p>
 
 <h2>Browse Daily Prayers by Date</h2>
@@ -67,63 +75,64 @@ author: "Jesus Calling Team"
   <li><strong>Monthly Reading Guides:</strong> You can follow daily readings sequentially through our published monthly guides, allowing you to catch up on recent days or revisit reflections at your own pace.</li>
 </ol>
 
-<h2>Daily Prayer Topic Directory</h2>
+<h2>Daily Prayer Collections &amp; Guides</h2>
 <p>
-  Depending on your time of day or immediate need, explore these focused prayer guides across our site:
+  Explore our dedicated guides designed to anchor every part of your day in God's presence, from early morning hours to family bedtime:
 </p>
 
 <div class="spoke-cards-grid">
-  <a href="{{ site.baseurl }}/prayer/" class="spoke-card">
+  <a href="{{ site.baseurl }}/prayer/morning-prayers/" class="spoke-card">
     <div class="spoke-card-media">
-      <img src="{{ site.baseurl }}/assets/images/spoke-prayer-hub.jpg" alt="Main Prayer Hub" class="spoke-card-img" width="600" height="338" loading="lazy" decoding="async">
+      <img src="{{ site.baseurl }}/assets/images/morning-prayers.jpg" alt="Morning Prayers" class="spoke-card-img" width="600" height="338" loading="lazy" decoding="async">
     </div>
     <div class="spoke-card-body">
-      <h3 class="spoke-card-title">Main Prayer Hub</h3>
-      <p class="spoke-card-desc">Our central directory linking all situational, healing, endurance, and family prayers in one place.</p>
-      <span class="spoke-card-action">Explore Directory &rarr;</span>
+      <h3 class="spoke-card-title">Morning Prayers</h3>
+      <p class="spoke-card-desc">Seven short morning prayers for work, school, anxiety, and gratitude, with a 5-minute sustainable routine.</p>
+      <span class="spoke-card-action">Start Your Day &rarr;</span>
     </div>
   </a>
 
-  <a href="{{ site.baseurl }}/prayer/prayer-for-peace-of-mind/" class="spoke-card">
+  <a href="{{ site.baseurl }}/prayer/night-prayers/" class="spoke-card">
     <div class="spoke-card-media">
-      <img src="{{ site.baseurl }}/assets/images/spoke-peace-of-mind.jpg" alt="Prayer for Peace of Mind" class="spoke-card-img" width="600" height="338" loading="lazy" decoding="async">
+      <img src="{{ site.baseurl }}/assets/images/night-prayers.jpg" alt="Night Prayers" class="spoke-card-img" width="600" height="338" loading="lazy" decoding="async">
     </div>
     <div class="spoke-card-body">
-      <h3 class="spoke-card-title">Prayer for Peace of Mind</h3>
-      <p class="spoke-card-desc">Calming prayers and biblical grounding when worries, insomnia, and racing thoughts feel overwhelming.</p>
-      <span class="spoke-card-action">Read Peace Prayers &rarr;</span>
+      <h3 class="spoke-card-title">Night Prayers</h3>
+      <p class="spoke-card-desc">Calming bedtime prayers for peaceful sleep, releasing tomorrow's worries, and the daily examen reflection.</p>
+      <span class="spoke-card-action">Find Night Peace &rarr;</span>
     </div>
   </a>
 
-  <a href="{{ site.baseurl }}/prayer/prayer-for-strength/" class="spoke-card">
+  <a href="{{ site.baseurl }}/prayer/good-night-prayer-for-family/" class="spoke-card">
     <div class="spoke-card-media">
-      <img src="{{ site.baseurl }}/assets/images/spoke-prayer-for-strength.jpg" alt="Prayer for Strength" class="spoke-card-img" width="600" height="338" loading="lazy" decoding="async">
+      <img src="{{ site.baseurl }}/assets/images/good-night-prayer-for-family.jpg" alt="Good Night Prayer for Family" class="spoke-card-img" width="600" height="338" loading="lazy" decoding="async">
     </div>
     <div class="spoke-card-body">
-      <h3 class="spoke-card-title">Prayer for Strength</h3>
-      <p class="spoke-card-desc">Words of renewal, patience, and stamina when you are facing emotional, physical, or spiritual exhaustion.</p>
-      <span class="spoke-card-action">Find Daily Strength &rarr;</span>
+      <h3 class="spoke-card-title">Good Night Prayer for Family</h3>
+      <p class="spoke-card-desc">Short bedtime prayers for kids, teenagers, and couples to speak together before lights out.</p>
+      <span class="spoke-card-action">Pray Together &rarr;</span>
     </div>
   </a>
 
-  <a href="{{ site.baseurl }}/prayer/prayer-for-protection-of-family/" class="spoke-card">
+  <a href="{{ site.baseurl }}/prayer/prayer-for-today/" class="spoke-card">
     <div class="spoke-card-media">
-      <img src="{{ site.baseurl }}/assets/images/spoke-protection-of-family.jpg" alt="Prayer for Protection of Family" class="spoke-card-img" width="600" height="338" loading="lazy" decoding="async">
+      <img src="{{ site.baseurl }}/assets/images/prayer-for-today.jpg" alt="Prayer for Today" class="spoke-card-img" width="600" height="338" loading="lazy" decoding="async">
     </div>
     <div class="spoke-card-body">
-      <h3 class="spoke-card-title">Prayer for Protection of Family</h3>
-      <p class="spoke-card-desc">Daily prayers of spiritual covering, safety, and blessing over your home, children, and loved ones.</p>
-      <span class="spoke-card-action">Protect Your Family &rarr;</span>
+      <h3 class="spoke-card-title">Prayer for Today</h3>
+      <p class="spoke-card-desc">A focus prayer for today, guidance on numbering our days, and prayers for wisdom, strength, and love.</p>
+      <span class="spoke-card-action">Pray for Today &rarr;</span>
     </div>
   </a>
 </div>
 
-<h3>Upcoming Prayer Guides</h3>
-<p>We are actively developing dedicated guides for these daily rhythms:</p>
-<ul>
-  <li><strong>Morning Prayers</strong> &mdash; Short, intentional prayers to start your workday or school routine <em>(forthcoming)</em>.</li>
-  <li><strong>Night Prayers</strong> &mdash; Peaceful evening reflections, look-back exercises, and bedtime prayers for restful sleep <em>(forthcoming)</em>.</li>
-  <li><strong>Good Night Prayer for Family</strong> &mdash; Simple evening prayers to read together with children or spouses <em>(forthcoming)</em>.</li>
+<h3>Additional Situational &amp; Daily Prayers</h3>
+<p>Depending on your immediate need, explore these additional prayer guides:</p>
+<ul class="prayer-hub-articles-list">
+  <li><a href="{{ site.baseurl }}/prayer/prayer-for-peace-of-mind/">Prayer for Peace of Mind &rarr;</a> <span>&mdash; Calming prayers when racing thoughts feel loud.</span></li>
+  <li><a href="{{ site.baseurl }}/prayer/prayer-for-strength/">Prayer for Strength &rarr;</a> <span>&mdash; Renewal for physical, emotional, and spiritual weariness.</span></li>
+  <li><a href="{{ site.baseurl }}/prayer/prayer-for-protection-of-family/">Prayer for Protection of Family &rarr;</a> <span>&mdash; Spiritual covering over your household.</span></li>
+  <li><a href="{{ site.baseurl }}/prayer/">Main Prayer Hub &rarr;</a> <span>&mdash; Browse all healing, life needs, and devotional prayer guides.</span></li>
 </ul>
 
 <h2>How to Establish a Sustainable Daily Prayer Habit</h2>
@@ -146,7 +155,7 @@ author: "Jesus Calling Team"
   <p>This page serves as a central discovery hub. It provides an immediate short prayer and Scripture reading for today, previews our daily devotional themes, links to published prayer resources, and directs you to topical prayers tailored to your immediate needs.</p>
 
   <h3>How does this page differ from &ldquo;Prayer for Today&rdquo;?</h3>
-  <p>This hub (<code>/prayer/daily-prayer/</code>) serves as our central organizational directory and daily prayer starting point. In contrast, our upcoming <em>Prayer for Today</em> page (<code>/prayer/prayer-for-today/</code>) is a forthcoming devotional destination planned to feature a complete, dated reflection and practical action step for each day.</p>
+  <p>This hub (<code>/prayer/daily-prayer/</code>) serves as our central organizational directory and daily prayer starting point. In contrast, our <a href="{{ site.baseurl }}/prayer/prayer-for-today/">Prayer for Today</a> guide offers a daily focus prayer, practical reflection on numbering our days, and specific petitions for wisdom, strength, and love.</p>
 
   <h3>What should I do if I only have sixty seconds to pray?</h3>
   <p>Pray a simple, focused sentence: <em>&ldquo;Lord, thank You for today. Guide my steps, help me love others, and give me peace. I trust You. Amen.&rdquo;</em> God values the sincerity of your heart, not the length of your prayer.</p>

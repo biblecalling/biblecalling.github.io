@@ -199,6 +199,72 @@
           "position": 4,
           "name": {{ page.breadcrumb_title | default: page.title | jsonify }},
           "item": "{{ canonical_url }}"
+        }{% elsif page.url == '/prayer/morning-prayers/' or page.url == '/prayer/night-prayers/' or page.url == '/prayer/good-night-prayer-for-family/' or page.url == '/prayer/prayer-for-today/' %},
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Prayer",
+          "item": "{{ site.url }}/prayer/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Daily Prayer",
+          "item": "{{ site.url }}/prayer/daily-prayer/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 4,
+          "name": {{ page.breadcrumb_title | default: page.title | jsonify }},
+          "item": "{{ canonical_url }}"
+        }{% elsif page.url == '/prayer/prayer-for-someone-in-the-hospital/' or page.url == '/prayer/prayer-for-a-sick-mother/' or page.url == '/prayer/prayer-for-healing-a-loved-one/' %},
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Prayer",
+          "item": "{{ site.url }}/prayer/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Healing Prayer",
+          "item": "{{ site.url }}/prayer/healing-prayers/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 4,
+          "name": {{ page.breadcrumb_title | default: page.title | jsonify }},
+          "item": "{{ canonical_url }}"
+        }{% elsif page.url == '/prayer/prayer-for-anxiety-at-night/' or page.url == '/prayer/prayer-for-peace-of-mind/' or page.url == '/prayer/prayer-for-strength/' or page.url == '/prayer/prayer-for-protection-of-family/' %},
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Prayer",
+          "item": "{{ site.url }}/prayer/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Life Needs Prayer",
+          "item": "{{ site.url }}/prayer/life-needs-prayers/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 4,
+          "name": {{ page.breadcrumb_title | default: page.title | jsonify }},
+          "item": "{{ canonical_url }}"
+        }{% elsif page.url contains '/prayer/' and page.url != '/prayer/' %},
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Prayer",
+          "item": "{{ site.url }}/prayer/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": {{ page.breadcrumb_title | default: page.title | jsonify }},
+          "item": "{{ canonical_url }}"
         }{% elsif page.url == '/prayer/daily-prayer/' or page.url == '/prayer/healing-prayers/' or page.url == '/prayer/life-needs-prayers/' %},
         {
           "@type": "ListItem",
