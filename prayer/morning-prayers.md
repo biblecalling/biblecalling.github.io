@@ -175,3 +175,52 @@ image_caption: "Image Source & Credit: Devotional artwork created for Bible Call
     <li><a href="{{ site.baseurl }}/prayer/good-night-prayer-for-family/">Good Night Prayer for Family</a> &mdash; Bedtime prayers for children, spouses, and households.</li>
   </ul>
 </div>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What is a good short morning prayer?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Lord, thank You for this new day. Guide my steps, guard my words, and help me love the people I meet. I trust You with today. Amen. It takes fifteen seconds and centers your heart on gratitude and wisdom."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How long should a morning prayer be?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "There is no required length. One to three minutes on busy days is plenty; what matters is sincere communication, not a performance."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is it okay to pray in bed or in the car?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Scripture places no restrictions on where you may pray. If praying while driving, keep your eyes on the road and pray with your thoughts open to God."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What Bible verse is best to start the day?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Lamentations 3:22–23 and Psalm 143:8 are the two most beloved morning anchors."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What if I forget to pray in the morning?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Pray when you remember. There is no penalty or spiritual deficit in pausing at noon or in the afternoon."
+      }
+    }
+  ]
+}
+</script>

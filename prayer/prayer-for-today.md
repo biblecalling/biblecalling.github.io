@@ -155,3 +155,44 @@ image_caption: "Image Source & Credit: Devotional artwork created for Bible Call
     <li><a href="{{ site.baseurl }}/prayer/good-night-prayer-for-family/">Good Night Prayer for Family</a> &mdash; Bedtime prayers to read together with children and spouses.</li>
   </ul>
 </div>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What is a good prayer for today?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Lord, thank You for this day. Guide me, strengthen me, and help me love the people I meet. I place today in Your hands. Amen."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I pray the same prayer every day?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Jesus provided the Lord's Prayer as a regular pattern, and believers have prayed the Psalms repeatedly for thousands of years. Familiar words help quiet a busy mind."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How does this page differ from “Morning Prayers”?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Morning prayers are specifically crafted for the start of the day. A prayer for today can be used at noon, mid-afternoon, or whenever you need to recenter your spirit on the present hours."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does God hear short prayers?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. In Nehemiah 2:4, before answering the Persian king, Nehemiah offered a silent prayer that took only seconds. God honors sincerity of heart, not word count."
+      }
+    }
+  ]
+}
+</script>

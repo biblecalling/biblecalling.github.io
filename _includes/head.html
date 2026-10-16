@@ -152,9 +152,9 @@
         "https://www.youtube.com/@godmessageforyoump4",
         "https://www.instagram.com/godsmessageforyoump4/"
       ]
-    }{% if page.layout == 'post' %},
+    }{% if page.layout == 'post' or page.url contains '/prayer/' %},
     {
-      "@type": "BlogPosting",
+      "@type": "{% if page.layout == 'post' %}BlogPosting{% elsif page.url == '/prayer/' or page.url == '/prayer/daily-prayer/' or page.url == '/prayer/healing-prayers/' or page.url == '/prayer/life-needs-prayers/' %}CollectionPage{% else %}Article{% endif %}",
       "@id": "{{ canonical_url }}#article",
       "isPartOf": {
         "@id": "{{ site.url }}/#website"
@@ -167,18 +167,19 @@
       "headline": {{ page.title | jsonify }},
       "description": {{ page_desc | jsonify }},
       "url": "{{ canonical_url }}",
-      "datePublished": "{{ page.date | date_to_xmlschema }}",
-      "dateModified": "{{ page.last_modified_at | default: page.date | date_to_xmlschema }}",
+      "datePublished": "{% if page.date %}{{ page.date | date_to_xmlschema }}{% else %}2026-10-16T00:00:00+00:00{% endif %}",
+      "dateModified": "{% if page.last_modified_at %}{{ page.last_modified_at | date_to_xmlschema }}{% elsif page.date %}{{ page.date | date_to_xmlschema }}{% else %}2026-10-16T00:00:00+00:00{% endif %}",
       "author": {
         "@type": "Organization",
-        "name": {{ site.author.name | jsonify }},
+        "name": {{ page.author.name | default: page.author | default: site.author.name | jsonify }},
         "url": "{{ site.url }}/about/"
       },
       "publisher": {
         "@id": "{{ site.url }}/#organization"
       },
-      "image": "{% if page.image contains 'http' %}{{ page.image }}{% else %}{{ site.url }}{{ site.baseurl }}{{ page.image | default: '/assets/images/og-default.webp' }}{% endif %}",
-      "articleSection": {{ page.categories | first | jsonify }}{% if page.tags.size > 0 %},
+      "image": "{% if page.image contains 'http' %}{{ page.image }}{% else %}{{ site.url }}{{ site.baseurl }}{{ page.image | default: '/assets/images/og-default.webp' }}{% endif %}"{% if page.categories.size > 0 %},
+      "articleSection": {{ page.categories | first | jsonify }}{% elsif page.url contains '/prayer/' %},
+      "articleSection": "Prayer"{% endif %}{% if page.tags.size > 0 %},
       "keywords": {{ page.tags | join: ', ' | jsonify }}{% endif %}
     }{% endif %}{% if page.url != '/' %},
     {

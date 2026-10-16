@@ -155,3 +155,36 @@ image_caption: "Image Source & Credit: Devotional artwork created for Bible Call
     <li><a href="{{ site.baseurl }}/prayer/daily-prayer/">Daily Prayer Hub</a> &mdash; Practical principles to build lasting family rhythms.</li>
   </ul>
 </div>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What is a good short good night prayer for family?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "God, thank You for today. Forgive us where we fell short. Keep us safe tonight and give us rest. We trust You with tomorrow. Amen. It is simple enough for toddlers to memorize and covers thanks, forgiveness, safety, and faith."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can we use the Lord's Prayer at bedtime?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. The Lord's Prayer (Matthew 6:9–13) is one of the most widely shared family bedtime prayers in Christian history."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What if bedtime is too chaotic?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "If bedtime is hurried, pray at dinner, during the evening car ride home, or while tucking kids into bed. The consistency of the prayer matters far more than the exact hour."
+      }
+    }
+  ]
+}
+</script>

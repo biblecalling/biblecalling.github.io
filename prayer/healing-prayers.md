@@ -146,3 +146,52 @@ author: "Jesus Calling Team"
 <div class="about-page-meta" style="font-size: 0.9rem; color: var(--color-text-muted);">
   <p><strong>About This Page:</strong> Written by the <strong>Jesus Calling Team</strong>. Last updated: October 16, 2026. Scripture quotations are taken from the Holy Bible, New International Version (NIV). This page provides pastoral and spiritual encouragement and does not constitute medical advice or a clinical diagnosis.</p>
 </div>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Should I pray for physical healing or spiritual peace?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "You do not have to choose between the two. Scripture invites us to pray boldly for physical restoration while also asking for deep emotional peace, courage, and resilience. God cares about both the body and the soul."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How do I sustain prayer when recovery is slow or uncertain?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Shorten your time horizon. Instead of carrying the entire road ahead, pray for the stamina needed for the next few hours. Repeating simple breath prayers or borrowing written prayers prevents emotional exhaustion."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does praying for healing replace medical care?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No. Scripture teaches us to honor physicians and use wisdom. God frequently brings restoration through modern medicine, doctors, and compassionate nurses. Pray alongside clinical treatment, never in place of it."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What can I say when someone is seriously ill and I don't know what to pray?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Honest simplicity is best: 'Lord, You know [Name] and how much we love them. Ease their pain, give them peaceful rest, and stay close to our family.' You do not need polished speeches."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What if healing does not happen in the way we asked?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Unanswered prayers in serious illness can cause profound grief. This does not mean your faith was inadequate. Many faithful believers throughout history faced prolonged sickness. God remains present in our sorrow, holding us even when answers do not come easily."
+      }
+    }
+  ]
+}
+</script>

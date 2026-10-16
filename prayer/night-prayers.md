@@ -170,3 +170,44 @@ image_caption: "Image Source & Credit: Devotional artwork created for Bible Call
     <li><a href="{{ site.baseurl }}/prayer/daily-prayer/">Daily Prayer Hub</a> &mdash; Core guidance for sustaining everyday spiritual rhythms.</li>
   </ul>
 </div>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What is a good short prayer before bed?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Lord, thank You for today. Forgive me where I fell short. Guard my sleep and give me rest. I trust You with tomorrow. Amen."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Should I pray lying down or sitting up?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Either is completely fine. Some people pray sitting on the edge of the bed so they stay alert enough to finish; others pray comfortably in bed."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What if I fall asleep while praying?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Falling asleep while speaking with God is not a failure. Psalm 127:2 describes sleep as a gift, and drifting off in God's presence is a peaceful way to end the day."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How is this page different from the family bedtime prayer?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "This page is focused on personal, individual evening quiet time. For prayers designed for households with kids or partners, see Good Night Prayer for Family."
+      }
+    }
+  ]
+}
+</script>

@@ -153,3 +153,52 @@ author: "Jesus Calling Team"
 <div class="about-page-meta" style="font-size: 0.9rem; color: var(--color-text-muted);">
   <p><strong>About This Page:</strong> Written by the <strong>Jesus Calling Team</strong>. Last updated: October 16, 2026. Scripture quotations are taken from the Holy Bible, New International Version (NIV). This content provides pastoral encouragement for everyday life challenges and does not replace professional mental health or medical counseling.</p>
 </div>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "How do I pray when my mind is too cluttered to concentrate?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Start with a single sentence: 'Lord, help me right now.' You do not need structured outlines. Simply acknowledging your distraction and asking for quietness is a genuine, effective prayer."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is it selfish to pray for my own emotional peace and strength?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Not at all. You cannot pour from an empty cup. Caring for your spiritual and emotional stamina enables you to serve, love, and protect your family and community with patience and grace."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How can I maintain a prayer habit during an intense, busy schedule?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Attach prayer to existing habits (habit stacking). Pray during your morning commute, while preparing a meal, or right before walking into your home in the evening. Two mindful minutes are more impactful than thirty minutes you constantly postpone."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What should I do if anxiety returns immediately after praying?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Our bodies take time to downshift from fight-or-flight states. Treat prayer as an ongoing dialogue rather than a one-time transaction. Repeat a calming Bible verse, practice deep rhythmic breathing, and extend grace to yourself."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can prayer help with everyday relationship friction?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Praying specifically for patience and asking God to help you listen before reacting is one of the most practical and transformative ways prayer impacts daily household life."
+      }
+    }
+  ]
+}
+</script>

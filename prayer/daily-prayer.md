@@ -181,3 +181,52 @@ author: "Jesus Calling Team"
 <div class="about-page-meta" style="font-size: 0.9rem; color: var(--color-text-muted);">
   <p><strong>About This Page:</strong> Published by the <strong>Jesus Calling Team</strong>. Scripture quotations are taken from the Holy Bible, New International Version&reg; (NIV&reg;), Copyright &copy; 1973, 1978, 1984, 2011 by Biblica, Inc.&trade; Used by permission. All rights reserved worldwide.</p>
 </div>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What is the purpose of this Daily Prayer page?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "This page serves as a central discovery hub. It provides an immediate short prayer and Scripture reading for today, previews our daily devotional themes, links to published prayer resources, and directs you to topical prayers tailored to your immediate needs."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How does this page differ from “Prayer for Today”?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "This hub (/prayer/daily-prayer/) serves as our central organizational directory and daily prayer starting point. In contrast, our Prayer for Today guide offers a daily focus prayer, practical reflection on numbering our days, and specific petitions for wisdom, strength, and love."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What should I do if I only have sixty seconds to pray?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Pray a simple, focused sentence: 'Lord, thank You for today. Guide my steps, help me love others, and give me peace. I trust You. Amen.' God values the sincerity of your heart, not the length of your prayer."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I read previous devotionals if I missed yesterday?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. You can explore published daily entries through our monthly reading guides, such as our October devotional collection, or browse our topical devotional library at any time."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is it acceptable to use written prayers instead of making up my own?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Throughout Christian history, believers have prayed the Psalms, historic collects, and written prayers. Using written prayers gives you words when you are too tired or overwhelmed to formulate your own, serving as a helpful scaffold for your personal conversation with God."
+      }
+    }
+  ]
+}
+</script>
