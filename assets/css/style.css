@@ -498,44 +498,63 @@ blockquote {
   display: none !important;
 }
 
-.nav-dropdown-header {
+.nav-dropdown-grid-hubs {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 0.65rem;
-  padding-bottom: 0.75rem;
-  margin-bottom: 0.85rem;
-  border-bottom: 1px solid var(--color-border-subtle);
+  gap: 0.75rem;
 }
 
 .nav-dropdown-hub-link {
   display: flex !important;
   align-items: center;
   justify-content: space-between;
-  gap: 0.5rem;
-  padding: 0.5rem 0.75rem !important;
+  gap: 0.65rem;
+  padding: 0.75rem 0.95rem !important;
   background-color: var(--color-bg-alt);
   border: 1px solid var(--color-border);
   border-radius: var(--radius-sm);
   text-decoration: none;
-  transition: background-color var(--transition-fast), border-color var(--transition-fast) !important;
+  transition: background-color var(--transition-fast), border-color var(--transition-fast), transform var(--transition-fast) !important;
+}
+
+.nav-hub-text-wrap {
+  display: flex;
+  flex-direction: column;
+  gap: 0.15rem;
 }
 
 .nav-dropdown-hub-link strong {
   font-size: 0.95rem;
   font-weight: 700;
   color: var(--color-text-main);
+  line-height: 1.25;
 }
 
-.nav-dropdown-hub-link span {
-  font-size: 0.825rem;
+.nav-dropdown-hub-link .nav-hub-subtext {
+  font-size: 0.775rem;
+  color: var(--color-text-muted);
+  font-weight: 400;
+  line-height: 1.25;
+}
+
+.nav-dropdown-hub-link .nav-hub-arrow {
+  font-size: 1rem;
   color: var(--color-accent);
-  font-weight: 600;
+  font-weight: 700;
+  flex-shrink: 0;
+  transition: transform var(--transition-fast);
 }
 
 .nav-dropdown-hub-link:hover,
 .nav-dropdown-hub-link:focus-visible {
   background-color: var(--color-accent-soft);
   border-color: var(--color-accent-border);
+  transform: translateY(-1px);
+}
+
+.nav-dropdown-hub-link:hover .nav-hub-arrow,
+.nav-dropdown-hub-link:focus-visible .nav-hub-arrow {
+  transform: translateX(3px);
 }
 
 .nav-dropdown-grid {
