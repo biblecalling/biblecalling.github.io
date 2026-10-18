@@ -2466,6 +2466,70 @@ blockquote {
   text-align: right;
 }
 
+/* Post FAQ Section (for posts with front-matter FAQ) */
+.post-faq-section {
+  margin-top: 3.5rem;
+  padding: 2.25rem;
+  background-color: var(--color-bg-alt);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+}
+
+.post-faq-header {
+  margin-bottom: 1.5rem;
+}
+
+.post-faq-badge {
+  font-size: 0.775rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  font-weight: 700;
+  color: var(--color-accent);
+  display: block;
+  margin-bottom: 0.35rem;
+}
+
+.post-faq-title {
+  font-family: var(--font-serif);
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--color-text-main);
+  margin: 0;
+}
+
+.post-faq-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.post-faq-item {
+  background-color: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-sm);
+  padding: 1.25rem 1.5rem;
+  box-shadow: var(--shadow-sm);
+}
+
+.post-faq-question {
+  font-family: var(--font-serif);
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: var(--color-text-main);
+  margin: 0 0 0.5rem;
+  line-height: 1.4;
+}
+
+.post-faq-answer {
+  font-size: 0.95rem;
+  color: var(--color-text-body);
+  line-height: 1.65;
+}
+
+.post-faq-answer p {
+  margin: 0;
+}
+
 /* Related Posts Section */
 .related-posts {
   margin-top: 4rem;

@@ -123,6 +123,26 @@ layout: default
       {% include share-buttons.html %}
     </div>
 
+    <!-- Frequently Asked Questions (if defined in front-matter) -->
+    {% if page.faq and page.faq.size > 0 %}
+      <section class="post-faq-section" aria-labelledby="post-faq-heading">
+        <div class="post-faq-header">
+          <span class="post-faq-badge">Biblical Guidance &amp; Insights</span>
+          <h2 id="post-faq-heading" class="post-faq-title">Frequently Asked Questions</h2>
+        </div>
+        <div class="post-faq-list">
+          {% for item in page.faq %}
+            <div class="post-faq-item">
+              <h3 class="post-faq-question">{{ item.question }}</h3>
+              <div class="post-faq-answer">
+                <p>{{ item.answer }}</p>
+              </div>
+            </div>
+          {% endfor %}
+        </div>
+      </section>
+    {% endif %}
+
     <!-- Related Devotionals -->
     {% include related-posts.html %}
 

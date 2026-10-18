@@ -1,0 +1,77 @@
+{% assign has_manual_faq_schema = false %}
+{% if page.content contains '"@type": "FAQPage"' or page.content contains '"@type":"FAQPage"' or page.content contains '@type": "FAQPage"' %}
+  {% assign has_manual_faq_schema = true %}
+{% endif %}
+
+{% unless has_manual_faq_schema %}
+  {% if page.faq and page.faq.size > 0 %}
+    <!-- FAQPage Schema (from Front-Matter) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "@id": "{{ canonical_url }}#faq",
+      "mainEntity": [
+        {% for item in page.faq %}
+        {
+          "@type": "Question",
+          "name": {{ item.question | jsonify }},
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": {{ item.answer | strip_html | jsonify }}
+          }
+        }{% unless forloop.last %},{% endunless %}
+        {% endfor %}
+      ]
+    }
+    </script>
+  {% elsif page.layout == 'post' %}
+    {% assign post_cat = page.categories.first | default: "Faith" %}
+    {% assign post_summary = page.description | default: page.excerpt | strip_html | strip_newlines | truncate: 240 %}
+    {% if post_summary == "" or post_summary == nil %}
+      {% assign post_summary = "A biblical reflection and devotional guide centered on Jesus Christ, faith, and daily prayer." %}
+    {% endif %}
+    <!-- Automated FAQPage Schema for Devotional Posts -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "@id": "{{ canonical_url }}#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": {{ "What is " | append: page.title | append: " about?" | jsonify }},
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": {{ post_summary | jsonify }}
+          }
+        },
+        {
+          "@type": "Question",
+          "name": {{ "What does the Bible teach about " | append: post_cat | append: " in this reflection?" | jsonify }},
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": {{ "Through Scripture, God calls believers to trust His sovereign wisdom, surrender daily burdens in honest prayer, and rest in the living hope of Jesus Christ." | jsonify }}
+          }
+        },
+        {
+          "@type": "Question",
+          "name": {{ "How can I apply this reflection to my daily Christian walk?" | jsonify }},
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": {{ "Set aside quiet moments for Scripture reading and prayer, bring specific concerns to Jesus throughout your day, and meditate on God's promises of peace and guidance." | jsonify }}
+          }
+        },
+        {
+          "@type": "Question",
+          "name": {{ "Where can I read more daily devotionals and scripture prayers?" | jsonify }},
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": {{ "Explore our complete spiritual archive of Christ-centered reflections, daily prayer guides, and Bible studies at Bible Calling (https://biblecalling.github.io/blog/)." | jsonify }}
+          }
+        }
+      ]
+    }
+    </script>
+  {% endif %}
+{% endunless %}
