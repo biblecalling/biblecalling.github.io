@@ -163,11 +163,11 @@ author: "Bible Calling Team"
 
 
 <h3>What is a short prayer for sleep?</h3>
-  <p>"Lord, quiet my mind, calm my heart, and give me rest tonight. I trust You with tomorrow. Amen."</p>
+  <p>Lord, quiet my mind, calm my heart, and give me rest tonight. I trust You with tomorrow. Amen.</p>
 
 
 <h3>Is Psalm 4:8 a good verse for sleep?</h3>
-  <p>"Yes. "In peace I will lie down and sleep, for you alone, Lord, make me dwell in safety" is one of the most-read Bible verses for bedtime and works well as a one-line prayer."</p>
+  <p>Yes. "In peace I will lie down and sleep, for you alone, Lord, make me dwell in safety" is one of the most-read Bible verses for bedtime and works well as a one-line prayer.</p>
 </div>
 
 <h2>Related Prayers</h2>
