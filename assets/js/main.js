@@ -415,4 +415,191 @@ document.addEventListener('DOMContentLoaded', () => {
       });
     }
   }
+
+  // 12. Footer Add Blog Modal & Markdown Generator
+  const openAddBlogBtn = document.getElementById('open-add-blog-modal');
+  const addBlogModal = document.getElementById('add-blog-modal');
+  const addBlogClose = document.getElementById('add-blog-modal-close');
+  const addBlogBackdrop = document.getElementById('add-blog-modal-backdrop');
+
+  const titleInput = document.getElementById('new-blog-title');
+  const catSelect = document.getElementById('new-blog-category');
+  const dateInput = document.getElementById('new-blog-date');
+  const descInput = document.getElementById('new-blog-desc');
+  const tagsInput = document.getElementById('new-blog-tags');
+  const contentInput = document.getElementById('new-blog-content');
+
+  const filenamePreview = document.getElementById('new-blog-filename');
+  const markdownPreview = document.getElementById('new-blog-markdown-preview');
+  const copyBtn = document.getElementById('btn-copy-markdown');
+  const copyBtnText = document.getElementById('btn-copy-markdown-text');
+  const downloadBtn = document.getElementById('btn-download-markdown');
+  const githubLink = document.getElementById('btn-github-new-post');
+
+  // Slugify helper
+  function slugify(text) {
+    return text
+      .toString()
+      .toLowerCase()
+      .trim()
+      .replace(/\s+/g, '-')
+      .replace(/[^\w\-]+/g, '')
+      .replace(/\-\-+/g, '-')
+      .replace(/^-+/, '')
+      .replace(/-+$/, '');
+  }
+
+  // Set today's date if empty
+  if (dateInput && !dateInput.value) {
+    const today = new Date();
+    const yyyy = today.getFullYear();
+    const mm = String(today.getMonth() + 1).padStart(2, '0');
+    const dd = String(today.getDate()).padStart(2, '0');
+    dateInput.value = `${yyyy}-${mm}-${dd}`;
+  }
+
+  function generateMarkdown() {
+    if (!titleInput || !markdownPreview) return { filename: '', markdown: '' };
+
+    const title = (titleInput.value || 'Untitled Reflection').trim();
+    const cat = catSelect ? catSelect.value : 'Daily Devotional';
+    const date = (dateInput && dateInput.value) ? dateInput.value : new Date().toISOString().slice(0, 10);
+    const desc = descInput ? descInput.value.trim() : '';
+    const tagsStr = tagsInput ? tagsInput.value.trim() : '';
+    const tags = tagsStr ? tagsStr.split(',').map(t => t.trim()).filter(Boolean) : [cat];
+    const rawContent = contentInput ? contentInput.value.trim() : '';
+
+    const slug = slugify(title) || 'reflection';
+    const filename = `${date}-${slug}.md`;
+    const fullPath = `_posts/${filename}`;
+
+    const tagsYaml = tags.length > 0 ? tags.map(t => `  - ${t}`).join('\n') : `  - ${cat}`;
+
+    const markdown = `---
+layout: post
+title: "${title.replace(/"/g, '\\"')}"
+date: ${date} 07:00:00 +0000
+categories:
+  - ${cat}
+tags:
+${tagsYaml}
+description: "${desc.replace(/"/g, '\\"')}"
+author: "Bible Calling Editorial Team"
+---
+
+${rawContent}
+`;
+
+    if (filenamePreview) {
+      filenamePreview.textContent = fullPath;
+    }
+    markdownPreview.textContent = markdown;
+
+    if (githubLink) {
+      githubLink.href = `https://github.com/biblecalling/biblecalling.github.io/new/main/_posts?filename=${encodeURIComponent(filename)}`;
+    }
+
+    return { filename, markdown };
+  }
+
+  function openAddBlogModal() {
+    if (!addBlogModal) return;
+    addBlogModal.style.display = 'flex';
+    // Force reflow for CSS transition
+    void addBlogModal.offsetWidth;
+    addBlogModal.classList.add('active');
+    addBlogModal.setAttribute('aria-hidden', 'false');
+    document.body.style.overflow = 'hidden';
+    generateMarkdown();
+    if (titleInput) titleInput.focus();
+  }
+
+  function closeAddBlogModal() {
+    if (!addBlogModal) return;
+    addBlogModal.classList.remove('active');
+    addBlogModal.setAttribute('aria-hidden', 'true');
+    document.body.style.overflow = '';
+    setTimeout(() => {
+      if (!addBlogModal.classList.contains('active')) {
+        addBlogModal.style.display = 'none';
+      }
+    }, 250);
+    if (openAddBlogBtn) openAddBlogBtn.focus();
+  }
+
+  if (openAddBlogBtn) {
+    openAddBlogBtn.addEventListener('click', openAddBlogModal);
+  }
+
+  if (addBlogClose) {
+    addBlogClose.addEventListener('click', closeAddBlogModal);
+  }
+
+  if (addBlogBackdrop) {
+    addBlogBackdrop.addEventListener('click', closeAddBlogModal);
+  }
+
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape' && addBlogModal && addBlogModal.classList.contains('active')) {
+      closeAddBlogModal();
+    }
+  });
+
+  // Listen for changes in form fields to update live preview
+  [titleInput, catSelect, dateInput, descInput, tagsInput, contentInput].forEach(field => {
+    if (field) {
+      field.addEventListener('input', generateMarkdown);
+      field.addEventListener('change', generateMarkdown);
+    }
+  });
+
+  // Initial preview generation
+  generateMarkdown();
+
+  // Copy Markdown to Clipboard
+  if (copyBtn) {
+    copyBtn.addEventListener('click', async () => {
+      const { markdown } = generateMarkdown();
+      try {
+        if (navigator.clipboard && navigator.clipboard.writeText) {
+          await navigator.clipboard.writeText(markdown);
+        } else {
+          const textarea = document.createElement('textarea');
+          textarea.value = markdown;
+          textarea.style.position = 'fixed';
+          textarea.style.opacity = '0';
+          document.body.appendChild(textarea);
+          textarea.select();
+          document.execCommand('copy');
+          document.body.removeChild(textarea);
+        }
+
+        const originalText = copyBtnText ? copyBtnText.textContent : 'Copy Post Markdown';
+        if (copyBtnText) copyBtnText.textContent = '✓ Copied to Clipboard!';
+        copyBtn.style.background = '#2e7d32';
+        setTimeout(() => {
+          if (copyBtnText) copyBtnText.textContent = originalText;
+          copyBtn.style.background = '';
+        }, 2200);
+      } catch (err) {
+        alert('Could not copy to clipboard. Please copy directly from the preview box.');
+      }
+    });
+  }
+
+  // Download Markdown file
+  if (downloadBtn) {
+    downloadBtn.addEventListener('click', () => {
+      const { filename, markdown } = generateMarkdown();
+      const blob = new Blob([markdown], { type: 'text/markdown;charset=utf-8' });
+      const url = URL.createObjectURL(blob);
+      const link = document.createElement('a');
+      link.href = url;
+      link.download = filename || 'devotional.md';
+      document.body.appendChild(link);
+      link.click();
+      document.body.removeChild(link);
+      URL.revokeObjectURL(url);
+    });
+  }
 });

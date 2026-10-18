@@ -18,7 +18,11 @@
      crossorigin="anonymous"></script>
 
 <!-- SEO Meta Tags -->
-{% assign page_desc = page.description | default: page.excerpt | default: site.description | strip_html | strip_newlines | truncate: 160 %}
+{% if page.meta_description and page.meta_description != "" %}
+  {% assign page_desc = page.meta_description | strip_html | strip_newlines | truncate: 160 %}
+{% else %}
+  {% assign page_desc = page.description | default: page.excerpt | default: site.description | strip_html | strip_newlines | truncate: 160 %}
+{% endif %}
 <meta name="description" content="{{ page_desc | escape }}">
 <meta name="author" content="{{ page.author.name | default: page.author | default: site.author.name }}">
 {% if page.noindex or page.url contains '404' or page.url contains '/search/' %}
