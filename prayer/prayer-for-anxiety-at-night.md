@@ -1,9 +1,9 @@
 ---
 layout: page
-title: "Prayer for Anxiety at Night: Calm Prayers for When You Can't Sleep"
-h1: "Prayer for Anxiety at Night"
+title: "Prayer for Sleep and Anxiety: Calming Night Prayers & Verses"
+h1: "Prayer for Sleep and Anxiety at Night"
 breadcrumb_title: "Anxiety at Night"
-description: "A prayer for anxiety at night, with Bible verses and simple steps for when worry keeps you awake. Includes when to talk to a doctor or counselor."
+description: "Calming prayers for sleep and anxiety at night, with Bible verses and a simple bedtime routine for when worry keeps you awake."
 permalink: /prayer/prayer-for-anxiety-at-night/
 author: "Jesus Calling Team"
 ---
