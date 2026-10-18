@@ -156,15 +156,15 @@ author: "Bible Calling Team"
 
   <h3>Why doesn't prayer always instantly calm me?</h3>
   <p>Nervous systems take time to regulate, and chronic anxiety often involves physical or hormonal factors. Keep praying gently, practice healthy routines, and consult a physician if insomnia continues.</p>
-</div>
+
 
 <h3>Can prayer help with anxiety and sleep?</h3>
   <p>Prayer can help you slow down, hand your worries to God, and feel less alone at night. Many people find that pairing prayer with slow breathing and a screen-free routine makes it easier to fall asleep. It is not a replacement for medical care if anxiety or insomnia continues.</p>
-</div>
+
 
 <h3>What is a short prayer for sleep?</h3>
   <p>"Lord, quiet my mind, calm my heart, and give me rest tonight. I trust You with tomorrow. Amen."</p>
-</div>
+
 
 <h3>Is Psalm 4:8 a good verse for sleep?</h3>
   <p>"Yes. "In peace I will lie down and sleep, for you alone, Lord, make me dwell in safety" is one of the most-read Bible verses for bedtime and works well as a one-line prayer."</p>
