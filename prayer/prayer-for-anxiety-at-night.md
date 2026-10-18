@@ -4,13 +4,14 @@ title: "Prayer for Sleep and Anxiety: Calming Night Prayers & Verses"
 h1: "Prayer for Sleep and Anxiety at Night"
 breadcrumb_title: "Anxiety at Night"
 description: "Calming prayers for sleep and anxiety at night, with Bible verses and a simple bedtime routine for when worry keeps you awake."
-description:"When the house goes quiet and the lights go out, worry gets louder. You are tired, but your mind will not stop, and sleep feels far away. If you need a prayer for sleep and anxiety tonight, you are in the right place. Start with the prayers below, then read on for Bible verses and a simple bedtime routine that can help settle your mind."
-
 permalink: /prayer/prayer-for-anxiety-at-night/
-author: "Jesus Calling Team"
+author: "Bible Calling Team"
 ---
-
 <p class="lead">
+  When the house goes quiet and the lights go out, worry gets louder. You are tired, but your mind will not stop, and sleep feels far away. If you need a prayer for sleep and anxiety tonight, you are in the right place. Start with the prayers below, then read on for Bible verses and a simple bedtime routine that can help settle your mind.
+</p>
+
+<p>
   Worry is often quieter during the day. You're busy, there are other voices around, and problems feel manageable. Then the house goes quiet, the lights go out, and every unresolved fear starts to speak.
 </p>
 
