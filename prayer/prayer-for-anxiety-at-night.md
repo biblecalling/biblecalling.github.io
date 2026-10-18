@@ -182,5 +182,5 @@ author: "Bible Calling Team"
 <hr style="margin: 2.5rem 0 1.5rem; border: none; border-top: 1px solid var(--color-border);">
 
 <div class="about-page-meta" style="font-size: 0.9rem; color: var(--color-text-muted);">
-  <p><strong>About This Page:</strong> Written by the <strong>Jesus Calling Team</strong>. Last updated: October 12, 2026. Scripture quotations are taken from the Holy Bible, New International Version (NIV). This page provides spiritual encouragement and is not a substitute for clinical or medical advice.</p>
+  <p><strong>About This Page:</strong> Written by the <strong>Bible Calling Team</strong>. Last updated: October 12, 2026. Scripture quotations are taken from the Holy Bible, New International Version (NIV). This page provides spiritual encouragement and is not a substitute for clinical or medical advice.</p>
 </div>
