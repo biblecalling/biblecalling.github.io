@@ -29,6 +29,27 @@ author: "Bible Calling Team"
   </p>
 </div>
 
+<div class="prayer-box">
+  <div class="prayer-box-title">A Prayer to Fall Asleep When You Feel Anxious</div>
+  <p>
+    &ldquo;Father, I am tired, but my mind is still running. I place this day in Your hands, the parts that went well and the parts I regret. Slow my breathing. Settle my thoughts. Remind me that You hold tomorrow, so I do not have to figure it out tonight. Let sleep come gently, and let me wake with Your peace. Amen.&rdquo;
+  </p>
+</div>
+
+<div class="prayer-box">
+  <div class="prayer-box-title">A Prayer When You Wake Up Anxious at 3 AM</div>
+  <p>
+    &ldquo;Lord, I am awake again, and the worries feel bigger in the dark. You never sleep, so I do not have to stand guard over my life. Take what is keeping me up. Help me breathe slowly and rest in knowing You are near. If sleep does not return right away, let me rest in Your presence until morning. Amen.&rdquo;
+  </p>
+</div>
+
+<div class="prayer-box">
+  <div class="prayer-box-title">A Prayer for a Restless Mind After a Hard Day</div>
+  <p>
+    &ldquo;God, today was heavy. I replay conversations, deadlines, and things I cannot change. I choose to stop carrying them tonight. Forgive what I got wrong, and help me trust You with what I cannot fix. Give my body rest and my heart peace. Thank You that Your mercies are new in the morning. Amen.&rdquo;
+  </p>
+</div>
+
 <h2>A Short One-Sentence Prayer</h2>
 <div class="prayer-box">
   <div class="prayer-box-title">Simple Evening Breath Prayer</div>
@@ -89,7 +110,7 @@ author: "Bible Calling Team"
   <div class="scripture-highlight-ref">&mdash; Psalm 4:8 (NIV)</div>
 </div>
 <p>
-  Other comforting scriptures include <strong>1 Peter 5:7</strong> (<em>&ldquo;Cast all your anxiety on him because he cares for you&rdquo;</em>), <strong>Psalm 94:19</strong> (<em>&ldquo;When anxiety was great within me, your consolation brought me joy&rdquo;</em>), and <strong>Matthew 11:28</strong> (<em>&ldquo;Come to me, all you who are weary and burdened, and I will give you rest&rdquo;</em>). Pick just one verse and read it slowly, letting the truth soak in.
+  Other comforting scriptures include <strong>1 Peter 5:7</strong> (<em>&ldquo;Cast all your anxiety on him because he cares for you&rdquo;</em>), <strong>Psalm 94:19</strong> (<em>&ldquo;When anxiety was great within me, your consolation brought me joy&rdquo;</em>), and <strong>Matthew 11:28</strong> (<em>&ldquo;Come to me, all you who are weary and burdened, and I will give you rest&rdquo;</em>). Pick just one verse and read it slowly, letting the truth soak in. <strong>Psalm 127:2</strong> (<em>&ldquo;reminds us that rest is something God gives, not something we have to earn by worrying less&rdquo;</em>).
 </p>
 
 <h2>A Calming Bedtime Routine for Anxious Evenings</h2>
