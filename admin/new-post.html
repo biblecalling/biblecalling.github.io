@@ -1,0 +1,118 @@
+---
+layout: default
+title: "Create & Add a New Blog Post (Admin)"
+description: "Private administrative markdown generator for Bible Calling editorial team."
+permalink: /admin/new-post/
+noindex: true
+nofollow: true
+sitemap: false
+search: false
+---
+
+<div class="container container-reading" style="padding: 3rem 1.5rem 5rem;">
+  <div class="add-blog-modal-card" style="margin: 0 auto; max-width: 760px; box-shadow: var(--shadow-md);">
+    <div class="add-blog-modal-header" style="text-align: left; margin-bottom: 1.5rem;">
+      <div class="add-blog-modal-icon-badge" aria-hidden="true" style="margin-bottom: 0.75rem;">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M12 20h9"></path>
+          <path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"></path>
+        </svg>
+      </div>
+      <h1 class="add-blog-modal-title" style="font-size: 1.75rem; margin-bottom: 0.35rem;">Create &amp; Add a New Blog Post</h1>
+      <p class="add-blog-modal-subtitle" style="margin: 0;">
+        Draft your devotional or article below. It generates the ready-to-use Jekyll Markdown post file.
+      </p>
+    </div>
+
+    <div class="add-blog-modal-body">
+      <form id="add-blog-form" class="add-blog-form" onsubmit="return false;">
+        <div class="add-blog-field-group">
+          <label for="new-blog-title" class="add-blog-label">Blog Title <span class="required">*</span></label>
+          <input type="text" id="new-blog-title" class="add-blog-input" placeholder="e.g. Finding Peace in Times of Uncertainty" required value="Finding God's Peace in Every Season">
+        </div>
+
+        <div class="add-blog-row">
+          <div class="add-blog-field-group">
+            <label for="new-blog-category" class="add-blog-label">Category</label>
+            <select id="new-blog-category" class="add-blog-select">
+              <option value="Daily Devotional" selected>Daily Devotional</option>
+              <option value="Jesus Calling">Jesus Calling</option>
+              <option value="Faith">Faith</option>
+              <option value="Prayer">Prayer</option>
+              <option value="Bible Study">Bible Study</option>
+              <option value="Trusting God">Trusting God</option>
+              <option value="Christian Encouragement">Christian Encouragement</option>
+              <option value="Christian Life">Christian Life</option>
+            </select>
+          </div>
+
+          <div class="add-blog-field-group">
+            <label for="new-blog-date" class="add-blog-label">Publish Date</label>
+            <input type="date" id="new-blog-date" class="add-blog-input">
+          </div>
+        </div>
+
+        <div class="add-blog-field-group">
+          <label for="new-blog-desc" class="add-blog-label">Short Summary / Excerpt</label>
+          <input type="text" id="new-blog-desc" class="add-blog-input" placeholder="Brief summary of the reflection for SEO and card snippets..." value="A heart-centered reflection on surrendering our burdens to Christ and resting in His promises.">
+        </div>
+
+        <div class="add-blog-field-group">
+          <label for="new-blog-tags" class="add-blog-label">Tags (comma-separated)</label>
+          <input type="text" id="new-blog-tags" class="add-blog-input" placeholder="Peace, Prayer, Faith, Daily Devotional" value="Peace, Prayer, Faith, Devotional">
+        </div>
+
+        <div class="add-blog-field-group">
+          <label for="new-blog-content" class="add-blog-label">Post Content (Markdown)</label>
+          <textarea id="new-blog-content" rows="6" class="add-blog-textarea" placeholder="Write your reflection here in Markdown...">### Scripture Reading
+> "Peace I leave with you; my peace I give to you. Not as the world gives do I give to you. Let not your hearts be troubled, neither let them be afraid." — John 14:27
+
+### Today's Reflection
+When life feels overwhelming, remember that God's peace surpasses all human understanding. Take a moment today to breathe deeply and rest in His presence.
+
+### Prayer
+*Lord Jesus, thank You for Your unending love and grace. Calm my anxious thoughts and guide my steps today. In Your holy name, Amen.*</textarea>
+        </div>
+
+        <!-- Live Generated Preview Box -->
+        <div class="add-blog-preview-section">
+          <div class="add-blog-preview-header">
+            <div class="add-blog-preview-filename">
+              <span class="preview-label">Generated File Name:</span>
+              <code id="new-blog-filename">_posts/2026-10-18-finding-gods-peace-in-every-season.md</code>
+            </div>
+          </div>
+          <pre class="add-blog-preview-code"><code id="new-blog-markdown-preview"></code></pre>
+        </div>
+
+        <!-- Action Buttons -->
+        <div class="add-blog-actions">
+          <button type="button" id="btn-copy-markdown" class="btn btn-primary add-blog-action-btn">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
+            <span id="btn-copy-markdown-text">Copy Post Markdown</span>
+          </button>
+
+          <button type="button" id="btn-download-markdown" class="btn btn-secondary add-blog-action-btn">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+            <span>Download .md File</span>
+          </button>
+
+          <a id="btn-github-new-post" href="https://github.com/biblecalling/biblecalling.github.io/new/main/_posts" target="_blank" rel="noopener noreferrer" class="btn btn-secondary add-blog-action-btn">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+            <span>Publish on GitHub</span>
+          </a>
+        </div>
+
+        <!-- Step Instructions -->
+        <div class="add-blog-guide" style="margin-top: 1.5rem;">
+          <strong class="add-blog-guide-title">How to publish this post:</strong>
+          <ol class="add-blog-guide-steps">
+            <li>Save or download this file inside your repository's <code>_posts/</code> directory.</li>
+            <li>Commit &amp; push to your GitHub branch.</li>
+            <li>Jekyll will automatically build and publish your post &mdash; it will instantly appear in the <strong>Footer Blog Section</strong>, on the homepage, and in the article archive!</li>
+          </ol>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>

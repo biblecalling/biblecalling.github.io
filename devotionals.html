@@ -1,42 +1,178 @@
 ---
 layout: page
-title: "Daily Devotionals & Quiet Time Guide"
-description: "Cultivate a meaningful daily devotional habit. Peaceful Christian devotions and practical steps for spending quiet time with the Lord."
+title: "Daily Devotional for Today: Free Morning Devotionals & Quiet Time Guide"
+h1: "Daily Devotional for Today"
+breadcrumb_title: "Daily Devotionals"
+description: "Read today's daily devotional with scripture, a short reflection and prayer. Start a simple morning quiet time habit with free Christian devotionals."
 permalink: /devotionals/
+exact_title: true
+hide_lead: true
 ---
 
 <p class="lead">
-  Setting aside time each day to draw near to God transforms how we experience our work, our relationships, and our trials. When we seek Him first, His peace steadies our souls for whatever lies ahead.
+  A daily devotional is a short time each morning (or evening) when you read a Bible passage, think about what it says, and pray. It does not need to be long or perfect. Five to fifteen minutes is enough to start.
 </p>
 
-<div class="scripture-highlight">
+<p>
+  This page is your starting point. You will find today's devotional, a simple way to build the habit, and guides to the most popular devotional styles and books.
+</p>
+
+<!-- TODO(author): add byline, e.g. "Written by [name or Bible Calling team]". Link to /about/. -->
+<p class="devotional-meta-date"><em>Last updated: {{ site.time | date: "%B %Y" }}.</em></p>
+
+<h2 id="today-heading">Today's Devotional</h2>
+
+{% assign non_future_posts = site.posts | where_exp: "p", "p.date <= site.time" %}
+{% assign today_post = nil %}
+{% for p in non_future_posts %}
+  {% if p.categories contains "Jesus Calling" or p.categories contains "jesus-calling" %}
+    {% assign today_post = p %}
+    {% break %}
+  {% endif %}
+{% endfor %}
+
+{% if today_post %}
+<section class="today-devotional-section" aria-labelledby="today-heading">
+  <article class="today-devotional-card">
+    <span class="today-devotional-badge">Today's Devotional</span>
+    <h3 class="today-devotional-title">
+      <a href="{{ today_post.url | relative_url }}">{{ today_post.title }}</a>
+    </h3>
+    <p class="today-devotional-excerpt">
+      {{ today_post.description | default: today_post.content | strip_html | truncatewords: 30 }}
+    </p>
+    <div class="today-devotional-actions">
+      <a href="{{ today_post.url | relative_url }}" class="btn btn-primary today-devotional-btn">
+        <span>Read Today's Devotional</span>
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+      </a>
+    </div>
+  </article>
+</section>
+{% endif %}
+
+<p>
+  New reflections are added every day, each with a Bible verse, a short thought and a prayer. You can also browse the full <a href="{{ site.baseurl }}/jesus-calling-october-2026/">October 2026 devotional guide</a>.
+</p>
+
+<h2>How to Start a Daily Devotional</h2>
+
+<p>Many people give up because they try to do too much. Start small and keep it steady.</p>
+
+<h3>1. Choose a time and place</h3>
+<p>Pick a time you can protect, such as before the phone, before the news, or after the kids leave for school. A fixed spot (a chair, a corner of the table) helps your mind settle faster.</p>
+
+<h3>2. Read slowly</h3>
+<p>Read the Bible passage once, then read it again. Notice a word or phrase that stands out. A devotional reading is not about finishing a chapter. It is about letting one thought sink in.</p>
+
+<h3>3. Ask two simple questions</h3>
+<ul>
+  <li>What does this tell me about God?</li>
+  <li>What is one thing I can do or trust today because of it?</li>
+</ul>
+
+<h3>4. Pray in your own words</h3>
+<p>Talk to God about the day ahead: your work, your family, your worries. If words are hard to find, use one of our <a href="{{ site.baseurl }}/prayer/">daily prayer guides</a>.</p>
+
+<h3>5. Write one line</h3>
+<p>Keep a small notebook and write one sentence about what you noticed. After a month, reading those lines back is encouraging.</p>
+
+<!-- TODO(author): add 2-3 sentences of genuine first-hand experience (how you started, what got in the way, what helped you stay consistent). Do not fabricate. -->
+
+<h2>Types of Daily Devotionals</h2>
+
+<p>Not every devotional fits every person. Here are the main kinds.</p>
+
+<h3>Short scripture-and-reflection devotionals</h3>
+<p>One verse, a few paragraphs, and a prayer. These suit busy mornings and are the most common style.</p>
+
+<h3>Devotionals built around one Bible book</h3>
+<p>These follow a book such as Psalms or the Gospel of John, a few verses at a time. They suit people who want to understand context, not just a single verse.</p>
+
+<h3>Devotionals for a specific group</h3>
+<p>Some are written with certain readers in mind, such as women, couples or children, and speak to the situations those readers face.</p>
+
+<h3>Classic devotional books</h3>
+<p>Well-known devotional books have been used by readers for years, including <em>Jesus Calling</em>, <em>My Utmost for His Highest</em>, <em>Our Daily Bread</em> and <em>The Upper Room</em>. Each has a different tone, from quiet and personal to more teaching-focused.</p>
+
+<h2>Explore More Devotionals</h2>
+
+<ul class="devotional-explore-links">
+  {% assign page_what_is = site.pages | where: "url", "/devotionals/what-is-a-devotional/" | first %}
+  {% if page_what_is %}
+    <li><a href="{{ page_what_is.url | relative_url }}">What Is a Devotional?</a> &mdash; Meaning, types and how it differs from Bible study</li>
+  {% else %}
+    <!-- COMING SOON: <li><a href="{{ '/devotionals/what-is-a-devotional/' | relative_url }}">What Is a Devotional?</a> &mdash; Meaning, types and how it differs from Bible study</li> -->
+  {% endif %}
+
+  {% assign page_odb = site.pages | where: "url", "/devotionals/our-daily-bread/" | first %}
+  {% if page_odb %}
+    <li><a href="{{ page_odb.url | relative_url }}">Our Daily Bread Devotional</a> &mdash; How it works and where to read it</li>
+  {% else %}
+    <!-- COMING SOON: <li><a href="{{ '/devotionals/our-daily-bread/' | relative_url }}">Our Daily Bread Devotional</a> &mdash; How it works and where to read it</li> -->
+  {% endif %}
+
+  {% assign page_women = site.pages | where: "url", "/devotionals/for-women/" | first %}
+  {% if page_women %}
+    <li><a href="{{ page_women.url | relative_url }}">Devotionals for Women</a> &mdash; Encouragement for different seasons of life</li>
+  {% else %}
+    <!-- COMING SOON: <li><a href="{{ '/devotionals/for-women/' | relative_url }}">Devotionals for Women</a> &mdash; Encouragement for different seasons of life</li> -->
+  {% endif %}
+
+  {% assign page_books = site.pages | where: "url", "/devotionals/best-devotional-books/" | first %}
+  {% if page_books %}
+    <li><a href="{{ page_books.url | relative_url }}">Best Devotional Books</a> &mdash; A reader's guide to popular choices</li>
+  {% else %}
+    <!-- COMING SOON: <li><a href="{{ '/devotionals/best-devotional-books/' | relative_url }}">Best Devotional Books</a> &mdash; A reader's guide to popular choices</li> -->
+  {% endif %}
+
+  <li><a href="{{ site.baseurl }}/categories/jesus-calling/">Jesus Calling Daily Reflections</a> &mdash; Daily reflections grounded in peaceful Scripture encouragement.</li>
+  <li><a href="{{ site.baseurl }}/prayer/">Prayer Guides</a> &mdash; Biblical prayers for healing, peace, strength, and quiet time with God.</li>
+  <li><a href="{{ site.baseurl }}/jesus-calling-october-2026/">October 2026 Daily Reflections</a> &mdash; Explore our day-by-day October devotional journey.</li>
+  <li><a href="{{ site.baseurl }}/categories/devotionals/">All Devotionals Archive</a> &mdash; Browse all published devotional reflections.</li>
+  <li><a href="{{ site.baseurl }}/categories/faith/">Faith Reflections</a> &mdash; Deepen your trust and steadfastness in Christ.</li>
+</ul>
+
+<h2>Frequently Asked Questions</h2>
+
+<div class="faq-list">
+  <div class="faq-item">
+    <h3>What is a daily devotional?</h3>
+    <p>A daily devotional is a short, regular time of Bible reading, reflection and prayer. Many devotionals pair a verse with a brief message to help you apply it to your day.</p>
+  </div>
+
+  <div class="faq-item">
+    <h3>How long should a devotional take?</h3>
+    <p>Most take between 5 and 15 minutes. A few minutes you keep every day will help you more than an hour you only manage once a month.</p>
+  </div>
+
+  <div class="faq-item">
+    <h3>What is the best time of day for a devotional?</h3>
+    <p>The best time is the one you will actually keep. Many people prefer the morning because it sets the tone for the day, but evenings work well too, especially for those with busy mornings.</p>
+  </div>
+
+  <div class="faq-item">
+    <h3>Do I need a devotional book, or can I just read the Bible?</h3>
+    <p>You do not need a book. Reading a Bible passage and praying is a devotional in itself. A devotional book or website simply gives you a guide and a daily thought to start from.</p>
+  </div>
+
+  <div class="faq-item">
+    <h3>What if I miss a day?</h3>
+    <p>Just start again the next day. A devotional habit is a relationship with God, not a streak to protect.</p>
+  </div>
+
+  <div class="faq-item">
+    <h3>Are these devotionals affiliated with Jesus Calling, Our Daily Bread or other publishers?</h3>
+    <p>No. Bible Calling is an independent website. We write our own reflections and refer to other devotionals for discussion only. For the official books, please visit the publishers.</p>
+  </div>
+</div>
+
+<div class="scripture-highlight" style="margin-top: 3rem;">
   <div class="scripture-highlight-title">Daily Stillness</div>
   <blockquote class="scripture-highlight-text">
     &ldquo;The steadfast love of the Lord never ceases; his mercies never come to an end; they are new every morning; great is your faithfulness.&rdquo;
   </blockquote>
   <div class="scripture-highlight-ref">&mdash; Lamentations 3:22&ndash;23</div>
-</div>
-
-<h2>Creating a Sustainable Quiet Time</h2>
-<p>
-  A meaningful quiet time does not require hours of complex study or rigid perfection. It is an intentional invitation for Jesus to enter your day. Here is a simple, three-step rhythm that many Christians find life-giving:
-</p>
-
-<ol>
-  <li><strong>Pause and Breathe (2 minutes):</strong> Put away digital distractions. Take a few deep breaths, remembering that you are in the presence of the God who loves you.</li>
-  <li><strong>Read and Meditate (5&ndash;10 minutes):</strong> Read a short passage from our <a href="{{ site.baseurl }}/bible/">Bible encouragement guide</a> or a daily devotional article, such as our <a href="{{ site.baseurl }}/jesus-calling-october-2026/">Jesus Calling October reflections</a>. Ask yourself: <em>What does this teach me about God's character? How does this speak to my heart today?</em></li>
-  <li><strong>Pray and Surrender (3&ndash;5 minutes):</strong> Speak openly with the Lord about your schedule, fears, and hopes—using our <a href="{{ site.baseurl }}/prayer/">daily prayer guides</a> whenever words feel difficult to find. Entrust the day into His capable hands.</li>
-</ol>
-
-<h2>Explore Our Devotional Archive</h2>
-<p>
-  Our devotional reflections are written to be read in 3 to 5 minutes, making them ideal companions for your morning coffee or evening wind-down:
-</p>
-
-<div class="category-pills" style="margin: 2rem 0;">
-  <a href="{{ site.baseurl }}/jesus-calling-october-2026/" style="font-weight: 600; border-color: var(--color-accent); color: var(--color-accent);">October 2026 Daily Reflections &rarr;</a>
-  <a href="{{ site.baseurl }}/categories/devotionals/">Read All Devotionals &rarr;</a>
-  <a href="{{ site.baseurl }}/categories/faith/">Read Faith Reflections &rarr;</a>
 </div>
 
 {% include youtube-prayer.html %}
@@ -47,3 +183,85 @@ permalink: /devotionals/
     Lord Jesus, thank You for the gift of a new day. Direct my steps, guard my speech, and fill my heart with Your patience and peace. Let Your light shine through me to everyone I meet today. Amen.
   </p>
 </div>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "CollectionPage",
+      "@id": "https://biblecalling.github.io/devotionals/#webpage",
+      "url": "https://biblecalling.github.io/devotionals/",
+      "name": "Daily Devotional for Today: Free Morning Devotionals & Quiet Time Guide",
+      "description": "Read today's daily devotional with scripture, a short reflection and prayer. Start a simple morning quiet time habit with free Christian devotionals.",
+      "inLanguage": "en",
+      "isPartOf": {
+        "@type": "WebSite",
+        "@id": "https://biblecalling.github.io/#website",
+        "name": "Bible Calling",
+        "url": "https://biblecalling.github.io/"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "@id": "https://biblecalling.github.io/#organization",
+        "name": "Bible Calling",
+        "url": "https://biblecalling.github.io/"
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://biblecalling.github.io/devotionals/#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What is a daily devotional?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "A daily devotional is a short, regular time of Bible reading, reflection and prayer. Many devotionals pair a verse with a brief message to help you apply it to your day."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How long should a devotional take?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Most take between 5 and 15 minutes. A few minutes you keep every day will help you more than an hour you only manage once a month."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What is the best time of day for a devotional?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The best time is the one you will actually keep. Many people prefer the morning because it sets the tone for the day, but evenings work well too, especially for those with busy mornings."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do I need a devotional book, or can I just read the Bible?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "You do not need a book. Reading a Bible passage and praying is a devotional in itself. A devotional book or website simply gives you a guide and a daily thought to start from."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What if I miss a day?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Just start again the next day. A devotional habit is a relationship with God, not a streak to protect."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Are these devotionals affiliated with Jesus Calling, Our Daily Bread or other publishers?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No. Bible Calling is an independent website. We write our own reflections and refer to other devotionals for discussion only. For the official books, please visit the publishers."
+          }
+        }
+      ]
+    }
+  ]
+}
+</script>

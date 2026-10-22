@@ -416,243 +416,61 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   }
 
-  // 12. Secure Owner Access Control & Add Blog Workflow
-  const OWNER_AUTH_KEY = 'biblecalling_owner_session';
-  const OWNER_HASH_KEY = 'biblecalling_custom_owner_hash';
+  // 12. Admin Post Generator (Initializes only on /admin/new-post/)
+  const addBlogForm = document.getElementById('add-blog-form');
+  if (addBlogForm) {
+    const titleInput = document.getElementById('new-blog-title');
+    const catSelect = document.getElementById('new-blog-category');
+    const dateInput = document.getElementById('new-blog-date');
+    const descInput = document.getElementById('new-blog-desc');
+    const tagsInput = document.getElementById('new-blog-tags');
+    const contentInput = document.getElementById('new-blog-content');
 
-  // SHA-256 hashes of recognized owner passcodes:
-  // 1. BibleCalling@2026 -> 10afe3e8f2426c35b5e2708b38c20059be3995eaf16a6a46916a5b3d9d8228e7
-  // 2. biblecalling2026  -> 5803f154f7416f26d816826ec1311d37c7d1717c6ffbb5ea3f221b4f641227d0
-  const VALID_OWNER_HASHES = [
-    '10afe3e8f2426c35b5e2708b38c20059be3995eaf16a6a46916a5b3d9d8228e7',
-    '5803f154f7416f26d816826ec1311d37c7d1717c6ffbb5ea3f221b4f641227d0'
-  ];
+    const filenamePreview = document.getElementById('new-blog-filename');
+    const markdownPreview = document.getElementById('new-blog-markdown-preview');
+    const copyBtn = document.getElementById('btn-copy-markdown');
+    const copyBtnText = document.getElementById('btn-copy-markdown-text');
+    const downloadBtn = document.getElementById('btn-download-markdown');
+    const githubLink = document.getElementById('btn-github-new-post');
 
-  async function hashStringSHA256(str) {
-    if (window.crypto && crypto.subtle) {
-      const encoder = new TextEncoder();
-      const data = encoder.encode(str);
-      const hashBuf = await crypto.subtle.digest('SHA-256', data);
-      const hashArr = Array.from(new Uint8Array(hashBuf));
-      return hashArr.map(b => b.toString(16).padStart(2, '0')).join('');
-    }
-    // Fallback if Web Crypto is unavailable
-    return str;
-  }
-
-  function isOwnerAuthenticated() {
-    try {
-      const sessionVal = sessionStorage.getItem(OWNER_AUTH_KEY) || localStorage.getItem(OWNER_AUTH_KEY);
-      if (!sessionVal) return false;
-      const parsed = JSON.parse(sessionVal);
-      if (parsed && parsed.authenticated === true && (!parsed.expires || parsed.expires > Date.now())) {
-        return true;
-      }
-    } catch (e) {
-      // In case of JSON error
-    }
-    return false;
-  }
-
-  function setOwnerSession(rememberMe) {
-    const sessionData = JSON.stringify({
-      authenticated: true,
-      timestamp: Date.now(),
-      expires: rememberMe ? (Date.now() + 30 * 24 * 60 * 60 * 1000) : null
-    });
-    if (rememberMe) {
-      try { localStorage.setItem(OWNER_AUTH_KEY, sessionData); } catch (e) {}
-    } else {
-      try { sessionStorage.setItem(OWNER_AUTH_KEY, sessionData); } catch (e) {}
-    }
-  }
-
-  function clearOwnerSession() {
-    try { localStorage.removeItem(OWNER_AUTH_KEY); } catch (e) {}
-    try { sessionStorage.removeItem(OWNER_AUTH_KEY); } catch (e) {}
-  }
-
-  // UI Elements
-  const openAddBlogBtn = document.getElementById('open-add-blog-modal');
-  const ownerActiveStatusBtn = document.getElementById('owner-active-status');
-  const footerOwnerLink = document.getElementById('trigger-owner-portal');
-  const footerOwnerLinkText = document.getElementById('footer-owner-link-text');
-
-  const ownerLoginModal = document.getElementById('owner-login-modal');
-  const ownerLoginClose = document.getElementById('owner-login-close');
-  const ownerLoginBackdrop = document.getElementById('owner-login-backdrop');
-  const ownerLoginForm = document.getElementById('owner-login-form');
-  const ownerPasscodeInput = document.getElementById('owner-passcode-input');
-  const ownerRememberCheckbox = document.getElementById('owner-remember-me');
-  const ownerLoginError = document.getElementById('owner-login-error');
-  const togglePasscodeVisBtn = document.getElementById('toggle-owner-passcode-vis');
-  const modalLogoutBtn = document.getElementById('modal-owner-logout-btn');
-
-  const addBlogModal = document.getElementById('add-blog-modal');
-  const addBlogClose = document.getElementById('add-blog-modal-close');
-  const addBlogBackdrop = document.getElementById('add-blog-modal-backdrop');
-
-  const titleInput = document.getElementById('new-blog-title');
-  const catSelect = document.getElementById('new-blog-category');
-  const dateInput = document.getElementById('new-blog-date');
-  const descInput = document.getElementById('new-blog-desc');
-  const tagsInput = document.getElementById('new-blog-tags');
-  const contentInput = document.getElementById('new-blog-content');
-
-  const filenamePreview = document.getElementById('new-blog-filename');
-  const markdownPreview = document.getElementById('new-blog-markdown-preview');
-  const copyBtn = document.getElementById('btn-copy-markdown');
-  const copyBtnText = document.getElementById('btn-copy-markdown-text');
-  const downloadBtn = document.getElementById('btn-download-markdown');
-  const githubLink = document.getElementById('btn-github-new-post');
-
-  function updateOwnerUI(isAuth) {
-    if (isAuth) {
-      if (openAddBlogBtn) {
-        openAddBlogBtn.style.display = 'inline-flex';
-        openAddBlogBtn.classList.add('owner-visible');
-      }
-      if (ownerActiveStatusBtn) {
-        ownerActiveStatusBtn.style.display = 'inline-flex';
-        ownerActiveStatusBtn.classList.add('owner-visible');
-      }
-      if (footerOwnerLinkText) {
-        footerOwnerLinkText.textContent = 'Owner Active (Logout)';
-      }
-    } else {
-      if (openAddBlogBtn) {
-        openAddBlogBtn.style.display = 'none';
-        openAddBlogBtn.classList.remove('owner-visible');
-      }
-      if (ownerActiveStatusBtn) {
-        ownerActiveStatusBtn.style.display = 'none';
-        ownerActiveStatusBtn.classList.remove('owner-visible');
-      }
-      if (footerOwnerLinkText) {
-        footerOwnerLinkText.textContent = 'Owner Portal';
-      }
-    }
-  }
-
-  function openOwnerLoginModal() {
-    if (!ownerLoginModal) return;
-    if (ownerLoginError) ownerLoginError.style.display = 'none';
-    if (ownerPasscodeInput) {
-      ownerPasscodeInput.value = '';
-    }
-    ownerLoginModal.style.display = 'flex';
-    void ownerLoginModal.offsetWidth;
-    ownerLoginModal.classList.add('active');
-    ownerLoginModal.setAttribute('aria-hidden', 'false');
-    document.body.style.overflow = 'hidden';
-    setTimeout(() => {
-      if (ownerPasscodeInput) ownerPasscodeInput.focus();
-    }, 120);
-  }
-
-  function closeOwnerLoginModal() {
-    if (!ownerLoginModal) return;
-    ownerLoginModal.classList.remove('active');
-    ownerLoginModal.setAttribute('aria-hidden', 'true');
-    document.body.style.overflow = '';
-    setTimeout(() => {
-      if (!ownerLoginModal.classList.contains('active')) {
-        ownerLoginModal.style.display = 'none';
-      }
-    }, 250);
-  }
-
-  async function handleOwnerLoginSubmit(e) {
-    if (e) e.preventDefault();
-    if (!ownerPasscodeInput) return;
-
-    const inputVal = ownerPasscodeInput.value.trim();
-    if (!inputVal) {
-      ownerPasscodeInput.focus();
-      return;
+    function slugify(text) {
+      return text
+        .toString()
+        .toLowerCase()
+        .trim()
+        .replace(/\s+/g, '-')
+        .replace(/[^\w\-]+/g, '')
+        .replace(/\-\-+/g, '-')
+        .replace(/^-+/, '')
+        .replace(/-+$/, '');
     }
 
-    try {
-      const inputHash = await hashStringSHA256(inputVal);
-      const customHash = localStorage.getItem(OWNER_HASH_KEY);
-      const isMatch = VALID_OWNER_HASHES.includes(inputHash) ||
-                      (customHash && inputHash === customHash) ||
-                      inputVal === 'BibleCalling@2026' ||
-                      inputVal === 'biblecalling2026';
-
-      if (isMatch) {
-        const remember = ownerRememberCheckbox ? ownerRememberCheckbox.checked : true;
-        setOwnerSession(remember);
-        updateOwnerUI(true);
-        closeOwnerLoginModal();
-        openAddBlogModal();
-      } else {
-        if (ownerLoginError) {
-          ownerLoginError.style.display = 'flex';
-        }
-        const card = ownerLoginModal.querySelector('.owner-login-card');
-        if (card) {
-          card.classList.remove('shake-animation');
-          void card.offsetWidth;
-          card.classList.add('shake-animation');
-        }
-        ownerPasscodeInput.focus();
-        ownerPasscodeInput.select();
-      }
-    } catch (err) {
-      console.error('Owner authentication error:', err);
+    if (dateInput && !dateInput.value) {
+      const today = new Date();
+      const yyyy = today.getFullYear();
+      const mm = String(today.getMonth() + 1).padStart(2, '0');
+      const dd = String(today.getDate()).padStart(2, '0');
+      dateInput.value = `${yyyy}-${mm}-${dd}`;
     }
-  }
 
-  function handleOwnerLogout() {
-    if (confirm('Are you sure you want to lock and exit Owner Mode? The Add Blog button will be hidden until you log in again.')) {
-      clearOwnerSession();
-      updateOwnerUI(false);
-      closeAddBlogModal();
-      alert('You have logged out of Owner Mode. The Add Blog button is now hidden.');
-    }
-  }
+    function generateMarkdown() {
+      if (!titleInput || !markdownPreview) return { filename: '', markdown: '' };
 
-  // Slugify helper
-  function slugify(text) {
-    return text
-      .toString()
-      .toLowerCase()
-      .trim()
-      .replace(/\s+/g, '-')
-      .replace(/[^\w\-]+/g, '')
-      .replace(/\-\-+/g, '-')
-      .replace(/^-+/, '')
-      .replace(/-+$/, '');
-  }
+      const title = (titleInput.value || 'Untitled Reflection').trim();
+      const cat = catSelect ? catSelect.value : 'Daily Devotional';
+      const date = (dateInput && dateInput.value) ? dateInput.value : new Date().toISOString().slice(0, 10);
+      const desc = descInput ? descInput.value.trim() : '';
+      const tagsStr = tagsInput ? tagsInput.value.trim() : '';
+      const tags = tagsStr ? tagsStr.split(',').map(t => t.trim()).filter(Boolean) : [cat];
+      const rawContent = contentInput ? contentInput.value.trim() : '';
 
-  // Set today's date if empty
-  if (dateInput && !dateInput.value) {
-    const today = new Date();
-    const yyyy = today.getFullYear();
-    const mm = String(today.getMonth() + 1).padStart(2, '0');
-    const dd = String(today.getDate()).padStart(2, '0');
-    dateInput.value = `${yyyy}-${mm}-${dd}`;
-  }
+      const slug = slugify(title) || 'reflection';
+      const filename = `${date}-${slug}.md`;
+      const fullPath = `_posts/${filename}`;
 
-  function generateMarkdown() {
-    if (!titleInput || !markdownPreview) return { filename: '', markdown: '' };
+      const tagsYaml = tags.length > 0 ? tags.map(t => `  - ${t}`).join('\n') : `  - ${cat}`;
 
-    const title = (titleInput.value || 'Untitled Reflection').trim();
-    const cat = catSelect ? catSelect.value : 'Daily Devotional';
-    const date = (dateInput && dateInput.value) ? dateInput.value : new Date().toISOString().slice(0, 10);
-    const desc = descInput ? descInput.value.trim() : '';
-    const tagsStr = tagsInput ? tagsInput.value.trim() : '';
-    const tags = tagsStr ? tagsStr.split(',').map(t => t.trim()).filter(Boolean) : [cat];
-    const rawContent = contentInput ? contentInput.value.trim() : '';
-
-    const slug = slugify(title) || 'reflection';
-    const filename = `${date}-${slug}.md`;
-    const fullPath = `_posts/${filename}`;
-
-    const tagsYaml = tags.length > 0 ? tags.map(t => `  - ${t}`).join('\n') : `  - ${cat}`;
-
-    const markdown = `---
+      const markdown = `---
 layout: post
 title: "${title.replace(/"/g, '\\"')}"
 date: ${date} 07:00:00 +0000
@@ -667,197 +485,70 @@ author: "Bible Calling Editorial Team"
 ${rawContent}
 `;
 
-    if (filenamePreview) {
-      filenamePreview.textContent = fullPath;
-    }
-    markdownPreview.textContent = markdown;
+      if (filenamePreview) {
+        filenamePreview.textContent = fullPath;
+      }
+      markdownPreview.textContent = markdown;
 
-    if (githubLink) {
-      githubLink.href = `https://github.com/biblecalling/biblecalling.github.io/new/main/_posts?filename=${encodeURIComponent(filename)}`;
-    }
+      if (githubLink) {
+        githubLink.href = `https://github.com/biblecalling/biblecalling.github.io/new/main/_posts?filename=${encodeURIComponent(filename)}`;
+      }
 
-    return { filename, markdown };
-  }
-
-  function openAddBlogModal() {
-    // Strict Owner Authorization Guard
-    if (!isOwnerAuthenticated()) {
-      openOwnerLoginModal();
-      return;
+      return { filename, markdown };
     }
 
-    if (!addBlogModal) return;
-    addBlogModal.style.display = 'flex';
-    void addBlogModal.offsetWidth;
-    addBlogModal.classList.add('active');
-    addBlogModal.setAttribute('aria-hidden', 'false');
-    document.body.style.overflow = 'hidden';
+    [titleInput, catSelect, dateInput, descInput, tagsInput, contentInput].forEach(field => {
+      if (field) {
+        field.addEventListener('input', generateMarkdown);
+        field.addEventListener('change', generateMarkdown);
+      }
+    });
+
     generateMarkdown();
-    if (titleInput) titleInput.focus();
-  }
 
-  function closeAddBlogModal() {
-    if (!addBlogModal) return;
-    addBlogModal.classList.remove('active');
-    addBlogModal.setAttribute('aria-hidden', 'true');
-    document.body.style.overflow = '';
-    setTimeout(() => {
-      if (!addBlogModal.classList.contains('active')) {
-        addBlogModal.style.display = 'none';
-      }
-    }, 250);
-    if (openAddBlogBtn && isOwnerAuthenticated()) openAddBlogBtn.focus();
-  }
+    if (copyBtn) {
+      copyBtn.addEventListener('click', async () => {
+        const { markdown } = generateMarkdown();
+        try {
+          if (navigator.clipboard && navigator.clipboard.writeText) {
+            await navigator.clipboard.writeText(markdown);
+          } else {
+            const textarea = document.createElement('textarea');
+            textarea.value = markdown;
+            textarea.style.position = 'fixed';
+            textarea.style.opacity = '0';
+            document.body.appendChild(textarea);
+            textarea.select();
+            document.execCommand('copy');
+            document.body.removeChild(textarea);
+          }
 
-  // Event Listeners for Owner Login
-  if (ownerLoginForm) {
-    ownerLoginForm.addEventListener('submit', handleOwnerLoginSubmit);
-  }
-
-  if (ownerLoginClose) {
-    ownerLoginClose.addEventListener('click', closeOwnerLoginModal);
-  }
-
-  if (ownerLoginBackdrop) {
-    ownerLoginBackdrop.addEventListener('click', closeOwnerLoginModal);
-  }
-
-  if (togglePasscodeVisBtn && ownerPasscodeInput) {
-    togglePasscodeVisBtn.addEventListener('click', () => {
-      const isPw = ownerPasscodeInput.type === 'password';
-      ownerPasscodeInput.type = isPw ? 'text' : 'password';
-      togglePasscodeVisBtn.innerHTML = isPw
-        ? `<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17.94 17.94A10.07 10.07 0 0 1 12 20c-7 0-11-8-11-8a18.45 18.45 0 0 1 5.06-5.94M9.9 4.24A9.12 9.12 0 0 1 12 4c7 0 11 8 11 8a18.5 18.5 0 0 1-2.16 3.19m-6.72-1.07a3 3 0 1 1-4.24-4.24"></path><line x1="1" y1="1" x2="23" y2="23"></line></svg>`
-        : `<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>`;
-    });
-  }
-
-  if (footerOwnerLink) {
-    footerOwnerLink.addEventListener('click', (e) => {
-      e.preventDefault();
-      if (isOwnerAuthenticated()) {
-        handleOwnerLogout();
-      } else {
-        openOwnerLoginModal();
-      }
-    });
-  }
-
-  if (ownerActiveStatusBtn) {
-    ownerActiveStatusBtn.addEventListener('click', handleOwnerLogout);
-  }
-
-  if (modalLogoutBtn) {
-    modalLogoutBtn.addEventListener('click', handleOwnerLogout);
-  }
-
-  // Event Listeners for Add Blog Modal
-  if (openAddBlogBtn) {
-    openAddBlogBtn.addEventListener('click', openAddBlogModal);
-  }
-
-  if (addBlogClose) {
-    addBlogClose.addEventListener('click', closeAddBlogModal);
-  }
-
-  if (addBlogBackdrop) {
-    addBlogBackdrop.addEventListener('click', closeAddBlogModal);
-  }
-
-  document.addEventListener('keydown', (e) => {
-    // Escape key closes open modals
-    if (e.key === 'Escape') {
-      if (ownerLoginModal && ownerLoginModal.classList.contains('active')) {
-        closeOwnerLoginModal();
-      } else if (addBlogModal && addBlogModal.classList.contains('active')) {
-        closeAddBlogModal();
-      }
-    }
-
-    // Shortcut: Ctrl + Shift + A or Alt + L to trigger Owner Portal
-    if ((e.ctrlKey && e.shiftKey && (e.key === 'A' || e.key === 'a')) ||
-        (e.altKey && (e.key === 'L' || e.key === 'l'))) {
-      e.preventDefault();
-      if (isOwnerAuthenticated()) {
-        openAddBlogModal();
-      } else {
-        openOwnerLoginModal();
-      }
-    }
-  });
-
-  // Listen for changes in form fields to update live preview
-  [titleInput, catSelect, dateInput, descInput, tagsInput, contentInput].forEach(field => {
-    if (field) {
-      field.addEventListener('input', generateMarkdown);
-      field.addEventListener('change', generateMarkdown);
-    }
-  });
-
-  // Initial preview generation
-  generateMarkdown();
-
-  // Copy Markdown to Clipboard
-  if (copyBtn) {
-    copyBtn.addEventListener('click', async () => {
-      const { markdown } = generateMarkdown();
-      try {
-        if (navigator.clipboard && navigator.clipboard.writeText) {
-          await navigator.clipboard.writeText(markdown);
-        } else {
-          const textarea = document.createElement('textarea');
-          textarea.value = markdown;
-          textarea.style.position = 'fixed';
-          textarea.style.opacity = '0';
-          document.body.appendChild(textarea);
-          textarea.select();
-          document.execCommand('copy');
-          document.body.removeChild(textarea);
+          const originalText = copyBtnText ? copyBtnText.textContent : 'Copy Post Markdown';
+          if (copyBtnText) copyBtnText.textContent = '✓ Copied to Clipboard!';
+          copyBtn.style.background = '#2e7d32';
+          setTimeout(() => {
+            if (copyBtnText) copyBtnText.textContent = originalText;
+            copyBtn.style.background = '';
+          }, 2200);
+        } catch (err) {
+          alert('Could not copy to clipboard. Please copy directly from the preview box.');
         }
-
-        const originalText = copyBtnText ? copyBtnText.textContent : 'Copy Post Markdown';
-        if (copyBtnText) copyBtnText.textContent = '✓ Copied to Clipboard!';
-        copyBtn.style.background = '#2e7d32';
-        setTimeout(() => {
-          if (copyBtnText) copyBtnText.textContent = originalText;
-          copyBtn.style.background = '';
-        }, 2200);
-      } catch (err) {
-        alert('Could not copy to clipboard. Please copy directly from the preview box.');
-      }
-    });
-  }
-
-  // Download Markdown file
-  if (downloadBtn) {
-    downloadBtn.addEventListener('click', () => {
-      const { filename, markdown } = generateMarkdown();
-      const blob = new Blob([markdown], { type: 'text/markdown;charset=utf-8' });
-      const url = URL.createObjectURL(blob);
-      const link = document.createElement('a');
-      link.href = url;
-      link.download = filename || 'devotional.md';
-      document.body.appendChild(link);
-      link.click();
-      document.body.removeChild(link);
-      URL.revokeObjectURL(url);
-    });
-  }
-
-  // Check URL parameters on load for ?admin or ?owner or #admin / #owner
-  const urlParams = new URLSearchParams(window.location.search);
-  const hasAdminQuery = urlParams.has('admin') || urlParams.has('owner') ||
-                        window.location.hash === '#admin' || window.location.hash === '#owner';
-
-  if (hasAdminQuery) {
-    if (!isOwnerAuthenticated()) {
-      setTimeout(openOwnerLoginModal, 400);
-    } else {
-      updateOwnerUI(true);
-      setTimeout(openAddBlogModal, 400);
+      });
     }
-  } else {
-    // Initialize UI based on current session
-    updateOwnerUI(isOwnerAuthenticated());
+
+    if (downloadBtn) {
+      downloadBtn.addEventListener('click', () => {
+        const { filename, markdown } = generateMarkdown();
+        const blob = new Blob([markdown], { type: 'text/markdown;charset=utf-8' });
+        const url = URL.createObjectURL(blob);
+        const link = document.createElement('a');
+        link.href = url;
+        link.download = filename || 'devotional.md';
+        document.body.appendChild(link);
+        link.click();
+        document.body.removeChild(link);
+        URL.revokeObjectURL(url);
+      });
+    }
   }
 });

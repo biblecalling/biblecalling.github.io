@@ -25,7 +25,9 @@
 {% endif %}
 <meta name="description" content="{{ page_desc | escape }}">
 <meta name="author" content="{{ page.author.name | default: page.author | default: site.author.name }}">
-{% if page.noindex or page.url contains '404' or page.url contains '/search/' %}
+{% if page.url contains '/admin/' or page.nofollow and page.noindex %}
+<meta name="robots" content="noindex, nofollow">
+{% elsif page.noindex or page.url contains '404' or page.url contains '/search/' %}
 <meta name="robots" content="noindex, follow">
 {% else %}
 <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
@@ -38,7 +40,7 @@
 <!-- Open Graph / Facebook -->
 <meta property="og:type" content="{% if page.layout == 'post' %}article{% else %}website{% endif %}">
 <meta property="og:site_name" content="Bible Calling">
-<meta property="og:title" content="{% if page.url == '/' %}{{ page.title | default: site.title }}{% elsif page.title %}{{ page.title }} | {{ site.title }}{% else %}{{ site.title }}{% endif %}">
+<meta property="og:title" content="{% if page.exact_title %}{{ page.title }}{% elsif page.url == '/' %}{{ page.title | default: site.title }}{% elsif page.title %}{{ page.title }} | {{ site.title }}{% else %}{{ site.title }}{% endif %}">
 <meta property="og:description" content="{{ page_desc | escape }}">
 <meta property="og:url" content="{{ canonical_url }}">
 {% if page.image %}
@@ -77,7 +79,7 @@
 <meta name="twitter:site" content="@{{ site.twitter_username }}">
 <meta name="twitter:creator" content="@{{ site.twitter_username }}">
 {% endif %}
-<meta name="twitter:title" content="{% if page.url == '/' %}{{ page.title | default: site.title }}{% elsif page.title %}{{ page.title }} | {{ site.title }}{% else %}{{ site.title }}{% endif %}">
+<meta name="twitter:title" content="{% if page.exact_title %}{{ page.title }}{% elsif page.url == '/' %}{{ page.title | default: site.title }}{% elsif page.title %}{{ page.title }} | {{ site.title }}{% else %}{{ site.title }}{% endif %}">
 <meta name="twitter:description" content="{{ page_desc | escape }}">
 {% if page.image %}
   {% if page.image contains "http" %}
@@ -307,7 +309,7 @@
         {
           "@type": "ListItem",
           "position": 2,
-          "name": {{ page.title | jsonify }},
+          "name": {{ page.breadcrumb_title | default: page.title | jsonify }},
           "item": "{{ canonical_url }}"
         }{% endif %}
       ]

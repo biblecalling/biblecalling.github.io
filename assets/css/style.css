@@ -5200,3 +5200,128 @@ blockquote {
   gap: 0.55rem;
   color: var(--color-accent-hover);
 }
+
+/* Devotionals Pillar Page Scoped Styles */
+.devotional-meta-date {
+  font-size: 0.85rem;
+  color: var(--color-text-light);
+  margin-top: -0.25rem;
+  margin-bottom: 1.75rem;
+}
+
+.today-devotional-section {
+  margin: 1.5rem 0 2.25rem;
+}
+
+.today-devotional-card {
+  background-color: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-left: 4px solid var(--color-accent);
+  border-radius: var(--radius-md);
+  padding: 1.75rem 2rem;
+  box-shadow: var(--shadow-sm);
+  transition: transform var(--transition-fast), box-shadow var(--transition-fast);
+}
+
+.today-devotional-card:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-md);
+}
+
+.today-devotional-badge {
+  display: inline-flex;
+  align-items: center;
+  font-size: 0.725rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--color-accent-hover);
+  background-color: var(--color-accent-soft);
+  padding: 0.25rem 0.75rem;
+  border-radius: var(--radius-full);
+  margin-bottom: 0.85rem;
+}
+
+.today-devotional-title {
+  font-family: var(--font-serif);
+  font-size: 1.45rem;
+  line-height: 1.3;
+  margin: 0 0 0.75rem;
+  font-weight: 700;
+}
+
+.today-devotional-title a {
+  color: var(--color-text-main);
+  text-decoration: none;
+  transition: color var(--transition-fast);
+}
+
+.today-devotional-title a:hover {
+  color: var(--color-accent);
+}
+
+.today-devotional-excerpt {
+  color: var(--color-text-muted);
+  font-size: 0.975rem;
+  line-height: 1.6;
+  margin: 0 0 1.25rem;
+}
+
+.today-devotional-actions {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.today-devotional-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  padding: 0.65rem 1.35rem;
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+.devotional-explore-links {
+  list-style: none;
+  padding: 0;
+  margin: 1.5rem 0 2.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.85rem;
+}
+
+.devotional-explore-links li {
+  padding: 0.85rem 1.15rem;
+  background-color: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-sm);
+  font-size: 0.95rem;
+  line-height: 1.5;
+  transition: border-color var(--transition-fast), transform var(--transition-fast);
+}
+
+.devotional-explore-links li:hover {
+  border-color: var(--color-accent);
+  transform: translateX(3px);
+}
+
+.devotional-explore-links li a {
+  font-weight: 600;
+  color: var(--color-accent);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.devotional-explore-links li a:hover {
+  color: var(--color-accent-hover);
+}
+
+@media (max-width: 640px) {
+  .today-devotional-card {
+    padding: 1.25rem 1.25rem;
+  }
+  .today-devotional-title {
+    font-size: 1.25rem;
+  }
+}
