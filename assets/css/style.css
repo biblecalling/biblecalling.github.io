@@ -2995,7 +2995,7 @@ blockquote {
 }
 
 .btn-footer-add-blog {
-  display: inline-flex;
+  display: none;
   align-items: center;
   gap: 0.45rem;
   background: linear-gradient(135deg, var(--color-accent), var(--color-accent-hover));
@@ -3008,6 +3008,35 @@ blockquote {
   cursor: pointer;
   box-shadow: 0 2px 8px rgba(154, 116, 50, 0.25);
   transition: all var(--transition-fast);
+}
+
+.btn-footer-add-blog.owner-visible {
+  display: inline-flex !important;
+}
+
+.btn-footer-owner-status {
+  display: none;
+  align-items: center;
+  gap: 0.45rem;
+  background-color: var(--color-surface);
+  color: #92400e !important;
+  border: 1px dashed var(--color-accent);
+  font-size: 0.8rem;
+  font-weight: 600;
+  padding: 0.55rem 0.95rem;
+  border-radius: var(--radius-full);
+  cursor: pointer;
+  transition: all var(--transition-fast);
+}
+
+.btn-footer-owner-status.owner-visible {
+  display: inline-flex !important;
+}
+
+.btn-footer-owner-status:hover {
+  background-color: #fee2e2;
+  border-color: #ef4444;
+  color: #b91c1c !important;
 }
 
 .btn-footer-add-blog:hover,
@@ -3472,6 +3501,170 @@ blockquote {
   line-height: 1.5;
   padding-left: 1.25rem;
   margin: 0;
+}
+
+/* Owner Access & Authentication Styles */
+.footer-owner-link {
+  background: none;
+  border: none;
+  padding: 0;
+  font-size: inherit;
+  font-family: inherit;
+  color: var(--color-text-light);
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3rem;
+  transition: color var(--transition-fast);
+}
+
+.footer-owner-link:hover {
+  color: var(--color-accent);
+  text-decoration: underline;
+}
+
+.owner-verified-banner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.75rem;
+  background-color: #ecfdf5;
+  border: 1px solid #a7f3d0;
+  color: #065f46;
+  padding: 0.6rem 0.85rem;
+  border-radius: var(--radius-sm);
+  font-size: 0.8rem;
+  font-weight: 600;
+  margin-bottom: 1.25rem;
+}
+
+.owner-verified-banner .banner-left {
+  display: flex;
+  align-items: center;
+  gap: 0.45rem;
+}
+
+.owner-verified-banner .modal-owner-logout {
+  background: #ffffff;
+  border: 1px solid #059669;
+  color: #065f46;
+  border-radius: var(--radius-full);
+  padding: 0.2rem 0.65rem;
+  font-size: 0.725rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all var(--transition-fast);
+}
+
+.owner-verified-banner .modal-owner-logout:hover {
+  background-color: #ef4444;
+  border-color: #ef4444;
+  color: #ffffff;
+}
+
+.owner-login-card {
+  max-width: 460px;
+}
+
+.owner-login-header {
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.owner-login-header .owner-badge-icon {
+  margin: 0 auto 1rem;
+  background: linear-gradient(135deg, #fef3c7, #fde68a);
+  color: #92400e;
+}
+
+.owner-passcode-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.owner-passcode-wrapper .add-blog-input {
+  padding-right: 2.75rem;
+}
+
+.owner-passcode-toggle-btn {
+  position: absolute;
+  right: 0.75rem;
+  background: none;
+  border: none;
+  color: var(--color-text-light);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.25rem;
+  transition: color var(--transition-fast);
+}
+
+.owner-passcode-toggle-btn:hover {
+  color: var(--color-text-main);
+}
+
+.owner-login-error-msg {
+  color: #dc2626;
+  font-size: 0.825rem;
+  font-weight: 500;
+  margin-top: 0.5rem;
+  display: flex;
+  align-items: center;
+  gap: 0.35rem;
+}
+
+.owner-remember-row {
+  margin: 1rem 0 1.25rem;
+}
+
+.owner-remember-label {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.85rem;
+  color: var(--color-text-main);
+  cursor: pointer;
+  user-select: none;
+}
+
+.owner-login-actions {
+  display: flex;
+  gap: 0.75rem;
+}
+
+.owner-unlock-btn {
+  width: 100%;
+  justify-content: center;
+  padding: 0.75rem 1rem;
+}
+
+.owner-login-hint {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.5rem;
+  font-size: 0.775rem;
+  color: var(--color-text-light);
+  line-height: 1.4;
+  margin-top: 1.25rem;
+  padding-top: 1rem;
+  border-top: 1px solid var(--color-border);
+}
+
+.owner-login-hint svg {
+  flex-shrink: 0;
+  margin-top: 0.1rem;
+}
+
+@keyframes shakeError {
+  0%, 100% { transform: translateX(0); }
+  20%, 60% { transform: translateX(-6px); }
+  40%, 80% { transform: translateX(6px); }
+}
+
+.shake-animation {
+  animation: shakeError 0.35s ease-in-out;
 }
 
 .footer-main {

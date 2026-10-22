@@ -26,12 +26,19 @@
           <p class="footer-blog-desc">Explore our newest faith reflections, scripture studies, and daily prayers &mdash; updated regularly.</p>
         </div>
         <div class="footer-blog-actions">
-          <button type="button" class="btn-footer-add-blog" id="open-add-blog-modal" aria-haspopup="dialog" aria-controls="add-blog-modal">
+          <button type="button" class="btn-footer-add-blog" id="open-add-blog-modal" aria-haspopup="dialog" aria-controls="add-blog-modal" style="display: none;" title="Add New Blog Post (Owner Only)">
             <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true">
               <line x1="12" y1="5" x2="12" y2="19"></line>
               <line x1="5" y1="12" x2="19" y2="12"></line>
             </svg>
-            <span>Add New Blog</span>
+            <span>+ Add New Blog</span>
+          </button>
+          <button type="button" class="btn-footer-owner-status" id="owner-active-status" title="Owner Mode Active &bull; Click to Log Out" style="display: none;">
+            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+              <rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect>
+              <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
+            </svg>
+            <span>Owner Active (Logout)</span>
           </button>
           <a href="{{ site.baseurl }}/blog/" class="btn-footer-all-blogs">
             <span>All Articles ({{ site.posts.size }})</span>
@@ -205,7 +212,7 @@
             </a>
           </div>
         </div>
-        <p>&copy; {{ site.time | date: '%Y' }} <strong>{{ site.title }}</strong>. All rights reserved. {{ site.disclaimer_footer_subline }}</p>
+        <p>&copy; {{ site.time | date: '%Y' }} <strong>{{ site.title }}</strong>. All rights reserved. {{ site.disclaimer_footer_subline }} &bull; <button type="button" id="trigger-owner-portal" class="footer-owner-link" title="Owner Editorial Portal (Press Ctrl+Shift+A)"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="vertical-align: -1px;" aria-hidden="true"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect><path d="M7 11V7a5 5 0 0 1 10 0v4"></path></svg> <span id="footer-owner-link-text">Owner Portal</span></button></p>
         <p class="footer-subtext">May the grace of our Lord Jesus Christ, the love of God, and the fellowship of the Holy Spirit be with you all. Amen.</p>
       </div>
       <div class="footer-back-to-top">
@@ -219,8 +226,77 @@
     </div>
   </div>
 
+  <!-- Secure Owner Access Authentication Modal -->
+  <div id="owner-login-modal" class="add-blog-modal-wrap owner-login-modal-wrap" role="dialog" aria-modal="true" aria-labelledby="owner-login-modal-title" aria-hidden="true" style="display: none;">
+    <div class="add-blog-modal-backdrop" id="owner-login-backdrop" tabindex="-1"></div>
+    <div class="add-blog-modal-card owner-login-card">
+      <button type="button" class="add-blog-modal-close" id="owner-login-close" aria-label="Close owner login dialog">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <line x1="18" y1="6" x2="6" y2="18"></line>
+          <line x1="6" y1="6" x2="18" y2="18"></line>
+        </svg>
+      </button>
+
+      <div class="add-blog-modal-header owner-login-header">
+        <div class="add-blog-modal-icon-badge" aria-hidden="true">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect>
+            <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
+          </svg>
+        </div>
+        <h2 id="owner-login-modal-title" class="add-blog-modal-title">Owner Editorial Portal</h2>
+        <p class="add-blog-modal-subtitle">
+          Protected area for website administrator. Enter your owner passcode to unlock blog creation and editorial publishing tools.
+        </p>
+      </div>
+
+      <div class="add-blog-modal-body">
+        <form id="owner-login-form" class="owner-login-form" onsubmit="return false;">
+          <div class="add-blog-field-group">
+            <label for="owner-passcode-input" class="add-blog-label">Owner Passcode <span class="required">*</span></label>
+            <div class="owner-passcode-wrapper">
+              <input type="password" id="owner-passcode-input" class="add-blog-input" placeholder="Enter owner passcode" autocomplete="current-password" required>
+              <button type="button" id="toggle-owner-passcode-vis" class="owner-passcode-toggle-btn" aria-label="Toggle password visibility">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
+                  <circle cx="12" cy="12" r="3"></circle>
+                </svg>
+              </button>
+            </div>
+            <div id="owner-login-error" class="owner-login-error-msg" style="display: none;" role="alert">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="8" x2="12" y2="12"></line><line x1="12" y1="16" x2="12.01" y2="16"></line></svg>
+              <span>Incorrect owner passcode. Please try again.</span>
+            </div>
+          </div>
+
+          <div class="owner-remember-row">
+            <label class="owner-remember-label">
+              <input type="checkbox" id="owner-remember-me" checked>
+              <span>Keep me logged in on this browser</span>
+            </label>
+          </div>
+
+          <div class="owner-login-actions">
+            <button type="submit" id="btn-owner-unlock" class="btn btn-primary add-blog-action-btn owner-unlock-btn">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect>
+                <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
+              </svg>
+              <span>Unlock Owner Mode</span>
+            </button>
+          </div>
+
+          <div class="owner-login-hint">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="16" x2="12" y2="12"></line><line x1="12" y1="8" x2="12.01" y2="8"></line></svg>
+            <span>Restricted to website owner. Regular visitors and incognito sessions cannot access or see blog publishing tools.</span>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+
   <!-- Interactive Add Blog Post Modal -->
-  <div id="add-blog-modal" class="add-blog-modal-wrap" role="dialog" aria-modal="true" aria-labelledby="add-blog-modal-title" aria-hidden="true">
+  <div id="add-blog-modal" class="add-blog-modal-wrap" role="dialog" aria-modal="true" aria-labelledby="add-blog-modal-title" aria-hidden="true" style="display: none;">
     <div class="add-blog-modal-backdrop" id="add-blog-modal-backdrop" tabindex="-1"></div>
     <div class="add-blog-modal-card">
       <button type="button" class="add-blog-modal-close" id="add-blog-modal-close" aria-label="Close add blog dialog">
@@ -229,6 +305,16 @@
           <line x1="6" y1="6" x2="18" y2="18"></line>
         </svg>
       </button>
+
+      <div class="owner-verified-banner">
+        <div class="banner-left">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+            <path d="M12 2L3 7v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V7l-9-5zm-2 16l-4-4 1.41-1.41L10 15.17l6.59-6.59L18 10l-8 8z"/>
+          </svg>
+          <span>Verified Owner Session &bull; Authorized Editorial Tools</span>
+        </div>
+        <button type="button" id="modal-owner-logout-btn" class="modal-owner-logout" title="Lock and exit owner mode">Log Out</button>
+      </div>
 
       <div class="add-blog-modal-header">
         <div class="add-blog-modal-icon-badge" aria-hidden="true">
