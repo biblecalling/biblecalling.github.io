@@ -1,8 +1,7 @@
 {% if site.data.journal.banner_enabled and page.layout == "post" and page.journal_banner != false %}
   {% assign is_devotional = false %}
   {% assign post_cats = page.categories | join: " " | downcase %}
-  {% assign post_tags = page.tags | join: " " | downcase %}
-  {% if post_cats contains "jesus calling" or post_cats contains "daily devotional" or post_cats contains "devotionals" or post_cats contains "devotional" or post_cats contains "prayer" or post_tags contains "daily devotional" or post_tags contains "devotional" or post_tags contains "devotionals" or post_tags contains "prayer" %}
+  {% if post_cats contains "jesus calling" or post_cats contains "daily devotional" %}
     {% assign is_devotional = true %}
   {% endif %}
 

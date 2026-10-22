@@ -33,9 +33,15 @@ A simple, fillable Christian prayer journal for slowing down, reading Scripture 
       </a>
     {% endif %}
   </div>
-  <p class="jf-sample-link-wrap">
-    <a href="{{ '/prayer-journal/free-sample/' | relative_url }}" class="jf-sample-link">Try the free 7-day sample first &rarr;</a>
-  </p>
+  {% assign has_sample = false %}
+  {% if site.data.journal.signup_embed_html and site.data.journal.signup_embed_html != "" or site.data.journal.sample_pdf_url and site.data.journal.sample_pdf_url != "" %}
+    {% assign has_sample = true %}
+  {% endif %}
+  {% if has_sample %}
+    <p class="jf-sample-link-wrap">
+      <a href="{{ '/prayer-journal/free-sample/' | relative_url }}" class="jf-sample-link">Try the free 7-day sample first &rarr;</a>
+    </p>
+  {% endif %}
   <p class="jf-micro-notice">Digital PDF download. No physical item is shipped.</p>
 </div>
 
@@ -117,7 +123,9 @@ No. Bible Calling is an independent website, and this journal is not affiliated 
 <p><a href="{{ site.data.journal.support_url | relative_url }}">Questions? Contact us</a></p>
 {% endif %}
 
+{% if has_sample %}
 If you would like to try before you buy, start with the [free 7-day sample](/prayer-journal/free-sample/).
+{% endif %}
 
 <div class="jf-cta-block jf-cta-bottom">
   <div class="jf-btn-group">
@@ -135,9 +143,11 @@ If you would like to try before you buy, start with the [free 7-day sample](/pra
       </a>
     {% endif %}
   </div>
-  <p class="jf-sample-link-wrap">
-    <a href="{{ '/prayer-journal/free-sample/' | relative_url }}" class="jf-sample-link">Try the free 7-day sample first &rarr;</a>
-  </p>
+  {% if has_sample %}
+    <p class="jf-sample-link-wrap">
+      <a href="{{ '/prayer-journal/free-sample/' | relative_url }}" class="jf-sample-link">Try the free 7-day sample first &rarr;</a>
+    </p>
+  {% endif %}
   <p class="jf-micro-notice">Digital PDF download. No physical item is shipped.</p>
 </div>
 
