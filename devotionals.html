@@ -98,12 +98,7 @@ hide_lead: true
 <h2>Explore More Devotionals</h2>
 
 <ul class="devotional-explore-links">
-  {% assign page_what_is = site.pages | where: "url", "/devotionals/what-is-a-devotional/" | first %}
-  {% if page_what_is %}
-    <li><a href="{{ page_what_is.url | relative_url }}">What Is a Devotional?</a> &mdash; Meaning, types and how it differs from Bible study</li>
-  {% else %}
-    <!-- COMING SOON: <li><a href="{{ '/devotionals/what-is-a-devotional/' | relative_url }}">What Is a Devotional?</a> &mdash; Meaning, types and how it differs from Bible study</li> -->
-  {% endif %}
+  <li><a href="{{ '/devotionals/what-is-a-devotional/' | relative_url }}">What Is a Devotional?</a> &mdash; Meaning, types and how it differs from Bible study</li>
 
   {% assign page_odb = site.pages | where: "url", "/devotionals/our-daily-bread/" | first %}
   {% if page_odb %}

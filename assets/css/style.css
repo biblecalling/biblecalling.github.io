@@ -5325,3 +5325,46 @@ blockquote {
     font-size: 1.25rem;
   }
 }
+
+/* Comparison Table Styles (for /devotionals/what-is-a-devotional/) */
+.comparison-table-wrap {
+  width: 100%;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  margin: 1.75rem 0 2rem;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  background-color: var(--color-surface);
+  box-shadow: var(--shadow-sm);
+}
+
+.comparison-table-wrap table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+  font-size: 0.95rem;
+  min-width: 500px;
+}
+
+.comparison-table-wrap th,
+.comparison-table-wrap td {
+  padding: 0.85rem 1.15rem;
+  border-bottom: 1px solid var(--color-border);
+  line-height: 1.5;
+}
+
+.comparison-table-wrap th {
+  background-color: var(--color-bg-alt);
+  font-weight: 700;
+  color: var(--color-text-main);
+  border-bottom: 2px solid var(--color-border);
+}
+
+.comparison-table-wrap tr:last-child td {
+  border-bottom: none;
+}
+
+.comparison-table-wrap tr:hover td {
+  background-color: rgba(0, 0, 0, 0.015);
+}
+

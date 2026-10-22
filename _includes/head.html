@@ -281,6 +281,18 @@
           "position": 3,
           "name": {{ page.breadcrumb_title | default: page.title | jsonify }},
           "item": "{{ canonical_url }}"
+        }{% elsif page.url contains '/devotionals/' and page.url != '/devotionals/' %},
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Devotionals",
+          "item": "{{ site.url }}/devotionals/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": {{ page.breadcrumb_title | default: page.title | jsonify }},
+          "item": "{{ canonical_url }}"
         }{% elsif page.url == '/prayer/daily-prayer/' or page.url == '/prayer/healing-prayers/' or page.url == '/prayer/life-needs-prayers/' %},
         {
           "@type": "ListItem",
