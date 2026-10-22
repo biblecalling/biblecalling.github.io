@@ -1,0 +1,62 @@
+{% assign valid_stories = "" | split: "" %}
+{% if site.data.reader_stories %}
+  {% for entry in site.data.reader_stories %}
+    {% if entry.display == true and entry.consent == true and entry.adult == true and entry.consent_date and entry.consent_date != "" and entry.story and entry.story != "" %}
+      {% assign valid_stories = valid_stories | push: entry %}
+    {% endif %}
+  {% endfor %}
+{% endif %}
+
+{% if valid_stories.size > 0 %}
+<section class="reader-stories-section" aria-labelledby="reader-stories-heading">
+  <h2 id="reader-stories-heading">Stories from Readers</h2>
+  <p class="reader-stories-intro">
+    Personal reflections shared by women who have found encouragement, stillness, and comfort through daily quiet time with God.
+  </p>
+
+  <div class="reader-stories-grid">
+    {% for item in valid_stories %}
+      <figure class="reader-story-card">
+        <blockquote class="reader-story-quote">
+          <p>{{ item.story | escape }}</p>
+        </blockquote>
+        <figcaption class="reader-story-meta">
+          <div class="reader-story-author-line">
+            <strong class="reader-story-author">{{ item.display_name | default: "A reader" | escape }}</strong>
+            {% if item.context and item.context != "" %}
+              <span class="reader-story-context">&bull; {{ item.context | escape }}</span>
+            {% endif %}
+          </div>
+          {% if item.using_devotionals_for and item.using_devotionals_for != "" %}
+            <div class="reader-story-detail">
+              <strong>Using devotionals for:</strong> {{ item.using_devotionals_for | escape }}
+            </div>
+          {% endif %}
+          {% if item.what_changed and item.what_changed != "" %}
+            <div class="reader-story-detail">
+              <strong>What changed:</strong> {{ item.what_changed | escape }}
+            </div>
+          {% endif %}
+        </figcaption>
+      </figure>
+    {% endfor %}
+  </div>
+
+  <p class="reader-stories-disclaimer">
+    These are personal experiences shared by readers with their permission. They are not medical or professional advice, and everyone's journey is different.
+  </p>
+</section>
+{% endif %}
+
+<div class="reader-story-invite-box">
+  <h3 class="reader-story-invite-title">Share your story</h3>
+  <p class="reader-story-invite-text">
+    Has a daily devotional helped you in an ordinary or a hard season? You are welcome to share your experience with us. We only publish stories with your clear permission, and you can stay anonymous.
+  </p>
+  <div class="reader-story-invite-action">
+    <a href="{{ '/devotionals/share-your-story/' | relative_url }}" class="btn btn-secondary">
+      <span>How to share your story</span>
+      <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+    </a>
+  </div>
+</div>

@@ -147,6 +147,8 @@ If you are new to devotionals, read [What Is a Devotional?](/devotionals/what-is
 
 Many women search for Proverbs 31 when looking for a devotional. The passage (Proverbs 31:10&ndash;31) describes a capable, wise and generous woman. Some readers treat it as a checklist and feel discouraged. Others read it as a picture of wisdom lived out in many different ways across a lifetime. Read it slowly, notice the qualities such as trust, hard work and kindness, and ask which one God is inviting you to grow in, rather than trying to do everything at once.
 
+{% include reader-stories.html %}
+
 ## A Simple Prayer for Women's Devotions
 
 Lord, thank You for this new day. You know what I am carrying: the tasks, the people I love, and the things I cannot say out loud. Give me strength for what is in front of me and peace for what I cannot control. Help me to rest in You and to see Your care in small things. Amen.

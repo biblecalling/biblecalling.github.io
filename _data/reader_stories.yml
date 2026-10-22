@@ -1,0 +1,15 @@
+# Reader stories. ONLY real, consented stories. Never add invented entries.
+# An entry is shown only if: display: true AND consent: true AND consent_date is set AND adult: true
+- id: format-sample-do-not-publish
+  display: false
+  consent: false
+  adult: false
+  consent_date: ""
+  display_name: ""          # first name, initial, or "A reader"
+  context: ""               # optional, general only, e.g. "Mother of two" (no exact location)
+  season: ""                # one of: anxious, tired, family, work, waiting, grief, comparison, courage
+  using_devotionals_for: "" # e.g. "about 3 months" (reader's own words)
+  story: ""                 # 60-150 words, reader's own words, lightly edited only with approval
+  what_changed: ""          # optional: in the reader's own words
+  approved_by_reader_on: "" # date the reader approved the final text
+  source: ""                # internal only: email / DM / form (NOT displayed)
