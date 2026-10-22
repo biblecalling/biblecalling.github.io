@@ -74,7 +74,7 @@ One reading for each day of the year. They are the most common type and the easi
 These move through a book such as Psalms or John, a few verses at a time. They help you see how a verse fits into the larger story.
 
 ### Devotionals for specific readers
-Some are written for women, men, couples, teens or children, and speak to the situations those readers face.
+Some are written for [women](/devotionals/for-women/), men, couples, teens or children, and speak to the situations those readers face.
 
 ### Seasonal devotionals
 Written for times like Advent or Lent, or for hard seasons such as grief, waiting or change.

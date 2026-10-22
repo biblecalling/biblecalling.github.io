@@ -102,12 +102,7 @@ hide_lead: true
 
   <li><a href="{{ '/devotionals/our-daily-bread/' | relative_url }}">Our Daily Bread Devotional</a> &mdash; How it works and where to read it</li>
 
-  {% assign page_women = site.pages | where: "url", "/devotionals/for-women/" | first %}
-  {% if page_women %}
-    <li><a href="{{ page_women.url | relative_url }}">Devotionals for Women</a> &mdash; Encouragement for different seasons of life</li>
-  {% else %}
-    <!-- COMING SOON: <li><a href="{{ '/devotionals/for-women/' | relative_url }}">Devotionals for Women</a> &mdash; Encouragement for different seasons of life</li> -->
-  {% endif %}
+  <li><a href="{{ '/devotionals/for-women/' | relative_url }}">Devotionals for Women</a> &mdash; Encouragement for different seasons of life</li>
 
   {% assign page_books = site.pages | where: "url", "/devotionals/best-devotional-books/" | first %}
   {% if page_books %}

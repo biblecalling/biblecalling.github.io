@@ -5375,3 +5375,72 @@ blockquote {
   background-color: rgba(0, 0, 0, 0.015);
 }
 
+/* Devotionals for Women Jump Nav & Reflection Callouts */
+.devotional-jump-nav {
+  background-color: var(--color-bg-alt);
+  border: 1px solid var(--color-border);
+  border-left: 4px solid var(--color-accent);
+  border-radius: var(--radius-sm);
+  padding: 1rem 1.25rem;
+  margin: 1.5rem 0 2rem;
+}
+
+.jump-nav-title {
+  display: block;
+  font-size: 0.875rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--color-text-main);
+  margin-bottom: 0.65rem;
+}
+
+.jump-nav-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem 0.85rem;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.jump-nav-list li a {
+  display: inline-block;
+  font-size: 0.875rem;
+  padding: 0.25rem 0.65rem;
+  background-color: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-full);
+  color: var(--color-accent);
+  text-decoration: none;
+  font-weight: 600;
+  transition: all var(--transition-fast);
+}
+
+.jump-nav-list li a:hover {
+  background-color: var(--color-accent-soft);
+  border-color: var(--color-accent);
+  color: var(--color-accent-hover);
+}
+
+.devotional-question-box {
+  background-color: var(--color-surface);
+  border-left: 3px solid var(--color-accent);
+  padding: 0.65rem 1rem;
+  margin: 0.85rem 0;
+  font-style: italic;
+  font-size: 0.95rem;
+  color: var(--color-text-main);
+}
+
+.devotional-note-box {
+  background-color: var(--color-bg-alt);
+  border-left: 3px solid var(--color-border);
+  padding: 0.65rem 1rem;
+  margin: 0.85rem 0;
+  font-size: 0.875rem;
+  color: var(--color-text-muted);
+  font-style: italic;
+}
+
+
