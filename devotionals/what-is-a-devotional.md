@@ -80,7 +80,7 @@ Some are written for women, men, couples, teens or children, and speak to the si
 Written for times like Advent or Lent, or for hard seasons such as grief, waiting or change.
 
 ### Devotional books and apps
-Well-known examples include *Jesus Calling*, *My Utmost for His Highest*, *Our Daily Bread* and *The Upper Room*. Each has its own tone. Reading a sample page before you commit helps you find one that suits you.
+Well-known examples include *Jesus Calling*, *My Utmost for His Highest*, [*Our Daily Bread*](/devotionals/our-daily-bread/) and *The Upper Room*. Each has its own tone. Reading a sample page before you commit helps you find one that suits you.
 
 ## Why People Read a Devotional Every Day
 

@@ -5326,7 +5326,8 @@ blockquote {
   }
 }
 
-/* Comparison Table Styles (for /devotionals/what-is-a-devotional/) */
+/* Comparison Table Styles (for /devotionals/what-is-a-devotional/ & /devotionals/our-daily-bread/) */
+.table-scroll,
 .comparison-table-wrap {
   width: 100%;
   overflow-x: auto;
@@ -5338,6 +5339,7 @@ blockquote {
   box-shadow: var(--shadow-sm);
 }
 
+.table-scroll table,
 .comparison-table-wrap table {
   width: 100%;
   border-collapse: collapse;
@@ -5346,6 +5348,8 @@ blockquote {
   min-width: 500px;
 }
 
+.table-scroll th,
+.table-scroll td,
 .comparison-table-wrap th,
 .comparison-table-wrap td {
   padding: 0.85rem 1.15rem;
@@ -5353,6 +5357,7 @@ blockquote {
   line-height: 1.5;
 }
 
+.table-scroll th,
 .comparison-table-wrap th {
   background-color: var(--color-bg-alt);
   font-weight: 700;
@@ -5360,10 +5365,12 @@ blockquote {
   border-bottom: 2px solid var(--color-border);
 }
 
+.table-scroll tr:last-child td,
 .comparison-table-wrap tr:last-child td {
   border-bottom: none;
 }
 
+.table-scroll tr:hover td,
 .comparison-table-wrap tr:hover td {
   background-color: rgba(0, 0, 0, 0.015);
 }

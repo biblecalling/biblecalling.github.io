@@ -100,12 +100,7 @@ hide_lead: true
 <ul class="devotional-explore-links">
   <li><a href="{{ '/devotionals/what-is-a-devotional/' | relative_url }}">What Is a Devotional?</a> &mdash; Meaning, types and how it differs from Bible study</li>
 
-  {% assign page_odb = site.pages | where: "url", "/devotionals/our-daily-bread/" | first %}
-  {% if page_odb %}
-    <li><a href="{{ page_odb.url | relative_url }}">Our Daily Bread Devotional</a> &mdash; How it works and where to read it</li>
-  {% else %}
-    <!-- COMING SOON: <li><a href="{{ '/devotionals/our-daily-bread/' | relative_url }}">Our Daily Bread Devotional</a> &mdash; How it works and where to read it</li> -->
-  {% endif %}
+  <li><a href="{{ '/devotionals/our-daily-bread/' | relative_url }}">Our Daily Bread Devotional</a> &mdash; How it works and where to read it</li>
 
   {% assign page_women = site.pages | where: "url", "/devotionals/for-women/" | first %}
   {% if page_women %}
