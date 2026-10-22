@@ -1,0 +1,49 @@
+{% if site.data.journal.banner_enabled and page.layout == "post" and page.journal_banner != false %}
+  {% assign is_devotional = false %}
+  {% assign post_cats = page.categories | join: " " | downcase %}
+  {% assign post_tags = page.tags | join: " " | downcase %}
+  {% if post_cats contains "jesus calling" or post_cats contains "daily devotional" or post_cats contains "devotionals" or post_cats contains "devotional" or post_cats contains "prayer" or post_tags contains "daily devotional" or post_tags contains "devotional" or post_tags contains "devotionals" or post_tags contains "prayer" %}
+    {% assign is_devotional = true %}
+  {% endif %}
+
+  {% if is_devotional %}
+    {% assign post_slug = page.slug | default: page.title | slugify %}
+    {% assign has_sample = false %}
+    {% if site.data.journal.signup_embed_html and site.data.journal.signup_embed_html != "" or site.data.journal.sample_pdf_url and site.data.journal.sample_pdf_url != "" %}
+      {% assign has_sample = true %}
+    {% endif %}
+
+    <aside class="jf-banner" aria-labelledby="jf-banner-title">
+      <span class="jf-banner-kicker">Go deeper</span>
+      <h2 id="jf-banner-title" class="jf-banner-title">Take today's reading into a daily prayer habit</h2>
+      <p class="jf-banner-text">A 30-day fillable prayer and quiet time journal with Scripture, reflections, prayers and space to write.</p>
+      
+      <div class="jf-banner-actions">
+        {% if has_sample %}
+          <a href="{{ '/prayer-journal/free-sample/' | relative_url }}?utm_source=biblecalling&amp;utm_medium=post-banner&amp;utm_campaign=prayer-journal&amp;utm_content=post-{{ post_slug }}" class="btn btn-primary jf-btn-primary" data-track="journal-banner" data-track-variant="free-sample">
+            Try the free 7-day sample
+          </a>
+          <a href="{{ '/prayer-journal/' | relative_url }}?utm_source=biblecalling&amp;utm_medium=post-banner&amp;utm_campaign=prayer-journal&amp;utm_content=post-{{ post_slug }}" class="jf-banner-sublink" data-track="journal-banner" data-track-variant="full-journal">
+            See the full journal &rarr;
+          </a>
+        {% else %}
+          <a href="{{ '/prayer-journal/' | relative_url }}?utm_source=biblecalling&amp;utm_medium=post-banner&amp;utm_campaign=prayer-journal&amp;utm_content=post-{{ post_slug }}" class="btn btn-primary jf-btn-primary" data-track="journal-banner" data-track-variant="full-journal">
+            See the journal
+          </a>
+        {% endif %}
+      </div>
+
+      <p class="jf-banner-micro">
+        {% if has_sample %}
+          {% if site.data.journal.signup_embed_html and site.data.journal.signup_embed_html != "" %}
+            Free sample.
+          {% else %}
+            Free sample. No spam.
+          {% endif %}
+        {% else %}
+          Digital fillable PDF download.
+        {% endif %}
+      </p>
+    </aside>
+  {% endif %}
+{% endif %}

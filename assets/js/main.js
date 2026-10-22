@@ -622,4 +622,17 @@ ${rawContent}
       });
     }
   }
+
+  // 17. Journal End-of-Post Banner Click Tracking (GA4 / gtag)
+  document.addEventListener('click', (e) => {
+    const bannerLink = e.target.closest('[data-track="journal-banner"]');
+    if (!bannerLink) return;
+    if (typeof window.gtag === 'function') {
+      window.gtag('event', 'journal_banner_click', {
+        variant: bannerLink.getAttribute('data-track-variant') || 'banner_link',
+        link_url: bannerLink.getAttribute('href') || '',
+        page_location: window.location.href
+      });
+    }
+  });
 });

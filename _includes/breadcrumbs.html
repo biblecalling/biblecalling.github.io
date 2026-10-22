@@ -44,6 +44,11 @@
       <li class="breadcrumb-item">
         <a href="{{ site.baseurl }}/prayer/">Prayer</a>
       </li>
+    {% elsif page.url contains '/prayer-journal/' and page.url != '/prayer-journal/' %}
+      <li class="breadcrumb-separator" aria-hidden="true">&rsaquo;</li>
+      <li class="breadcrumb-item">
+        <a href="{{ site.baseurl }}/prayer-journal/">Prayer Journal</a>
+      </li>
     {% elsif page.url contains '/devotionals/' and page.url != '/devotionals/' %}
       <li class="breadcrumb-separator" aria-hidden="true">&rsaquo;</li>
       <li class="breadcrumb-item">

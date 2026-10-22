@@ -1,0 +1,17 @@
+# Fill these in when ready. Empty value = the related element is hidden.
+name: "30 Days of Prayer & Quiet Time with Jesus"
+short_name: "Prayer & Quiet Time Journal"
+price_display: ""            # e.g. "$5.99" (do not guess)
+currency: "USD"              # used only for schema
+price_value: ""              # e.g. "5.99" (do not guess)
+buy_url_primary: ""          # e.g. Etsy listing URL
+buy_label_primary: "Get the journal"
+buy_url_secondary: ""        # e.g. Gumroad URL
+buy_label_secondary: "Buy on our store"
+sample_pdf_url: ""           # e.g. /assets/downloads/prayer-journal-7-day-sample.pdf
+signup_embed_html: ""        # paste the email service embed code here (owner supplies)
+cover_image: ""              # e.g. /assets/images/journal/cover.png
+sample_images: []            # list of image paths, e.g. ["/assets/images/journal/day-1.png"]
+refund_text: ""              # owner's own refund policy sentence, shown only if filled
+support_url: "/contact/"
+banner_enabled: true

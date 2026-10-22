@@ -5593,5 +5593,224 @@ blockquote {
   }
 }
 
+/* ==========================================================================
+   16. PRAYER JOURNAL PRODUCT & FUNNEL STYLES (.jf-)
+   ========================================================================== */
+
+/* End-of-Post Banner */
+.jf-banner {
+  background-color: var(--color-bg-alt);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  padding: 1.75rem 1.5rem;
+  margin: 2.25rem 0 2rem;
+  text-align: center;
+  box-shadow: var(--shadow-sm);
+}
+
+.jf-banner-kicker {
+  display: block;
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--color-accent);
+  margin-bottom: 0.35rem;
+}
+
+.jf-banner-title {
+  font-family: var(--font-serif);
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: var(--color-text-main);
+  line-height: 1.25;
+  margin: 0.25rem auto 0.65rem;
+  max-width: 580px;
+}
+
+.jf-banner-text {
+  font-size: 0.975rem;
+  color: var(--color-text-body);
+  max-width: 540px;
+  margin: 0 auto 1.25rem;
+  line-height: 1.5;
+}
+
+.jf-banner-actions {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.75rem;
+}
+
+@media (min-width: 640px) {
+  .jf-banner-actions {
+    flex-direction: row;
+    gap: 1.25rem;
+  }
+}
+
+.jf-banner-sublink {
+  font-size: 0.925rem;
+  font-weight: 600;
+  color: var(--color-accent);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  transition: color var(--transition-fast);
+}
+
+.jf-banner-sublink:hover,
+.jf-banner-sublink:focus-visible {
+  color: var(--color-accent-hover);
+}
+
+.jf-banner-micro {
+  font-size: 0.775rem;
+  color: var(--color-text-muted);
+  margin-top: 0.85rem;
+  margin-bottom: 0;
+}
+
+/* Product Page Hero & CTA */
+.jf-cover-wrap {
+  text-align: center;
+  margin: 1.5rem 0 1.75rem;
+}
+
+.jf-cover-img {
+  max-width: 280px;
+  width: 100%;
+  height: auto;
+  border-radius: var(--radius-md);
+  border: 1px solid var(--color-border);
+  box-shadow: var(--shadow-md);
+}
+
+.jf-cta-block {
+  background-color: var(--color-bg-alt);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  padding: 1.5rem 1.25rem;
+  margin: 1.75rem 0;
+  text-align: center;
+}
+
+.jf-cta-bottom {
+  margin-top: 2.5rem;
+}
+
+.jf-btn-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 0.75rem;
+}
+
+.jf-btn-primary,
+.jf-btn-secondary {
+  min-height: 44px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.75rem 1.45rem;
+}
+
+.jf-price-tag {
+  font-size: 0.85rem;
+  opacity: 0.9;
+  margin-left: 0.35rem;
+}
+
+.jf-sample-link-wrap {
+  margin: 0.65rem 0 0.35rem;
+}
+
+.jf-sample-link {
+  font-weight: 600;
+  color: var(--color-accent);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.jf-micro-notice {
+  font-size: 0.775rem;
+  color: var(--color-text-muted);
+  margin: 0;
+}
+
+/* Gallery Grid */
+.jf-gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.25rem;
+  margin: 1.5rem 0;
+}
+
+.jf-gallery-item {
+  margin: 0;
+  border-radius: var(--radius-sm);
+  overflow: hidden;
+  border: 1px solid var(--color-border);
+  box-shadow: var(--shadow-sm);
+}
+
+.jf-gallery-img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Sample Box & Ready Box */
+.jf-sample-box {
+  background-color: var(--color-bg-alt);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  padding: 1.5rem 1.25rem;
+  margin: 1.5rem 0;
+  text-align: center;
+}
+
+.jf-embed-wrap {
+  margin-bottom: 0.75rem;
+}
+
+.jf-privacy-note {
+  font-size: 0.825rem;
+  color: var(--color-text-muted);
+  margin: 0.5rem 0 0;
+  line-height: 1.4;
+}
+
+.jf-sample-direct-line {
+  font-size: 0.875rem;
+  color: var(--color-text-body);
+  margin-top: 0.65rem;
+  margin-bottom: 0;
+}
+
+.jf-sample-coming-soon {
+  font-style: italic;
+  color: var(--color-text-muted);
+  padding: 0.75rem 0;
+}
+
+.jf-ready-box {
+  background-color: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  padding: 1.25rem;
+  margin: 1.75rem 0;
+  text-align: center;
+}
+
+.jf-ready-box h3 {
+  margin-top: 0;
+  margin-bottom: 0.75rem;
+  font-size: 1.15rem;
+}
+
 
 
