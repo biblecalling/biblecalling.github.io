@@ -37,6 +37,13 @@ document.addEventListener('DOMContentLoaded', () => {
     mobileMenu.setAttribute('aria-hidden', 'true');
     mobileToggle.setAttribute('aria-expanded', 'false');
     document.body.style.overflow = '';
+
+    // Reset all mobile submenus on drawer close
+    const mobileSubmenuToggles = mobileMenu.querySelectorAll('.mobile-submenu-toggle');
+    const mobileSubmenus = mobileMenu.querySelectorAll('.mobile-submenu');
+    mobileSubmenuToggles.forEach(toggle => toggle.setAttribute('aria-expanded', 'false'));
+    mobileSubmenus.forEach(submenu => submenu.setAttribute('hidden', ''));
+
     mobileToggle.focus();
   }
 
@@ -75,43 +82,92 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
-  // 2b. Prayer Navigation Submenus (Desktop & Mobile)
+  // 2b. Devotionals & Prayer Navigation Submenus (Desktop & Mobile)
   const desktopPrayerDropdown = document.getElementById('nav-item-prayer');
   const desktopPrayerToggle = document.getElementById('prayer-menu-toggle');
+  const desktopDevotionalsDropdown = document.getElementById('nav-item-devotionals');
+  const desktopDevotionalsToggle = document.getElementById('devotionals-menu-toggle');
+
   const mobilePrayerToggle = document.getElementById('mobile-prayer-toggle');
   const mobilePrayerSubmenu = document.getElementById('mobile-prayer-submenu');
+  const mobileDevotionalsToggle = document.getElementById('mobile-devotionals-toggle');
+  const mobileDevotionalsSubmenu = document.getElementById('mobile-devotionals-submenu');
 
+  function closeDesktopDropdown(dropdown, toggle) {
+    if (dropdown && toggle) {
+      dropdown.classList.remove('open');
+      toggle.setAttribute('aria-expanded', 'false');
+    }
+  }
+
+  function openDesktopDropdown(dropdown, toggle) {
+    if (dropdown && toggle) {
+      dropdown.classList.add('open');
+      toggle.setAttribute('aria-expanded', 'true');
+    }
+  }
+
+  // Desktop Prayer Dropdown
   if (desktopPrayerDropdown && desktopPrayerToggle) {
     desktopPrayerToggle.addEventListener('click', (e) => {
       e.stopPropagation();
       const isOpen = desktopPrayerDropdown.classList.contains('open');
       if (isOpen) {
-        desktopPrayerDropdown.classList.remove('open');
-        desktopPrayerToggle.setAttribute('aria-expanded', 'false');
+        closeDesktopDropdown(desktopPrayerDropdown, desktopPrayerToggle);
       } else {
-        desktopPrayerDropdown.classList.add('open');
-        desktopPrayerToggle.setAttribute('aria-expanded', 'true');
+        closeDesktopDropdown(desktopDevotionalsDropdown, desktopDevotionalsToggle);
+        openDesktopDropdown(desktopPrayerDropdown, desktopPrayerToggle);
       }
     });
 
-    // Close desktop dropdown on click outside
-    document.addEventListener('click', (e) => {
-      if (!desktopPrayerDropdown.contains(e.target)) {
-        desktopPrayerDropdown.classList.remove('open');
-        desktopPrayerToggle.setAttribute('aria-expanded', 'false');
-      }
-    });
-
-    // Close desktop dropdown on Escape key
-    document.addEventListener('keydown', (e) => {
-      if (e.key === 'Escape' && desktopPrayerDropdown.classList.contains('open')) {
-        desktopPrayerDropdown.classList.remove('open');
-        desktopPrayerToggle.setAttribute('aria-expanded', 'false');
-        desktopPrayerToggle.focus();
-      }
+    desktopPrayerDropdown.addEventListener('mouseenter', () => {
+      closeDesktopDropdown(desktopDevotionalsDropdown, desktopDevotionalsToggle);
     });
   }
 
+  // Desktop Devotionals Dropdown
+  if (desktopDevotionalsDropdown && desktopDevotionalsToggle) {
+    desktopDevotionalsToggle.addEventListener('click', (e) => {
+      e.stopPropagation();
+      const isOpen = desktopDevotionalsDropdown.classList.contains('open');
+      if (isOpen) {
+        closeDesktopDropdown(desktopDevotionalsDropdown, desktopDevotionalsToggle);
+      } else {
+        closeDesktopDropdown(desktopPrayerDropdown, desktopPrayerToggle);
+        openDesktopDropdown(desktopDevotionalsDropdown, desktopDevotionalsToggle);
+      }
+    });
+
+    desktopDevotionalsDropdown.addEventListener('mouseenter', () => {
+      closeDesktopDropdown(desktopPrayerDropdown, desktopPrayerToggle);
+    });
+  }
+
+  // Close desktop dropdowns on click outside
+  document.addEventListener('click', (e) => {
+    if (desktopPrayerDropdown && !desktopPrayerDropdown.contains(e.target)) {
+      closeDesktopDropdown(desktopPrayerDropdown, desktopPrayerToggle);
+    }
+    if (desktopDevotionalsDropdown && !desktopDevotionalsDropdown.contains(e.target)) {
+      closeDesktopDropdown(desktopDevotionalsDropdown, desktopDevotionalsToggle);
+    }
+  });
+
+  // Close desktop dropdowns on Escape key
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape') {
+      if (desktopPrayerDropdown && desktopPrayerDropdown.classList.contains('open')) {
+        closeDesktopDropdown(desktopPrayerDropdown, desktopPrayerToggle);
+        desktopPrayerToggle.focus();
+      }
+      if (desktopDevotionalsDropdown && desktopDevotionalsDropdown.classList.contains('open')) {
+        closeDesktopDropdown(desktopDevotionalsDropdown, desktopDevotionalsToggle);
+        desktopDevotionalsToggle.focus();
+      }
+    }
+  });
+
+  // Mobile Submenus
   if (mobilePrayerToggle && mobilePrayerSubmenu) {
     mobilePrayerToggle.addEventListener('click', (e) => {
       e.preventDefault();
@@ -123,6 +179,21 @@ document.addEventListener('DOMContentLoaded', () => {
       } else {
         mobilePrayerToggle.setAttribute('aria-expanded', 'true');
         mobilePrayerSubmenu.removeAttribute('hidden');
+      }
+    });
+  }
+
+  if (mobileDevotionalsToggle && mobileDevotionalsSubmenu) {
+    mobileDevotionalsToggle.addEventListener('click', (e) => {
+      e.preventDefault();
+      e.stopPropagation();
+      const isExpanded = mobileDevotionalsToggle.getAttribute('aria-expanded') === 'true';
+      if (isExpanded) {
+        mobileDevotionalsToggle.setAttribute('aria-expanded', 'false');
+        mobileDevotionalsSubmenu.setAttribute('hidden', '');
+      } else {
+        mobileDevotionalsToggle.setAttribute('aria-expanded', 'true');
+        mobileDevotionalsSubmenu.removeAttribute('hidden');
       }
     });
   }

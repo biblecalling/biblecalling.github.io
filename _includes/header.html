@@ -22,7 +22,53 @@
     <nav class="nav-desktop" aria-label="Primary Navigation">
       <ul class="nav-list">
         <li><a href="{{ site.baseurl }}/" {% if page.url == '/' %}class="active" aria-current="page"{% endif %}>Home</a></li>
-        <li><a href="{{ site.baseurl }}/devotionals/" {% if page.url contains '/devotionals/' or page.url contains '/categories/devotionals/' %}class="active" aria-current="page"{% endif %}>Devotionals</a></li>
+        <li class="nav-item-dropdown" id="nav-item-devotionals">
+          <div class="nav-dropdown-trigger-wrap">
+            <a href="{{ site.baseurl }}/devotionals/" class="nav-link-devotionals{% if page.url contains '/devotionals/' or page.url contains '/categories/devotionals/' %} active{% endif %}" {% if page.url == '/devotionals/' %}aria-current="page"{% endif %}>Devotionals</a>
+            <button type="button" class="nav-dropdown-toggle" id="devotionals-menu-toggle" aria-expanded="false" aria-haspopup="true" aria-controls="devotionals-dropdown-menu" aria-label="Toggle Devotionals submenu">
+              <svg class="chevron-icon" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"></polyline></svg>
+            </button>
+          </div>
+          <div class="nav-dropdown-menu" id="devotionals-dropdown-menu" role="region" aria-label="Devotionals Submenu">
+            <div class="nav-dropdown-grid-hubs">
+              <a href="{{ site.baseurl }}/devotionals/" class="nav-dropdown-hub-link{% if page.url == '/devotionals/' %} active{% endif %}" {% if page.url == '/devotionals/' %}aria-current="page"{% endif %}>
+                <div class="nav-hub-text-wrap">
+                  <strong>Devotionals Hub</strong>
+                  <span class="nav-hub-subtext">All Devotionals &amp; Guides</span>
+                </div>
+                <span class="nav-hub-arrow">&rarr;</span>
+              </a>
+              <a href="{{ site.baseurl }}/devotionals/today/" class="nav-dropdown-hub-link{% if page.url == '/devotionals/today/' %} active{% endif %}" {% if page.url == '/devotionals/today/' %}aria-current="page"{% endif %}>
+                <div class="nav-hub-text-wrap">
+                  <strong>Today's Devotional</strong>
+                  <span class="nav-hub-subtext">Today's Reading</span>
+                </div>
+                <span class="nav-hub-arrow">&rarr;</span>
+              </a>
+              <a href="{{ site.baseurl }}/devotionals/what-is-a-devotional/" class="nav-dropdown-hub-link{% if page.url == '/devotionals/what-is-a-devotional/' %} active{% endif %}" {% if page.url == '/devotionals/what-is-a-devotional/' %}aria-current="page"{% endif %}>
+                <div class="nav-hub-text-wrap">
+                  <strong>What Is a Devotional?</strong>
+                  <span class="nav-hub-subtext">Meaning &amp; How to Start</span>
+                </div>
+                <span class="nav-hub-arrow">&rarr;</span>
+              </a>
+              <a href="{{ site.baseurl }}/devotionals/for-women/" class="nav-dropdown-hub-link{% if page.url == '/devotionals/for-women/' %} active{% endif %}" {% if page.url == '/devotionals/for-women/' %}aria-current="page"{% endif %}>
+                <div class="nav-hub-text-wrap">
+                  <strong>Devotionals for Women</strong>
+                  <span class="nav-hub-subtext">Encouragement for Every Season</span>
+                </div>
+                <span class="nav-hub-arrow">&rarr;</span>
+              </a>
+              <a href="{{ site.baseurl }}/devotionals/our-daily-bread/" class="nav-dropdown-hub-link{% if page.url == '/devotionals/our-daily-bread/' %} active{% endif %}" {% if page.url == '/devotionals/our-daily-bread/' %}aria-current="page"{% endif %}>
+                <div class="nav-hub-text-wrap">
+                  <strong>Our Daily Bread</strong>
+                  <span class="nav-hub-subtext">Guide &amp; Where to Read</span>
+                </div>
+                <span class="nav-hub-arrow">&rarr;</span>
+              </a>
+            </div>
+          </div>
+        </li>
         <li><a href="{{ site.baseurl }}/categories/jesus-calling/" {% if page.url contains '/categories/jesus-calling/' %}class="active" aria-current="page"{% endif %}>Jesus Calling</a></li>
         <li><a href="{{ site.baseurl }}/bible/" {% if page.url contains '/bible/' or page.url contains '/categories/bible/' or page.url contains '/categories/bible-study/' %}class="active" aria-current="page"{% endif %}>Bible</a></li>
         <li class="nav-item-dropdown" id="nav-item-prayer">
@@ -114,7 +160,23 @@
     <nav aria-label="Mobile Navigation">
       <ul class="mobile-nav-list">
         <li><a href="{{ site.baseurl }}/" {% if page.url == '/' %}class="active" aria-current="page"{% endif %}>Home</a></li>
-        <li><a href="{{ site.baseurl }}/devotionals/">Devotionals</a></li>
+        <li class="mobile-nav-item-dropdown" id="mobile-nav-devotionals">
+          <div class="mobile-nav-row">
+            <a href="{{ site.baseurl }}/devotionals/" {% if page.url contains '/devotionals/' or page.url contains '/categories/devotionals/' %}class="active"{% endif %}{% if page.url == '/devotionals/' %} aria-current="page"{% endif %}>Devotionals</a>
+            <button type="button" class="mobile-submenu-toggle" id="mobile-devotionals-toggle" aria-expanded="false" aria-controls="mobile-devotionals-submenu" aria-label="Toggle Devotionals submenu">
+              <svg class="chevron-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"></polyline></svg>
+            </button>
+          </div>
+          <div class="mobile-submenu" id="mobile-devotionals-submenu" hidden>
+            <div class="mobile-submenu-hub">
+              <a href="{{ site.baseurl }}/devotionals/" class="mobile-hub-link{% if page.url == '/devotionals/' %} active{% endif %}"{% if page.url == '/devotionals/' %} aria-current="page"{% endif %}>Devotionals Hub &rarr;</a>
+              <a href="{{ site.baseurl }}/devotionals/today/" class="mobile-hub-link{% if page.url == '/devotionals/today/' %} active{% endif %}"{% if page.url == '/devotionals/today/' %} aria-current="page"{% endif %}>Today's Devotional &rarr;</a>
+              <a href="{{ site.baseurl }}/devotionals/what-is-a-devotional/" class="mobile-hub-link{% if page.url == '/devotionals/what-is-a-devotional/' %} active{% endif %}"{% if page.url == '/devotionals/what-is-a-devotional/' %} aria-current="page"{% endif %}>What Is a Devotional? &rarr;</a>
+              <a href="{{ site.baseurl }}/devotionals/for-women/" class="mobile-hub-link{% if page.url == '/devotionals/for-women/' %} active{% endif %}"{% if page.url == '/devotionals/for-women/' %} aria-current="page"{% endif %}>Devotionals for Women &rarr;</a>
+              <a href="{{ site.baseurl }}/devotionals/our-daily-bread/" class="mobile-hub-link{% if page.url == '/devotionals/our-daily-bread/' %} active{% endif %}"{% if page.url == '/devotionals/our-daily-bread/' %} aria-current="page"{% endif %}>Our Daily Bread &rarr;</a>
+            </div>
+          </div>
+        </li>
         <li><a href="{{ site.baseurl }}/categories/jesus-calling/">Jesus Calling</a></li>
         <li><a href="{{ site.baseurl }}/bible/">Bible Studies</a></li>
         <li class="mobile-nav-item-dropdown" id="mobile-nav-prayer">

@@ -494,6 +494,18 @@ blockquote {
   transform: translateX(-50%) translateY(0);
 }
 
+@media (min-width: 992px) and (max-width: 1140px) {
+  #nav-item-devotionals .nav-dropdown-menu {
+    left: 0;
+    transform: translateY(6px);
+  }
+  #nav-item-devotionals:hover .nav-dropdown-menu,
+  #nav-item-devotionals:focus-within .nav-dropdown-menu,
+  #nav-item-devotionals.open .nav-dropdown-menu {
+    transform: translateY(0);
+  }
+}
+
 .nav-dropdown-menu a::after {
   display: none !important;
 }
@@ -502,6 +514,10 @@ blockquote {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 0.75rem;
+}
+
+.nav-dropdown-grid-hubs > a:last-child:nth-child(odd) {
+  grid-column: span 2;
 }
 
 .nav-dropdown-hub-link {
@@ -546,14 +562,18 @@ blockquote {
 }
 
 .nav-dropdown-hub-link:hover,
-.nav-dropdown-hub-link:focus-visible {
+.nav-dropdown-hub-link:focus-visible,
+.nav-dropdown-hub-link.active,
+.nav-dropdown-hub-link[aria-current="page"] {
   background-color: var(--color-accent-soft);
   border-color: var(--color-accent-border);
   transform: translateY(-1px);
 }
 
 .nav-dropdown-hub-link:hover .nav-hub-arrow,
-.nav-dropdown-hub-link:focus-visible .nav-hub-arrow {
+.nav-dropdown-hub-link:focus-visible .nav-hub-arrow,
+.nav-dropdown-hub-link.active .nav-hub-arrow,
+.nav-dropdown-hub-link[aria-current="page"] .nav-hub-arrow {
   transform: translateX(3px);
 }
 
@@ -915,14 +935,25 @@ blockquote {
 }
 
 .mobile-hub-link {
-  display: block;
-  padding: 0.5rem 0.65rem !important;
+  display: flex !important;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 44px;
+  padding: 0.65rem 0.75rem !important;
   font-size: 0.95rem !important;
   font-weight: 600 !important;
   color: var(--color-accent) !important;
   background-color: var(--color-accent-soft);
   border: 1px solid var(--color-accent-border);
   border-radius: var(--radius-sm);
+  transition: background-color var(--transition-fast), color var(--transition-fast), border-color var(--transition-fast) !important;
+}
+
+.mobile-hub-link.active,
+.mobile-hub-link[aria-current="page"] {
+  background-color: var(--color-accent);
+  color: #ffffff !important;
+  border-color: var(--color-accent);
 }
 
 .mobile-submenu-group-title {
