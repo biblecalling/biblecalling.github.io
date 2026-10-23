@@ -17,7 +17,8 @@ layout: default
         Welcome to {{ site.title }} &mdash; your quiet sanctuary for Christ-centered encouragement, <a href="{{ site.baseurl }}/prayer/">daily prayer guides</a>, <a href="{{ site.baseurl }}/bible/">biblical wisdom and scripture reflections</a>, and <a href="{{ site.baseurl }}/devotionals/">uplifting daily devotionals</a> to nourish your walk with God.
       </p>
       <div class="hero-actions">
-        <a href="{{ site.posts.first.url | relative_url }}" class="btn btn-primary">
+        {% assign today_post = site.posts | where: "url", "/jesus-calling-october-23/" | first %}
+        <a href="{{ today_post.url | default: '/jesus-calling-october-23/' | relative_url }}" class="btn btn-primary">
           <span>Read Today's Devotional</span>
           <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
         </a>
@@ -49,7 +50,7 @@ layout: default
         </blockquote>
         <div class="verse-card-cite">&mdash; Matthew 11:28&ndash;29</div>
         <div class="verse-card-footer">
-          <a href="{{ site.posts.first.url | relative_url }}" class="verse-card-link">
+          <a href="{{ today_post.url | default: '/jesus-calling-october-23/' | relative_url }}" class="verse-card-link">
             <span>Read Today's Devotional</span>
             <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
           </a>

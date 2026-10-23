@@ -20,36 +20,52 @@ hide_lead: true
 <!-- TODO(author): add byline, e.g. "Written by [name or Bible Calling team]". Link to /about/. -->
 <p class="devotional-meta-date"><em>Last updated: {{ site.time | date: "%B %Y" }}.</em></p>
 
-<h2 id="today-heading">Today's Devotional</h2>
+<h2 id="today-heading">Today's Devotional &mdash; October 23, 2026</h2>
 
-{% assign non_future_posts = site.posts | where_exp: "p", "p.date <= site.time" %}
-{% assign today_post = nil %}
-{% for p in non_future_posts %}
-  {% if p.categories contains "Jesus Calling" or p.categories contains "jesus-calling" %}
-    {% assign today_post = p %}
-    {% break %}
-  {% endif %}
-{% endfor %}
+{% assign today_post = site.posts | where: "url", "/jesus-calling-october-23/" | first %}
+{% if today_post == nil %}
+  {% for p in site.posts %}
+    {% if p.url contains "october-23" or p.path contains "2026-10-23" %}
+      {% assign today_post = p %}
+      {% break %}
+    {% endif %}
+  {% endfor %}
+{% endif %}
+{% if today_post == nil %}
+  {% assign non_future_posts = site.posts | where_exp: "p", "p.date <= site.time" %}
+  {% for p in non_future_posts %}
+    {% if p.categories contains "Jesus Calling" or p.categories contains "jesus-calling" %}
+      {% assign today_post = p %}
+      {% break %}
+    {% endif %}
+  {% endfor %}
+{% endif %}
 
-{% if today_post %}
 <section class="today-devotional-section" aria-labelledby="today-heading">
   <article class="today-devotional-card">
-    <span class="today-devotional-badge">Today's Devotional</span>
+    <span class="today-devotional-badge">Today's Devotional &bull; October 23, 2026</span>
     <h3 class="today-devotional-title">
-      <a href="{{ today_post.url | relative_url }}">{{ today_post.title }}</a>
+      <a href="{{ today_post.url | default: '/jesus-calling-october-23/' | relative_url }}">
+        {% if today_post %}{{ today_post.title }}{% else %}Jesus Calling October 23: 2026 Reflection, Scripture &amp; Prayer{% endif %}
+      </a>
     </h3>
     <p class="today-devotional-excerpt">
-      {{ today_post.description | default: today_post.content | strip_html | truncatewords: 30 }}
+      {% if today_post.description %}
+        {{ today_post.description }}
+      {% elsif today_post.content %}
+        {{ today_post.content | strip_html | truncatewords: 30 }}
+      {% else %}
+        Daily reflection for Jesus Calling October 23, 2026. Explore John 15, living in union with the true Vine, and experiencing the shared, abiding joy of Christ.
+      {% endif %}
     </p>
     <div class="today-devotional-actions">
-      <a href="{{ today_post.url | relative_url }}" class="btn btn-primary today-devotional-btn">
+      <a href="{{ today_post.url | default: '/jesus-calling-october-23/' | relative_url }}" class="btn btn-primary today-devotional-btn">
         <span>Read Today's Devotional</span>
         <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
       </a>
     </div>
   </article>
 </section>
-{% endif %}
 
 <p>
   New reflections are added every day, each with a Bible verse, a short thought and a prayer. You can also browse the full <a href="{{ site.baseurl }}/jesus-calling-october-2026/">October 2026 devotional guide</a>.
@@ -112,6 +128,7 @@ hide_lead: true
     <!-- COMING SOON: <li><a href="{{ '/devotionals/best-devotional-books/' | relative_url }}">Best Devotional Books</a> &mdash; A reader's guide to popular choices</li> -->
   {% endif %}
 
+  <li><a href="{{ site.baseurl }}/jesus-calling-october-23/">Today's Reflection: October 23, 2026</a> &mdash; Abiding in Christ, the True Vine, and experiencing shared joy.</li>
   <li><a href="{{ site.baseurl }}/categories/jesus-calling/">Jesus Calling Daily Reflections</a> &mdash; Daily reflections grounded in peaceful Scripture encouragement.</li>
   <li><a href="{{ site.baseurl }}/prayer/">Prayer Guides</a> &mdash; Biblical prayers for healing, peace, strength, and quiet time with God.</li>
   <li><a href="{{ site.baseurl }}/jesus-calling-october-2026/">October 2026 Daily Reflections</a> &mdash; Explore our day-by-day October devotional journey.</li>
