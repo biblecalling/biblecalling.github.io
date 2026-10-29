@@ -215,6 +215,36 @@
           "position": 4,
           "name": {{ page.breadcrumb_title | default: page.title | jsonify }},
           "item": "{{ canonical_url }}"
+        }{% elsif page.url contains '/jesus-calling-november-' and page.url != '/jesus-calling-november-2026/' %},
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Jesus Calling",
+          "item": "{{ site.url }}/categories/jesus-calling/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "November 2026",
+          "item": "{{ site.url }}/jesus-calling-november-2026/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 4,
+          "name": {{ page.breadcrumb_title | default: page.title | jsonify }},
+          "item": "{{ canonical_url }}"
+        }{% elsif page.url == '/jesus-calling-october-2026/' or page.url == '/jesus-calling-november-2026/' %},
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Jesus Calling",
+          "item": "{{ site.url }}/categories/jesus-calling/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": {{ page.breadcrumb_title | default: page.title | jsonify }},
+          "item": "{{ canonical_url }}"
         }{% elsif page.url == '/prayer/morning-prayers/' or page.url == '/prayer/night-prayers/' or page.url == '/prayer/good-night-prayer-for-family/' or page.url == '/prayer/prayer-for-today/' %},
         {
           "@type": "ListItem",

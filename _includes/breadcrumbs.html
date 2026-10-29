@@ -12,6 +12,20 @@
       <li class="breadcrumb-item">
         <a href="{{ site.baseurl }}/jesus-calling-october-2026/">October 2026</a>
       </li>
+    {% elsif page.url contains '/jesus-calling-november-' and page.url != '/jesus-calling-november-2026/' %}
+      <li class="breadcrumb-separator" aria-hidden="true">&rsaquo;</li>
+      <li class="breadcrumb-item">
+        <a href="{{ site.baseurl }}/categories/jesus-calling/">Jesus Calling</a>
+      </li>
+      <li class="breadcrumb-separator" aria-hidden="true">&rsaquo;</li>
+      <li class="breadcrumb-item">
+        <a href="{{ site.baseurl }}/jesus-calling-november-2026/">November 2026</a>
+      </li>
+    {% elsif page.url == '/jesus-calling-october-2026/' or page.url == '/jesus-calling-november-2026/' %}
+      <li class="breadcrumb-separator" aria-hidden="true">&rsaquo;</li>
+      <li class="breadcrumb-item">
+        <a href="{{ site.baseurl }}/categories/jesus-calling/">Jesus Calling</a>
+      </li>
     {% elsif page.url == '/prayer/morning-prayers/' or page.url == '/prayer/night-prayers/' or page.url == '/prayer/good-night-prayer-for-family/' or page.url == '/prayer/prayer-for-today/' %}
       <li class="breadcrumb-separator" aria-hidden="true">&rsaquo;</li>
       <li class="breadcrumb-item">

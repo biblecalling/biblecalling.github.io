@@ -120,6 +120,7 @@ May the light of Christ guide your thoughts, strengthen your faith, and remind y
 
 <ul>
   <li><strong>Previous Reflection:</strong> <a href="{{ site.baseurl }}/jesus-calling-october-30/">Jesus Calling October 30: Learning to Hear in Quietness</a></li>
+  <li><strong>Next Reflection:</strong> <a href="{{ site.baseurl }}/jesus-calling-november-1/">Jesus Calling November 1: The Gift of an Unhurried Hour</a></li>
   <li><strong>Complete October Guide:</strong> <a href="{{ site.baseurl }}/jesus-calling-october-2026/">Back to Jesus Calling October 2026 Hub</a></li>
   <li><a href="{{ site.baseurl }}/jesus-calling-october-6/">Jesus Calling October 6: Trusting God When You Can't See the Road Ahead</a></li>
   <li><a href="{{ site.baseurl }}/jesus-calling-october-13/">Jesus Calling October 13: Five Minutes of Stillness and Lasting Peace</a></li>
