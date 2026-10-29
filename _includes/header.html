@@ -7,7 +7,10 @@
       <svg class="ribbon-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 2v20M5 8h14"/></svg>
       <em>&ldquo;Peace I leave with you; my peace I give you.&rdquo;</em> &mdash; John 14:27
     </span>
-    <a href="{{ site.baseurl }}/jesus-calling-october-2026/" class="ribbon-link">October 2026 Daily Guide &rarr;</a>
+    <span class="ribbon-links" style="display: inline-flex; gap: 0.6rem;">
+      <a href="{{ site.baseurl }}/jesus-calling-november-2026/" class="ribbon-link">November 2026 Guide &rarr;</a>
+      <a href="{{ site.baseurl }}/jesus-calling-october-2026/" class="ribbon-link" style="opacity: 0.85;">October Guide &rarr;</a>
+    </span>
   </div>
 </div>
 
@@ -31,6 +34,13 @@
           </div>
           <div class="nav-dropdown-menu" id="devotionals-dropdown-menu" role="region" aria-label="Devotionals Submenu">
             <div class="nav-dropdown-grid-hubs">
+              <a href="{{ site.baseurl }}/jesus-calling-november-2026/" class="nav-dropdown-hub-link{% if page.url == '/jesus-calling-november-2026/' %} active{% endif %}" {% if page.url == '/jesus-calling-november-2026/' %}aria-current="page"{% endif %}>
+                <div class="nav-hub-text-wrap">
+                  <strong>November 2026 Hub</strong>
+                  <span class="nav-hub-subtext">Nov 1–15 Daily Reflections</span>
+                </div>
+                <span class="nav-hub-arrow">&rarr;</span>
+              </a>
               <a href="{{ site.baseurl }}/devotionals/" class="nav-dropdown-hub-link{% if page.url == '/devotionals/' %} active{% endif %}" {% if page.url == '/devotionals/' %}aria-current="page"{% endif %}>
                 <div class="nav-hub-text-wrap">
                   <strong>Devotionals Hub</strong>
@@ -170,6 +180,8 @@
           <div class="mobile-submenu" id="mobile-devotionals-submenu" hidden>
             <div class="mobile-submenu-hub">
               <a href="{{ site.baseurl }}/devotionals/" class="mobile-hub-link{% if page.url == '/devotionals/' %} active{% endif %}"{% if page.url == '/devotionals/' %} aria-current="page"{% endif %}>Devotionals Hub &rarr;</a>
+              <a href="{{ site.baseurl }}/jesus-calling-november-2026/" class="mobile-hub-link{% if page.url == '/jesus-calling-november-2026/' %} active{% endif %}"{% if page.url == '/jesus-calling-november-2026/' %} aria-current="page"{% endif %}>November 2026 Guide &rarr;</a>
+              <a href="{{ site.baseurl }}/jesus-calling-october-2026/" class="mobile-hub-link{% if page.url == '/jesus-calling-october-2026/' %} active{% endif %}"{% if page.url == '/jesus-calling-october-2026/' %} aria-current="page"{% endif %}>October 2026 Guide &rarr;</a>
               <a href="{{ site.baseurl }}/devotionals/today/" class="mobile-hub-link{% if page.url == '/devotionals/today/' %} active{% endif %}"{% if page.url == '/devotionals/today/' %} aria-current="page"{% endif %}>Today's Devotional &rarr;</a>
               <a href="{{ site.baseurl }}/devotionals/what-is-a-devotional/" class="mobile-hub-link{% if page.url == '/devotionals/what-is-a-devotional/' %} active{% endif %}"{% if page.url == '/devotionals/what-is-a-devotional/' %} aria-current="page"{% endif %}>What Is a Devotional? &rarr;</a>
               <a href="{{ site.baseurl }}/devotionals/for-women/" class="mobile-hub-link{% if page.url == '/devotionals/for-women/' %} active{% endif %}"{% if page.url == '/devotionals/for-women/' %} aria-current="page"{% endif %}>Devotionals for Women &rarr;</a>
