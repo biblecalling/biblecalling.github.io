@@ -120,6 +120,7 @@ Jesus Calling October 30 focuses on becoming quieter and more attentive to God's
 
 <ul>
   <li><strong>Previous Reflection:</strong> <a href="{{ site.baseurl }}/jesus-calling-october-29/">Jesus Calling October 29</a></li>
+  <li><strong>Next Reflection:</strong> <a href="{{ site.baseurl }}/jesus-calling-october-31/">Jesus Calling October 31</a></li>
   <li><strong>Complete October Guide:</strong> <a href="{{ site.baseurl }}/jesus-calling-october-2026/">Back to Jesus Calling October 2026 Hub</a></li>
   <li><a href="{{ site.baseurl }}/jesus-calling-october-13/">Jesus Calling October 13: Five Minutes of Stillness and Lasting Peace</a></li>
 <li><a href="{{ site.baseurl }}/jesus-calling-october-24/">Jesus Calling October 24: Resting in Green Pastures in a Wired World</a></li>
