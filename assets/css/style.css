@@ -5995,6 +5995,259 @@ blockquote {
   }
 }
 
+/* ==========================================================================
+   18. FLOATING ANIMATED PROMOTIONAL BANNER (.floating-journal-banner)
+   ========================================================================== */
+
+.floating-journal-banner {
+  position: fixed;
+  bottom: 24px;
+  right: 24px;
+  width: 350px;
+  max-width: calc(100vw - 32px);
+  background-color: #fdfbf7;
+  border: 1px solid #e6dec5;
+  border-radius: 14px;
+  box-shadow: 0 12px 32px rgba(44, 36, 22, 0.14), 0 3px 8px rgba(44, 36, 22, 0.06);
+  z-index: 1000;
+  opacity: 0;
+  transform: translateY(45px) scale(0.96);
+  pointer-events: none;
+  transition: opacity 0.45s cubic-bezier(0.16, 1, 0.3, 1),
+              transform 0.45s cubic-bezier(0.16, 1, 0.3, 1);
+  font-family: Georgia, "Iowan Old Style", "Apple Garamond", "Times New Roman", serif;
+  box-sizing: border-box;
+}
+
+/* Slide in animation state */
+.floating-journal-banner.banner-visible {
+  opacity: 1;
+  transform: translateY(0) scale(1);
+  pointer-events: auto;
+}
+
+.floating-journal-banner.banner-hidden {
+  opacity: 0;
+  transform: translateY(30px) scale(0.95);
+  pointer-events: none;
+}
+
+/* Entire card is clickable */
+.floating-banner-link {
+  display: block;
+  padding: 1.25rem 1.35rem 1.15rem;
+  text-decoration: none;
+  color: #2c2416;
+  border-radius: 14px;
+  transition: background-color 0.2s ease;
+}
+
+.floating-banner-link:hover {
+  background-color: #fbf7ee;
+  color: #2c2416;
+}
+
+/* Close button */
+.floating-banner-close-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  background: rgba(230, 222, 197, 0.5);
+  border: 1px solid transparent;
+  color: #5a4d3b;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  padding: 0;
+  transition: all 0.2s ease;
+  z-index: 2;
+}
+
+.floating-banner-close-btn:hover {
+  background: #e6dec5;
+  color: #2c2416;
+  transform: scale(1.1);
+}
+
+.floating-banner-close-btn:focus-visible {
+  outline: 2px solid #2c2416;
+  outline-offset: 2px;
+}
+
+/* Badge with pulsing dot */
+.floating-banner-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  font-size: 0.72rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: #7f5c22;
+  background-color: #f3ebdb;
+  border: 1px solid #e2d1b6;
+  padding: 0.2rem 0.6rem;
+  border-radius: 9999px;
+  margin-bottom: 0.5rem;
+}
+
+.floating-badge-pulse {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background-color: #9a7432;
+  box-shadow: 0 0 0 0 rgba(154, 116, 50, 0.7);
+  animation: badgePulse 2s infinite;
+}
+
+@keyframes badgePulse {
+  0% {
+    transform: scale(0.95);
+    box-shadow: 0 0 0 0 rgba(154, 116, 50, 0.7);
+  }
+  70% {
+    transform: scale(1);
+    box-shadow: 0 0 0 5px rgba(154, 116, 50, 0);
+  }
+  100% {
+    transform: scale(0.95);
+    box-shadow: 0 0 0 0 rgba(154, 116, 50, 0);
+  }
+}
+
+.floating-banner-title {
+  font-family: Georgia, "Iowan Old Style", "Apple Garamond", "Times New Roman", serif;
+  font-size: 1.15rem;
+  font-weight: 700;
+  line-height: 1.25;
+  color: #2c2416 !important;
+  margin: 0 0 0.35rem;
+  padding-right: 1.25rem;
+}
+
+.floating-banner-desc {
+  font-family: Georgia, "Iowan Old Style", "Apple Garamond", "Times New Roman", serif;
+  font-size: 0.92rem;
+  line-height: 1.45;
+  color: #4a3f2f;
+  margin: 0 0 0.85rem;
+}
+
+.floating-banner-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.75rem;
+}
+
+/* Animated button with subtle periodic pulse */
+.floating-banner-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.4rem;
+  background-color: #2c2416;
+  color: #ffffff !important;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  font-size: 0.875rem;
+  font-weight: 600;
+  padding: 0.6rem 1.15rem;
+  border-radius: 8px;
+  line-height: 1;
+  text-decoration: none;
+  box-shadow: 0 4px 12px rgba(44, 36, 22, 0.25);
+  animation: btnHeartbeat 4s ease-in-out infinite;
+  transition: all 0.2s ease;
+  white-space: nowrap;
+}
+
+.floating-banner-link:hover .floating-banner-btn {
+  background-color: #4a3b25;
+  transform: translateY(-1px);
+  box-shadow: 0 6px 16px rgba(44, 36, 22, 0.32);
+}
+
+.floating-btn-arrow {
+  display: inline-block;
+  transition: transform 0.2s ease;
+}
+
+.floating-banner-link:hover .floating-btn-arrow {
+  transform: translateX(3px);
+}
+
+.floating-banner-micro {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  font-size: 0.72rem;
+  color: #7a7061;
+  text-align: right;
+  line-height: 1.25;
+}
+
+/* Subtle periodic bounce/pulse every 4 seconds */
+@keyframes btnHeartbeat {
+  0%, 100% {
+    transform: scale(1);
+    box-shadow: 0 4px 12px rgba(44, 36, 22, 0.25);
+  }
+  4% {
+    transform: scale(1.04);
+    box-shadow: 0 6px 18px rgba(154, 116, 50, 0.4);
+  }
+  8% {
+    transform: scale(1);
+    box-shadow: 0 4px 12px rgba(44, 36, 22, 0.25);
+  }
+  12% {
+    transform: scale(1.03);
+    box-shadow: 0 6px 16px rgba(154, 116, 50, 0.35);
+  }
+  16% {
+    transform: scale(1);
+    box-shadow: 0 4px 12px rgba(44, 36, 22, 0.25);
+  }
+}
+
+/* Mobile responsiveness: dock smoothly to bottom */
+@media (max-width: 640px) {
+  .floating-journal-banner {
+    bottom: 12px;
+    right: 12px;
+    left: 12px;
+    width: auto;
+    max-width: none;
+    border-radius: 12px;
+    box-shadow: 0 8px 24px rgba(44, 36, 22, 0.18);
+  }
+  .floating-banner-link {
+    padding: 1rem 1.15rem 0.95rem;
+  }
+  .floating-banner-title {
+    font-size: 1.05rem;
+  }
+  .floating-banner-desc {
+    font-size: 0.85rem;
+    margin-bottom: 0.65rem;
+  }
+  .floating-banner-footer {
+    flex-direction: row;
+    align-items: center;
+  }
+  .floating-banner-btn {
+    padding: 0.55rem 1rem;
+    font-size: 0.825rem;
+  }
+  .floating-banner-micro {
+    font-size: 0.68rem;
+  }
+}
+
+
 
 
 

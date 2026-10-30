@@ -1,0 +1,76 @@
+<!-- Floating Animated Promotional Banner (Gumroad 30-Day Prayer Journal) -->
+<aside id="floating-journal-banner" class="floating-journal-banner" aria-label="30-Day Prayer Journal Offer" role="complementary">
+  <button id="floating-banner-close" class="floating-banner-close-btn" type="button" aria-label="Close promotional offer">
+    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+      <line x1="18" y1="6" x2="6" y2="18"></line>
+      <line x1="6" y1="6" x2="18" y2="18"></line>
+    </svg>
+  </button>
+  
+  <a href="https://pintukrsre.gumroad.com/l/pzmqee" target="_blank" rel="noopener noreferrer" class="floating-banner-link">
+    <div class="floating-banner-badge">
+      <span class="floating-badge-pulse" aria-hidden="true"></span>
+      <span class="floating-badge-text">✨ Devotional Companion</span>
+    </div>
+    
+    <div class="floating-banner-content">
+      <h4 class="floating-banner-title">🙏 Deepen Your Daily Devotions</h4>
+      <p class="floating-banner-desc">Get the complete 30-Day Prayer Journal PDF guide now.</p>
+    </div>
+
+    <div class="floating-banner-footer">
+      <span class="floating-banner-btn">
+        <span>Get Full Journal ($5)</span>
+        <svg class="floating-btn-arrow" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <line x1="5" y1="12" x2="19" y2="12"></line>
+          <polyline points="12 5 19 12 12 19"></polyline>
+        </svg>
+      </span>
+      <span class="floating-banner-micro">Instant PDF &bull; Fillable &amp; Printable</span>
+    </div>
+  </a>
+</aside>
+
+<script>
+(function() {
+  var banner = document.getElementById('floating-journal-banner');
+  var closeBtn = document.getElementById('floating-banner-close');
+  if (!banner) return;
+
+  // Check if previously dismissed in this session
+  if (sessionStorage.getItem('dismissed_journal_banner') === 'true') {
+    return;
+  }
+
+  // Slide in after 5 seconds of page load or when scrolled 25% down the article
+  var hasShown = false;
+  function showBanner() {
+    if (hasShown) return;
+    hasShown = true;
+    banner.classList.add('banner-visible');
+  }
+
+  var timer = setTimeout(showBanner, 5000);
+
+  function onScroll() {
+    var scrollPos = window.scrollY || window.pageYOffset;
+    var docHeight = document.documentElement.scrollHeight - window.innerHeight;
+    if (docHeight > 0 && (scrollPos / docHeight) > 0.25) {
+      showBanner();
+      window.removeEventListener('scroll', onScroll, { passive: true });
+      clearTimeout(timer);
+    }
+  }
+  window.addEventListener('scroll', onScroll, { passive: true });
+
+  if (closeBtn) {
+    closeBtn.addEventListener('click', function(e) {
+      e.preventDefault();
+      e.stopPropagation();
+      banner.classList.remove('banner-visible');
+      banner.classList.add('banner-hidden');
+      sessionStorage.setItem('dismissed_journal_banner', 'true');
+    });
+  }
+})();
+</script>
