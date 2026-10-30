@@ -14,6 +14,10 @@
   {% include footer.html %}
   {% include push-subscribe.html %}
 
+  {% unless page.url contains "prayer-journal" %}
+    {% include floating-journal-banner.html %}
+  {% endunless %}
+
   <!-- Vanilla JavaScript (deferred for Core Web Vitals) -->
   <script src="{{ site.baseurl }}/assets/js/main.js" defer></script>
   <script src="{{ site.baseurl }}/assets/js/push-config.js" defer></script>

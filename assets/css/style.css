@@ -5920,6 +5920,7 @@ blockquote {
   text-decoration: none;
   min-height: 48px;
   box-shadow: 0 4px 12px rgba(44, 36, 22, 0.22);
+  animation: btnHeartbeat 4s ease-in-out infinite;
   transition: all 0.2s ease;
   cursor: pointer;
 }
