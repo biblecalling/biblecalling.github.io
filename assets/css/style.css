@@ -5838,15 +5838,133 @@ blockquote {
   box-shadow: 0 3px 14px rgba(44, 36, 22, 0.04);
 }
 
-/* 2. Bottom Placement CTA (#f8f5ee background, left border accent #2c2416) */
-.devotional-cta-bottom {
-  background-color: #f8f5ee;
-  border: 1px solid #e6dec5;
-  border-left: 5px solid #2c2416;
-  box-shadow: 0 4px 16px rgba(44, 36, 22, 0.05);
-  margin-top: 2.5rem;
-  margin-bottom: 2.5rem;
+/* 2. Bottom Placement CTA - Sleek Slim Stripe / Patti Banner */
+.devotional-stripe-banner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.25rem;
+  background-color: #fdfbf7 !important;
+  border: 1px solid #e6dec5 !important;
+  border-left: 5px solid #2c2416 !important;
+  border-radius: 6px;
+  padding: 14px 20px !important;
+  margin: 2rem 0 2.25rem !important;
+  font-family: Georgia, "Iowan Old Style", "Apple Garamond", "Times New Roman", serif;
+  box-shadow: 0 2px 8px rgba(44, 36, 22, 0.04);
+  box-sizing: border-box;
+  transition: box-shadow 0.2s ease;
 }
+
+.devotional-stripe-banner:hover {
+  box-shadow: 0 4px 14px rgba(44, 36, 22, 0.08);
+}
+
+.devotional-stripe-content {
+  flex: 1 1 auto;
+  min-width: 0;
+}
+
+.devotional-stripe-heading {
+  font-family: Georgia, "Iowan Old Style", "Apple Garamond", "Times New Roman", serif;
+  font-size: 17px !important;
+  font-weight: 700;
+  color: #2c2416 !important;
+  line-height: 1.35;
+  margin: 0 0 3px 0 !important;
+  letter-spacing: -0.01em;
+}
+
+.devotional-stripe-desc {
+  font-family: Georgia, "Iowan Old Style", "Apple Garamond", "Times New Roman", serif;
+  font-size: 13px !important;
+  color: #5c5240 !important;
+  line-height: 1.45;
+  margin: 0 !important;
+}
+
+.devotional-stripe-btn {
+  flex-shrink: 0;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  background-color: #2c2416 !important;
+  color: #ffffff !important;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  font-size: 14px;
+  font-weight: bold;
+  padding: 10px 22px !important;
+  border-radius: 4px !important;
+  text-decoration: none;
+  line-height: 1;
+  white-space: nowrap;
+  cursor: pointer;
+  box-shadow: 0 2px 6px rgba(44, 36, 22, 0.2);
+  animation: stripeButtonPulse 2s infinite ease-in-out;
+  transition: background-color 0.2s ease, transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.devotional-stripe-btn:hover {
+  background-color: #4a3b25 !important;
+  color: #ffffff !important;
+  animation-play-state: paused;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(44, 36, 22, 0.3);
+}
+
+.devotional-stripe-btn:focus-visible {
+  outline: 2px solid #9a7432;
+  outline-offset: 2px;
+}
+
+.devotional-stripe-arrow {
+  display: inline-block;
+  transition: transform 0.2s ease;
+}
+
+.devotional-stripe-btn:hover .devotional-stripe-arrow {
+  transform: translateX(3px);
+}
+
+/* Subtle 2-second keyframes pulse & glow animation */
+@keyframes stripeButtonPulse {
+  0% {
+    transform: scale(1);
+    box-shadow: 0 2px 6px rgba(44, 36, 22, 0.2);
+  }
+  50% {
+    transform: scale(1.028);
+    box-shadow: 0 0 14px rgba(154, 116, 50, 0.45), 0 3px 8px rgba(44, 36, 22, 0.25);
+  }
+  100% {
+    transform: scale(1);
+    box-shadow: 0 2px 6px rgba(44, 36, 22, 0.2);
+  }
+}
+
+/* Mobile responsiveness: clean vertical stacking */
+@media (max-width: 680px) {
+  .devotional-stripe-banner {
+    flex-direction: column;
+    align-items: stretch;
+    padding: 14px 16px !important;
+    gap: 12px;
+  }
+  .devotional-stripe-heading {
+    font-size: 16px !important;
+  }
+  .devotional-stripe-desc {
+    font-size: 13px !important;
+  }
+  .devotional-stripe-btn {
+    width: 100%;
+    text-align: center;
+    padding: 11px 18px !important;
+    font-size: 14px;
+  }
+}
+
 
 .devotional-cta-inner {
   max-width: 100%;
