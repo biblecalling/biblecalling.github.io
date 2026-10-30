@@ -5813,304 +5813,210 @@ blockquote {
 }
 
 /* ==========================================================================
-   17. DEVOTIONAL PROMOTIONAL CTAS (GUMROAD 30-DAY PRAYER JOURNAL)
+   17. DEVOTIONAL PROMOTIONAL CTAS - ULTRA-COMPACT SLIM STRIPE / PATTI STYLE
    ========================================================================== */
 
+.devotional-patti-stripe,
+.devotional-stripe-banner,
 .devotional-cta-box {
-  position: relative;
-  border-radius: var(--radius-md, 10px);
-  padding: 1.75rem 1.65rem;
-  margin: 2.25rem 0;
-  box-sizing: border-box;
-  font-family: Georgia, "Iowan Old Style", "Apple Garamond", "Times New Roman", serif;
-  color: #2c2416;
-  transition: transform var(--transition-fast, 0.2s ease), box-shadow var(--transition-fast, 0.2s ease);
-}
-
-.devotional-cta-box:hover {
-  box-shadow: 0 6px 20px rgba(44, 36, 22, 0.08);
-}
-
-/* 1. Middle Placement CTA (#fdfbf7 background, #e6dec5 border, Georgia font, #2c2416 primary text) */
-.devotional-cta-mid {
-  background-color: #fdfbf7;
-  border: 1px solid #e6dec5;
-  box-shadow: 0 3px 14px rgba(44, 36, 22, 0.04);
-}
-
-/* 2. Bottom Placement CTA - Sleek Slim Stripe / Patti Banner */
-.devotional-stripe-banner {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 1.25rem;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: space-between !important;
+  gap: 14px !important;
   background-color: #fdfbf7 !important;
   border: 1px solid #e6dec5 !important;
   border-left: 5px solid #2c2416 !important;
-  border-radius: 6px;
-  padding: 14px 20px !important;
-  margin: 2rem 0 2.25rem !important;
-  font-family: Georgia, "Iowan Old Style", "Apple Garamond", "Times New Roman", serif;
-  box-shadow: 0 2px 8px rgba(44, 36, 22, 0.04);
-  box-sizing: border-box;
-  transition: box-shadow 0.2s ease;
+  border-radius: 4px !important;
+  padding: 8px 16px !important;
+  margin: 1.35rem 0 !important;
+  font-family: Georgia, "Iowan Old Style", "Apple Garamond", "Times New Roman", serif !important;
+  box-shadow: 0 1px 4px rgba(44, 36, 22, 0.04) !important;
+  box-sizing: border-box !important;
+  max-width: 100% !important;
+  position: relative !important;
+  transition: box-shadow 0.2s ease, border-color 0.2s ease !important;
 }
 
-.devotional-stripe-banner:hover {
-  box-shadow: 0 4px 14px rgba(44, 36, 22, 0.08);
+.devotional-patti-stripe:hover,
+.devotional-stripe-banner:hover,
+.devotional-cta-box:hover {
+  box-shadow: 0 2px 8px rgba(44, 36, 22, 0.08) !important;
+  border-color: #d8ceb0 !important;
 }
 
-.devotional-stripe-content {
-  flex: 1 1 auto;
-  min-width: 0;
+.devotional-patti-left,
+.devotional-stripe-content,
+.devotional-cta-inner {
+  flex: 1 1 auto !important;
+  min-width: 0 !important;
+  display: flex !important;
+  flex-direction: row !important;
+  align-items: center !important;
+  flex-wrap: wrap !important;
+  gap: 6px 10px !important;
 }
 
-.devotional-stripe-heading {
-  font-family: Georgia, "Iowan Old Style", "Apple Garamond", "Times New Roman", serif;
-  font-size: 17px !important;
-  font-weight: 700;
+/* Remove bulky badges and meta lines for clean, sleek patti */
+.devotional-cta-badge,
+.devotional-badge-accent,
+.devotional-cta-meta {
+  display: none !important;
+}
+
+.devotional-patti-sep {
+  display: inline-block !important;
+  color: #a89f91 !important;
+  font-size: 13px !important;
+  line-height: 1 !important;
+}
+
+.devotional-patti-title,
+.devotional-stripe-heading,
+.devotional-cta-title {
+  font-family: Georgia, "Iowan Old Style", "Apple Garamond", "Times New Roman", serif !important;
+  font-size: 14.5px !important;
+  font-weight: 700 !important;
   color: #2c2416 !important;
-  line-height: 1.35;
-  margin: 0 0 3px 0 !important;
-  letter-spacing: -0.01em;
+  line-height: 1.3 !important;
+  margin: 0 !important;
+  letter-spacing: -0.01em !important;
+  white-space: nowrap !important;
 }
 
-.devotional-stripe-desc {
-  font-family: Georgia, "Iowan Old Style", "Apple Garamond", "Times New Roman", serif;
+.devotional-patti-desc,
+.devotional-stripe-desc,
+.devotional-cta-desc {
+  font-family: Georgia, "Iowan Old Style", "Apple Garamond", "Times New Roman", serif !important;
   font-size: 13px !important;
   color: #5c5240 !important;
-  line-height: 1.45;
+  line-height: 1.35 !important;
   margin: 0 !important;
 }
 
-.devotional-stripe-btn {
-  flex-shrink: 0;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  gap: 6px;
+.devotional-cta-action {
+  margin: 0 !important;
+  display: inline-flex !important;
+  align-items: center !important;
+}
+
+.devotional-patti-btn,
+.devotional-stripe-btn,
+.devotional-cta-btn {
+  flex-shrink: 0 !important;
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  gap: 6px !important;
   background-color: #2c2416 !important;
   color: #ffffff !important;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-  font-size: 14px;
-  font-weight: bold;
-  padding: 10px 22px !important;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif !important;
+  font-size: 12.5px !important;
+  font-weight: 700 !important;
+  padding: 7px 16px !important;
   border-radius: 4px !important;
-  text-decoration: none;
-  line-height: 1;
-  white-space: nowrap;
-  cursor: pointer;
-  box-shadow: 0 2px 6px rgba(44, 36, 22, 0.2);
-  animation: stripeButtonPulse 2s infinite ease-in-out;
-  transition: background-color 0.2s ease, transform 0.2s ease, box-shadow 0.2s ease;
+  text-decoration: none !important;
+  line-height: 1 !important;
+  min-height: auto !important;
+  white-space: nowrap !important;
+  cursor: pointer !important;
+  box-shadow: 0 2px 5px rgba(44, 36, 22, 0.18) !important;
+  animation: pattiButtonPulse 2s infinite ease-in-out !important;
+  transition: background-color 0.2s ease, transform 0.2s ease, box-shadow 0.2s ease !important;
 }
 
-.devotional-stripe-btn:hover {
+.devotional-patti-btn:hover,
+.devotional-stripe-btn:hover,
+.devotional-cta-btn:hover {
   background-color: #4a3b25 !important;
   color: #ffffff !important;
-  animation-play-state: paused;
-  transform: translateY(-1px);
-  box-shadow: 0 4px 12px rgba(44, 36, 22, 0.3);
+  animation-play-state: paused !important;
+  transform: translateY(-1px) !important;
+  box-shadow: 0 4px 10px rgba(44, 36, 22, 0.25) !important;
 }
 
-.devotional-stripe-btn:focus-visible {
-  outline: 2px solid #9a7432;
-  outline-offset: 2px;
+.devotional-patti-btn:focus-visible,
+.devotional-stripe-btn:focus-visible,
+.devotional-cta-btn:focus-visible {
+  outline: 2px solid #9a7432 !important;
+  outline-offset: 2px !important;
 }
 
-.devotional-stripe-arrow {
-  display: inline-block;
-  transition: transform 0.2s ease;
+.devotional-patti-arrow,
+.devotional-stripe-arrow,
+.devotional-cta-arrow {
+  display: inline-block !important;
+  transition: transform 0.2s ease !important;
 }
 
-.devotional-stripe-btn:hover .devotional-stripe-arrow {
-  transform: translateX(3px);
+.devotional-patti-btn:hover .devotional-patti-arrow,
+.devotional-stripe-btn:hover .devotional-stripe-arrow,
+.devotional-cta-btn:hover .devotional-cta-arrow {
+  transform: translateX(3px) !important;
 }
 
-/* Subtle 2-second keyframes pulse & glow animation */
-@keyframes stripeButtonPulse {
+/* 2-Second Subtle Keyframes Pulse & Glow */
+@keyframes pattiButtonPulse {
   0% {
     transform: scale(1);
-    box-shadow: 0 2px 6px rgba(44, 36, 22, 0.2);
+    box-shadow: 0 2px 5px rgba(44, 36, 22, 0.18);
   }
   50% {
-    transform: scale(1.028);
-    box-shadow: 0 0 14px rgba(154, 116, 50, 0.45), 0 3px 8px rgba(44, 36, 22, 0.25);
+    transform: scale(1.02);
+    box-shadow: 0 0 10px rgba(154, 116, 50, 0.4), 0 2px 6px rgba(44, 36, 22, 0.2);
   }
   100% {
     transform: scale(1);
-    box-shadow: 0 2px 6px rgba(44, 36, 22, 0.2);
+    box-shadow: 0 2px 5px rgba(44, 36, 22, 0.18);
   }
 }
 
-/* Mobile responsiveness: clean vertical stacking */
-@media (max-width: 680px) {
-  .devotional-stripe-banner {
-    flex-direction: column;
-    align-items: stretch;
-    padding: 14px 16px !important;
-    gap: 12px;
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+  .devotional-patti-title,
+  .devotional-stripe-heading,
+  .devotional-cta-title {
+    white-space: normal !important;
   }
-  .devotional-stripe-heading {
-    font-size: 16px !important;
-  }
-  .devotional-stripe-desc {
-    font-size: 13px !important;
-  }
-  .devotional-stripe-btn {
-    width: 100%;
-    text-align: center;
-    padding: 11px 18px !important;
-    font-size: 14px;
-  }
-}
-
-
-.devotional-cta-inner {
-  max-width: 100%;
-}
-
-.devotional-cta-badge {
-  display: inline-flex;
-  align-items: center;
-  gap: 0.4rem;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-  font-size: 0.75rem;
-  font-weight: 700;
-  text-transform: uppercase;
-  letter-spacing: 0.08em;
-  color: #7f5c22;
-  background-color: #f3ebdb;
-  border: 1px solid #e2d1b6;
-  padding: 0.25rem 0.65rem;
-  border-radius: 9999px;
-  margin-bottom: 0.75rem;
-}
-
-.devotional-badge-accent {
-  background-color: #ebe4d2;
-  border-color: #d8cbb2;
-  color: #2c2416;
-}
-
-.devotional-cta-title {
-  font-family: Georgia, "Iowan Old Style", "Apple Garamond", "Times New Roman", serif;
-  font-size: 1.45rem;
-  font-weight: 700;
-  color: #2c2416 !important;
-  line-height: 1.3;
-  margin: 0 0 0.75rem;
-}
-
-.devotional-cta-desc {
-  font-family: Georgia, "Iowan Old Style", "Apple Garamond", "Times New Roman", serif;
-  font-size: 1.05rem;
-  line-height: 1.65;
-  color: #3c3427;
-  margin: 0 0 1.25rem;
-}
-
-.devotional-cta-desc strong {
-  color: #2c2416;
-}
-
-.devotional-cta-action {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  gap: 1rem 1.25rem;
-  margin-top: 0.5rem;
-}
-
-.devotional-cta-btn {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  gap: 0.5rem;
-  background-color: #2c2416;
-  color: #ffffff !important;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-  font-size: 1rem;
-  font-weight: 600;
-  line-height: 1;
-  padding: 0.85rem 1.75rem;
-  border-radius: 8px;
-  text-decoration: none;
-  min-height: 48px;
-  box-shadow: 0 4px 12px rgba(44, 36, 22, 0.22);
-  animation: btnHeartbeat 4s ease-in-out infinite;
-  transition: all 0.2s ease;
-  cursor: pointer;
-}
-
-.devotional-cta-btn:hover {
-  background-color: #4a3b25;
-  color: #ffffff !important;
-  transform: translateY(-2px);
-  box-shadow: 0 6px 18px rgba(44, 36, 22, 0.28);
-}
-
-.devotional-cta-btn:focus-visible {
-  outline: 3px solid #9a7432;
-  outline-offset: 3px;
-}
-
-.devotional-cta-arrow {
-  display: inline-block;
-  transition: transform 0.2s ease;
-}
-
-.devotional-cta-btn:hover .devotional-cta-arrow {
-  transform: translateX(4px);
-}
-
-.devotional-btn-accent {
-  background-color: #2c2416;
-  border: 1px solid #2c2416;
-}
-
-.devotional-btn-accent:hover {
-  background-color: #443722;
-}
-
-.devotional-cta-meta {
-  display: inline-flex;
-  align-items: center;
-  gap: 0.4rem;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-  font-size: 0.85rem;
-  color: #6b645b;
-}
-
-.devotional-cta-meta svg {
-  color: #7f5c22;
-  flex-shrink: 0;
 }
 
 @media (max-width: 640px) {
+  .devotional-patti-stripe,
+  .devotional-stripe-banner,
   .devotional-cta-box {
-    padding: 1.5rem 1.25rem;
-    margin: 1.75rem 0;
+    flex-direction: column !important;
+    align-items: stretch !important;
+    padding: 10px 14px !important;
+    gap: 8px !important;
+    margin: 1.25rem 0 !important;
   }
+  .devotional-patti-left,
+  .devotional-stripe-content,
+  .devotional-cta-inner {
+    flex-direction: column !important;
+    align-items: flex-start !important;
+    gap: 2px !important;
+  }
+  .devotional-patti-sep {
+    display: none !important;
+  }
+  .devotional-patti-title,
+  .devotional-stripe-heading,
   .devotional-cta-title {
-    font-size: 1.25rem;
+    font-size: 14px !important;
+    white-space: normal !important;
   }
+  .devotional-patti-desc,
+  .devotional-stripe-desc,
   .devotional-cta-desc {
-    font-size: 0.975rem;
+    font-size: 12px !important;
   }
-  .devotional-cta-action {
-    flex-direction: column;
-    align-items: stretch;
-    gap: 0.75rem;
-  }
+  .devotional-patti-btn,
+  .devotional-stripe-btn,
   .devotional-cta-btn {
-    width: 100%;
-    justify-content: center;
-  }
-  .devotional-cta-meta {
-    justify-content: center;
-    font-size: 0.8rem;
-    text-align: center;
+    width: 100% !important;
+    text-align: center !important;
+    padding: 8px 14px !important;
+    font-size: 13px !important;
   }
 }
 
