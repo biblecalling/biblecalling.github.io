@@ -132,6 +132,10 @@ layout: default
       {% assign has_inline_faq = true %}
     {% endif %}
 
+    {% if has_inline_faq == false %}
+      {% include cta-journal-bottom.html %}
+    {% endif %}
+
     {% if page.faq and page.faq.size > 0 %}
       <!-- 1. Custom Front-Matter FAQ -->
       <section class="post-faq-section" aria-labelledby="post-faq-heading">

@@ -1,4 +1,4 @@
----
+﻿---
 layout: post
 title: "Jesus Calling October 12: Meaning, Bible Verses & Prayer"
 h1: "Jesus Calling October 12 — 2026 Reflection & Prayer"
@@ -31,6 +31,8 @@ Jesus Calling October 12 focuses on breaking free from people-pleasing by seeing
 <p>
   The reading outlines several reasons why relying on human approval is spiritually perilous. First, we rarely know what other people are genuinely thinking; we often react to our own projections. Second, people's opinions are inherently unstable, shifting with their own stress, moods, and changing interests. Most seriously, when gaining approval becomes our dominant motive, pleasing people displaces God as the center of our lives. The biblical remedy is to gaze upon Jesus and let His loving assessment define our worth, bringing our hearts before God in <a href="{{ site.baseurl }}/prayer/">prayerful stillness</a>.
 </p>
+
+{% include cta-journal-mid.html %}
 
 ## What Scripture Teaches Us
 
@@ -90,6 +92,8 @@ Jesus Calling October 12 focuses on breaking free from people-pleasing by seeing
 <div class="reflection-question-box" style="margin: 1.5rem 0; padding: 1.25rem 1.5rem; background: var(--color-bg-alt); border-left: 4px solid var(--color-accent); border-radius: 6px;">
   <strong>Question to ponder:</strong> Whose approval do you find yourself chasing most often, and how would your day change if you rested securely in God's love instead?
 </div>
+
+{% include cta-journal-bottom.html %}
 
 ## Frequently Asked Questions
 

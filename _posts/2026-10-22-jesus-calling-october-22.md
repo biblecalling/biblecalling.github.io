@@ -1,4 +1,4 @@
----
+﻿---
 layout: post
 title: "Jesus Calling October 22: 2026 Reflection, Bible Verses & Prayer"
 h1: "Jesus Calling October 22 — 2026 Reflection & Prayer"
@@ -32,6 +32,8 @@ Jesus Calling October 22 focuses on discovering supernatural joy in Christ's pre
 <p>
   The reading contrasts bright, vibrant days—where joy seems scattered openly along the path—with gloomy, overcast seasons where the journey feels heavy. Even on the grayest days, joy remains accessible because Jesus Himself is present with us. The devotional urges believers to search for joy like hidden treasure: by remembering that God created this specific day, acknowledging His invisible nearness, and opening up an honest conversation with Him about whatever is on our minds, bringing our hearts before God in <a href="{{ site.baseurl }}/prayer/">daily prayers</a>.
 </p>
+
+{% include cta-journal-mid.html %}
 
 ## Scripture Verses Behind the Reflection
 
@@ -91,6 +93,8 @@ Jesus Calling October 22 focuses on discovering supernatural joy in Christ's pre
 <div class="reflection-question-box" style="margin: 1.5rem 0; padding: 1.25rem 1.5rem; background: var(--color-bg-alt); border-left: 4px solid var(--color-accent); border-radius: 6px;">
   <strong>Question to ponder:</strong> What is one small, hidden blessing in your day that you might have completely overlooked because your mood was gray?
 </div>
+
+{% include cta-journal-bottom.html %}
 
 ## Frequently Asked Questions
 

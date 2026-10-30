@@ -1,4 +1,4 @@
----
+﻿---
 layout: post
 title: "Jesus Calling October 23: 2026 Reflection, Scripture & Prayer"
 h1: "Jesus Calling October 23 — 2026 Reflection & Prayer"
@@ -32,6 +32,8 @@ Jesus Calling October 23 centers on the mystery of abiding in Christ and experie
 <p>
   Scripture invites believers to turn their attention toward Jesus and receive the warm light of His presence. It pictures opening our hearts to receive His smile of grace, allowing His life to intertwine with ours until a profound union is formed: Christ living in us, and us resting in Christ. In that union, joy is no longer something we labor to manufacture; it is the natural byproduct of remaining connected to the true Vine, bringing our hearts before God in <a href="{{ site.baseurl }}/prayer/">communion in prayer</a>.
 </p>
+
+{% include cta-journal-mid.html %}
 
 ## Bible Verses Related to Today's Theme
 
@@ -91,6 +93,8 @@ Jesus Calling October 23 centers on the mystery of abiding in Christ and experie
 <div class="reflection-question-box" style="margin: 1.5rem 0; padding: 1.25rem 1.5rem; background: var(--color-bg-alt); border-left: 4px solid var(--color-accent); border-radius: 6px;">
   <strong>Question to ponder:</strong> Do you typically picture God as disappointed with you or rejoicing over you, and how does Scripture correct that picture today?
 </div>
+
+{% include cta-journal-bottom.html %}
 
 ## Frequently Asked Questions
 

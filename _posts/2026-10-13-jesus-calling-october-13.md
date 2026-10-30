@@ -1,4 +1,4 @@
----
+﻿---
 layout: post
 title: "Jesus Calling October 13: 2026 Reflection, Bible Verses & Prayer"
 h1: "Jesus Calling October 13 — 2026 Reflection & Prayer"
@@ -31,6 +31,8 @@ Jesus Calling October 13 centers on the necessity of pausing in God's presence t
 <p>
   Sarah Young's devotional prompts believers to pause before God, pointing out that when we feel most frazzled, quiet communion is not a luxury—it is spiritual oxygen. Pausing to rest under the light of Jesus' countenance allows us to receive the supernatural peace He purchased for us at great cost. This peace is not dependent on circumstances remaining calm; it is an internal anchor that steadies our minds regardless of outer storms, bringing our hearts before God in <a href="{{ site.baseurl }}/prayer/">quiet prayer and reflection</a>.
 </p>
+
+{% include cta-journal-mid.html %}
 
 ## Biblical Anchor & Passages
 
@@ -90,6 +92,8 @@ Jesus Calling October 13 centers on the necessity of pausing in God's presence t
 <div class="reflection-question-box" style="margin: 1.5rem 0; padding: 1.25rem 1.5rem; background: var(--color-bg-alt); border-left: 4px solid var(--color-accent); border-radius: 6px;">
   <strong>Question to ponder:</strong> What is typically the most chaotic part of your daily routine, and how could you insert even two minutes of quiet prayer there?
 </div>
+
+{% include cta-journal-bottom.html %}
 
 ## Frequently Asked Questions
 

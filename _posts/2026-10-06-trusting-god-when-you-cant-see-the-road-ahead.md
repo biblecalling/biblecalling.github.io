@@ -1,4 +1,4 @@
----
+﻿---
 layout: post
 title: "October 6: Trusting God When You Can't See the Road Ahead"
 permalink: /jesus-calling-october-6/
@@ -72,6 +72,8 @@ Notice that the promise is direction, not a full map.
 God often reveals the next step without showing us the entire journey. That can be difficult for us because we naturally want certainty. We want to know how everything will turn out before we move forward.
 
 But faith invites us to take the next step with God, even when we cannot see what comes after it. As we learn in our daily <a href="{{ site.baseurl }}/categories/devotionals/">devotional reflections</a>, trusting God's timing frees us from the anxious urge to predict every outcome ourselves.
+
+{% include cta-journal-mid.html %}
 
 ## Receive the Mountaintop Moments
 
@@ -147,6 +149,8 @@ When we step into our daily routines &mdash; managing emails, cooking meals, nav
     &ldquo;Trust in the LORD with all thine heart; and lean not unto thine own understanding.&rdquo; &mdash; Proverbs 3:5 (KJV)
   </p>
 </div>
+
+{% include cta-journal-bottom.html %}
 
 ## A Note on Sources
 

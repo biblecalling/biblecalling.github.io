@@ -1,4 +1,4 @@
----
+﻿---
 layout: post
 title: "Jesus Calling November 15, 2026: Gathering Together on a Sunday"
 date: 2026-11-15 07:00:00 +0000
@@ -29,6 +29,8 @@ This companion reflection for **Jesus Calling November 15** celebrates the divin
   > "And let us consider one another to provoke unto love and to good works: Not forsaking the assembling of ourselves together, as the manner of some is; but exhorting one another: and so much the more, as ye see the day approaching."
 
 ---
+
+{% include cta-journal-mid.html %}
 
 ## Reflection: Gathering Together on a Sunday
 
@@ -62,6 +64,8 @@ In the name of Jesus Christ,
 Who in your path needs you to be an intentional voice of spiritual comfort, listening, or encouragement this week?
 
 ---
+
+{% include cta-journal-bottom.html %}
 
 ## Frequently Asked Questions
 

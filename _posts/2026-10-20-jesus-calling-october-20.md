@@ -1,4 +1,4 @@
----
+﻿---
 layout: post
 title: "Jesus Calling October 20: 2026 Reflection, Scripture & Prayer"
 h1: "Jesus Calling October 20 — 2026 Reflection & Prayer"
@@ -32,6 +32,8 @@ Jesus Calling October 20 focuses on daily inner spiritual renewal while our phys
 <p>
   The reading describes Jesus as the living Lord—possessing boundless life and energy far greater than the most vigorous athlete. Even the strongest earthly bodies eventually yield to wear, gravity, and aging. Rather than falling into despair over diminished physical energy, believers are invited to see their weakness as an invitation for Christ's strength. As we abide near Him, an inward vitality develops that outlasts physical youth, bringing our hearts before God in <a href="{{ site.baseurl }}/prayer/">restorative prayer</a>.
 </p>
+
+{% include cta-journal-mid.html %}
 
 ## What Scripture Teaches Us
 
@@ -91,6 +93,8 @@ Jesus Calling October 20 focuses on daily inner spiritual renewal while our phys
 <div class="reflection-question-box" style="margin: 1.5rem 0; padding: 1.25rem 1.5rem; background: var(--color-bg-alt); border-left: 4px solid var(--color-accent); border-radius: 6px;">
   <strong>Question to ponder:</strong> Where have you tied your personal worth to youthful energy or physical stamina, and how does 2 Corinthians 4:16 speak hope into your heart today?
 </div>
+
+{% include cta-journal-bottom.html %}
 
 ## Frequently Asked Questions
 

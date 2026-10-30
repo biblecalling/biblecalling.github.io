@@ -1,4 +1,4 @@
----
+﻿---
 layout: post
 title: "Jesus Calling October 30: 2026 Reflection, Scripture & Prayer"
 h1: "Jesus Calling October 30 — 2026 Reflection & Prayer"
@@ -32,6 +32,8 @@ Jesus Calling October 30 focuses on becoming quieter and more attentive to God's
 <p>
   The reading reminds us of Jesus' promise that His presence is constantly with us. Yet many people miss that reality because their minds are earthbound and cluttered with noise. Christ desires for His sheep to hear His voice continually. Quietness is the classroom where our spiritual hearing is trained; as we practice stillness in <a href="{{ site.baseurl }}/prayer/">attentive prayer</a>, we learn to carry that settled peace into the noisy marketplace of daily life.
 </p>
+
+{% include cta-journal-mid.html %}
 
 ## Scripture Verses Behind the Reflection
 
@@ -101,6 +103,8 @@ Jesus Calling October 30 focuses on becoming quieter and more attentive to God's
 <div class="reflection-question-box" style="margin: 1.5rem 0; padding: 1.25rem 1.5rem; background: var(--color-bg-alt); border-left: 4px solid var(--color-accent); border-radius: 6px;">
   <strong>Question to ponder:</strong> Where can you carve out five uninterrupted minutes of stillness today to listen for the Shepherd's gentle voice?
 </div>
+
+{% include cta-journal-bottom.html %}
 
 ## Frequently Asked Questions
 

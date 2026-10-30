@@ -1,4 +1,4 @@
----
+﻿---
 layout: post
 title: "Jesus Calling October 16: 2026 Reflection, Bible Verses & Prayer"
 h1: "Jesus Calling October 16 — 2026 Reflection & Prayer"
@@ -32,6 +32,8 @@ Jesus Calling October 16 focuses on continually looking to Jesus for comfort and
 <p>
   Believers are urged to look toward Jesus continually throughout the day for strength, counsel, and companionship. Even a momentary <a href="{{ site.baseurl }}/prayer/">intercessory prayer</a> or brief upward glance reconnects our awareness with Him. When we face trials, Jesus enfolds us in His tender care. But divine comfort is not meant to stagnate within us; as we experience God's mercy in our own weakness, we become gentle instruments through which He comforts other struggling souls.
 </p>
+
+{% include cta-journal-mid.html %}
 
 ## What Scripture Teaches Us
 
@@ -91,6 +93,8 @@ Jesus Calling October 16 focuses on continually looking to Jesus for comfort and
 <div class="reflection-question-box" style="margin: 1.5rem 0; padding: 1.25rem 1.5rem; background: var(--color-bg-alt); border-left: 4px solid var(--color-accent); border-radius: 6px;">
   <strong>Question to ponder:</strong> Who in your circle of family, friends, or church might be in need of the comfort and encouragement you have recently received from God?
 </div>
+
+{% include cta-journal-bottom.html %}
 
 ## Frequently Asked Questions
 

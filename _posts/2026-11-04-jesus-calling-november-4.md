@@ -1,4 +1,4 @@
----
+﻿---
 layout: post
 title: "Jesus Calling November 4, 2026: Trusting When You Cannot Trace the Path"
 h1: "Jesus Calling November 4, 2026: Trusting When You Cannot Trace the Path"
@@ -57,6 +57,8 @@ This companion reflection for Jesus Calling November 4 is about faith that does 
   Biblical faith operates in harmony with sound wisdom, encouraging believers to seek grounded guidance from trustworthy advisors.
 </p>
 
+{% include cta-journal-mid.html %}
+
 ## Reflection: Trusting When You Cannot Trace the Path
 
 Proverbs 3:5 does not command us to stop thinking or dismiss sound judgment. It instructs us not to lean our whole spiritual weight upon our own limited understanding. God gave us minds to examine facts, weigh consequences, and plan carefully; yet biblical trust recognizes that our human perspective is partial, while God's sovereign knowledge is complete.
@@ -83,6 +85,8 @@ A lantern held on a dark trail does not light the entire journey at once—it il
 <div class="reflection-question-box" style="margin: 1.5rem 0; padding: 1.25rem 1.5rem; background: var(--color-bg-alt); border-left: 4px solid var(--color-accent); border-radius: 6px;">
   <strong>Question to ponder:</strong> Where are you demanding a complete map when God has graciously provided a lantern for your next step?
 </div>
+
+{% include cta-journal-bottom.html %}
 
 ## Frequently Asked Questions
 

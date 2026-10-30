@@ -1,4 +1,4 @@
----
+﻿---
 layout: post
 title: "Jesus Calling October 29: 2026 Reflection, Bible Verses & Prayer"
 h1: "Jesus Calling October 29 — 2026 Reflection & Prayer"
@@ -32,6 +32,8 @@ Jesus Calling October 29 centers on lingering in Jesus' presence at the start of
 <p>
   The reading urges believers to rein in the impulsive urge to plunge straight into daily tasks without pausing. Beginning the day alone with Jesus equips us for spiritual endurance, just as an athlete centers their focus before entering competition. Christ alone foresees what challenges our day will bring; time spent in His presence anchors our hearts so that when unexpected demands arise, we respond with patience rather than panic, bringing our hearts before God in <a href="{{ site.baseurl }}/prayer/">morning prayer</a>.
 </p>
+
+{% include cta-journal-mid.html %}
 
 ## Biblical Anchor & Passages
 
@@ -92,6 +94,8 @@ Jesus Calling October 29 centers on lingering in Jesus' presence at the start of
 <div class="reflection-question-box" style="margin: 1.5rem 0; padding: 1.25rem 1.5rem; background: var(--color-bg-alt); border-left: 4px solid var(--color-accent); border-radius: 6px;">
   <strong>Question to ponder:</strong> What is the very first thing you typically reach for when waking up, and how would your morning change if you reached for God first?
 </div>
+
+{% include cta-journal-bottom.html %}
 
 ## Frequently Asked Questions
 

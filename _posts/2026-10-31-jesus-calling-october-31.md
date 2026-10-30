@@ -1,4 +1,4 @@
----
+﻿---
 layout: post
 title: "Jesus Calling October 31, 2026: Walking in the Light"
 h1: "Jesus Calling October 31, 2026: Walking in the Light, Not in Fear"
@@ -57,6 +57,8 @@ This companion reflection for Jesus Calling October 31 is about trading fear for
   Jesus provides a definitive promise to all who follow Him: darkness does not have the final word when Christ illuminates the path.
 </p>
 
+{% include cta-journal-mid.html %}
+
 ## Reflection: Walking in the Light, Not in Fear
 
 Fear is rarely loud at first. It starts as a small "what if" at the edge of the day, then grows when we leave it in the dark. David does not answer his fear with a theory. He answers with a person: the LORD is my light. Light does not argue with darkness. It simply arrives, and the room changes.
@@ -95,6 +97,8 @@ Presenting this simple daily devotional exercise to center your thoughts upon Go
 <div class="reflection-question-box" style="margin: 1.5rem 0; padding: 1.25rem 1.5rem; background: var(--color-bg-alt); border-left: 4px solid var(--color-accent); border-radius: 6px;">
   <strong>Question to ponder:</strong> Which fear would lose its grip if you described it out loud to God tonight?
 </div>
+
+{% include cta-journal-bottom.html %}
 
 ## Frequently Asked Questions
 

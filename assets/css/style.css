@@ -5812,5 +5812,189 @@ blockquote {
   font-size: 1.15rem;
 }
 
+/* ==========================================================================
+   17. DEVOTIONAL PROMOTIONAL CTAS (GUMROAD 30-DAY PRAYER JOURNAL)
+   ========================================================================== */
+
+.devotional-cta-box {
+  position: relative;
+  border-radius: var(--radius-md, 10px);
+  padding: 1.75rem 1.65rem;
+  margin: 2.25rem 0;
+  box-sizing: border-box;
+  font-family: Georgia, "Iowan Old Style", "Apple Garamond", "Times New Roman", serif;
+  color: #2c2416;
+  transition: transform var(--transition-fast, 0.2s ease), box-shadow var(--transition-fast, 0.2s ease);
+}
+
+.devotional-cta-box:hover {
+  box-shadow: 0 6px 20px rgba(44, 36, 22, 0.08);
+}
+
+/* 1. Middle Placement CTA (#fdfbf7 background, #e6dec5 border, Georgia font, #2c2416 primary text) */
+.devotional-cta-mid {
+  background-color: #fdfbf7;
+  border: 1px solid #e6dec5;
+  box-shadow: 0 3px 14px rgba(44, 36, 22, 0.04);
+}
+
+/* 2. Bottom Placement CTA (#f8f5ee background, left border accent #2c2416) */
+.devotional-cta-bottom {
+  background-color: #f8f5ee;
+  border: 1px solid #e6dec5;
+  border-left: 5px solid #2c2416;
+  box-shadow: 0 4px 16px rgba(44, 36, 22, 0.05);
+  margin-top: 2.5rem;
+  margin-bottom: 2.5rem;
+}
+
+.devotional-cta-inner {
+  max-width: 100%;
+}
+
+.devotional-cta-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: #7f5c22;
+  background-color: #f3ebdb;
+  border: 1px solid #e2d1b6;
+  padding: 0.25rem 0.65rem;
+  border-radius: 9999px;
+  margin-bottom: 0.75rem;
+}
+
+.devotional-badge-accent {
+  background-color: #ebe4d2;
+  border-color: #d8cbb2;
+  color: #2c2416;
+}
+
+.devotional-cta-title {
+  font-family: Georgia, "Iowan Old Style", "Apple Garamond", "Times New Roman", serif;
+  font-size: 1.45rem;
+  font-weight: 700;
+  color: #2c2416 !important;
+  line-height: 1.3;
+  margin: 0 0 0.75rem;
+}
+
+.devotional-cta-desc {
+  font-family: Georgia, "Iowan Old Style", "Apple Garamond", "Times New Roman", serif;
+  font-size: 1.05rem;
+  line-height: 1.65;
+  color: #3c3427;
+  margin: 0 0 1.25rem;
+}
+
+.devotional-cta-desc strong {
+  color: #2c2416;
+}
+
+.devotional-cta-action {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 1rem 1.25rem;
+  margin-top: 0.5rem;
+}
+
+.devotional-cta-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  background-color: #2c2416;
+  color: #ffffff !important;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  font-size: 1rem;
+  font-weight: 600;
+  line-height: 1;
+  padding: 0.85rem 1.75rem;
+  border-radius: 8px;
+  text-decoration: none;
+  min-height: 48px;
+  box-shadow: 0 4px 12px rgba(44, 36, 22, 0.22);
+  transition: all 0.2s ease;
+  cursor: pointer;
+}
+
+.devotional-cta-btn:hover {
+  background-color: #4a3b25;
+  color: #ffffff !important;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 18px rgba(44, 36, 22, 0.28);
+}
+
+.devotional-cta-btn:focus-visible {
+  outline: 3px solid #9a7432;
+  outline-offset: 3px;
+}
+
+.devotional-cta-arrow {
+  display: inline-block;
+  transition: transform 0.2s ease;
+}
+
+.devotional-cta-btn:hover .devotional-cta-arrow {
+  transform: translateX(4px);
+}
+
+.devotional-btn-accent {
+  background-color: #2c2416;
+  border: 1px solid #2c2416;
+}
+
+.devotional-btn-accent:hover {
+  background-color: #443722;
+}
+
+.devotional-cta-meta {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  font-size: 0.85rem;
+  color: #6b645b;
+}
+
+.devotional-cta-meta svg {
+  color: #7f5c22;
+  flex-shrink: 0;
+}
+
+@media (max-width: 640px) {
+  .devotional-cta-box {
+    padding: 1.5rem 1.25rem;
+    margin: 1.75rem 0;
+  }
+  .devotional-cta-title {
+    font-size: 1.25rem;
+  }
+  .devotional-cta-desc {
+    font-size: 0.975rem;
+  }
+  .devotional-cta-action {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0.75rem;
+  }
+  .devotional-cta-btn {
+    width: 100%;
+    justify-content: center;
+  }
+  .devotional-cta-meta {
+    justify-content: center;
+    font-size: 0.8rem;
+    text-align: center;
+  }
+}
+
+
 
 

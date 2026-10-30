@@ -1,4 +1,4 @@
----
+﻿---
 layout: post
 title: "Jesus Calling November 13, 2026: Not Luck, But a Father Who Holds Your Times"
 date: 2026-11-13 07:00:00 +0000
@@ -29,6 +29,8 @@ This companion reflection for **Jesus Calling November 13** meets Friday the 13t
   > "And we know that all things work together for good to them that love God, to them who are the called according to his purpose."
 
 ---
+
+{% include cta-journal-mid.html %}
 
 ## Reflection: Not Luck, But a Father Who Holds Your Times
 
@@ -62,6 +64,8 @@ In Jesus' name,
 What small habit, fear, or superstition in your daily routine reveals that you are trying to manage luck rather than trusting God's sovereign care?
 
 ---
+
+{% include cta-journal-bottom.html %}
 
 ## Frequently Asked Questions
 

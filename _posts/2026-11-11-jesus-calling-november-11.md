@@ -1,4 +1,4 @@
----
+﻿---
 layout: post
 title: "Jesus Calling November 11, 2026: Remembering, Honoring and Making Peace"
 date: 2026-11-11 07:00:00 +0000
@@ -29,6 +29,8 @@ This companion reflection for **Jesus Calling November 11** commemorates the sol
   > "Blessed are the peacemakers: for they shall be called the children of God."
 
 ---
+
+{% include cta-journal-mid.html %}
 
 ## Reflection: Remembering, Honoring and Making Peace
 
@@ -62,6 +64,8 @@ In the name of Jesus Christ,
 Who in your immediate circle of family, work, or neighborhood needs you to take the first courageous step toward peace?
 
 ---
+
+{% include cta-journal-bottom.html %}
 
 ## Frequently Asked Questions
 

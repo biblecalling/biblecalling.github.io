@@ -1,4 +1,4 @@
----
+﻿---
 layout: post
 title: "Jesus Calling November 6, 2026: Rest for the Weary Friday"
 h1: "Jesus Calling November 6, 2026: Rest for the Weary Friday"
@@ -57,6 +57,8 @@ This companion reflection for Jesus Calling November 6 is for anyone feeling phy
   David describes the shepherd's intentional care: providing quiet pastures and still waters to restore the vitality of the flock.
 </p>
 
+{% include cta-journal-mid.html %}
+
 ## Reflection: Rest for the Weary Friday
 
 Notice the order of verbs in Matthew 11:28. Jesus says *Come*, and then *I will give*. The first action is simple enough for an exhausted, depleted person to take; the second action is His divine work. Biblical rest is deeper than merely sleeping late; it is the spiritual relief of knowing you do not have to carry the entire weight of your world alone.
@@ -83,6 +85,8 @@ Psalm 23 adds a tender detail: the Shepherd *maketh* His sheep lie down. In a cu
 <div class="reflection-question-box" style="margin: 1.5rem 0; padding: 1.25rem 1.5rem; background: var(--color-bg-alt); border-left: 4px solid var(--color-accent); border-radius: 6px;">
   <strong>Question to ponder:</strong> What heavy burden have you been carrying this week that Jesus never asked you to hold alone?
 </div>
+
+{% include cta-journal-bottom.html %}
 
 ## Frequently Asked Questions
 

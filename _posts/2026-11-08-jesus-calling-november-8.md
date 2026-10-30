@@ -1,4 +1,4 @@
----
+﻿---
 layout: post
 title: "Jesus Calling November 8, 2026: A Sunday of Thanks Before the Season of Thanks"
 date: 2026-11-08 07:00:00 +0000
@@ -29,6 +29,8 @@ This companion reflection for **Jesus Calling November 8** begins a quiet gratit
   > "In every thing give thanks: for this is the will of God in Christ Jesus concerning you."
 
 ---
+
+{% include cta-journal-mid.html %}
 
 ## Reflection: A Sunday of Thanks Before the Season of Thanks
 
@@ -65,6 +67,8 @@ In Jesus' name,
 What small, ordinary gift from this past week have you enjoyed, but not yet paused to thank God for?
 
 ---
+
+{% include cta-journal-bottom.html %}
 
 ## Frequently Asked Questions
 

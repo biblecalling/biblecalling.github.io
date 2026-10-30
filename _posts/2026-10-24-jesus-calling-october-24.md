@@ -1,4 +1,4 @@
----
+﻿---
 layout: post
 title: "Jesus Calling October 24: 2026 Reflection, Bible Verses & Prayer"
 h1: "Jesus Calling October 24 — 2026 Reflection & Prayer"
@@ -32,6 +32,8 @@ Jesus Calling October 24 focuses on the vital necessity of unwinding in the Shep
 <p>
   The reading calls believers to unwind in the gentle presence of the Good Shepherd. It observes that our electronic age keeps society perpetually 'wired,' leaving people too stressed and fragmented to sense God in their daily moments. Rest is woven into the very fabric of creation. The reading contrasts the unnecessary guilt many feel when resting with the immense energy wasted on hurried, frantic busyness, inviting us to walk paths of peace, bringing our hearts before God in <a href="{{ site.baseurl }}/prayer/">prayer and meditation</a>.
 </p>
+
+{% include cta-journal-mid.html %}
 
 ## What Scripture Teaches Us
 
@@ -91,6 +93,8 @@ Jesus Calling October 24 focuses on the vital necessity of unwinding in the Shep
 <div class="reflection-question-box" style="margin: 1.5rem 0; padding: 1.25rem 1.5rem; background: var(--color-bg-alt); border-left: 4px solid var(--color-accent); border-radius: 6px;">
   <strong>Question to ponder:</strong> What is the single biggest habit keeping you from genuine, restorative rest, and what small boundary can you establish today?
 </div>
+
+{% include cta-journal-bottom.html %}
 
 ## Frequently Asked Questions
 

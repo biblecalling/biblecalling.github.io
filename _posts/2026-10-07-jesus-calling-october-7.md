@@ -32,6 +32,8 @@ Jesus Calling October 7 focuses on releasing anxious worries to God so that our 
   The reading connects three vital spiritual ideas. First, unmanaged worries and runaway fears crowd our mental and spiritual space, keeping us from sensing Christ's presence. Entrusting those anxieties to Jesus is the necessary first step. Second, we are encouraged to accept each day as it arrives, recognizing that God is sovereign over today's moments rather than projecting fears into next month. Third, rather than resenting unpredictable circumstances, we practice thankfulness—a spiritual discipline that turns our focus from what is lacking to the God who sustains us, bringing our hearts before God in <a href="{{ site.baseurl }}/prayer/">heartfelt prayer</a>.
 </p>
 
+{% include cta-journal-mid.html %}
+
 ## Bible Verses Related to Today's Theme
 
 ### Casting our cares upon Him
@@ -90,6 +92,8 @@ Jesus Calling October 7 focuses on releasing anxious worries to God so that our 
 <div class="reflection-question-box" style="margin: 1.5rem 0; padding: 1.25rem 1.5rem; background: var(--color-bg-alt); border-left: 4px solid var(--color-accent); border-radius: 6px;">
   <strong>Question to ponder:</strong> Which specific worry do you find yourself picking back up after praying about it, and what would it look like to leave it with God today?
 </div>
+
+{% include cta-journal-bottom.html %}
 
 ## Frequently Asked Questions
 

@@ -1,4 +1,4 @@
----
+﻿---
 layout: post
 title: "Jesus Calling November 2, 2026: Comfort for a Grieving Heart"
 h1: "Jesus Calling November 2, 2026: Comfort for a Grieving Heart"
@@ -57,6 +57,8 @@ This companion reflection for Jesus Calling November 2 is for anyone carrying gr
   Jesus blesses those who weep, offering the enduring assurance that sorrow will not have the final word in the kingdom of God.
 </p>
 
+{% include cta-journal-mid.html %}
+
 ## Reflection: Comfort for a Grieving Heart
 
 Many church and cultural traditions set aside early November to remember those who have departed this life. Whether or not your community observes a formal day of remembrance, grief keeps its own calendar, often arriving uninvited in the middle of an ordinary afternoon. Notice the specific promise of Psalm 34:18: the Lord is *nigh*—near. Scripture does not say all pain is immediately rationalized or stripped away; it promises that God Himself draws close to hold our tears.
@@ -83,6 +85,8 @@ When Jesus stood before the tomb of His beloved friend Lazarus, He wept (John 11
 <div class="reflection-question-box" style="margin: 1.5rem 0; padding: 1.25rem 1.5rem; background: var(--color-bg-alt); border-left: 4px solid var(--color-accent); border-radius: 6px;">
   <strong>Question to ponder:</strong> What would you like to tell God about the person you miss today?
 </div>
+
+{% include cta-journal-bottom.html %}
 
 ## Frequently Asked Questions
 

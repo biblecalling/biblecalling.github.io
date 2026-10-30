@@ -1,4 +1,4 @@
----
+﻿---
 layout: post
 title: "Jesus Calling November 10, 2026: Staying Connected to the Vine"
 date: 2026-11-10 07:00:00 +0000
@@ -26,6 +26,8 @@ This companion reflection for **Jesus Calling November 10** centers on the vital
   > "I am the vine, ye are the branches: He that abideth in me, and I in him, the same bringeth forth much fruit: for without me ye can do nothing."
 
 ---
+
+{% include cta-journal-mid.html %}
 
 ## Reflection: Staying Connected to the Vine
 
@@ -61,6 +63,8 @@ In Your precious name,
 In what area of your life are you currently working hard for God without first pausing to be with Him?
 
 ---
+
+{% include cta-journal-bottom.html %}
 
 ## Frequently Asked Questions
 

@@ -1,4 +1,4 @@
----
+﻿---
 layout: post
 title: "Jesus Calling October 19: 2026 Reflection, Bible Verses & Prayer"
 h1: "Jesus Calling October 19 — 2026 Reflection & Prayer"
@@ -32,6 +32,8 @@ Jesus Calling October 19 focuses on approaching God with complete authenticity, 
 <p>
   The reading urges believers to come to Jesus with their shields down, vulnerable and authentic. Human beings instinctively erect emotional walls to protect themselves from rejection, even inside churches, where the pressure to project spiritual success often produces hollow fellowship. The antidote is to prioritize genuine worship: when we become secure in Christ's comprehensive love and forgiveness, we are liberated to love others without defensiveness, bringing our hearts before God in <a href="{{ site.baseurl }}/prayer/">prayer and surrender</a>.
 </p>
+
+{% include cta-journal-mid.html %}
 
 ## Bible Verses Related to Today's Theme
 
@@ -91,6 +93,8 @@ Jesus Calling October 19 focuses on approaching God with complete authenticity, 
 <div class="reflection-question-box" style="margin: 1.5rem 0; padding: 1.25rem 1.5rem; background: var(--color-bg-alt); border-left: 4px solid var(--color-accent); border-radius: 6px;">
   <strong>Question to ponder:</strong> Where in your spiritual or church life have you been wearing an artificial mask, and what would it look like to bring your authentic heart to God today?
 </div>
+
+{% include cta-journal-bottom.html %}
 
 ## Frequently Asked Questions
 

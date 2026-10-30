@@ -57,6 +57,8 @@ This companion reflection for Jesus Calling November 1 looks at time as somethin
   Solomon reminds believers that God has appointed healthy seasons for labor and rest alike, freeing us from the illusion that we must accomplish everything at once.
 </p>
 
+{% include cta-journal-mid.html %}
+
 ## Reflection: The Gift of an Unhurried Hour
 
 Most of us treat time like a currency we are constantly short of, racing from one obligation to the next with hurried breaths. Moses prays differently in Psalm 90. He does not plead for more hours; he asks for the grace to number them—to see each day as counted, purposeful, and precious before God. Wisdom, in biblical terms, is not high speed. It is holy attention.
@@ -83,6 +85,8 @@ If you live in an area that gains an hour through daylight saving time today, re
 <div class="reflection-question-box" style="margin: 1.5rem 0; padding: 1.25rem 1.5rem; background: var(--color-bg-alt); border-left: 4px solid var(--color-accent); border-radius: 6px;">
   <strong>Question to ponder:</strong> If you really had one unhurried hour today, what would you want to hear from God in it?
 </div>
+
+{% include cta-journal-bottom.html %}
 
 ## Frequently Asked Questions
 

@@ -1,4 +1,4 @@
----
+﻿---
 layout: post
 title: "Jesus Calling October 8: 2026 Reflection, Scripture & Prayer"
 h1: "Jesus Calling October 8 — 2026 Reflection & Prayer"
@@ -31,6 +31,8 @@ Jesus Calling October 8 centers on the steady, unchanging nature of God's love c
 <p>
   The October 8 reflection addresses a common human vulnerability: we often mistake our emotional fluctuations for changes in God's posture toward us. When we feel motivated and spiritually energized, we imagine God loves us more; when we feel downhearted or weary, we fear He has pulled away. The devotional challenges this misconception by turning our eyes toward Jesus' unchanging character. Circumstances shift constantly, but the cross of Christ settled God's love once and for all, bringing our hearts before God in <a href="{{ site.baseurl }}/prayer/">daily prayers for peace</a>.
 </p>
+
+{% include cta-journal-mid.html %}
 
 ## What Scripture Teaches Us
 
@@ -90,6 +92,8 @@ Jesus Calling October 8 centers on the steady, unchanging nature of God's love c
 <div class="reflection-question-box" style="margin: 1.5rem 0; padding: 1.25rem 1.5rem; background: var(--color-bg-alt); border-left: 4px solid var(--color-accent); border-radius: 6px;">
   <strong>Question to ponder:</strong> Where in your daily life have you allowed changing emotions to dictate what you believe about God's love for you?
 </div>
+
+{% include cta-journal-bottom.html %}
 
 ## Frequently Asked Questions
 

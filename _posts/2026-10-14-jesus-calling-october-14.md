@@ -1,4 +1,4 @@
----
+﻿---
 layout: post
 title: "Jesus Calling October 14: 2026 Reflection, Scripture & Prayer"
 h1: "Jesus Calling October 14 — 2026 Reflection & Prayer"
@@ -31,6 +31,8 @@ Jesus Calling October 14 focuses on how suffering can be redeemed in God's kingd
 <p>
   The October 14 reading shares a solemn truth: suffering endured in Christ's name is never wasted in God's kingdom. Hardships can become sacred ground where deep trust is forged, and offering thanksgiving in the middle of pain becomes a profound sacrifice of praise. Rather than hiding our wounds, we are urged to bring them directly to Christ, believing that He is capable of working through our brokenness to produce eternal fruit, bringing our hearts before God in <a href="{{ site.baseurl }}/prayer/">heartfelt prayers for comfort</a>.
 </p>
+
+{% include cta-journal-mid.html %}
 
 ## Scripture Verses Behind the Reflection
 
@@ -90,6 +92,8 @@ Jesus Calling October 14 focuses on how suffering can be redeemed in God's kingd
 <div class="reflection-question-box" style="margin: 1.5rem 0; padding: 1.25rem 1.5rem; background: var(--color-bg-alt); border-left: 4px solid var(--color-accent); border-radius: 6px;">
   <strong>Question to ponder:</strong> Who is one safe, trusted person you can invite into your current trial so that you do not carry this burden in isolation?
 </div>
+
+{% include cta-journal-bottom.html %}
 
 ## Frequently Asked Questions
 

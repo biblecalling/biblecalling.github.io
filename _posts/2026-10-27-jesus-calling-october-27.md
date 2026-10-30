@@ -1,4 +1,4 @@
----
+﻿---
 layout: post
 title: "Jesus Calling October 27: 2026 Reflection, Scripture & Prayer"
 h1: "Jesus Calling October 27 — 2026 Reflection & Prayer"
@@ -32,6 +32,8 @@ Jesus Calling October 27 centers on developing sensitivity to God's guidance in 
 <p>
   The reading explains that as we grow in conscious awareness of Christ's presence, discerning the way forward becomes far more natural. Instead of agonizing over distant hypothetical scenarios, we can maintain steady dialogue with Jesus, trusting that when we reach an actual fork in the road, He will make the next step clear. It warns against becoming so absorbed in future blueprints that we sleepwalk through today's opportunities, bringing our hearts before God in <a href="{{ site.baseurl }}/prayer/">prayer for wisdom</a>.
 </p>
+
+{% include cta-journal-mid.html %}
 
 ## Bible Verses Related to Today's Theme
 
@@ -91,6 +93,8 @@ Jesus Calling October 27 centers on developing sensitivity to God's guidance in 
 <div class="reflection-question-box" style="margin: 1.5rem 0; padding: 1.25rem 1.5rem; background: var(--color-bg-alt); border-left: 4px solid var(--color-accent); border-radius: 6px;">
   <strong>Question to ponder:</strong> What future dilemma are you overthinking that is currently distracting you from an important choice you need to make today?
 </div>
+
+{% include cta-journal-bottom.html %}
 
 ## Frequently Asked Questions
 

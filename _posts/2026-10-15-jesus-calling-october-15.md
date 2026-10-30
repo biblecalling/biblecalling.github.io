@@ -1,4 +1,4 @@
----
+﻿---
 layout: post
 title: "Jesus Calling October 15: Meaning, Bible Verses & Prayer"
 h1: "Jesus Calling October 15 — 2026 Reflection & Prayer"
@@ -32,6 +32,8 @@ Jesus Calling October 15 centers on maintaining an active, moment-by-moment awar
 <p>
   The reading highlights Jesus' parting promise to His disciples: that He is with us always, even to the end of the age. This promise is not merely comforting sentiment; it is our active spiritual shield. When our focus wavers, we can easily slip into pits of self-pity, resentment, or pride. Even well-meaning friends can lead us astray if we prioritize their approval over Christ. Keeping our eyes fixed on Jesus keeps our steps firmly on the path of life, bringing our hearts before God in <a href="{{ site.baseurl }}/prayer/">daily prayers</a>.
 </p>
+
+{% include cta-journal-mid.html %}
 
 ## Bible Verses Related to Today's Theme
 
@@ -91,6 +93,8 @@ Jesus Calling October 15 centers on maintaining an active, moment-by-moment awar
 <div class="reflection-question-box" style="margin: 1.5rem 0; padding: 1.25rem 1.5rem; background: var(--color-bg-alt); border-left: 4px solid var(--color-accent); border-radius: 6px;">
   <strong>Question to ponder:</strong> Which cultural voice, habit, or media influence is currently competing most aggressively for your attention against Christ?
 </div>
+
+{% include cta-journal-bottom.html %}
 
 ## Frequently Asked Questions
 

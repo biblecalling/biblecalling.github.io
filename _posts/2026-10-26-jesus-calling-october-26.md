@@ -1,4 +1,4 @@
----
+﻿---
 layout: post
 title: "Jesus Calling October 26: 2026 Reflection, Bible Verses & Prayer"
 h1: "Jesus Calling October 26 — 2026 Reflection & Prayer"
@@ -32,6 +32,8 @@ Jesus Calling October 26 focuses on trading exhausting self-sufficiency for acti
 <p>
   Today's reflection calls believers to bring both their deepest sorrows and their greatest joys to Jesus. He soothes our heartaches and multiplies our celebrations. It contrasts the world's self-centered ethos with Christ's call to joyful dependence. True spiritual confidence does not arise from feeling superior or completely self-contained; it rests on knowing that in Christ, we lack nothing essential for life and godliness, bringing our hearts before God in <a href="{{ site.baseurl }}/prayer/">daily prayers</a>.
 </p>
+
+{% include cta-journal-mid.html %}
 
 ## Scripture Verses Behind the Reflection
 
@@ -91,6 +93,8 @@ Jesus Calling October 26 focuses on trading exhausting self-sufficiency for acti
 <div class="reflection-question-box" style="margin: 1.5rem 0; padding: 1.25rem 1.5rem; background: var(--color-bg-alt); border-left: 4px solid var(--color-accent); border-radius: 6px;">
   <strong>Question to ponder:</strong> In which area of your life have you been stubbornly trying to be self-sufficient instead of bringing your need to God and seeking help?
 </div>
+
+{% include cta-journal-bottom.html %}
 
 ## Frequently Asked Questions
 

@@ -1,4 +1,4 @@
----
+﻿---
 layout: post
 title: "Jesus Calling November 9, 2026: Learning to Wait Without Wasting the Wait"
 date: 2026-11-09 07:00:00 +0000
@@ -29,6 +29,8 @@ This companion reflection for **Jesus Calling November 9** offers comfort for an
   > "Wait on the LORD: be of good courage, and he shall strengthen thine heart: wait, I say, on the LORD."
 
 ---
+
+{% include cta-journal-mid.html %}
 
 ## Reflection: Learning to Wait Without Wasting the Wait
 
@@ -64,6 +66,8 @@ In Jesus' name,
 What spiritual depth or trust might God be cultivating in your heart that a faster answer would have bypassed?
 
 ---
+
+{% include cta-journal-bottom.html %}
 
 ## Frequently Asked Questions
 

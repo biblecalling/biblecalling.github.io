@@ -1,4 +1,4 @@
----
+﻿---
 layout: post
 title: "Jesus Calling October 25: Meaning, Bible Verses & Prayer"
 h1: "Jesus Calling October 25 — 2026 Reflection & Prayer"
@@ -32,6 +32,8 @@ Jesus Calling October 25 centers on the perpetual presence of Christ and the dee
 <p>
   The reading reminds believers that Jesus is Immanuel—God with us for all eternity. It cautions against allowing that reality to become so routine that it loses its impact. His constant presence should be an unending wellspring of peace and joy. The meditation encourages us to reflect deeply on the sacred meanings of His names: Jesus, because He saves His people from sin, and Immanuel, because He abides with us forever, bringing our hearts before God in <a href="{{ site.baseurl }}/prayer/">heartfelt prayer</a>.
 </p>
+
+{% include cta-journal-mid.html %}
 
 ## Biblical Anchor & Passages
 
@@ -91,6 +93,8 @@ Jesus Calling October 25 centers on the perpetual presence of Christ and the dee
 <div class="reflection-question-box" style="margin: 1.5rem 0; padding: 1.25rem 1.5rem; background: var(--color-bg-alt); border-left: 4px solid var(--color-accent); border-radius: 6px;">
   <strong>Question to ponder:</strong> How would your stress level and peace of mind shift today if you genuinely believed that Christ was physically walking beside you through every task?
 </div>
+
+{% include cta-journal-bottom.html %}
 
 ## Frequently Asked Questions
 

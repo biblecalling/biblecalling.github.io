@@ -1,4 +1,4 @@
----
+﻿---
 layout: post
 title: "Jesus Calling November 7, 2026: Strength That Shows Up in Weakness"
 h1: "Jesus Calling November 7, 2026: Strength That Shows Up in Weakness"
@@ -57,6 +57,8 @@ This companion reflection for Jesus Calling November 7 reframes how believers vi
   The Lord reassures His people with threefold comfort: He is present, He imparts strength, and He upholds us when our own footing feels unsteady.
 </p>
 
+{% include cta-journal-mid.html %}
+
 ## Reflection: Strength That Shows Up in Weakness
 
 The Apostle Paul pleaded three separate times for God to take away his painful "thorn in the flesh." Instead of an instant rescue, God gave Paul a lasting promise: *My grace is sufficient for thee*. Divine grace is not a meager ration; it is an unshakeable bedrock that sustains believers through ongoing limitations, heartaches, and chronic trials.
@@ -83,6 +85,8 @@ In 2 Corinthians 4:7, Paul reminds us that we hold heavenly treasure in fragile 
 <div class="reflection-question-box" style="margin: 1.5rem 0; padding: 1.25rem 1.5rem; background: var(--color-bg-alt); border-left: 4px solid var(--color-accent); border-radius: 6px;">
   <strong>Question to ponder:</strong> Where might God be asking you to stop hiding a weakness and instead let His grace be strong there?
 </div>
+
+{% include cta-journal-bottom.html %}
 
 ## Frequently Asked Questions
 

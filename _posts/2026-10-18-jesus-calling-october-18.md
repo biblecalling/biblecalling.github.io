@@ -1,4 +1,4 @@
----
+﻿---
 layout: post
 title: "Jesus Calling October 18: Meaning, Bible Verses & Prayer"
 h1: "Jesus Calling October 18 — 2026 Reflection & Prayer"
@@ -32,6 +32,8 @@ Jesus Calling October 18 focuses on fixing your eyes on the Good Shepherd rather
 <p>
   The reading counsels believers to proceed gently through the day with their focus fixed upon Jesus. When obstacles arise, our instinctive reaction is often to panic, stare obsessively at the barrier, or hastily search for emergency detours. That frantic reaction often leads us into spiritual confusion. By keeping our eyes on the Shepherd who leads us, we often discover that the obstacle resolves or is passed through without the catastrophe we feared, bringing our hearts before God in <a href="{{ site.baseurl }}/prayer/">prayer for guidance</a>.
 </p>
+
+{% include cta-journal-mid.html %}
 
 ## Scripture Verses Behind the Reflection
 
@@ -91,6 +93,8 @@ Jesus Calling October 18 focuses on fixing your eyes on the Good Shepherd rather
 <div class="reflection-question-box" style="margin: 1.5rem 0; padding: 1.25rem 1.5rem; background: var(--color-bg-alt); border-left: 4px solid var(--color-accent); border-radius: 6px;">
   <strong>Question to ponder:</strong> What obstacle have you been analyzing and agonizing over so intensely that you have forgotten to look to the Good Shepherd?
 </div>
+
+{% include cta-journal-bottom.html %}
 
 ## Frequently Asked Questions
 

@@ -1,4 +1,4 @@
----
+﻿---
 layout: post
 title: "Jesus Calling October 17: 2026 Reflection, Scripture & Prayer"
 h1: "Jesus Calling October 17 — 2026 Reflection & Prayer"
@@ -32,6 +32,8 @@ Jesus Calling October 17 centers on overcoming future anxiety by refusing to ima
 <p>
   The reading pinpoints the root mechanism of anxiety: we mentally project ourselves into tomorrow's difficulties, but we project ourselves there alone, stripped of God's grace. In that God-absent fantasy, fear naturally runs wild. The devotional offers two clear guidelines: first, do not linger unnecessarily in tomorrow's problems; second, whenever you must think about upcoming duties, intentionally include Jesus in the mental picture, bringing our hearts before God in <a href="{{ site.baseurl }}/prayer/">prayers for anxiety</a>.
 </p>
+
+{% include cta-journal-mid.html %}
 
 ## Biblical Anchor & Passages
 
@@ -91,6 +93,8 @@ Jesus Calling October 17 centers on overcoming future anxiety by refusing to ima
 <div class="reflection-question-box" style="margin: 1.5rem 0; padding: 1.25rem 1.5rem; background: var(--color-bg-alt); border-left: 4px solid var(--color-accent); border-radius: 6px;">
   <strong>Question to ponder:</strong> What upcoming future scenario have you been agonizing over as if you will have to face it completely alone?
 </div>
+
+{% include cta-journal-bottom.html %}
 
 ## Frequently Asked Questions
 

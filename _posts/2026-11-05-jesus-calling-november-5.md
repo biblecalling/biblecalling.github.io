@@ -1,4 +1,4 @@
----
+﻿---
 layout: post
 title: "Jesus Calling November 5, 2026: Handing Over the Worry List"
 h1: "Jesus Calling November 5, 2026: Handing Over the Worry List"
@@ -57,6 +57,8 @@ This companion reflection for Jesus Calling November 5 shows how to turn chronic
   Paul outlines a divine exchange: bringing specific requests with a grateful heart releases a peace that guards our emotional and spiritual health.
 </p>
 
+{% include cta-journal-mid.html %}
+
 ## Reflection: Handing Over the Worry List
 
 "Casting" is a deliberate throwing word. You do not place a heavy weight tentatively on a stranger's back; you toss it to someone strong enough to catch it. Peter gives the underlying reason right inside the command: *for He careth for you*. We are not imposing upon a distracted or reluctant God; we are handing our cares over to a Father who is already watching over us with infinite tenderness.
@@ -86,6 +88,8 @@ Paul's pattern in Philippians 4 contains three vital steps: naming the issue hon
 <div class="reflection-question-box" style="margin: 1.5rem 0; padding: 1.25rem 1.5rem; background: var(--color-bg-alt); border-left: 4px solid var(--color-accent); border-radius: 6px;">
   <strong>Question to ponder:</strong> Which worry do you find yourself picking back up after you have already prayed about it?
 </div>
+
+{% include cta-journal-bottom.html %}
 
 ## Frequently Asked Questions
 

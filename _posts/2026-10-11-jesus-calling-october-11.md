@@ -1,4 +1,4 @@
----
+﻿---
 layout: post
 title: "Jesus Calling October 11: 2026 Reflection, Scripture & Prayer"
 h1: "Jesus Calling October 11 — 2026 Reflection & Prayer"
@@ -31,6 +31,8 @@ Jesus Calling October 11 centers on enjoying God's blessings without clinging to
 <p>
   The reading reminds believers that Jesus is the fulfillment of our deepest longings—the Alpha and Omega who satisfies the thirsty soul. Before knowing Him, people often look for lasting satisfaction in things that cannot sustain them. While God provides countless good gifts to enrich our lives, none of them can replace His presence. When we make gifts our ultimate source of security, fear of loss takes over. When we rest in Jesus, we are freed to enjoy His gifts without anxiety, bringing our hearts before God in <a href="{{ site.baseurl }}/prayer/">prayers of thanksgiving</a>.
 </p>
+
+{% include cta-journal-mid.html %}
 
 ## Bible Verses Related to Today's Theme
 
@@ -90,6 +92,8 @@ Jesus Calling October 11 centers on enjoying God's blessings without clinging to
 <div class="reflection-question-box" style="margin: 1.5rem 0; padding: 1.25rem 1.5rem; background: var(--color-bg-alt); border-left: 4px solid var(--color-accent); border-radius: 6px;">
   <strong>Question to ponder:</strong> Which good gift in your life have you begun depending on for security more than the God who gave it?
 </div>
+
+{% include cta-journal-bottom.html %}
 
 ## Frequently Asked Questions
 

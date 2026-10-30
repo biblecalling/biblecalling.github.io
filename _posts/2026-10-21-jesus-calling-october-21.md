@@ -1,4 +1,4 @@
----
+﻿---
 layout: post
 title: "Jesus Calling October 21: Meaning, Bible Verses & Prayer"
 h1: "Jesus Calling October 21 — 2026 Reflection & Prayer"
@@ -32,6 +32,8 @@ Jesus Calling October 21 centers on identifying hidden resentment and rebellious
 <p>
   The reading points out that walking consistently in Christ's presence requires confronting our internal resistance, especially the resentment we feel when life interferes with our personal desires. Pushing those feelings underground only allows bitterness to fester. The spiritual path forward is to let them surface before Jesus, submit to His loving authority, and practice gratitude, recognizing that everything we possess is an unearned gift from His hand, bringing our hearts before God in <a href="{{ site.baseurl }}/prayer/">prayers for forgiveness</a>.
 </p>
+
+{% include cta-journal-mid.html %}
 
 ## Biblical Anchor & Passages
 
@@ -91,6 +93,8 @@ Jesus Calling October 21 centers on identifying hidden resentment and rebellious
 <div class="reflection-question-box" style="margin: 1.5rem 0; padding: 1.25rem 1.5rem; background: var(--color-bg-alt); border-left: 4px solid var(--color-accent); border-radius: 6px;">
   <strong>Question to ponder:</strong> What disappointment or unmet expectation are you still holding against someone, or against God, that you need to release today?
 </div>
+
+{% include cta-journal-bottom.html %}
 
 ## Frequently Asked Questions
 

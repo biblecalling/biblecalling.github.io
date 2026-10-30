@@ -1,4 +1,4 @@
----
+﻿---
 layout: post
 title: "Jesus Calling November 3, 2026: Perfect Peace in Uncertain Times"
 h1: "Jesus Calling November 3, 2026: Perfect Peace in Uncertain Times"
@@ -57,6 +57,8 @@ This companion reflection for Jesus Calling November 3 is about maintaining a mi
   The Apostle Paul directs believers to intercede for leaders and neighbors alike, cultivating peaceable living rooted in godliness.
 </p>
 
+{% include cta-journal-mid.html %}
+
 ## Reflection: Perfect Peace in Uncertain Times
 
 In the United States, today marks a general election day, and readers across many other nations regularly experience similar civic tension and public unease. Isaiah tells us that peace is *kept*—like a fortified gate—for the soul whose mind is "stayed" upon the Lord: leaning, resting, and fastened to His character. Perfect peace does not require the total silence of news headlines; it stems from the living presence of Someone infinitely steadier than human politics.
@@ -83,6 +85,8 @@ Paul's instruction in 1 Timothy 2 to pray for all people and for those in public
 <div class="reflection-question-box" style="margin: 1.5rem 0; padding: 1.25rem 1.5rem; background: var(--color-bg-alt); border-left: 4px solid var(--color-accent); border-radius: 6px;">
   <strong>Question to ponder:</strong> What is one worry about the future you can hand over to God before this day ends?
 </div>
+
+{% include cta-journal-bottom.html %}
 
 ## Frequently Asked Questions
 

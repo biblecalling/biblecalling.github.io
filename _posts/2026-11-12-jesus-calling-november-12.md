@@ -1,4 +1,4 @@
----
+﻿---
 layout: post
 title: "Jesus Calling November 12, 2026: Asking God for Wisdom"
 date: 2026-11-12 07:00:00 +0000
@@ -29,6 +29,8 @@ This companion reflection for **Jesus Calling November 12** explores the invitat
   > "I will instruct thee and teach thee in the way which thou shalt go: I will guide thee with mine eye."
 
 ---
+
+{% include cta-journal-mid.html %}
 
 ## Reflection: Asking God for Wisdom
 
@@ -66,6 +68,8 @@ In Jesus' holy name,
 What decision would feel significantly lighter if you committed to asking God for His wisdom before turning to your own worries?
 
 ---
+
+{% include cta-journal-bottom.html %}
 
 ## Frequently Asked Questions
 

@@ -1,4 +1,4 @@
----
+﻿---
 layout: post
 title: "Jesus Calling October 28: Meaning, Bible Verses & Prayer"
 h1: "Jesus Calling October 28 — 2026 Reflection & Prayer"
@@ -32,6 +32,8 @@ Jesus Calling October 28 focuses on responding to unfair treatment with quick fo
 <p>
   The reading counsels believers not to expect earthly life to be consistently fair; people will sometimes hurt us without cause. When mistreatment occurs, the reading suggests viewing it as a classroom to grow in Christlike grace: forgiving quickly rather than fighting frantically to set the record straight. It urges us to focus on Jesus' evaluation of our life, reminding us that we are clothed in His spotless robe of righteousness—a gift that was pure, unearned mercy, bringing our hearts before God in <a href="{{ site.baseurl }}/prayer/">honest prayers of surrender</a>.
 </p>
+
+{% include cta-journal-mid.html %}
 
 ## What Scripture Teaches Us
 
@@ -91,6 +93,8 @@ Jesus Calling October 28 focuses on responding to unfair treatment with quick fo
 <div class="reflection-question-box" style="margin: 1.5rem 0; padding: 1.25rem 1.5rem; background: var(--color-bg-alt); border-left: 4px solid var(--color-accent); border-radius: 6px;">
   <strong>Question to ponder:</strong> Is there someone you have been withholding forgiveness from until they apologize, and what would it look like to release that debt to God today?
 </div>
+
+{% include cta-journal-bottom.html %}
 
 ## Frequently Asked Questions
 

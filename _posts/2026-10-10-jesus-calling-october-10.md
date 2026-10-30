@@ -1,4 +1,4 @@
----
+﻿---
 layout: post
 title: "Jesus Calling October 10: 2026 Reflection, Bible Verses & Prayer"
 h1: "Jesus Calling October 10 — 2026 Reflection & Prayer"
@@ -31,6 +31,8 @@ Jesus Calling October 10 focuses on letting go of anxious control and learning t
 <p>
   Today's meditation encourages believers to cultivate trust strong enough to let life unfold without needing to micromanage every upcoming detail. Trying to mentally secure ourselves miles into the future can subtly communicate that we do not need God's present help. The biblical alternative is to live fully in today's moment, walking in close relationship with Jesus, and recognizing that our strength comes from remaining connected to Him rather than hoarding solutions in advance, bringing our hearts before God in <a href="{{ site.baseurl }}/prayer/">conversations with God in prayer</a>.
 </p>
+
+{% include cta-journal-mid.html %}
 
 ## Scripture Verses Behind the Reflection
 
@@ -90,6 +92,8 @@ Jesus Calling October 10 focuses on letting go of anxious control and learning t
 <div class="reflection-question-box" style="margin: 1.5rem 0; padding: 1.25rem 1.5rem; background: var(--color-bg-alt); border-left: 4px solid var(--color-accent); border-radius: 6px;">
   <strong>Question to ponder:</strong> What future outcome or relationship are you currently trying to control that you need to place in God's hands today?
 </div>
+
+{% include cta-journal-bottom.html %}
 
 ## Frequently Asked Questions
 

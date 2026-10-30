@@ -1,4 +1,4 @@
----
+﻿---
 layout: post
 title: "Jesus Calling October 9: Meaning, Bible Verses & Prayer"
 h1: "Jesus Calling October 9 — 2026 Reflection & Prayer"
@@ -31,6 +31,8 @@ Jesus Calling October 9 focuses on bringing complaints and frustrations directly
 <p>
   The October 9 reading begins with deep encouragement, acknowledging the long, uphill road many readers have traveled without abandoning faith. It then addresses a subtle habit that can erode our joy: habitual grumbling. While talking to Christ openly about difficulties helps us gain His perspective, broadcasting complaints to everyone around us breeds resentment, bitterness, and self-pity. Scripture shows us a healthier pathway: honest lament before the Lord, bringing our hearts before God in <a href="{{ site.baseurl }}/prayer/">personal prayer and lament</a>.
 </p>
+
+{% include cta-journal-mid.html %}
 
 ## Biblical Anchor & Passages
 
@@ -90,6 +92,8 @@ Jesus Calling October 9 focuses on bringing complaints and frustrations directly
 <div class="reflection-question-box" style="margin: 1.5rem 0; padding: 1.25rem 1.5rem; background: var(--color-bg-alt); border-left: 4px solid var(--color-accent); border-radius: 6px;">
   <strong>Question to ponder:</strong> What situation has sparked the most complaining in your life this week, and have you brought that frustration honestly to God in prayer?
 </div>
+
+{% include cta-journal-bottom.html %}
 
 ## Frequently Asked Questions
 

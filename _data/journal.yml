@@ -1,13 +1,13 @@
 # Fill these in when ready. Empty value = the related element is hidden.
 name: "30 Days of Prayer & Quiet Time with Jesus"
 short_name: "Prayer & Quiet Time Journal"
-price_display: ""            # e.g. "$5.99" (do not guess)
+price_display: "$5"            # e.g. "$5.99" (do not guess)
 currency: "USD"              # used only for schema
-price_value: ""              # e.g. "5.99" (do not guess)
-buy_url_primary: ""          # e.g. Etsy listing URL
-buy_label_primary: "Get the journal"
-buy_url_secondary: ""        # e.g. Gumroad URL
-buy_label_secondary: "Buy on our store"
+price_value: "5.00"          # e.g. "5.99" (do not guess)
+buy_url_primary: "https://pintukrsre.gumroad.com/l/pzmqee"          # Gumroad product URL
+buy_label_primary: "Get Full Journal ($5)"
+buy_url_secondary: "https://pintukrsre.gumroad.com/l/pzmqee"        # Gumroad URL
+buy_label_secondary: "Download on Gumroad ($5)"
 sample_pdf_url: ""           # e.g. /assets/downloads/prayer-journal-7-day-sample.pdf
 signup_embed_html: ""        # paste the email service embed code here (owner supplies)
 cover_image: ""              # e.g. /assets/images/journal/cover.png

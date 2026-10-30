@@ -1,4 +1,4 @@
----
+﻿---
 layout: post
 title: "Jesus Calling November 14, 2026: Setting Down What Someone Else Did"
 date: 2026-11-14 07:00:00 +0000
@@ -29,6 +29,8 @@ This companion reflection for **Jesus Calling November 14** explores the liberat
   > "Forbearing one another, and forgiving one another, if any man have a quarrel against any: even as Christ forgave you, so also do ye."
 
 ---
+
+{% include cta-journal-mid.html %}
 
 ## Reflection: Setting Down What Someone Else Did
 
@@ -67,6 +69,8 @@ In Jesus' name,
 What would change in your daily peace if you finally stopped waiting for an apology that may never arrive, and instead released the debt to God?
 
 ---
+
+{% include cta-journal-bottom.html %}
 
 ## Frequently Asked Questions
 
