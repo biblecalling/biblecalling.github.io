@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: "Jesus Calling November 15, 2026: Gathering Together on a Sunday"
 date: 2026-11-15 07:00:00 +0000
@@ -80,7 +80,7 @@ Yes. The heart of Hebrews 10:24–25 is mutual encouragement, spiritual accounta
 ## Devotional Navigation & Related Reflections
 
 * **Previous Reflection:** [Jesus Calling November 14: Setting Down What Someone Else Did](/jesus-calling-november-14/)
-* **Next Reflection:** *This concludes the first half of the November series. Explore the complete collection on the hub page below.*
+* **Next Reflection:** [Jesus Calling November 16: Beginning the Week by Listening First](/jesus-calling-november-16/)
 * **Related Reflection:** [Jesus Calling November 8: A Sunday of Thanks Before the Season of Thanks](/jesus-calling-november-8/)
 * **Related Reflection:** [Jesus Calling November 10: Staying Connected to the Vine](/jesus-calling-november-10/)
 * **Series Hub:** [Explore all November 2026 devotional reflections on the November Hub Page](/jesus-calling-november-2026/)
