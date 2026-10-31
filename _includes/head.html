@@ -34,343 +34,75 @@
 {% endif %}
 
 <!-- Canonical URL -->
-{% capture canonical_url %}{{ site.url }}{{ site.baseurl }}{{ page.url | replace:'index.html','' }}{% endcapture %}
-<link rel="canonical" href="{{ canonical_url }}">
+<link rel="canonical" href="{{ page.url | absolute_url }}">
 
-<!-- Open Graph / Facebook -->
-<meta property="og:type" content="{% if page.layout == 'post' %}article{% else %}website{% endif %}">
-<meta property="og:site_name" content="Bible Calling">
-<meta property="og:title" content="{% if page.exact_title %}{{ page.title }}{% elsif page.url == '/' %}{{ page.title | default: site.title }}{% elsif page.title %}{{ page.title }} | {{ site.title }}{% else %}{{ site.title }}{% endif %}">
+<!-- Open Graph / Social Meta Tags -->
+<meta property="og:title" content="{% if page.title %}{{ page.title }} | {{ site.title }}{% else %}{{ site.title }}{% endif %}">
 <meta property="og:description" content="{{ page_desc | escape }}">
-<meta property="og:url" content="{{ canonical_url }}">
+<meta property="og:url" content="{{ page.url | absolute_url }}">
+<meta property="og:site_name" content="{{ site.title }}">
+<meta property="og:type" content="{% if page.layout == 'post' %}article{% else %}website{% endif %}">
 {% if page.image %}
-  {% if page.image contains "http" %}
-    <meta property="og:image" content="{{ page.image }}">
-  {% else %}
-    <meta property="og:image" content="{{ site.url }}{{ site.baseurl }}{{ page.image }}">
-  {% endif %}
-  {% if page.image_source %}
-  <meta name="image:source" content="{{ page.image_source | escape }}">
-  {% endif %}
-  {% if page.image_credit %}
-  <meta name="image:credit" content="{{ page.image_credit | escape }}">
-  {% endif %}
-  {% if page.image_license %}
-  <meta name="image:license" content="{{ page.image_license | escape }}">
-  {% endif %}
-{% else %}
-  <meta property="og:image" content="{{ site.url }}{{ site.baseurl }}/assets/images/og-default.webp">
+  <meta property="og:image" content="{{ page.image | absolute_url }}">
+{% elsif site.og_image %}
+  <meta property="og:image" content="{{ site.og_image | absolute_url }}">
 {% endif %}
 
-{% if page.layout == 'post' %}
-  <meta property="article:published_time" content="{{ page.date | date_to_xmlschema }}">
-  {% if page.last_modified_at %}
-    <meta property="article:modified_time" content="{{ page.last_modified_at | date_to_xmlschema }}">
-  {% endif %}
-  <meta property="article:author" content="{{ page.author.name | default: page.author | default: site.author.name }}">
-  {% for category in page.categories %}
-    <meta property="article:section" content="{{ category }}">
-  {% endfor %}
-{% endif %}
-
-<!-- Twitter Cards -->
+<!-- Twitter Card Meta Tags -->
 <meta name="twitter:card" content="summary_large_image">
-{% if site.twitter_username and site.twitter_username != "" %}
-<meta name="twitter:site" content="@{{ site.twitter_username }}">
-<meta name="twitter:creator" content="@{{ site.twitter_username }}">
-{% endif %}
-<meta name="twitter:title" content="{% if page.exact_title %}{{ page.title }}{% elsif page.url == '/' %}{{ page.title | default: site.title }}{% elsif page.title %}{{ page.title }} | {{ site.title }}{% else %}{{ site.title }}{% endif %}">
+<meta name="twitter:title" content="{% if page.title %}{{ page.title }} | {{ site.title }}{% else %}{{ site.title }}{% endif %}">
 <meta name="twitter:description" content="{{ page_desc | escape }}">
 {% if page.image %}
-  {% if page.image contains "http" %}
-    <meta name="twitter:image" content="{{ page.image }}">
-  {% else %}
-    <meta name="twitter:image" content="{{ site.url }}{{ site.baseurl }}{{ page.image }}">
-  {% endif %}
-{% else %}
-  <meta name="twitter:image" content="{{ site.url }}{{ site.baseurl }}/assets/images/og-default.webp">
+  <meta name="twitter:image" content="{{ page.image | absolute_url }}">
+{% elsif site.og_image %}
+  <meta name="twitter:image" content="{{ site.og_image | absolute_url }}">
 {% endif %}
 
-<!-- RSS & Feeds -->
-<link rel="alternate" type="application/rss+xml" title="{{ site.title }} RSS Feed" href="{{ site.url }}{{ site.baseurl }}/feed.xml">
+<!-- Favicon -->
+<link rel="icon" href="{{ '/favicon.ico' | relative_url }}" type="image/x-icon">
+<link rel="shortcut icon" href="{{ '/favicon.ico' | relative_url }}" type="image/x-icon">
 
-<!-- Favicon (Prioritizing 48x48+ square icons for Google Search) -->
-<link rel="icon" type="image/png" sizes="96x96" href="{{ '/assets/images/favicon-96x96.png' | relative_url }}">
-<link rel="icon" type="image/png" sizes="48x48" href="{{ '/assets/images/favicon-48x48.png' | relative_url }}">
-<link rel="icon" type="image/png" sizes="32x32" href="{{ '/assets/images/favicon-32x32.png' | relative_url }}">
-<link rel="icon" type="image/png" sizes="16x16" href="{{ '/assets/images/favicon-16x16.png' | relative_url }}">
-<link rel="icon" type="image/x-icon" href="{{ '/favicon.ico' | relative_url }}">
+<!-- Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;1,300;1,400&family=Source+Sans+Pro:wght@400;600;700&display=swap" rel="stylesheet">
 
-<!-- Apple Touch Icon -->
-<link rel="apple-touch-icon" href="{{ '/assets/images/apple-touch-icon.png' | relative_url }}">
+<!-- Stylesheets -->
+<link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
 
-<!-- Web App Manifest -->
-<link rel="manifest" href="{{ '/assets/images/site.webmanifest' | relative_url }}">
+<!-- RSS Feed -->
+<link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ '/feed.xml' | relative_url }}">
 
-<!-- Browser / Mobile Theme -->
-<meta name="theme-color" content="#fcfbf7">
-
-<!-- LCP Image Preload for Article Pages -->
-{% if page.layout == 'post' and page.image %}
-<link rel="preload" as="image" href="{{ page.image | relative_url }}" fetchpriority="high">
-{% endif %}
-
-<!-- Stylesheet -->
-<link rel="stylesheet" href="{{ site.baseurl }}/assets/css/style.css">
-
-<!-- Structured Data (JSON-LD) -->
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@graph": [
-    {
-      "@type": "WebSite",
-      "@id": "{{ site.url }}/#website",
-      "url": "{{ site.url }}/",
-      "name": "Bible Calling",
-      "alternateName": "BibleCalling",
-      "description": "{{ site.description | escape }}",
-      "inLanguage": "en-US",
-      "publisher": {
-        "@id": "{{ site.url }}/#organization"
-      },
-      "potentialAction": {
-        "@type": "SearchAction",
-        "target": "{{ site.url }}/search/?q={search_term_string}",
-        "query-input": "required name=search_term_string"
-      }
-    },
-    {
-      "@type": "Organization",
-      "@id": "{{ site.url }}/#organization",
-      "name": "{{ site.title }}",
-      "url": "{{ site.url }}/",
-      "description": "{{ site.description | escape }}",
-      {% if site.author.email %}"email": "{{ site.author.email }}",{% endif %}
-      "logo": {
-        "@type": "ImageObject",
-        "url": "{{ site.url }}/assets/images/logo.webp",
-        "width": 512,
-        "height": 512
-      },
-      "sameAs": [
-        "https://www.facebook.com/profile.php?id=61595103040251",
-        "https://www.youtube.com/@godmessageforyoump4",
-        "https://www.instagram.com/godsmessageforyoump4/"
-      ]
-    }{% if page.layout == 'post' or page.url contains '/prayer/' %},
-    {
-      "@type": "{% if page.layout == 'post' %}BlogPosting{% elsif page.url == '/prayer/' or page.url == '/prayer/daily-prayer/' or page.url == '/prayer/healing-prayers/' or page.url == '/prayer/life-needs-prayers/' %}CollectionPage{% else %}Article{% endif %}",
-      "@id": "{{ canonical_url }}#article",
-      "isPartOf": {
-        "@id": "{{ site.url }}/#website"
-      },
-      "inLanguage": "en-US",
-      "mainEntityOfPage": {
-        "@type": "WebPage",
-        "@id": "{{ canonical_url }}"
-      },
-      "headline": {{ page.title | jsonify }},
-      "description": {{ page_desc | jsonify }},
-      "url": "{{ canonical_url }}",
-      "datePublished": "{% if page.date %}{{ page.date | date_to_xmlschema }}{% else %}2026-10-16T00:00:00+00:00{% endif %}",
-      "dateModified": "{% if page.last_modified_at %}{{ page.last_modified_at | date_to_xmlschema }}{% elsif page.date %}{{ page.date | date_to_xmlschema }}{% else %}2026-10-16T00:00:00+00:00{% endif %}",
-      "author": {
-        "@type": "Organization",
-        "name": {{ page.author.name | default: page.author | default: site.author.name | jsonify }},
-        "url": "{{ site.url }}/about/"
-      },
-      "publisher": {
-        "@id": "{{ site.url }}/#organization"
-      },
-      "image": "{% if page.image contains 'http' %}{{ page.image }}{% else %}{{ site.url }}{{ site.baseurl }}{{ page.image | default: '/assets/images/og-default.webp' }}{% endif %}"{% if page.categories.size > 0 %},
-      "articleSection": {{ page.categories | first | jsonify }}{% elsif page.url contains '/prayer/' %},
-      "articleSection": "Prayer"{% endif %}{% if page.tags.size > 0 %},
-      "keywords": {{ page.tags | join: ', ' | jsonify }}{% endif %}
-    }{% endif %}{% if page.url != '/' %},
-    {
-      "@type": "BreadcrumbList",
-      "@id": "{{ canonical_url }}#breadcrumb",
-      "itemListElement": [
-        {
-          "@type": "ListItem",
-          "position": 1,
-          "name": "Home",
-          "item": "{{ site.url }}/"
-        }{% if page.url contains '/jesus-calling-october-' and page.url != '/jesus-calling-october-2026/' %},
-        {
-          "@type": "ListItem",
-          "position": 2,
-          "name": "Jesus Calling",
-          "item": "{{ site.url }}/categories/jesus-calling/"
-        },
-        {
-          "@type": "ListItem",
-          "position": 3,
-          "name": "October 2026",
-          "item": "{{ site.url }}/jesus-calling-october-2026/"
-        },
-        {
-          "@type": "ListItem",
-          "position": 4,
-          "name": {{ page.breadcrumb_title | default: page.title | jsonify }},
-          "item": "{{ canonical_url }}"
-        }{% elsif page.url contains '/jesus-calling-november-' and page.url != '/jesus-calling-november-2026/' %},
-        {
-          "@type": "ListItem",
-          "position": 2,
-          "name": "Jesus Calling",
-          "item": "{{ site.url }}/categories/jesus-calling/"
-        },
-        {
-          "@type": "ListItem",
-          "position": 3,
-          "name": "November 2026",
-          "item": "{{ site.url }}/jesus-calling-november-2026/"
-        },
-        {
-          "@type": "ListItem",
-          "position": 4,
-          "name": {{ page.breadcrumb_title | default: page.title | jsonify }},
-          "item": "{{ canonical_url }}"
-        }{% elsif page.url == '/jesus-calling-october-2026/' or page.url == '/jesus-calling-november-2026/' %},
-        {
-          "@type": "ListItem",
-          "position": 2,
-          "name": "Jesus Calling",
-          "item": "{{ site.url }}/categories/jesus-calling/"
-        },
-        {
-          "@type": "ListItem",
-          "position": 3,
-          "name": {{ page.breadcrumb_title | default: page.title | jsonify }},
-          "item": "{{ canonical_url }}"
-        }{% elsif page.url == '/prayer/morning-prayers/' or page.url == '/prayer/night-prayers/' or page.url == '/prayer/good-night-prayer-for-family/' or page.url == '/prayer/prayer-for-today/' %},
-        {
-          "@type": "ListItem",
-          "position": 2,
-          "name": "Prayer",
-          "item": "{{ site.url }}/prayer/"
-        },
-        {
-          "@type": "ListItem",
-          "position": 3,
-          "name": "Daily Prayer",
-          "item": "{{ site.url }}/prayer/daily-prayer/"
-        },
-        {
-          "@type": "ListItem",
-          "position": 4,
-          "name": {{ page.breadcrumb_title | default: page.title | jsonify }},
-          "item": "{{ canonical_url }}"
-        }{% elsif page.url == '/prayer/prayer-for-someone-in-the-hospital/' or page.url == '/prayer/prayer-for-a-sick-mother/' or page.url == '/prayer/prayer-for-healing-a-loved-one/' %},
-        {
-          "@type": "ListItem",
-          "position": 2,
-          "name": "Prayer",
-          "item": "{{ site.url }}/prayer/"
-        },
-        {
-          "@type": "ListItem",
-          "position": 3,
-          "name": "Healing Prayer",
-          "item": "{{ site.url }}/prayer/healing-prayers/"
-        },
-        {
-          "@type": "ListItem",
-          "position": 4,
-          "name": {{ page.breadcrumb_title | default: page.title | jsonify }},
-          "item": "{{ canonical_url }}"
-        }{% elsif page.url == '/prayer/prayer-for-anxiety-at-night/' or page.url == '/prayer/prayer-for-peace-of-mind/' or page.url == '/prayer/prayer-for-strength/' or page.url == '/prayer/prayer-for-protection-of-family/' %},
-        {
-          "@type": "ListItem",
-          "position": 2,
-          "name": "Prayer",
-          "item": "{{ site.url }}/prayer/"
-        },
-        {
-          "@type": "ListItem",
-          "position": 3,
-          "name": "Life Needs Prayer",
-          "item": "{{ site.url }}/prayer/life-needs-prayers/"
-        },
-        {
-          "@type": "ListItem",
-          "position": 4,
-          "name": {{ page.breadcrumb_title | default: page.title | jsonify }},
-          "item": "{{ canonical_url }}"
-        }{% elsif page.url contains '/prayer/' and page.url != '/prayer/' %},
-        {
-          "@type": "ListItem",
-          "position": 2,
-          "name": "Prayer",
-          "item": "{{ site.url }}/prayer/"
-        },
-        {
-          "@type": "ListItem",
-          "position": 3,
-          "name": {{ page.breadcrumb_title | default: page.title | jsonify }},
-          "item": "{{ canonical_url }}"
-        }{% elsif page.url contains '/devotionals/' and page.url != '/devotionals/' %},
-        {
-          "@type": "ListItem",
-          "position": 2,
-          "name": "Devotionals",
-          "item": "{{ site.url }}/devotionals/"
-        },
-        {
-          "@type": "ListItem",
-          "position": 3,
-          "name": {{ page.breadcrumb_title | default: page.title | jsonify }},
-          "item": "{{ canonical_url }}"
-        }{% elsif page.url == '/prayer/daily-prayer/' or page.url == '/prayer/healing-prayers/' or page.url == '/prayer/life-needs-prayers/' %},
-        {
-          "@type": "ListItem",
-          "position": 2,
-          "name": "Prayer",
-          "item": "{{ site.url }}/prayer/"
-        },
-        {
-          "@type": "ListItem",
-          "position": 3,
-          "name": {{ page.breadcrumb_title | default: page.title | jsonify }},
-          "item": "{{ canonical_url }}"
-        }{% elsif page.layout == 'post' and page.categories.first %},
-        {
-          "@type": "ListItem",
-          "position": 2,
-          "name": "{{ page.categories.first }}",
-          "item": "{{ site.url }}/categories/{{ page.categories.first | slugify }}/"
-        },
-        {
-          "@type": "ListItem",
-          "position": 3,
-          "name": {{ page.title | jsonify }},
-          "item": "{{ canonical_url }}"
-        }{% else %},
-        {
-          "@type": "ListItem",
-          "position": 2,
-          "name": {{ page.breadcrumb_title | default: page.title | jsonify }},
-          "item": "{{ canonical_url }}"
-        }{% endif %}
-      ]
-    }{% endif %}{% if page.image and page.url != '/' %},
-    {
-      "@type": "ImageObject",
-      "@id": "{% if page.image contains 'http' %}{{ page.image }}{% else %}{{ site.url }}{{ site.baseurl }}{{ page.image }}{% endif %}#image",
-      "url": "{% if page.image contains 'http' %}{{ page.image }}{% else %}{{ site.url }}{{ site.baseurl }}{{ page.image }}{% endif %}",
-      "contentUrl": "{% if page.image contains 'http' %}{{ page.image }}{% else %}{{ site.url }}{{ site.baseurl }}{{ page.image }}{% endif %}",
-      "caption": {{ page.image_caption | default: page.title | jsonify }},
-      "creator": {
-        "@type": "Organization",
-        "name": {{ page.image_credit | default: "Bible Calling Editorial Team" | jsonify }}
-      },
-      "creditText": {{ page.image_source | default: "Bible Calling Devotional Artwork" | jsonify }},
-      "copyrightNotice": "© 2026 Bible Calling",
-      "license": "{{ site.url }}/about/",
-      "acquireLicensePage": "{{ site.url }}/about/"
-    }{% endif %}
-  ]
+<!-- Tax / GST Notice Styles -->
+<style>
+.price-tax-note {
+  display: inline-block !important;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif !important;
+  font-size: 10.5px !important;
+  font-weight: 600 !important;
+  color: #7a5c1e !important;
+  background-color: #fef3cd !important;
+  border: 1px solid #e8c96a !important;
+  border-radius: 3px !important;
+  padding: 1px 5px !important;
+  margin-left: 4px !important;
+  vertical-align: middle !important;
+  letter-spacing: 0.01em !important;
+  white-space: nowrap !important;
 }
-</script>
+
+.jf-tax-note {
+  display: block !important;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif !important;
+  font-size: 11px !important;
+  font-weight: 600 !important;
+  color: #7a5c1e !important;
+  background-color: #fef3cd !important;
+  border: 1px solid #e8c96a !important;
+  border-radius: 3px !important;
+  padding: 2px 8px !important;
+  margin-top: 6px !important;
+  text-align: center !important;
+  width: fit-content !important;
+}
+</style>
